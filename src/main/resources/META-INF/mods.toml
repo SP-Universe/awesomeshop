@@ -7,25 +7,29 @@ license="2020 | SP UNIVERSE | ALL RIGHTS RESERVED"
 issueTrackerURL="https://github.com/Steven-Paw-Design/awesomeshop/issues" #optional
 
 [[mods]] #mandatory
-
 modId="awesomeshop" #mandatory
-
 version="1.16.4-0.1.0beta" #mandatory
-
 displayName="Awesome Shop" #mandatory
-
-updateJSONURL="http://myurl.me/" #optional
-
+#updateJSONURL="http://myurl.me/" #optional
 displayURL="https://sp-universe.com/" #optional
-
 logoFile="awesomeshop-logo.png" #optional
-
-credits="Thanks for this Mod goes to my girlfriend. With her beautiful ideas #optional
-
+credits="Thanks for this Mod goes to my girlfriend. With her beautiful ideas #optional"
 authors="Steven Paw - SP Universe" #optional
-
 description='''
 This is a mod about a shop that fuels with trash
 
 Make great things with garbage and have fun!
 '''
+
+[[dependencies.awesomeshop]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[35,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.awesomeshop]] #optional
+    modId="minecraft" #mandatory
+    mandatory=true #mandatory
+    versionRange="[1.16.4]" #mandatory
+    ordering="NONE"
+    side="BOTH"
