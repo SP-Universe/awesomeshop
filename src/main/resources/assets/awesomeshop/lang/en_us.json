@@ -1,3 +1,5 @@
 {
-  "item.awesomeshop.awesomnium_crystal": "Awesomnium Crystal"
+  "item.awesomeshop.awesomnium_crystal": "Awesomnium Crystal",
+  "itemGroup.awesomeshopItemTab" : "AwesomeShop Items",
+  "itemGroup.awesomeshopBlockTab" : "AwesomeShop Blocks"
 }
