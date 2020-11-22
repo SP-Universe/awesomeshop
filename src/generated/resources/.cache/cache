@@ -1,0 +1,15 @@
+b81f7f704147a089c5d3aad4effc13f63dc863b8 assets/awesomeshop/blockstates/awesomnium_block.json
+afc72cb10c01d9ad8420c7077cc5cb88356bec5c assets/awesomeshop/blockstates/awesomnium_ore.json
+25726ab4cfa2a6887d95b156fb49587435ed7028 assets/awesomeshop/models/block/awesomnium_block.json
+9afe2495a7b4766e56f1742fbc23e54db5be85b7 assets/awesomeshop/models/block/awesomnium_ore.json
+f78345cd23908c3bfee9e0713bfca9b1f56edc60 assets/awesomeshop/models/item/awesomnium_ingot.json
+436b2b7c4684ac6fd93875da8ce28d4f79a51b6b data/forge/tags/blocks/ores.json
+a987c634c8c239f87012768d2bde7109928bf1bd data/forge/tags/blocks/ores/awesomnium.json
+fd6182b01a7cea4c3174fe7ab4a241e1ac049a62 data/forge/tags/blocks/storage_blocks.json
+07b449a09816047ed8b75d638483da60e7b72a55 data/forge/tags/blocks/storage_blocks/awesomnium.json
+be8bb9b562254e8d8934f0d856f9f77a3b703486 data/forge/tags/items/ingots.json
+670b9c13329dacfdae53607963fc0b9e3da0965b data/forge/tags/items/ingots/awesomnium.json
+74700d556ca80c7a1db5fd4efb09c3ddb26cad66 data/forge/tags/items/ores.json
+74700d556ca80c7a1db5fd4efb09c3ddb26cad66 data/forge/tags/items/ores/awesomnium.json
+74700d556ca80c7a1db5fd4efb09c3ddb26cad66 data/forge/tags/items/storage_blocks.json
+74700d556ca80c7a1db5fd4efb09c3ddb26cad66 data/forge/tags/items/storage_blocks/awesomnium.json
