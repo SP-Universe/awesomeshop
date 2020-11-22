@@ -1,6 +1,6 @@
 package com.stevenpaw.awesomeshop;
 
-import com.stevenpaw.awesomeshop.setup.Registration;
+import com.stevenpaw.awesomeshop.util.RegistryHandler;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -17,12 +17,10 @@ public class AwesomeShop
 
     public AwesomeShop()
     {
-
-        Registration.Register();
-
-
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+
+        RegistryHandler.init();
 
         MinecraftForge.EVENT_BUS.register(this);
     }
