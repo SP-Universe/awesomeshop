@@ -5,8 +5,23 @@
   "item.awesomeshop.awesomnium_particles": "Awesomnium Particles",
   "item.awesomeshop.depressnium_particles": "Depressnium Particles",
 
+  "item.awesomeshop.awesome_core": "Awesome Core",
+
+  "item.awesomeshop.awesomnium_helmet": "Awesomnium Helmet",
+  "item.awesomeshop.awesomnium_chestplate": "Awesomnium Chestplate",
+  "item.awesomeshop.awesomnium_leggings": "Awesomnium Leggings",
+  "item.awesomeshop.awesomnium_boots": "Awesomnium Boots",
+
   "item.awesomeshop.awesomnium_sword": "Awesomnium Sword",
   "item.awesomeshop.depressnium_sword": "Depressnium Sword",
+  "item.awesomeshop.awesomnium_pickaxe": "Awesomnium Pickaxe",
+  "item.awesomeshop.depressnium_pickaxe": "Depressnium Pickaxe",
+  "item.awesomeshop.awesomnium_axe": "Awesomnium Axe",
+  "item.awesomeshop.depressnium_axe": "Depressnium Axe",
+  "item.awesomeshop.awesomnium_shovel": "Awesomnium Shovel",
+  "item.awesomeshop.depressnium_shovel": "Depressnium Shovel",
+  "item.awesomeshop.awesomnium_hoe": "Awesomnium Hoe",
+  "item.awesomeshop.depressnium_hoe": "Depressnium Hoe",
 
   "block.awesomeshop.awesomnium_ore" : "Awesomnium Ore",
   "block.awesomeshop.awesomnium_block" : "Awesomnium Block",

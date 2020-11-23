@@ -2,20 +2,24 @@
   "type": "minecraft:crafting_shaped",
   "pattern":
   [
-    " x ",
-    "x x",
-    " X "
+    "CCC",
+    "CDC",
+    "CCC"
   ],
   "key":
   {
-    "x":
+    "C":
     {
       "item": "awesomeshop:awesomnium_crystal"
+    },
+    "D":
+    {
+      "item": "minecraft:diamond"
     }
   },
   "result":
   {
-    "item": "awesomeshop:awesomnium_block_diagonal",
+    "item": "awesomeshop:awesome_core",
     "count": 1
   }
 }

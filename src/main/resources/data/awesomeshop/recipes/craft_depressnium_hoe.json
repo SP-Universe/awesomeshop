@@ -2,9 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "pattern":
   [
-    "C",
-    "C",
-    "S"
+    "CC",
+    " S",
+    " S"
   ],
   "key":
   {
@@ -19,7 +19,7 @@
   },
   "result":
   {
-    "item": "awesomeshop:depressnium_sword",
+    "item": "awesomeshop:depressnium_hoe",
     "count": 1
   }
 }
