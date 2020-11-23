@@ -50,7 +50,7 @@ public class AwesomeShop
         @Override
         public ItemStack createIcon()
         {
-            return new ItemStack(RegistryHandler.AWESOMNIUM_CRYSTAL.get());
+            return new ItemStack(RegistryHandler.AWESOMNIUM_ORE.get());
         }
     };
 }
