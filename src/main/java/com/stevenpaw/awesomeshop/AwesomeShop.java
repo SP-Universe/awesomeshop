@@ -35,7 +35,7 @@ public class AwesomeShop
     {
     }
 
-    //Creating Custom Inventory Tab
+    //Creating Custom Inventory Tabs
     public static final ItemGroup ITEMTAB = new ItemGroup("awesomeshopItemTab") {
 
         @Override
@@ -50,7 +50,7 @@ public class AwesomeShop
         @Override
         public ItemStack createIcon()
         {
-            return new ItemStack(RegistryHandler.AWESOMNIUM_ORE.get());
+            return new ItemStack(RegistryHandler.AWESOMNIUM_BLOCK.get());
         }
     };
 }

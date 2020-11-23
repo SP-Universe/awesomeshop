@@ -8,7 +8,7 @@ issueTrackerURL="https://github.com/Steven-Paw-Design/awesomeshop/issues" #optio
 
 [[mods]] #mandatory
 modId="awesomeshop" #mandatory
-version="1.16.4-0.1.0beta" #mandatory
+version="1.16.4-0.3.0" #mandatory
 displayName="Awesome Shop" #mandatory
 #updateJSONURL="http://myurl.me/" #optional
 displayURL="https://sp-universe.com/" #optional

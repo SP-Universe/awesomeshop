@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "CCC",
+    " S ",
+    " S "
+  ],
+  "key":
+  {
+    "C":
+    {
+      "item": "awesomeshop:awesomnium_crystal"
+    },
+    "S":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "awesomeshop:awesomnium_pickaxe",
+    "count": 1
+  }
+}
