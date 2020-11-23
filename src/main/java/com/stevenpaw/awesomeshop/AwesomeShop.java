@@ -1,6 +1,8 @@
 package com.stevenpaw.awesomeshop;
 
-import com.stevenpaw.awesomeshop.setup.Registration;
+import com.stevenpaw.awesomeshop.util.RegistryHandler;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -17,12 +19,10 @@ public class AwesomeShop
 
     public AwesomeShop()
     {
-
-        Registration.Register();
-
-
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+
+        RegistryHandler.init(); //Starts registering all kinds of stuff
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -34,4 +34,23 @@ public class AwesomeShop
     private void doClientStuff(final FMLClientSetupEvent event)
     {
     }
+
+    //Creating Custom Inventory Tab
+    public static final ItemGroup ITEMTAB = new ItemGroup("awesomeshopItemTab") {
+
+        @Override
+        public ItemStack createIcon()
+        {
+            return new ItemStack(RegistryHandler.AWESOMNIUM_CRYSTAL.get());
+        }
+    };
+
+    public static final ItemGroup BLOCKTAB = new ItemGroup("awesomeshopBlockTab") {
+
+        @Override
+        public ItemStack createIcon()
+        {
+            return new ItemStack(RegistryHandler.AWESOMNIUM_ORE.get());
+        }
+    };
 }
