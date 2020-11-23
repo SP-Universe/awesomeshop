@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " C ",
+    " C ",
+    " S "
+  ],
+  "key":
+  {
+    "C":
+    {
+      "item": "awesomeshop:depressnium_crystal"
+    },
+    "S":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "awesomeshop:depressnium_sword",
+    "count": 1
+  }
+}

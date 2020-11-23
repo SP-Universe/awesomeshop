@@ -35,7 +35,7 @@ public class AwesomeShop
     {
     }
 
-    //Creating Custom Inventory Tab
+    //Creating Custom Inventory Tabs
     public static final ItemGroup ITEMTAB = new ItemGroup("awesomeshopItemTab") {
 
         @Override

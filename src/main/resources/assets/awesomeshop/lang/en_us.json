@@ -1,10 +1,17 @@
 {
   "item.awesomeshop.awesomnium_crystal": "Awesomnium Crystal",
   "item.awesomeshop.depressnium_crystal": "Depressnium Crystal",
-  "item.awesomeshop.depressnium_particles": "Depressnium Particles",
+
   "item.awesomeshop.awesomnium_particles": "Awesomnium Particles",
+  "item.awesomeshop.depressnium_particles": "Depressnium Particles",
+
+  "item.awesomeshop.awesomnium_sword": "Awesomnium Sword",
+  "item.awesomeshop.depressnium_sword": "Depressnium Sword",
+
   "block.awesomeshop.awesomnium_ore" : "Awesomnium Ore",
   "block.awesomeshop.awesomnium_block" : "Awesomnium Block",
+  "block.awesomeshop.awesomnium_block_diagonal" : "Awesomnium Block Diagonal",
+
   "itemGroup.awesomeshopItemTab" : "AwesomeShop Items",
   "itemGroup.awesomeshopBlockTab" : "AwesomeShop Blocks"
 }

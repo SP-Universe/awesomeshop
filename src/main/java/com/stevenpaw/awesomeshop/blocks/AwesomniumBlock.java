@@ -10,7 +10,7 @@ public class AwesomniumBlock extends Block {
     //hardness:         how easy it is to mine block
     //resistance:       how easy it can be destroyed by TNT
     //sound:            how the block sounds
-    //harvestLevel:     1-Wood, 2-Gold/Stone, 3-Iron, 4-Diamond | What you need to harvest the block
+    //harvestLevel:     1-Wood, 2-Stone, 3-Iron/Gold, 4-Diamond | What you need to harvest the block
     //harvestTool:      What kind of Tool you need to harvest the block
 
     public AwesomniumBlock() {
