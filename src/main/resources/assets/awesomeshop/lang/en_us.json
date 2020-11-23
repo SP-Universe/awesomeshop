@@ -1,6 +1,8 @@
 {
   "item.awesomeshop.awesomnium_crystal": "Awesomnium Crystal",
   "item.awesomeshop.depressnium_crystal": "Depressnium Crystal",
+  "item.awesomeshop.depressnium_particles": "Depressnium Particles",
+  "item.awesomeshop.awesomnium_particles": "Awesomnium Particles",
   "block.awesomeshop.awesomnium_ore" : "Awesomnium Ore",
   "block.awesomeshop.awesomnium_block" : "Awesomnium Block",
   "itemGroup.awesomeshopItemTab" : "AwesomeShop Items",
