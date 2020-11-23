@@ -64,7 +64,7 @@ public class RegistryHandler
     public static final RegistryObject<HoeItem> AWESOMNIUM_HOE = ITEMS.register("awesomnium_hoe", () ->
             new HoeItem(ModItemTier.AWESOMNIUM, 0, -1.0F, new Item.Properties().group(AwesomeShop.ITEMTAB)));
     public static final RegistryObject<HoeItem> DEPRESSNIUM_HOE = ITEMS.register("depressnium_hoe", () ->
-            new HoeItem(ModItemTier.DEPRESSNIUM, 0, -1.0F, new Item.Properties().group(AwesomeShop.ITEMTAB)));
+            new HoeItem(ModItemTier.DEPRESSNIUM, -3, -1.0F, new Item.Properties().group(AwesomeShop.ITEMTAB)));
 
 
 

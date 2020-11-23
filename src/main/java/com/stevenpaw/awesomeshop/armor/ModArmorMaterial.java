@@ -15,10 +15,10 @@ import java.util.function.Supplier;
 public enum ModArmorMaterial implements IArmorMaterial {
 
     AWESOMNIUM(AwesomeShop.MOD_ID + ":awesomnium", 25, new int[] { 2, 5, 6, 2}, 18,
-            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, () -> {return  Ingredient.fromItems(RegistryHandler.AWESOMNIUM_CRYSTAL.get()); }, 0.0F),
+            SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, () -> {return  Ingredient.fromItems(RegistryHandler.AWESOMNIUM_CRYSTAL.get()); }, 2),
 
     DEPRESSNIUM(AwesomeShop.MOD_ID + ":depressnium", 25, new int[] { 2, 5, 6, 2}, 18,
-    SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, () -> {return  Ingredient.fromItems(RegistryHandler.DEPRESSNIUM_CRYSTAL.get()); }, 0.0F);
+    SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F, () -> {return  Ingredient.fromItems(RegistryHandler.DEPRESSNIUM_CRYSTAL.get()); }, 3);
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[] {11, 16, 15, 13};
     private final String name;
