@@ -20,6 +20,7 @@ public class AwesomniumOre extends Block {
                 .sound(SoundType.STONE)
                 .harvestLevel(2)
                 .harvestTool(ToolType.PICKAXE)
+                .setLightLevel(value -> 3)
                 .setRequiresTool()
         );
     }
