@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "awesomeshop:awesomnium_block"
+      "tag": "awesomeshop:awesomnium_blocks"
     }
   ],
   "result":
