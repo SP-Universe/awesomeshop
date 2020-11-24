@@ -16,7 +16,7 @@ import org.apache.logging.log4j.Logger;
 @Mod("awesomeshop")
 public class AwesomeShop
 {
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "awesomeshop";
 
     public AwesomeShop()
