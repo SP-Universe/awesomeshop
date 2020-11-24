@@ -25,6 +25,7 @@ public class ModClientEvents
     @SubscribeEvent
     public static void onJumpWithAwesomeCore(LivingEvent.LivingJumpEvent event)
     {
+        /*
         LivingEntity player = event.getEntityLiving();
         if(player.getHeldItemMainhand().getItem() == ModItems.AWESOME_CORE.get())
         {
@@ -32,11 +33,14 @@ public class ModClientEvents
             World world = player.getEntityWorld();
             world.setBlockState(player.getPosition().add(0,-1,0), ModBlocks.AWESOMNIUM_BLOCK.get().getDefaultState());
         }
+        
+         */
     }
 
     @SubscribeEvent
     public static void onDamageEntity(AttackEntityEvent event)
     {
+        /*
         if(event.getEntityLiving().getHeldItemMainhand().getItem() == ModItems.POISON_APPLE.get())
         {
             if(event.getTarget().isAlive())
@@ -58,18 +62,10 @@ public class ModClientEvents
                 }
             }
         }
+        */
     }
 
     @SubscribeEvent
     public static void onCraftingTableOpen(GuiOpenEvent event)
-    {
-        if (event.isCancelable())
-        {
-            if (event.getGui() instanceof CraftingScreen)
-            {
-                event.setCanceled(true);
-                AwesomeShop.LOGGER.info("Player tried to open a crafting table... what a fool!");
-            }
-        }
-    }
+    {}
 }
