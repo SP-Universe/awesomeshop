@@ -1,10 +1,7 @@
 package com.stevenpaw.awesomeshop.init;
 
 import com.stevenpaw.awesomeshop.AwesomeShop;
-import com.stevenpaw.awesomeshop.blocks.AwesomniumBlock;
-import com.stevenpaw.awesomeshop.blocks.AwesomniumBlockDiagonal;
-import com.stevenpaw.awesomeshop.blocks.AwesomniumOre;
-import com.stevenpaw.awesomeshop.blocks.DucatiumOre;
+import com.stevenpaw.awesomeshop.blocks.*;
 import net.minecraft.block.Block;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -21,4 +18,5 @@ public class ModBlocks {
     public static final RegistryObject<Block> DUCATIUM_ORE = BLOCKS.register("ducatium_ore", DucatiumOre::new);
     public static final RegistryObject<Block> AWESOMNIUM_BLOCK = BLOCKS.register("awesomnium_block", AwesomniumBlock::new);
     public static final RegistryObject<Block> AWESOMNIUM_BLOCK_DIAGONAL = BLOCKS.register("awesomnium_block_diagonal", AwesomniumBlockDiagonal::new);
+    public static final RegistryObject<Block> SHREDDER = BLOCKS.register("shredder", Shredder::new);
 }

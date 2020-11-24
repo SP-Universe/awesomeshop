@@ -30,6 +30,7 @@
   "block.awesomeshop.awesomnium_ore" : "Awesomnium Ore",
   "block.awesomeshop.awesomnium_block" : "Awesomnium Block",
   "block.awesomeshop.awesomnium_block_diagonal" : "Awesomnium Block Diagonal",
+  "block.awesomeshop.shredder" : "Shredder",
 
   "itemGroup.awesomeshopItemTab" : "AwesomeShop Items",
   "itemGroup.awesomeshopBlockTab" : "AwesomeShop Blocks"
