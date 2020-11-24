@@ -37,6 +37,7 @@ public class ModClientEvents
     @SubscribeEvent
     public static void onDamageEntity(AttackEntityEvent event)
     {
+        /*
         if(event.getEntityLiving().getHeldItemMainhand().getItem() == ModItems.POISON_APPLE.get())
         {
             if(event.getTarget().isAlive())
@@ -58,18 +59,10 @@ public class ModClientEvents
                 }
             }
         }
+        */
     }
 
     @SubscribeEvent
     public static void onCraftingTableOpen(GuiOpenEvent event)
-    {
-        if (event.isCancelable())
-        {
-            if (event.getGui() instanceof CraftingScreen)
-            {
-                event.setCanceled(true);
-                AwesomeShop.LOGGER.info("Player tried to open a crafting table... what a fool!");
-            }
-        }
-    }
+    {}
 }
