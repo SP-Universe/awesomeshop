@@ -2,21 +2,22 @@ modLoader="javafml" #mandatory
 
 loaderVersion="[35,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
 
-license="2020 | SP UNIVERSE | ALL RIGHTS RESERVED"
+license="Creative Commons Attribution-NonCommercial 3.0 Unported"
 
 issueTrackerURL="https://github.com/Steven-Paw-Design/awesomeshop/issues" #optional
 
 [[mods]] #mandatory
 modId="awesomeshop" #mandatory
-version="1.16.4-0.3.0" #mandatory
+version="1.16.4-0.4.0" #mandatory
 displayName="Awesome Shop" #mandatory
-#updateJSONURL="http://myurl.me/" #optional
-displayURL="https://sp-universe.com/" #optional
+updateJSONURL="http://myurl.me/" #optional
+displayURL="https://github.com/Steven-Paw-Design/awesomeshop" #optional
 logoFile="awesomeshop-logo.png" #optional
-credits="Thanks for this Mod goes to my girlfriend. With her beautiful ideas #optional"
+credits="Thanks for this Mod goes to my girlfriend. With her beautiful ideas" #optional
 authors="Steven Paw - SP Universe" #optional
 description='''
-This is a mod about a shop that fuels with trash
+This Mod adds Awesomnium, Depressnium and Ducatium into the Game to shredder Items and make more Awesomnium.
+With the won Awesomnium you can create more Deco Blocks for your house and a few useful items.
 
 Make great things with garbage and have fun!
 '''
