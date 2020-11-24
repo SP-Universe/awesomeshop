@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " D ",
+    "DDD",
+    " D "
+  ],
+  "key":
+  {
+    "D":
+    {
+      "item": "awesomeshop:ducatium_slime"
+    }
+  },
+  "result":
+  {
+    "item": "minecraft:slime_ball",
+    "count": 1
+  }
+}

@@ -2,6 +2,8 @@
   "item.awesomeshop.awesomnium_crystal": "Awesomnium Crystal",
   "item.awesomeshop.depressnium_crystal": "Depressnium Crystal",
 
+  "item.awesomeshop.ducatium_slime": "Ducatium Slime",
+
   "item.awesomeshop.awesomnium_particles": "Awesomnium Particles",
   "item.awesomeshop.depressnium_particles": "Depressnium Particles",
 
@@ -24,6 +26,7 @@
   "item.awesomeshop.awesomnium_hoe": "Awesomnium Hoe",
   "item.awesomeshop.depressnium_hoe": "Depressnium Hoe",
 
+  "block.awesomeshop.ducatium_ore" : "Ducatium Ore",
   "block.awesomeshop.awesomnium_ore" : "Awesomnium Ore",
   "block.awesomeshop.awesomnium_block" : "Awesomnium Block",
   "block.awesomeshop.awesomnium_block_diagonal" : "Awesomnium Block Diagonal",

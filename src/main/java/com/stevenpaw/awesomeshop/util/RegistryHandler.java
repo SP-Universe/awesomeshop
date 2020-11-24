@@ -2,10 +2,7 @@ package com.stevenpaw.awesomeshop.util;
 
 import com.stevenpaw.awesomeshop.AwesomeShop;
 import com.stevenpaw.awesomeshop.armor.ModArmorMaterial;
-import com.stevenpaw.awesomeshop.blocks.AwesomniumBlock;
-import com.stevenpaw.awesomeshop.blocks.AwesomniumBlockDiagonal;
-import com.stevenpaw.awesomeshop.blocks.AwesomniumOre;
-import com.stevenpaw.awesomeshop.blocks.BlockItemBase;
+import com.stevenpaw.awesomeshop.blocks.*;
 import com.stevenpaw.awesomeshop.items.ItemBase;
 import com.stevenpaw.awesomeshop.items.PoisonApple;
 import com.stevenpaw.awesomeshop.tools.ModItemTier;
@@ -36,6 +33,7 @@ public class RegistryHandler
     public static final RegistryObject<Item> DEPRESSNIUM_PARTICLES = ITEMS.register("depressnium_particles", ItemBase::new);
     public static final RegistryObject<Item> AWESOME_CORE = ITEMS.register("awesome_core", ItemBase::new);
     public static final RegistryObject<PoisonApple> POISON_APPLE = ITEMS.register("poison_apple", PoisonApple::new);
+    public static final RegistryObject<Item> DUCATIUM_SLIME = ITEMS.register("ducatium_slime", ItemBase::new);
 
 
     //TOOLS
@@ -84,12 +82,15 @@ public class RegistryHandler
     // BLOCKS
     // public static final RegistryObject<Block> NAME_OF_BLOCK = BLOCKS.register("name_of_block", NameOfBlock::new);
     public static final RegistryObject<Block> AWESOMNIUM_ORE = BLOCKS.register("awesomnium_ore", AwesomniumOre::new);
+    public static final RegistryObject<Block> DUCATIUM_ORE = BLOCKS.register("ducatium_ore", DucatiumOre::new);
     public static final RegistryObject<Block> AWESOMNIUM_BLOCK = BLOCKS.register("awesomnium_block", AwesomniumBlock::new);
     public static final RegistryObject<Block> AWESOMNIUM_BLOCK_DIAGONAL = BLOCKS.register("awesomnium_block_diagonal", AwesomniumBlockDiagonal::new);
 
     //BLOCK ITEMS
     public static final RegistryObject<Item> AWESOMNIUM_ORE_ITEM = ITEMS.register("awesomnium_ore", ()
             -> new BlockItemBase(AWESOMNIUM_ORE.get()));
+    public static final RegistryObject<Item> DUCATIUM_ORE_ITEM = ITEMS.register("ducatium_ore", ()
+            -> new BlockItemBase(DUCATIUM_ORE.get()));
     public static final RegistryObject<Item> AWESOMNIUM_BLOCK_ITEM = ITEMS.register("awesomnium_block", ()
             -> new BlockItemBase(AWESOMNIUM_BLOCK.get()));
     public static final RegistryObject<Item> AWESOMNIUM_BLOCK_DIAGONAL_ITEM = ITEMS.register("awesomnium_block_diagonal", ()
