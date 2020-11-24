@@ -1,10 +1,11 @@
 {
 	"homepage": "https://www.curseforge.com/minecraft/mc-mods/awesome-shop",
 	"promos": {
-		"1.16.4-recommended": "1.16.4-0.5.0",
-		"1.16.4-latest": "1.16.4-0.5.0"
+		"1.16.4-recommended": "1.16.4-0.6.0",
+		"1.16.4-latest": "1.16.4-0.6.0"
 	},
 	"1.16.4": {
+		"0.6.0": "Added the Marker",
 		"0.5.0": "Added the Shredder",
 		"0.4.0": "Added Ore Generation",
 		"0.3.0": "Added Depressnium",
