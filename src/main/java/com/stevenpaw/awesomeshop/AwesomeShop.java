@@ -1,6 +1,8 @@
 package com.stevenpaw.awesomeshop;
 
-import com.stevenpaw.awesomeshop.util.RegistryHandler;
+import com.stevenpaw.awesomeshop.init.ModBlocks;
+import com.stevenpaw.awesomeshop.init.ModItems;
+import com.stevenpaw.awesomeshop.world.gen.ModOreGen;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -22,13 +24,15 @@ public class AwesomeShop
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
-        RegistryHandler.init(); //Starts registering all kinds of stuff
+        ModBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        ModItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void setup(final FMLCommonSetupEvent event)
     {
+        ModOreGen.registerOres();
     }
 
     private void doClientStuff(final FMLClientSetupEvent event)
@@ -41,7 +45,7 @@ public class AwesomeShop
         @Override
         public ItemStack createIcon()
         {
-            return new ItemStack(RegistryHandler.AWESOMNIUM_CRYSTAL.get());
+            return new ItemStack(ModItems.AWESOMNIUM_CRYSTAL.get());
         }
     };
 
@@ -50,7 +54,7 @@ public class AwesomeShop
         @Override
         public ItemStack createIcon()
         {
-            return new ItemStack(RegistryHandler.AWESOMNIUM_BLOCK.get());
+            return new ItemStack(ModBlocks.AWESOMNIUM_BLOCK.get());
         }
     };
 }

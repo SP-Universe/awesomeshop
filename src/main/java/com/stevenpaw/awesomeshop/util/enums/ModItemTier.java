@@ -1,6 +1,6 @@
-package com.stevenpaw.awesomeshop.tools;
+package com.stevenpaw.awesomeshop.util.enums;
 
-import com.stevenpaw.awesomeshop.util.RegistryHandler;
+import com.stevenpaw.awesomeshop.init.ModItems;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 
@@ -11,11 +11,11 @@ public enum ModItemTier implements IItemTier {
     //HARVESTTIER, USES, EFFICIENCY, ENCHANTABILITY, REPAIRMATERIAL
     //attackDamage: 1 + baseDamage (set here) + itemDamage (set when registering tool)
     AWESOMNIUM(3, 1000, 7.0F, 1.0F, 12, () -> {
-        return Ingredient.fromItems((RegistryHandler.AWESOMNIUM_SWORD.get()));
+        return Ingredient.fromItems((ModItems.AWESOMNIUM_SWORD.get()));
     }),
 
     DEPRESSNIUM(3, 700, 8.0F, 3.0F, 10, () -> {
-        return Ingredient.fromItems((RegistryHandler.DEPRESSNIUM_SWORD.get()));
+        return Ingredient.fromItems((ModItems.DEPRESSNIUM_SWORD.get()));
     });
 
     private final int harvestLevel;
