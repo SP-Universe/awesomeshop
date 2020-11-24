@@ -25,6 +25,7 @@ public class ModClientEvents
     @SubscribeEvent
     public static void onJumpWithAwesomeCore(LivingEvent.LivingJumpEvent event)
     {
+        /*
         LivingEntity player = event.getEntityLiving();
         if(player.getHeldItemMainhand().getItem() == ModItems.AWESOME_CORE.get())
         {
@@ -32,6 +33,8 @@ public class ModClientEvents
             World world = player.getEntityWorld();
             world.setBlockState(player.getPosition().add(0,-1,0), ModBlocks.AWESOMNIUM_BLOCK.get().getDefaultState());
         }
+        
+         */
     }
 
     @SubscribeEvent
