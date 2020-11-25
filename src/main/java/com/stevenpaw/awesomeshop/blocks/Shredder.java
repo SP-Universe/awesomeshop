@@ -1,10 +1,14 @@
 package com.stevenpaw.awesomeshop.blocks;
 
+import com.stevenpaw.awesomeshop.init.ModTileEntityTypes;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItemUseContext;
+import net.minecraft.state.BooleanProperty;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.state.StateContainer;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.Direction;
 import net.minecraft.util.Mirror;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.math.BlockPos;
@@ -14,13 +18,15 @@ import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.world.IBlockReader;
 import net.minecraftforge.common.ToolType;
+import sun.util.resources.cldr.it.LocaleNames_it;
 
 import javax.annotation.Nullable;
 import java.util.stream.Stream;
 
-public class Shredder extends Block {
+public class Shredder extends Block{
 
     private static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
+    public static final BooleanProperty LIT = BooleanProperty.create("lit");
 
     private static final VoxelShape SHAPE_N = Stream.of(Block.makeCuboidShape(2, 12, 10, 14, 15, 13), Block.makeCuboidShape(1, 0, 1, 15, 11, 15), Block.makeCuboidShape(0, 7, 0, 16, 14, 5), Block.makeCuboidShape(0, 7, 11, 16, 14, 16), Block.makeCuboidShape(1, 11, 2, 2, 15, 14), Block.makeCuboidShape(14, 11, 2, 15, 15, 14), Block.makeCuboidShape(2, 12, 3, 14, 15, 6)).reduce((v1, v2) -> {
         return VoxelShapes.combineAndSimplify(v1, v2, IBooleanFunction.OR);}).get();
@@ -38,7 +44,20 @@ public class Shredder extends Block {
                 .harvestLevel(0)
                 .harvestTool(ToolType.PICKAXE)
                 .setRequiresTool());
+        this.setDefaultState(this.getStateContainer().getBaseState().with(FACING, Direction.NORTH).with(LIT, false));
     }
+
+    @Override
+    public boolean hasTileEntity(BlockState state)
+    {
+        return true;
+    }
+
+    
+
+
+
+
 
     @Override
     public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos po, ISelectionContext context)
