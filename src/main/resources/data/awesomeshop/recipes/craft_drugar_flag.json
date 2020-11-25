@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "WWW",
+    "WWW",
+    "S"
+  ],
+  "key":
+  {
+    "S":
+    {
+      "tag": "forge:rods/wooden"
+    },
+    "W":
+    {
+      "tag": "minecraft:wool"
+    }
+  },
+  "result":
+  {
+    "item": "awesomeshop:shredder",
+    "count": 1
+  }
+}
