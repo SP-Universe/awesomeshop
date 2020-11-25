@@ -1,0 +1,12 @@
+{
+  "useHighlighterON": {
+    "category": "block",
+    "subtitle": "awesomshop.subtitle.use_hightlighter_on",
+    "sounds": [ "awesomshop:use_highlighter_on" ]
+  },
+  "useHighlighterOFF": {
+    "category": "block",
+    "subtitle": "awesomshop.subtitle.use_highlighter_off",
+    "sounds": [ "awesomshop:use_highlighter_off" ]
+  }
+}
