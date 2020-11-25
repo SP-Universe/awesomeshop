@@ -4,12 +4,16 @@ import com.stevenpaw.awesomeshop.AwesomeShop;
 import com.stevenpaw.awesomeshop.init.ModItems;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
+import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
-@Mod.EventBusSubscriber(modid = AwesomeShop.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE, value = Dist.CLIENT)
+import static net.minecraft.util.Hand.MAIN_HAND;
+
+@Mod.EventBusSubscriber(modid = AwesomeShop.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class ModClientEvents
 {
     @SubscribeEvent
@@ -17,15 +21,24 @@ public class ModClientEvents
     {
         PlayerEntity player = event.getPlayer();
 
-        if(player.getHeldItemMainhand().getItem() == ModItems.HIGHLIGHTER.get())
-        {
-            Entity target = (Entity) event.getTarget();
+        Item usedItem;
 
-            if(target.isGlowing())
-            {
-                target.setGlowing(false);
-            } else {
-                target.setGlowing(true);
+        if(event.getHand() == MAIN_HAND)
+        {
+            usedItem = player.getHeldItemMainhand().getItem();
+        } else {
+            usedItem = player.getHeldItemOffhand().getItem();
+        }
+
+        if(!player.world.isRemote) {
+            if (usedItem == ModItems.HIGHLIGHTER.get()) {
+                Entity target = (Entity) event.getTarget();
+
+                if (target.isGlowing()) {
+                    target.setGlowing(false);
+                } else {
+                    target.setGlowing(true);
+                }
             }
         }
     }
