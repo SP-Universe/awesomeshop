@@ -37,6 +37,8 @@ public class ModClientEvents
                 } else {
                     target.setGlowing(true);
                 }
+
+                event.setCanceled(true);
             }
         }
     }
