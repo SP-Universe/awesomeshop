@@ -30,13 +30,9 @@ public class ModClientEvents
 
         if(!player.world.isRemote) {
             if (usedItem == ModItems.HIGHLIGHTER.get()) {
-                Entity target = (Entity) event.getTarget();
+                Entity target = event.getTarget();
 
-                if (target.isGlowing()) {
-                    target.setGlowing(false);
-                } else {
-                    target.setGlowing(true);
-                }
+                target.setGlowing(!target.isGlowing());
 
                 event.setCanceled(true);
             }
