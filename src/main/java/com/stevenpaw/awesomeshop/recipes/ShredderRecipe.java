@@ -59,7 +59,7 @@ public class ShredderRecipe implements IRecipe<RecipeWrapper> {
 
     @Override
     public IRecipeSerializer<?> getSerializer() {
-        return ModRecipeSerializers.SHREDDER;
+        return ModRecipeSerializers.SHREDDER_RECIPE_SERIALIZER;
     }
 
     @Override

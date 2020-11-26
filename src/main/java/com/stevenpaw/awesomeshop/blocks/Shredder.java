@@ -27,6 +27,7 @@ public class Shredder extends Block{
 
     private static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 
+
     private static final VoxelShape SHAPE_N = Stream.of(Block.makeCuboidShape(2, 12, 10, 14, 15, 13), Block.makeCuboidShape(1, 0, 1, 15, 11, 15), Block.makeCuboidShape(0, 7, 0, 16, 14, 5), Block.makeCuboidShape(0, 7, 11, 16, 14, 16), Block.makeCuboidShape(1, 11, 2, 2, 15, 14), Block.makeCuboidShape(14, 11, 2, 15, 15, 14), Block.makeCuboidShape(2, 12, 3, 14, 15, 6)).reduce((v1, v2) -> {
         return VoxelShapes.combineAndSimplify(v1, v2, IBooleanFunction.OR);}).get();
     private static final VoxelShape SHAPE_E = Stream.of(Block.makeCuboidShape(3, 12, 2, 6, 15, 14), Block.makeCuboidShape(1, 0, 1, 15, 11, 15), Block.makeCuboidShape(11, 7, 0, 16, 14, 16), Block.makeCuboidShape(0, 7, 0, 5, 14, 16), Block.makeCuboidShape(2, 11, 1, 14, 15, 2), Block.makeCuboidShape(2, 11, 14, 14, 15, 15), Block.makeCuboidShape(10, 12, 2, 13, 15, 14)).reduce((v1, v2) -> {

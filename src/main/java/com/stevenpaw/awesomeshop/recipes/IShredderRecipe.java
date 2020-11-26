@@ -12,9 +12,9 @@ import net.minecraft.util.registry.Registry;
 import net.minecraftforge.items.wrapper.RecipeWrapper;
 
 
-public interface IExampleRecipe extends IRecipe<RecipeWrapper> {
+public interface IShredderRecipe extends IRecipe<RecipeWrapper> {
 
-    ResourceLocation RECIPE_TYPE_ID = new ResourceLocation(AwesomeShop.MOD_ID, "example");
+    ResourceLocation RECIPE_TYPE_ID = new ResourceLocation(AwesomeShop.MOD_ID, "shredder");
 
     //@Nonnull
     //@Override
