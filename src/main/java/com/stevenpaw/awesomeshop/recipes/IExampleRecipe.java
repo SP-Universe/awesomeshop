@@ -16,11 +16,11 @@ public interface IExampleRecipe extends IRecipe<RecipeWrapper> {
 
     ResourceLocation RECIPE_TYPE_ID = new ResourceLocation(AwesomeShop.MOD_ID, "example");
 
-    @Nonnull
-    @Override
-    default IRecipeType<?> getType() {
-        return Registry.RECIPE_TYPE.getValueForKey(RECIPE_TYPE_ID).get();
-    }
+    //@Nonnull
+    //@Override
+    //default IRecipeType<?> getType() {
+        //return Registry.RECIPE_TYPE.getValueForKey(RECIPE_TYPE_ID).get();
+    //}
 
     @Override
     default boolean canFit(int width, int height) {

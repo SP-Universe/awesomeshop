@@ -3,6 +3,7 @@ package com.stevenpaw.awesomeshop;
 import com.stevenpaw.awesomeshop.init.ModBlocks;
 import com.stevenpaw.awesomeshop.init.ModContainerTypes;
 import com.stevenpaw.awesomeshop.init.ModItems;
+import com.stevenpaw.awesomeshop.init.ModRecipeSerializers;
 import com.stevenpaw.awesomeshop.world.gen.ModOreGen;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
