@@ -90,4 +90,12 @@ public class ModItems {
 
     public static final RegistryObject<Item> ADVENT_WREATH_0_ITEM = ITEMS.register("advent_wreath0",
             () -> new BlockItemBase(ModBlocks.ADVENT_WREATH_0.get()));
+    public static final RegistryObject<Item> ADVENT_WREATH_1_ITEM = ITEMS.register("advent_wreath1",
+            () -> new BlockItemBase(ModBlocks.ADVENT_WREATH_1.get()));
+    public static final RegistryObject<Item> ADVENT_WREATH_2_ITEM = ITEMS.register("advent_wreath2",
+            () -> new BlockItemBase(ModBlocks.ADVENT_WREATH_2.get()));
+    public static final RegistryObject<Item> ADVENT_WREATH_3_ITEM = ITEMS.register("advent_wreath3",
+            () -> new BlockItemBase(ModBlocks.ADVENT_WREATH_3.get()));
+    public static final RegistryObject<Item> ADVENT_WREATH_4_ITEM = ITEMS.register("advent_wreath4",
+            () -> new BlockItemBase(ModBlocks.ADVENT_WREATH_4.get()));
 }

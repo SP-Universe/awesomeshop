@@ -22,8 +22,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> SHREDDER = BLOCKS.register("shredder", Shredder::new);
     public static final RegistryObject<Block> DRUGAR_FLAG = BLOCKS.register("drugar_flag", DrugarFlag::new);
     public static final RegistryObject<Block> ADVENT_WREATH_0 = BLOCKS.register("advent_wreath_0", AdventWreath0::new);
-    //public static final RegistryObject<Block> ADVENT_WREATH_1 = BLOCKS.register("advent_wreath_1", AdventWreath1::new);
-    //public static final RegistryObject<Block> ADVENT_WREATH_2 = BLOCKS.register("advent_wreath_2", AdventWreath2::new);
-    //public static final RegistryObject<Block> ADVENT_WREATH_3 = BLOCKS.register("advent_wreath_3", AdventWreath3::new);
-    //public static final RegistryObject<Block> ADVENT_WREATH_4 = BLOCKS.register("advent_wreath_4", AdventWreath4::new);
+    public static final RegistryObject<Block> ADVENT_WREATH_1 = BLOCKS.register("advent_wreath_1", AdventWreath1::new);
+    public static final RegistryObject<Block> ADVENT_WREATH_2 = BLOCKS.register("advent_wreath_2", AdventWreath2::new);
+    public static final RegistryObject<Block> ADVENT_WREATH_3 = BLOCKS.register("advent_wreath_3", AdventWreath3::new);
+    public static final RegistryObject<Block> ADVENT_WREATH_4 = BLOCKS.register("advent_wreath_4", AdventWreath4::new);
 }
