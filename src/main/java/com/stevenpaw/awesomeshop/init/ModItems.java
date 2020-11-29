@@ -87,4 +87,7 @@ public class ModItems {
             () -> new BlockItemBase(ModBlocks.SHREDDER.get()));
     public static final RegistryObject<Item> DRUGAR_FLAG_ITEM = ITEMS.register("drugar_flag",
             () -> new BlockItemBase(ModBlocks.DRUGAR_FLAG.get()));
+
+    public static final RegistryObject<Item> ADVENT_WREATH_0_ITEM = ITEMS.register("advent_wreath0",
+            () -> new BlockItemBase(ModBlocks.ADVENT_WREATH_0.get()));
 }

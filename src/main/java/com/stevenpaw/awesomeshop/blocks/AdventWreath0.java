@@ -26,16 +26,22 @@ public class AdventWreath0 extends Block {
     private static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 
     private static final VoxelShape SHAPE_N = Stream.of(
-            Block.makeCuboidShape(3, 0, 6, 5, 2, 10), Block.makeCuboidShape(6, 0, 3, 10, 2, 5), Block.makeCuboidShape(11, 0, 6, 13, 2, 10), Block.makeCuboidShape(6, 0, 11, 10, 2, 13), Block.makeCuboidShape(7.5, 2, 3.5, 8.5, 6, 4.5), Block.makeCuboidShape(3.5, 2, 7.5, 4.5, 6, 8.5), Block.makeCuboidShape(11.5, 2, 7.5, 12.5, 6, 8.5), Block.makeCuboidShape(7.5, 2, 11.5, 8.5, 6, 12.5), Block.makeCuboidShape(3, 0, 3, 13, 2, 13)).reduce((v1, v2) -> {
-        return VoxelShapes.combineAndSimplify(v1, v2, IBooleanFunction.OR);}).get();
+            Block.makeCuboidShape(3, 0, 6, 5, 2, 10),
+            Block.makeCuboidShape(6, 0, 3, 10, 2, 5),
+            Block.makeCuboidShape(11, 0, 6, 13, 2, 10),
+            Block.makeCuboidShape(6, 0, 11, 10, 2, 13),
+            Block.makeCuboidShape(7.5, 2, 3.5, 8.5, 6, 4.5),
+            Block.makeCuboidShape(3.5, 2, 7.5, 4.5, 6, 8.5),
+            Block.makeCuboidShape(11.5, 2, 7.5, 12.5, 6, 8.5),
+            Block.makeCuboidShape(7.5, 2, 11.5, 8.5, 6, 12.5),
+            Block.makeCuboidShape(3, 0, 3, 13, 2, 13)
+    ).reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, IBooleanFunction.OR);}).get();
 
     public AdventWreath0() {
-        super(Properties.create(Material.IRON)
+        super(Properties.create(Material.CLAY)
                 .hardnessAndResistance(3.5f,4.0f)
-                .sound(SoundType.CLOTH)
-                .harvestLevel(0)
-                .harvestTool(ToolType.PICKAXE)
-                .setRequiresTool());
+                .sound(SoundType.SOUL_SAND)
+                .harvestLevel(0));
     }
 
     @Override
