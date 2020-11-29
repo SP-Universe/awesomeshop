@@ -12,7 +12,6 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.INamedContainerProvider;
@@ -49,8 +48,8 @@ import java.util.stream.Collectors;
 public class ShredderTileEntity extends TileEntity implements ITickableTileEntity, INamedContainerProvider {
 
     private ITextComponent customName;
-    public int currentSmeltTime;
-    public final int maxSmeltTime = 100;
+    public int currentShredderTime;
+    public final int maxShredderTime = 100;
     private ShredderItemHandler inventory;
 
     public ShredderTileEntity(TileEntityType<?> tileEntityTypeIn) {
@@ -75,15 +74,15 @@ public class ShredderTileEntity extends TileEntity implements ITickableTileEntit
         if (this.world != null && !this.world.isRemote) {
             if (this.world.isBlockPowered(this.getPos())) {
                 if (this.getRecipe(this.inventory.getStackInSlot(0)) != null) {
-                    if (this.currentSmeltTime != this.maxSmeltTime) {
+                    if (this.currentShredderTime != this.maxShredderTime) {
                         this.world.setBlockState(this.getPos(),
                                 this.getBlockState().with(Shredder.LIT, true));
-                        this.currentSmeltTime++;
+                        this.currentShredderTime++;
                         dirty = true;
                     } else {
                         this.world.setBlockState(this.getPos(),
                                 this.getBlockState().with(Shredder.LIT, false));
-                        this.currentSmeltTime = 0;
+                        this.currentShredderTime = 0;
                         ItemStack output = this.getRecipe(this.inventory.getStackInSlot(0)).getRecipeOutput();
                         this.inventory.insertItem(1, output.copy(), false);
                         this.inventory.decrStackSize(0, 1);
@@ -133,7 +132,7 @@ public class ShredderTileEntity extends TileEntity implements ITickableTileEntit
         ItemStackHelper.loadAllItems(compound, inv);
         this.inventory.setNonNullList(inv);
 
-        this.currentSmeltTime = compound.getInt("CurrentSmeltTime");
+        this.currentShredderTime = compound.getInt("CurrentSmeltTime");
     }
 
     @Override
@@ -144,7 +143,7 @@ public class ShredderTileEntity extends TileEntity implements ITickableTileEntit
         }
 
         ItemStackHelper.saveAllItems(compound, this.inventory.toNonNullList());
-        compound.putInt("CurrentSmeltTime", this.currentSmeltTime);
+        compound.putInt("CurrentSmeltTime", this.currentShredderTime);
 
         return compound;
     }

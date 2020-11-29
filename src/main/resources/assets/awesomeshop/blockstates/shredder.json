@@ -1,8 +1,13 @@
 {
   "variants": {
-    "facing=north": { "model": "awesomeshop:block/shredder" },
-    "facing=south": { "model": "awesomeshop:block/shredder", "y":  180},
-    "facing=west": { "model": "awesomeshop:block/shredder", "y":  270},
-    "facing=east": { "model": "awesomeshop:block/shredder", "y":  90}
+    "facing=north,lit=false":  { "model": "awesomeshop:block/shredder" },
+    "facing=east,lit=false":   { "model": "awesomeshop:block/shredder", "y": 90 },
+    "facing=south,lit=false":   { "model": "awesomeshop:block/shredder", "y": 180 },
+    "facing=west,lit=false":   { "model": "awesomeshop:block/shredder", "y": 270 },
+
+    "facing=north,lit=true":  { "model": "awesomeshop:block/shredder" },
+    "facing=east,lit=true":   { "model": "awesomeshop:block/shredder", "y": 90 },
+    "facing=south,lit=true":   { "model": "awesomeshop:block/shredder", "y": 180 },
+    "facing=west,lit=true":   { "model": "awesomeshop:block/shredder", "y": 270 }
   }
 }

@@ -12,6 +12,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IWorldPosCallable;
+import net.minecraft.util.math.BlockPos;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.items.SlotItemHandler;
@@ -56,8 +57,8 @@ public class ShredderContainer extends Container {
         this.addSlot(new SlotItemHandler(tile.getInventory(), 0, 56, 34));
         this.addSlot(new SlotItemHandler(tile.getInventory(), 1, 116, 35));
 
-        this.trackInt(shredderTime = new FunctionalIntReferenceHolder(() -> this.tileEntity.currentSmeltTime,
-                value -> this.tileEntity.currentSmeltTime = value));
+        this.trackInt(shredderTime = new FunctionalIntReferenceHolder(() -> this.tileEntity.currentShredderTime,
+                value -> this.tileEntity.currentShredderTime = value));
     }
 
     // Client Constructor
@@ -108,12 +109,22 @@ public class ShredderContainer extends Container {
             slot.onTake(player, slotStack);
         }
         return returnStack;
+
     }
 
     @OnlyIn(Dist.CLIENT)
-    public int getSmeltProgressionScaled() {
-        return this.shredderTime.get() != 0 && this.tileEntity.maxSmeltTime != 0
-                ? this.shredderTime.get() * 24 / this.tileEntity.maxSmeltTime
+    public int getShredderedProgressionLevel() {
+        return this.shredderTime.get() != 0 && this.tileEntity.maxShredderTime != 0
+                ? this.shredderTime.get() * 24 / this.tileEntity.maxShredderTime
                 : 0;
     }
+
+    private IWorldPosCallable worldPosCallable;
+
+    public ShredderContainer(int windowID, PlayerInventory type, PlayerInventory playerInventory, BlockPos pos) {
+        super(ModContainerTypes.SHREDDER.get(), windowID);
+        this.worldPosCallable = IWorldPosCallable.of(playerInventory.player.getEntityWorld(), pos);
+    }
+
+    
 }

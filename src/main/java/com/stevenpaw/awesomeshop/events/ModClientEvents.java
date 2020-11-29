@@ -1,7 +1,10 @@
 package com.stevenpaw.awesomeshop.events;
 
 import com.stevenpaw.awesomeshop.AwesomeShop;
+import com.stevenpaw.awesomeshop.client.gui.ShredderScreen;
+import com.stevenpaw.awesomeshop.init.ModContainerTypes;
 import com.stevenpaw.awesomeshop.init.ModItems;
+import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -17,6 +20,8 @@ public class ModClientEvents
     @SubscribeEvent
     public static void onInteractEntity(PlayerInteractEvent.EntityInteract event)
     {
+        ScreenManager.registerFactory(ModContainerTypes.SHREDDER.get(), (ScreenManager.IScreenFactory)ShredderScreen::new);
+
         PlayerEntity player = event.getPlayer();
 
         Item usedItem;
