@@ -1,8 +1,6 @@
 package com.stevenpaw.awesomeshop.blocks;
 
 import com.stevenpaw.awesomeshop.init.ModTileEntityTypes;
-import com.stevenpaw.awesomeshop.tileentity.ShredderTileEntity;
-import com.stevenpaw.awesomeshop.util.ShredderItemHandler;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.LivingEntity;
@@ -34,10 +32,8 @@ import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
-import sun.util.resources.cldr.it.LocaleNames_it;
 
 import javax.annotation.Nullable;
-import java.lang.reflect.Array;
 import java.util.Random;
 import java.util.stream.Stream;
 
