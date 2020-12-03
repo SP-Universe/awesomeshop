@@ -1,42 +1,33 @@
 package com.stevenpaw.awesomeshop.tileentity;
 
+import com.stevenpaw.awesomeshop.blocks.Shredder;
 import com.stevenpaw.awesomeshop.container.ShredderContainer;
-import com.stevenpaw.awesomeshop.util.FurnaceStateData;
-import com.stevenpaw.awesomeshop.util.FurnaceZoneContents;
-import net.minecraft.block.AbstractFurnaceBlock;
+import com.stevenpaw.awesomeshop.init.StartupCommon;
+import com.stevenpaw.awesomeshop.util.SetBlockStateFlag;
+import com.stevenpaw.awesomeshop.util.ShredderStateData;
+import com.stevenpaw.awesomeshop.util.ShredderZoneContents;
 import net.minecraft.block.BlockState;
-import net.minecraft.client.renderer.texture.ITickable;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.INamedContainerProvider;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.AbstractCookingRecipe;
 import net.minecraft.item.crafting.FurnaceRecipe;
 import net.minecraft.item.crafting.IRecipeType;
 import net.minecraft.item.crafting.RecipeManager;
 import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.nbt.ListNBT;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.SUpdateTileEntityPacket;
 import net.minecraft.tileentity.ITickableTileEntity;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.tileentity.FurnaceTileEntity;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
-import net.minecraft.world.IWorld;
-import net.minecraft.world.LightType;
 import net.minecraft.world.World;
-import net.minecraftforge.items.ItemStackHandler;
 
 import javax.annotation.Nullable;
-import java.util.Arrays;
 import java.util.Optional;
 
 public class ShredderTileEntity extends TileEntity implements INamedContainerProvider, ITickableTileEntity{
@@ -45,19 +36,19 @@ public class ShredderTileEntity extends TileEntity implements INamedContainerPro
     public static final int OUTPUT_SLOTS_COUNT = 5;
     public static final int TOTAL_SLOTS_COUNT = FUEL_SLOTS_COUNT + INPUT_SLOTS_COUNT + OUTPUT_SLOTS_COUNT;
 
-    private FurnaceZoneContents fuelZoneContents;
-    private FurnaceZoneContents inputZoneContents;
-    private FurnaceZoneContents outputZoneContents;
+    private ShredderZoneContents fuelZoneContents;
+    private ShredderZoneContents inputZoneContents;
+    private ShredderZoneContents outputZoneContents;
 
-    private final FurnaceStateData furnaceStateData = new FurnaceStateData();
+    private final ShredderStateData shredderStateData = new ShredderStateData();
 
     public ShredderTileEntity(){
         super(StartupCommon.tileEntityTypeMBE31);
-        fuelZoneContents = FurnaceZoneContents.createForTileEntity(FUEL_SLOTS_COUNT,
+        fuelZoneContents = ShredderZoneContents.createForTileEntity(FUEL_SLOTS_COUNT,
                 this::canPlayerAccessInventory, this::markDirty);
-        inputZoneContents = FurnaceZoneContents.createForTileEntity(INPUT_SLOTS_COUNT,
+        inputZoneContents = ShredderZoneContents.createForTileEntity(INPUT_SLOTS_COUNT,
                 this::canPlayerAccessInventory, this::markDirty);
-        outputZoneContents = FurnaceZoneContents.createForTileEntity(OUTPUT_SLOTS_COUNT,
+        outputZoneContents = ShredderZoneContents.createForTileEntity(OUTPUT_SLOTS_COUNT,
                 this::canPlayerAccessInventory, this::markDirty);
     }
 
@@ -79,7 +70,7 @@ public class ShredderTileEntity extends TileEntity implements INamedContainerPro
      */
     public int numberOfBurningFuelSlots()	{
         int burningCount = 0;
-        for (int burnTime : furnaceStateData.burnTimeRemainings) {
+        for (int burnTime : shredderStateData.burnTimeRemainings) {
             if (burnTime > 0) ++burningCount;
         }
         return burningCount;
@@ -97,7 +88,7 @@ public class ShredderTileEntity extends TileEntity implements INamedContainerPro
 
         // if user has changed the input slots, reset the smelting time
         if (!ItemStack.areItemsEqual(currentlySmeltingItem, currentlySmeltingItemLastTick)) {  // == and != don't work!
-            furnaceStateData.cookTimeElapsed = 0;
+            shredderStateData.shredderTimeElapsed = 0;
         }
         currentlySmeltingItemLastTick = currentlySmeltingItem.copy();
 
@@ -106,21 +97,21 @@ public class ShredderTileEntity extends TileEntity implements INamedContainerPro
 
             // If fuel is available, keep cooking the item, otherwise start "uncooking" it at double speed
             if (numberOfFuelBurning > 0) {
-                furnaceStateData.cookTimeElapsed += numberOfFuelBurning;
+                shredderStateData.shredderTimeElapsed += numberOfFuelBurning;
             }	else {
-                furnaceStateData.cookTimeElapsed -= 2;
+                shredderStateData.shredderTimeElapsed -= 2;
             }
-            if (furnaceStateData.cookTimeElapsed < 0) furnaceStateData.cookTimeElapsed = 0;
+            if (shredderStateData.shredderTimeElapsed < 0) shredderStateData.shredderTimeElapsed = 0;
 
             int cookTimeForCurrentItem = getCookTime(this.world, currentlySmeltingItem);
-            furnaceStateData.cookTimeForCompletion = cookTimeForCurrentItem;
+            shredderStateData.shredderTimeForCompletion = cookTimeForCurrentItem;
             // If cookTime has reached maxCookTime smelt the item and reset cookTime
-            if (furnaceStateData.cookTimeElapsed >= cookTimeForCurrentItem) {
+            if (shredderStateData.shredderTimeElapsed >= cookTimeForCurrentItem) {
                 smeltFirstSuitableInputItem();
-                furnaceStateData.cookTimeElapsed = 0;
+                shredderStateData.shredderTimeElapsed = 0;
             }
         }	else {
-            furnaceStateData.cookTimeElapsed = 0;
+            shredderStateData.shredderTimeElapsed = 0;
         }
 
         // when the number of burning slots changes, we need to force the block to re-render, otherwise the change in
@@ -146,19 +137,19 @@ public class ShredderTileEntity extends TileEntity implements INamedContainerPro
         boolean inventoryChanged = false;
 
         for (int fuelIndex = 0; fuelIndex < FUEL_SLOTS_COUNT; fuelIndex++) {
-            if (furnaceStateData.burnTimeRemainings[fuelIndex] > 0) {
-                --furnaceStateData.burnTimeRemainings[fuelIndex];
+            if (shredderStateData.burnTimeRemainings[fuelIndex] > 0) {
+                --shredderStateData.burnTimeRemainings[fuelIndex];
                 ++burningCount;
             }
 
-            if (furnaceStateData.burnTimeRemainings[fuelIndex] == 0) {
+            if (shredderStateData.burnTimeRemainings[fuelIndex] == 0) {
                 ItemStack fuelItemStack = fuelZoneContents.getStackInSlot(fuelIndex);
                 if (!fuelItemStack.isEmpty() && getItemBurnTime(this.world, fuelItemStack) > 0) {
                     // If the stack in this slot isn't empty and is fuel, set burnTimeRemainings & burnTimeInitialValues to the
                     // item's burn time and decrease the stack size
                     int burnTimeForItem = getItemBurnTime(this.world, fuelItemStack);
-                    furnaceStateData.burnTimeRemainings[fuelIndex] = burnTimeForItem;
-                    furnaceStateData.burnTimeInitialValues[fuelIndex] = burnTimeForItem;
+                    shredderStateData.burnTimeRemainings[fuelIndex] = burnTimeForItem;
+                    shredderStateData.burnTimeInitialValues[fuelIndex] = burnTimeForItem;
                     fuelZoneContents.decrStackSize(fuelIndex, 1);
                     ++burningCount;
                     inventoryChanged = true;
@@ -236,13 +227,13 @@ public class ShredderTileEntity extends TileEntity implements INamedContainerPro
 
     /**
      * Will the given ItemStack fully fit into the target slot?
-     * @param furnaceZoneContents
+     * @param shredderZoneContents
      * @param slotIndex
      * @param itemStackOrigin
      * @return true if the given ItemStack will fit completely; false otherwise
      */
-    public boolean willItemStackFit(FurnaceZoneContents furnaceZoneContents, int slotIndex, ItemStack itemStackOrigin) {
-        ItemStack itemStackDestination = furnaceZoneContents.getStackInSlot(slotIndex);
+    public boolean willItemStackFit(ShredderZoneContents shredderZoneContents, int slotIndex, ItemStack itemStackOrigin) {
+        ItemStack itemStackDestination = shredderZoneContents.getStackInSlot(slotIndex);
 
         if (itemStackDestination.isEmpty() || itemStackOrigin.isEmpty()) {
             return true;
@@ -253,7 +244,7 @@ public class ShredderTileEntity extends TileEntity implements INamedContainerPro
         }
 
         int sizeAfterMerge = itemStackDestination.getCount() + itemStackOrigin.getCount();
-        if (sizeAfterMerge <= furnaceZoneContents.getInventoryStackLimit() && sizeAfterMerge <= itemStackDestination.getMaxStackSize()) {
+        if (sizeAfterMerge <= shredderZoneContents.getInventoryStackLimit() && sizeAfterMerge <= itemStackDestination.getMaxStackSize()) {
             return true;
         }
         return false;
@@ -325,7 +316,7 @@ public class ShredderTileEntity extends TileEntity implements INamedContainerPro
     {
         super.write(parentNBTTagCompound); // The super call is required to save and load the tile's location
 
-        furnaceStateData.putIntoNBT(parentNBTTagCompound);
+        shredderStateData.putIntoNBT(parentNBTTagCompound);
         parentNBTTagCompound.put(FUEL_SLOTS_NBT, fuelZoneContents.serializeNBT());
         parentNBTTagCompound.put(INPUT_SLOTS_NBT, inputZoneContents.serializeNBT());
         parentNBTTagCompound.put(OUTPUT_SLOTS_NBT, outputZoneContents.serializeNBT());
@@ -338,7 +329,7 @@ public class ShredderTileEntity extends TileEntity implements INamedContainerPro
     {
         super.read(blockState, nbtTagCompound); // The super call is required to save and load the tile's location
 
-        furnaceStateData.readFromNBT(nbtTagCompound);
+        shredderStateData.readFromNBT(nbtTagCompound);
 
         CompoundNBT inventoryNBT = nbtTagCompound.getCompound(FUEL_SLOTS_NBT);
         fuelZoneContents.deserializeNBT(inventoryNBT);
@@ -426,7 +417,7 @@ public class ShredderTileEntity extends TileEntity implements INamedContainerPro
     @Override
     public Container createMenu(int windowID, PlayerInventory playerInventory, PlayerEntity playerEntity) {
         return ShredderContainer.createContainerServerSide(windowID, playerInventory,
-                inputZoneContents, outputZoneContents, fuelZoneContents, furnaceStateData);
+                inputZoneContents, outputZoneContents, fuelZoneContents, shredderStateData);
     }
 
     private ItemStack currentlySmeltingItemLastTick = ItemStack.EMPTY;

@@ -1,14 +1,14 @@
 package com.stevenpaw.awesomeshop.container;
 
+import com.stevenpaw.awesomeshop.init.StartupCommon;
 import com.stevenpaw.awesomeshop.tileentity.ShredderTileEntity;
-import com.stevenpaw.awesomeshop.util.FurnaceStateData;
-import com.stevenpaw.awesomeshop.util.FurnaceZoneContents;
+import com.stevenpaw.awesomeshop.util.ShredderStateData;
+import com.stevenpaw.awesomeshop.util.ShredderZoneContents;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.container.Slot;
 import net.minecraft.inventory.container.Container;
-import net.minecraft.inventory.container.IContainerListener;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
@@ -18,28 +18,28 @@ import org.apache.logging.log4j.Logger;
 public class ShredderContainer extends Container {
 
     public static ShredderContainer createContainerServerSide(int windowID, PlayerInventory playerInventory,
-                                                             FurnaceZoneContents inputZoneContents,
-                                                             FurnaceZoneContents outputZoneContents,
-                                                             FurnaceZoneContents fuelZoneContents,
-                                                             FurnaceStateData furnaceStateData) {
+                                                             ShredderZoneContents inputZoneContents,
+                                                             ShredderZoneContents outputZoneContents,
+                                                             ShredderZoneContents fuelZoneContents,
+                                                             ShredderStateData shredderStateData) {
         return new ShredderContainer(windowID, playerInventory,
-                inputZoneContents, outputZoneContents, fuelZoneContents, furnaceStateData);
+                inputZoneContents, outputZoneContents, fuelZoneContents, shredderStateData);
     }
 
     public static ShredderContainer createContainerClientSide(int windowID, PlayerInventory playerInventory, net.minecraft.network.PacketBuffer extraData) {
         //  don't need extraData for this example; if you want you can use it to provide extra information from the server, that you can use
         //  when creating the client container
         //  eg String detailedDescription = extraData.readString(128);
-        FurnaceZoneContents inputZoneContents = FurnaceZoneContents.createForClientSideContainer(INPUT_SLOTS_COUNT);
-        FurnaceZoneContents outputZoneContents = FurnaceZoneContents.createForClientSideContainer(OUTPUT_SLOTS_COUNT);
-        FurnaceZoneContents fuelZoneContents = FurnaceZoneContents.createForClientSideContainer(FUEL_SLOTS_COUNT);
-        FurnaceStateData furnaceStateData = new FurnaceStateData();
+        ShredderZoneContents inputZoneContents = ShredderZoneContents.createForClientSideContainer(INPUT_SLOTS_COUNT);
+        ShredderZoneContents outputZoneContents = ShredderZoneContents.createForClientSideContainer(OUTPUT_SLOTS_COUNT);
+        ShredderZoneContents fuelZoneContents = ShredderZoneContents.createForClientSideContainer(FUEL_SLOTS_COUNT);
+        ShredderStateData shredderStateData = new ShredderStateData();
 
         // on the client side there is no parent TileEntity to communicate with, so we:
         // 1) use dummy inventories and furnace state data (tracked ints)
         // 2) use "do nothing" lambda functions for canPlayerAccessInventory and markDirty
         return new ShredderContainer(windowID, playerInventory,
-                inputZoneContents, outputZoneContents, fuelZoneContents, furnaceStateData);
+                inputZoneContents, outputZoneContents, fuelZoneContents, shredderStateData);
     }
 
     // must assign a slot index to each of the slots used by the GUI.
@@ -78,21 +78,21 @@ public class ShredderContainer extends Container {
     // i.e. invPlayer slots 0 - 35 (hotbar 0 - 8 then main inventory 9 to 35)
     // and furnace: inputZone slots 0 - 4, outputZone slots 0 - 4, fuelZone 0 - 3
 
-    public ContainerFurnace(int windowID, PlayerInventory invPlayer,
-                            FurnaceZoneContents inputZoneContents,
-                            FurnaceZoneContents outputZoneContents,
-                            FurnaceZoneContents fuelZoneContents,
-                            FurnaceStateData furnaceStateData) {
+    public ShredderContainer(int windowID, PlayerInventory invPlayer,
+                            ShredderZoneContents inputZoneContents,
+                            ShredderZoneContents outputZoneContents,
+                            ShredderZoneContents fuelZoneContents,
+                            ShredderStateData shredderStateData) {
         super(StartupCommon.containerTypeContainerFurnace, windowID);
         if (StartupCommon.containerTypeContainerFurnace == null)
             throw new IllegalStateException("Must initialise containerTypeContainerFurnace before constructing a ContainerFurnace!");
         this.inputZoneContents = inputZoneContents;
         this.outputZoneContents = outputZoneContents;
         this.fuelZoneContents = fuelZoneContents;
-        this.furnaceStateData = furnaceStateData;
+        this.shredderStateData = shredderStateData;
         this.world = invPlayer.player.world;
 
-        trackIntArray(furnaceStateData);    // tell vanilla to keep the furnaceStateData synchronised between client and server Containers
+        trackIntArray(shredderStateData);    // tell vanilla to keep the furnaceStateData synchronised between client and server Containers
 
         final int SLOT_X_SPACING = 18;
         final int SLOT_Y_SPACING = 18;
@@ -241,8 +241,8 @@ public class ShredderContainer extends Container {
      * @return fraction remaining, between 0.0 - 1.0
      */
     public double fractionOfFuelRemaining(int fuelSlot) {
-        if (furnaceStateData.burnTimeInitialValues[fuelSlot] <= 0 ) return 0;
-        double fraction = furnaceStateData.burnTimeRemainings[fuelSlot] / (double)furnaceStateData.burnTimeInitialValues[fuelSlot];
+        if (shredderStateData.burnTimeInitialValues[fuelSlot] <= 0 ) return 0;
+        double fraction = shredderStateData.burnTimeRemainings[fuelSlot] / (double) shredderStateData.burnTimeInitialValues[fuelSlot];
         return MathHelper.clamp(fraction, 0.0, 1.0);
     }
 
@@ -252,17 +252,17 @@ public class ShredderContainer extends Container {
      * @return seconds remaining
      */
     public int secondsOfFuelRemaining(int fuelSlot)	{
-        if (furnaceStateData.burnTimeRemainings[fuelSlot] <= 0 ) return 0;
-        return furnaceStateData.burnTimeRemainings[fuelSlot] / 20; // 20 ticks per second
+        if (shredderStateData.burnTimeRemainings[fuelSlot] <= 0 ) return 0;
+        return shredderStateData.burnTimeRemainings[fuelSlot] / 20; // 20 ticks per second
     }
 
     /**
      * Returns the amount of cook time completed on the currently cooking item.
      * @return fraction remaining, between 0 - 1
      */
-    public double fractionOfCookTimeComplete() {
-        if (furnaceStateData.cookTimeForCompletion == 0) return 0;
-        double fraction = furnaceStateData.cookTimeElapsed / (double)furnaceStateData.cookTimeForCompletion;
+    public double fractionOfShredderTimeComplete() {
+        if (shredderStateData.shredderTimeForCompletion == 0) return 0;
+        double fraction = shredderStateData.shredderTimeElapsed / (double) shredderStateData.shredderTimeForCompletion;
         return MathHelper.clamp(fraction, 0.0, 1.0);
     }
 
@@ -308,10 +308,10 @@ public class ShredderContainer extends Container {
         }
     }
 
-    private FurnaceZoneContents inputZoneContents;
-    private FurnaceZoneContents outputZoneContents;
-    private FurnaceZoneContents fuelZoneContents;
-    private FurnaceStateData furnaceStateData;
+    private ShredderZoneContents inputZoneContents;
+    private ShredderZoneContents outputZoneContents;
+    private ShredderZoneContents fuelZoneContents;
+    private ShredderStateData shredderStateData;
 
     private World world; //needed for some helper methods
     private static final Logger LOGGER = LogManager.getLogger();

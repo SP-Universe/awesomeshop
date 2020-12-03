@@ -6,13 +6,13 @@ import net.minecraft.util.IIntArray;
 
 import java.util.Arrays;
 
-public class FurnaceStateData implements IIntArray {
+public class ShredderStateData implements IIntArray {
     public static final int FUEL_SLOTS_COUNT = ShredderTileEntity.FUEL_SLOTS_COUNT;
 
     /**The number of ticks that the current item has been cooking*/
-    public int cookTimeElapsed;
+    public int shredderTimeElapsed;
     // The number of ticks required to cook the current item (i.e complete when cookTimeElapsed == cookTimeForCompletion
-    public int cookTimeForCompletion;
+    public int shredderTimeForCompletion;
 
     /** The initial fuel value of the currently burning fuel in each slot (in ticks of burn duration) */
     public int [] burnTimeInitialValues = new int[FUEL_SLOTS_COUNT];
@@ -22,16 +22,16 @@ public class FurnaceStateData implements IIntArray {
     // --------- read/write to NBT for permanent storage (on disk, or packet transmission) - used by the TileEntity only
 
     public void putIntoNBT(CompoundNBT nbtTagCompound) {
-        nbtTagCompound.putInt("CookTimeElapsed", cookTimeElapsed);
-        nbtTagCompound.putInt("CookTimeForCompletion", cookTimeElapsed);
+        nbtTagCompound.putInt("CookTimeElapsed", shredderTimeElapsed);
+        nbtTagCompound.putInt("CookTimeForCompletion", shredderTimeElapsed);
         nbtTagCompound.putIntArray("burnTimeRemainings", burnTimeRemainings);
         nbtTagCompound.putIntArray("burnTimeInitial", burnTimeInitialValues);
     }
 
     public void readFromNBT(CompoundNBT nbtTagCompound) {
         // Trim the arrays (or pad with 0) to make sure they have the correct number of elements
-        cookTimeElapsed = nbtTagCompound.getInt("CookTimeElapsed");
-        cookTimeForCompletion = nbtTagCompound.getInt("CookTimeForCompletion");
+        shredderTimeElapsed = nbtTagCompound.getInt("CookTimeElapsed");
+        shredderTimeForCompletion = nbtTagCompound.getInt("CookTimeForCompletion");
         burnTimeRemainings = Arrays.copyOf(nbtTagCompound.getIntArray("burnTimeRemainings"), FUEL_SLOTS_COUNT);
         burnTimeInitialValues = Arrays.copyOf(nbtTagCompound.getIntArray("burnTimeInitialValues"), FUEL_SLOTS_COUNT);
     }
@@ -54,9 +54,9 @@ public class FurnaceStateData implements IIntArray {
     public int get(int index) {
         validateIndex(index);
         if (index == COOKTIME_INDEX) {
-            return cookTimeElapsed;
+            return shredderTimeElapsed;
         } else if (index == COOKTIME_FOR_COMPLETION_INDEX) {
-            return cookTimeForCompletion;
+            return shredderTimeForCompletion;
         } else if (index >= BURNTIME_INITIAL_VALUE_INDEX && index < BURNTIME_REMAINING_INDEX) {
             return burnTimeInitialValues[index - BURNTIME_INITIAL_VALUE_INDEX];
         } else {
@@ -68,9 +68,9 @@ public class FurnaceStateData implements IIntArray {
     public void set(int index, int value) {
         validateIndex(index);
         if (index == COOKTIME_INDEX) {
-            cookTimeElapsed = value;
+            shredderTimeElapsed = value;
         } else if (index == COOKTIME_FOR_COMPLETION_INDEX) {
-            cookTimeForCompletion = value;
+            shredderTimeForCompletion = value;
         } else if (index >= BURNTIME_INITIAL_VALUE_INDEX && index < BURNTIME_REMAINING_INDEX) {
             burnTimeInitialValues[index - BURNTIME_INITIAL_VALUE_INDEX] = value;
         } else {

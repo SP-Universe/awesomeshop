@@ -8,7 +8,7 @@ import net.minecraftforge.items.ItemStackHandler;
 
 import java.util.function.Predicate;
 
-public class FurnaceZoneContents implements IInventory {
+public class ShredderZoneContents implements IInventory {
     /**
      * Use this constructor to create a FurnaceZoneContents which is linked to its parent TileEntity.
      * On the server, this link will be used by the Container to request information and provide notifications to the parent
@@ -24,10 +24,10 @@ public class FurnaceZoneContents implements IInventory {
      *                                     this is TileEntity::markDirty
      * @return the new ChestContents.
      */
-    public static FurnaceZoneContents createForTileEntity(int size,
+    public static ShredderZoneContents createForTileEntity(int size,
                                                           Predicate<PlayerEntity> canPlayerAccessInventoryLambda,
                                                           Notify markDirtyNotificationLambda) {
-        return new FurnaceZoneContents(size, canPlayerAccessInventoryLambda, markDirtyNotificationLambda);
+        return new ShredderZoneContents(size, canPlayerAccessInventoryLambda, markDirtyNotificationLambda);
     }
 
     /**
@@ -38,8 +38,8 @@ public class FurnaceZoneContents implements IInventory {
      * @param size  the max number of ItemStacks in the inventory
      * @return the new ChestContents
      */
-    public static FurnaceZoneContents createForClientSideContainer(int size) {
-        return new FurnaceZoneContents(size);
+    public static ShredderZoneContents createForClientSideContainer(int size) {
+        return new ShredderZoneContents(size);
     }
 
     // ----Methods used to load / save the contents to NBT
@@ -213,11 +213,11 @@ public class FurnaceZoneContents implements IInventory {
 
     // ---------
 
-    private FurnaceZoneContents(int size) {
+    private ShredderZoneContents(int size) {
         this.furnaceComponentContents = new ItemStackHandler(size);
     }
 
-    private FurnaceZoneContents(int size, Predicate<PlayerEntity> canPlayerAccessInventoryLambda, Notify markDirtyNotificationLambda) {
+    private ShredderZoneContents(int size, Predicate<PlayerEntity> canPlayerAccessInventoryLambda, Notify markDirtyNotificationLambda) {
         this.furnaceComponentContents = new ItemStackHandler(size);
         this.canPlayerAccessInventoryLambda = canPlayerAccessInventoryLambda;
         this.markDirtyNotificationLambda = markDirtyNotificationLambda;
