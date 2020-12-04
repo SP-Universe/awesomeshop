@@ -60,7 +60,7 @@ public class ShredderContainer extends Container {
     public static final int FUEL_SLOTS_COUNT = ShredderTileEntity.FUEL_SLOTS_COUNT;
     public static final int INPUT_SLOTS_COUNT = ShredderTileEntity.INPUT_SLOTS_COUNT;
     public static final int OUTPUT_SLOTS_COUNT = ShredderTileEntity.OUTPUT_SLOTS_COUNT;
-    public static final int FURNACE_SLOTS_COUNT = FUEL_SLOTS_COUNT + INPUT_SLOTS_COUNT + OUTPUT_SLOTS_COUNT;
+    public static final int SHREDDER_SLOTS_COUNT = FUEL_SLOTS_COUNT + INPUT_SLOTS_COUNT + OUTPUT_SLOTS_COUNT;
 
     // slot index is the unique index for all slots in this container i.e. 0 - 35 for invPlayer then 36 - 49 for furnaceContents
     private static final int VANILLA_FIRST_SLOT_INDEX = 0;
@@ -72,7 +72,7 @@ public class ShredderContainer extends Container {
 
     // gui position of the player inventory grid
     public static final int PLAYER_INVENTORY_XPOS = 8;
-    public static final int PLAYER_INVENTORY_YPOS = 125;
+    public static final int PLAYER_INVENTORY_YPOS = 84;
 
     // slot number is the slot number within each component;
     // i.e. invPlayer slots 0 - 35 (hotbar 0 - 8 then main inventory 9 to 35)
@@ -83,8 +83,8 @@ public class ShredderContainer extends Container {
                             ShredderZoneContents outputZoneContents,
                             ShredderZoneContents fuelZoneContents,
                             ShredderStateData shredderStateData) {
-        super(StartupCommon.containerTypeContainerFurnace, windowID);
-        if (StartupCommon.containerTypeContainerFurnace == null)
+        super(StartupCommon.shredderContainerType, windowID);
+        if (StartupCommon.shredderContainerType == null)
             throw new IllegalStateException("Must initialise containerTypeContainerFurnace before constructing a ContainerFurnace!");
         this.inputZoneContents = inputZoneContents;
         this.outputZoneContents = outputZoneContents;
@@ -97,7 +97,7 @@ public class ShredderContainer extends Container {
         final int SLOT_X_SPACING = 18;
         final int SLOT_Y_SPACING = 18;
         final int HOTBAR_XPOS = 8;
-        final int HOTBAR_YPOS = 183;
+        final int HOTBAR_YPOS = 142;
         // Add the players hotbar to the gui - the [xpos, ypos] location of each item
         for (int x = 0; x < HOTBAR_SLOT_COUNT; x++) {
             int slotNumber = x;
@@ -114,24 +114,24 @@ public class ShredderContainer extends Container {
             }
         }
 
-        final int FUEL_SLOTS_XPOS = 53;
-        final int FUEL_SLOTS_YPOS = 96;
+        final int FUEL_SLOTS_XPOS = 26;
+        final int FUEL_SLOTS_YPOS = 57;
         // Add the tile fuel slots
         for (int x = 0; x < FUEL_SLOTS_COUNT; x++) {
             int slotNumber = x;
             addSlot(new SlotFuel(fuelZoneContents, slotNumber, FUEL_SLOTS_XPOS + SLOT_X_SPACING * x, FUEL_SLOTS_YPOS));
         }
 
-        final int INPUT_SLOTS_XPOS = 26;
-        final int INPUT_SLOTS_YPOS = 24;
+        final int INPUT_SLOTS_XPOS = 80;
+        final int INPUT_SLOTS_YPOS = 11;
         // Add the tile input slots
         for (int y = 0; y < INPUT_SLOTS_COUNT; y++) {
             int slotNumber = y;
             addSlot(new SlotSmeltableInput(inputZoneContents, slotNumber, INPUT_SLOTS_XPOS, INPUT_SLOTS_YPOS+ SLOT_Y_SPACING * y));
         }
 
-        final int OUTPUT_SLOTS_XPOS = 134;
-        final int OUTPUT_SLOTS_YPOS = 24;
+        final int OUTPUT_SLOTS_XPOS = 80;
+        final int OUTPUT_SLOTS_YPOS = 57;
         // Add the tile output slots
         for (int y = 0; y < OUTPUT_SLOTS_COUNT; y++) {
             int slotNumber = y;

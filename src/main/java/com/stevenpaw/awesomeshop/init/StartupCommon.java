@@ -14,16 +14,16 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class StartupCommon {
-    public static Block blockFurnace;  // this holds the unique instance of your block
-    public static BlockItem itemBlockFurnace; // and the corresponding item form that block
+    public static Block shredder;  // this holds the unique instance of your block
+    public static BlockItem shredderItem; // and the corresponding item form that block
 
-    public static TileEntityType<ShredderTileEntity> tileEntityTypeMBE31;  // Holds the type of our tile entity; needed for the TileEntityData constructor
-    public static ContainerType<ShredderContainer> containerTypeContainerFurnace;
+    public static TileEntityType<ShredderTileEntity> shredderTileEntity;  // Holds the type of our tile entity; needed for the TileEntityData constructor
+    public static ContainerType<ShredderContainer> shredderContainerType;
 
     @SubscribeEvent
     public static void onBlocksRegistration(final RegistryEvent.Register<Block> blockRegisterEvent) {
-        blockFurnace = new Shredder().setRegistryName("shredder");
-        blockRegisterEvent.getRegistry().register(blockFurnace);
+        shredder = new Shredder().setRegistryName("shredder");
+        blockRegisterEvent.getRegistry().register(shredder);
     }
 
     @SubscribeEvent
@@ -34,26 +34,26 @@ public class StartupCommon {
         Item.Properties itemSimpleProperties = new Item.Properties()
                 .maxStackSize(MAXIMUM_STACK_SIZE)
                 .group(ItemGroup.BUILDING_BLOCKS);  // which inventory tab?
-        itemBlockFurnace = new BlockItem(blockFurnace, itemSimpleProperties);
-        itemBlockFurnace.setRegistryName(blockFurnace.getRegistryName());
-        itemRegisterEvent.getRegistry().register(itemBlockFurnace);
+        shredderItem = new BlockItem(shredder, itemSimpleProperties);
+        shredderItem.setRegistryName(shredder.getRegistryName());
+        itemRegisterEvent.getRegistry().register(shredderItem);
     }
 
     @SubscribeEvent
     public static void onTileEntityTypeRegistration(final RegistryEvent.Register<TileEntityType<?>> event) {
-        tileEntityTypeMBE31 = TileEntityType.Builder.create(ShredderTileEntity::new, blockFurnace)
+        shredderTileEntity = TileEntityType.Builder.create(ShredderTileEntity::new, shredder)
                 .build(null);
         // you probably don't need a datafixer --> null should be fine
-        tileEntityTypeMBE31.setRegistryName("awesomeshop:shredder_tile_entity_type");
-        event.getRegistry().register(tileEntityTypeMBE31);
+        shredderTileEntity.setRegistryName("awesomeshop:shredder_tile_entity_type");
+        event.getRegistry().register(shredderTileEntity);
     }
 
     @SubscribeEvent
     public static void registerContainers(final RegistryEvent.Register<ContainerType<?>> event)
     {
-        containerTypeContainerFurnace = IForgeContainerType.create(ShredderContainer::createContainerClientSide);
-        containerTypeContainerFurnace.setRegistryName("shredder_container");
-        event.getRegistry().register(containerTypeContainerFurnace);
+        shredderContainerType = IForgeContainerType.create(ShredderContainer::createContainerClientSide);
+        shredderContainerType.setRegistryName("shredder_container");
+        event.getRegistry().register(shredderContainerType);
     }
 
 }

@@ -34,6 +34,7 @@
   "block.awesomeshop.awesomnium_block" : "Awesomnium Block",
   "block.awesomeshop.awesomnium_block_diagonal" : "Awesomnium Block Diagonal",
   "block.awesomeshop.shredder" : "Shredder",
+  "containername.awesomeshop.shredder" : "Shredder",
   "block.awesomeshop.drugar_flag" : "Drugar Flag",
 
   "itemGroup.awesomeshopItemTab" : "AwesomeShop Items",

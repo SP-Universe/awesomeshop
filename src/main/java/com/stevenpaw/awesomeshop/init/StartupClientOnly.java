@@ -9,6 +9,6 @@ public class StartupClientOnly {
     // register the factory that is used on the client to generate a ContainerScreen corresponding to our Container
     @SubscribeEvent
     public static void onClientSetupEvent(FMLClientSetupEvent event) {
-        ScreenManager.registerFactory(StartupCommon.containerTypeContainerFurnace, ShredderContainerScreen::new);
+        ScreenManager.registerFactory(StartupCommon.shredderContainerType, ShredderContainerScreen::new);
     }
 }

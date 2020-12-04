@@ -83,8 +83,8 @@ public class ModItems {
             () -> new BlockItemBase(ModBlocks.AWESOMNIUM_BLOCK.get()));
     public static final RegistryObject<Item> AWESOMNIUM_BLOCK_DIAGONAL_ITEM = ITEMS.register("awesomnium_block_diagonal",
             () -> new BlockItemBase(ModBlocks.AWESOMNIUM_BLOCK_DIAGONAL.get()));
-    public static final RegistryObject<Item> SHREDDER_ITEM = ITEMS.register("shredder",
-            () -> new BlockItemBase(ModBlocks.SHREDDER.get()));
+    //public static final RegistryObject<Item> SHREDDER_ITEM = ITEMS.register("shredder",
+    //        () -> new BlockItemBase(ModBlocks.SHREDDER.get()));
     public static final RegistryObject<Item> DRUGAR_FLAG_ITEM = ITEMS.register("drugar_flag",
             () -> new BlockItemBase(ModBlocks.DRUGAR_FLAG.get()));
 }

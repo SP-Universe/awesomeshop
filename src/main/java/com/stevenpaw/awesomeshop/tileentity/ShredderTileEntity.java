@@ -31,9 +31,9 @@ import javax.annotation.Nullable;
 import java.util.Optional;
 
 public class ShredderTileEntity extends TileEntity implements INamedContainerProvider, ITickableTileEntity{
-    public static final int FUEL_SLOTS_COUNT = 4;
-    public static final int INPUT_SLOTS_COUNT = 5;
-    public static final int OUTPUT_SLOTS_COUNT = 5;
+    public static final int FUEL_SLOTS_COUNT = 1;
+    public static final int INPUT_SLOTS_COUNT = 1;
+    public static final int OUTPUT_SLOTS_COUNT = 1;
     public static final int TOTAL_SLOTS_COUNT = FUEL_SLOTS_COUNT + INPUT_SLOTS_COUNT + OUTPUT_SLOTS_COUNT;
 
     private ShredderZoneContents fuelZoneContents;
@@ -43,7 +43,7 @@ public class ShredderTileEntity extends TileEntity implements INamedContainerPro
     private final ShredderStateData shredderStateData = new ShredderStateData();
 
     public ShredderTileEntity(){
-        super(StartupCommon.tileEntityTypeMBE31);
+        super(StartupCommon.shredderTileEntity);
         fuelZoneContents = ShredderZoneContents.createForTileEntity(FUEL_SLOTS_COUNT,
                 this::canPlayerAccessInventory, this::markDirty);
         inputZoneContents = ShredderZoneContents.createForTileEntity(INPUT_SLOTS_COUNT,
@@ -403,7 +403,7 @@ public class ShredderTileEntity extends TileEntity implements INamedContainerPro
      */
     @Override
     public ITextComponent getDisplayName() {
-        return new TranslationTextComponent("container.minecraftbyexample.mbe31_container_registry_name");
+        return new TranslationTextComponent("containername.awesomeshop.shredder");
     }
 
     /**

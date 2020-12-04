@@ -2,6 +2,7 @@ package com.stevenpaw.awesomeshop.recipes;
 
 import com.stevenpaw.awesomeshop.init.ModBlocks;
 import com.stevenpaw.awesomeshop.init.ModRecipeSerializers;
+import com.stevenpaw.awesomeshop.init.StartupCommon;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.item.crafting.IRecipeSerializer;
@@ -74,7 +75,7 @@ public class ShredderRecipe implements IRecipe<RecipeWrapper> {
 
     @Override
     public ItemStack getIcon() {
-        return new ItemStack(ModBlocks.SHREDDER.get());
+        return new ItemStack(StartupCommon.shredder);
     }
 
     public int getCookTime() {
