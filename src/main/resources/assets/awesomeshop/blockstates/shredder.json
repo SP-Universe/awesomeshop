@@ -1,13 +1,28 @@
 {
   "variants": {
-    "facing=north,lit=false":  { "model": "awesomeshop:block/shredder" },
-    "facing=east,lit=false":   { "model": "awesomeshop:block/shredder", "y": 90 },
-    "facing=south,lit=false":   { "model": "awesomeshop:block/shredder", "y": 180 },
-    "facing=west,lit=false":   { "model": "awesomeshop:block/shredder", "y": 270 },
+    "burning_sides_count=1,facing=north":  { "model": "awesomeshop:block/shredder" },
+    "burning_sides_count=2,facing=north":  { "model": "awesomeshop:block/shredder" },
+    "burning_sides_count=3,facing=north":  { "model": "awesomeshop:block/shredder" },
+    "burning_sides_count=4,facing=north":  { "model": "awesomeshop:block/shredder" },
 
-    "facing=north,lit=true":  { "model": "awesomeshop:block/shredder" },
-    "facing=east,lit=true":   { "model": "awesomeshop:block/shredder", "y": 90 },
-    "facing=south,lit=true":   { "model": "awesomeshop:block/shredder", "y": 180 },
-    "facing=west,lit=true":   { "model": "awesomeshop:block/shredder", "y": 270 }
+    "burning_sides_count=1,facing=east":   { "model": "awesomeshop:block/shredder", "y": 90 },
+    "burning_sides_count=2,facing=east":   { "model": "awesomeshop:block/shredder", "y": 90 },
+    "burning_sides_count=3,facing=east":   { "model": "awesomeshop:block/shredder", "y": 90 },
+    "burning_sides_count=4,facing=east":   { "model": "awesomeshop:block/shredder", "y": 90 },
+
+    "burning_sides_count=1,facing=south":   { "model": "awesomeshop:block/shredder", "y": 180 },
+    "burning_sides_count=2,facing=south":   { "model": "awesomeshop:block/shredder", "y": 180 },
+    "burning_sides_count=3,facing=south":   { "model": "awesomeshop:block/shredder", "y": 180 },
+    "burning_sides_count=4,facing=south":   { "model": "awesomeshop:block/shredder", "y": 180 },
+
+    "burning_sides_count=1,facing=west":   { "model": "awesomeshop:block/shredder", "y": 270 },
+    "burning_sides_count=2,facing=west":   { "model": "awesomeshop:block/shredder", "y": 270 },
+    "burning_sides_count=3,facing=west":   { "model": "awesomeshop:block/shredder", "y": 270 },
+    "burning_sides_count=4,facing=west":   { "model": "awesomeshop:block/shredder", "y": 270 },
+
+    "burning_sides_count=0,facing=north":  { "model": "awesomeshop:block/shredder" },
+    "burning_sides_count=0,facing=east":   { "model": "awesomeshop:block/shredder", "y": 90 },
+    "burning_sides_count=0,facing=south":   { "model": "awesomeshop:block/shredder", "y": 180 },
+    "burning_sides_count=0,facing=west":   { "model": "awesomeshop:block/shredder", "y": 270 }
   }
 }

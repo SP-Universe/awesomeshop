@@ -21,24 +21,24 @@ public class ShredderContainerScreen extends ContainerScreen<ShredderContainer> 
 
         // Set the width and height of the gui.  Should match the size of the texture!
         xSize = 176;
-        ySize = 207;
+        ySize = 166;
     }
 
     // some [x,y] coordinates of graphical elements
-    final static int COOK_BAR_XPOS = 49;
-    final static  int COOK_BAR_YPOS = 60;
-    final static  int COOK_BAR_ICON_U = 0;   // texture position of white arrow icon [u,v]
-    final static  int COOK_BAR_ICON_V = 207;
-    final static  int SHREDDER_BAR_WIDTH = 80;
-    final static  int SHREDDER_BAR_HEIGHT = 17;
+    final static int COOK_BAR_XPOS = 81;
+    final static  int COOK_BAR_YPOS = 31;
+    final static  int COOK_BAR_ICON_U = 176;   // texture position of white arrow icon [u,v]
+    final static  int COOK_BAR_ICON_V = 14;
+    final static  int SHREDDER_BAR_WIDTH = 14;
+    final static  int SHREDDER_BAR_HEIGHT = 22;
 
-    final static  int FLAME_XPOS = 54;
-    final static  int FLAME_YPOS = 80;
+    final static  int FLAME_XPOS = 26;
+    final static  int FLAME_YPOS = 41;
     final static  int FLAME_ICON_U = 176;   // texture position of flame icon [u,v]
     final static  int FLAME_ICON_V = 0;
     final static  int FLAME_WIDTH = 14;
     final static  int FLAME_HEIGHT = 14;
-    final static  int FLAME_X_SPACING = 18;
+    final static  int FLAME_X_SPACING = 10;
 
     final static  int FONT_Y_SPACING = 10;
     final static  int PLAYER_INV_LABEL_XPOS = ShredderContainer.PLAYER_INVENTORY_XPOS;
@@ -61,7 +61,6 @@ public class ShredderContainerScreen extends ContainerScreen<ShredderContainer> 
 
         // If the mouse is over the progress bar add the progress bar hovering text
         if (isInRect(guiLeft + COOK_BAR_XPOS, guiTop + COOK_BAR_YPOS, SHREDDER_BAR_WIDTH, SHREDDER_BAR_HEIGHT, mouseX, mouseY)){
-            hoveringText.add(new StringTextComponent("Progress:"));
             int cookPercentage =(int)(shredderContainer.fractionOfShredderTimeComplete() * 100);
             hoveringText.add(new StringTextComponent(cookPercentage + "%"));
         }
@@ -99,7 +98,7 @@ public class ShredderContainerScreen extends ContainerScreen<ShredderContainer> 
         // draw the cook progress bar
         double cookProgress = shredderContainer.fractionOfShredderTimeComplete();
         this.blit(matrixStack, guiLeft + COOK_BAR_XPOS, guiTop + COOK_BAR_YPOS, COOK_BAR_ICON_U, COOK_BAR_ICON_V,
-                (int) (cookProgress * SHREDDER_BAR_WIDTH), SHREDDER_BAR_HEIGHT);
+                SHREDDER_BAR_WIDTH, (int) (cookProgress * SHREDDER_BAR_HEIGHT));
 
         // draw the fuel remaining bar for each fuel slot flame
         for (int i = 0; i < shredderContainer.FUEL_SLOTS_COUNT; ++i) {
@@ -113,8 +112,8 @@ public class ShredderContainerScreen extends ContainerScreen<ShredderContainer> 
     @Override
     protected void drawGuiContainerForegroundLayer(MatrixStack matrixStack, int mouseX, int mouseY) {
         // draw the label for the top of the screen
-        final int LABEL_XPOS = 5;
-        final int LABEL_YPOS = 5;
+        final int LABEL_XPOS = 7;
+        final int LABEL_YPOS = 7;
         this.font.func_243248_b(matrixStack, this.title, LABEL_XPOS, LABEL_YPOS, Color.darkGray.getRGB());     ///    this.font.drawString
 
         // draw the label for the player inventory slots
