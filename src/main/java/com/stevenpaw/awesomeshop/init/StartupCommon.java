@@ -2,12 +2,14 @@ package com.stevenpaw.awesomeshop.init;
 
 import com.stevenpaw.awesomeshop.blocks.Shredder;
 import com.stevenpaw.awesomeshop.container.ShredderContainer;
+import com.stevenpaw.awesomeshop.recipes.IShredderRecipe;
 import com.stevenpaw.awesomeshop.tileentity.ShredderTileEntity;
 import net.minecraft.block.Block;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.crafting.IRecipeSerializer;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.common.extensions.IForgeContainerType;
 import net.minecraftforge.event.RegistryEvent;
@@ -55,5 +57,4 @@ public class StartupCommon {
         shredderContainerType.setRegistryName("shredder_container");
         event.getRegistry().register(shredderContainerType);
     }
-
 }

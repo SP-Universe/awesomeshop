@@ -15,9 +15,9 @@ import java.util.List;
 
 public class ShredderContainerScreen extends ContainerScreen<ShredderContainer> {
     private ShredderContainer shredderContainer;
-    public ShredderContainerScreen(ShredderContainer containerFurnace, PlayerInventory playerInventory, ITextComponent title) {
-        super(containerFurnace, playerInventory, title);
-        this.shredderContainer = containerFurnace;
+    public ShredderContainerScreen(ShredderContainer containerShredder, PlayerInventory playerInventory, ITextComponent title) {
+        super(containerShredder, playerInventory, title);
+        this.shredderContainer = containerShredder;
 
         // Set the width and height of the gui.  Should match the size of the texture!
         xSize = 176;

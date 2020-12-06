@@ -3,6 +3,8 @@ package com.stevenpaw.awesomeshop.tileentity;
 import com.stevenpaw.awesomeshop.blocks.Shredder;
 import com.stevenpaw.awesomeshop.container.ShredderContainer;
 import com.stevenpaw.awesomeshop.init.StartupCommon;
+import com.stevenpaw.awesomeshop.recipes.IShredderRecipe;
+import com.stevenpaw.awesomeshop.recipes.ShredderRecipe;
 import com.stevenpaw.awesomeshop.util.SetBlockStateFlag;
 import com.stevenpaw.awesomeshop.util.ShredderStateData;
 import com.stevenpaw.awesomeshop.util.ShredderZoneContents;
@@ -26,6 +28,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
+import net.minecraftforge.items.wrapper.RecipeWrapper;
 
 import javax.annotation.Nullable;
 import java.util.Optional;
