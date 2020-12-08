@@ -2,9 +2,10 @@ package com.stevenpaw.awesomeshop.init;
 
 import com.stevenpaw.awesomeshop.AwesomeShop;
 import com.stevenpaw.awesomeshop.blocks.*;
+import com.stevenpaw.awesomeshop.blocks.flags.DrugarFlag;
+import com.stevenpaw.awesomeshop.blocks.flags.GermanFlag;
 import net.minecraft.block.Block;
 import net.minecraftforge.fml.RegistryObject;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -21,6 +22,7 @@ public class ModBlocks {
 
     //public static final RegistryObject<Block> SHREDDER = BLOCKS.register("shredder", Shredder::new);
     public static final RegistryObject<Block> DRUGAR_FLAG = BLOCKS.register("drugar_flag", DrugarFlag::new);
+    public static final RegistryObject<Block> GERMAN_FLAG = BLOCKS.register("german_flag", GermanFlag::new);
     public static final RegistryObject<Block> SHOWER_HEAD = BLOCKS.register("shower_head", ShowerHead::new);
     public static final RegistryObject<Block> SHOWER_FAUCET1 = BLOCKS.register("shower_faucet1", ShowerFaucet1::new);
     public static final RegistryObject<Block> SHOWER_FAUCET2 = BLOCKS.register("shower_faucet2", ShowerFaucet2::new);
