@@ -87,4 +87,6 @@ public class ModItems {
     //        () -> new BlockItemBase(ModBlocks.SHREDDER.get()));
     public static final RegistryObject<Item> DRUGAR_FLAG_ITEM = ITEMS.register("drugar_flag",
             () -> new BlockItemBase(ModBlocks.DRUGAR_FLAG.get()));
+    public static final RegistryObject<Item> SHOWER_HEAD_ITEM = ITEMS.register("shower_head",
+            () -> new BlockItemBase(ModBlocks.SHOWER_HEAD.get()));
 }
