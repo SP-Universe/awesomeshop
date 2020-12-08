@@ -33,6 +33,7 @@ public class ModClientEvents
                 Entity target = event.getTarget();
 
                 target.setGlowing(!target.isGlowing());
+                //player.playSound("usehighlighteron",1,1); --TODO: ADD SOUNDS
 
                 event.setCanceled(true);
             }

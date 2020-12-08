@@ -29,6 +29,8 @@ public class ModItems {
     public static final RegistryObject<Item> AWESOMNIUM_STICK = ITEMS.register("awesomnium_stick", ItemBase::new);
     public static final RegistryObject<Item> DEPRESSNIUM_STICK = ITEMS.register("depressnium_stick", ItemBase::new);
     public static final RegistryObject<Item> HIGHLIGHTER = ITEMS.register("highlighter", ItemBase::new);
+    public static final RegistryObject<Item> AWESOME_MATTER = ITEMS.register("awesome_matter", ItemBase::new);
+    public static final RegistryObject<Item> DEPRESSING_MATTER = ITEMS.register("depressing_matter", ItemBase::new);
 
 
     //TOOLS
@@ -83,8 +85,10 @@ public class ModItems {
             () -> new BlockItemBase(ModBlocks.AWESOMNIUM_BLOCK.get()));
     public static final RegistryObject<Item> AWESOMNIUM_BLOCK_DIAGONAL_ITEM = ITEMS.register("awesomnium_block_diagonal",
             () -> new BlockItemBase(ModBlocks.AWESOMNIUM_BLOCK_DIAGONAL.get()));
-    public static final RegistryObject<Item> SHREDDER_ITEM = ITEMS.register("shredder",
-            () -> new BlockItemBase(ModBlocks.SHREDDER.get()));
+    //public static final RegistryObject<Item> SHREDDER_ITEM = ITEMS.register("shredder",
+    //        () -> new BlockItemBase(ModBlocks.SHREDDER.get()));
     public static final RegistryObject<Item> DRUGAR_FLAG_ITEM = ITEMS.register("drugar_flag",
             () -> new BlockItemBase(ModBlocks.DRUGAR_FLAG.get()));
+    public static final RegistryObject<Item> SHOWER_HEAD_ITEM = ITEMS.register("shower_head",
+            () -> new BlockItemBase(ModBlocks.SHOWER_HEAD.get()));
 }
