@@ -39,6 +39,8 @@
   "containername.awesomeshop.shredder" : "Schredder",
   "block.awesomeshop.drugar_flag" : "Drugar Flag",
   "block.awesomeshop.shower_head" : "Duschkopf",
+  "block.awesomeshop.shower_faucet1" : "Dusch Armatur 1",
+  "block.awesomeshop.shower_faucet2" : "Dusch Armatur 2",
 
   "itemGroup.awesomeshopItemTab" : "AwesomeShop Gegenstände",
   "itemGroup.awesomeshopBlockTab" : "AwesomeShop Blocks"

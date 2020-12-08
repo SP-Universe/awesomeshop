@@ -91,4 +91,8 @@ public class ModItems {
             () -> new BlockItemBase(ModBlocks.DRUGAR_FLAG.get()));
     public static final RegistryObject<Item> SHOWER_HEAD_ITEM = ITEMS.register("shower_head",
             () -> new BlockItemBase(ModBlocks.SHOWER_HEAD.get()));
+    public static final RegistryObject<Item> SHOWER_FAUCET1_ITEM = ITEMS.register("shower_faucet1",
+            () -> new BlockItemBase(ModBlocks.SHOWER_FAUCET1.get()));
+    public static final RegistryObject<Item> SHOWER_FAUCET2_ITEM = ITEMS.register("shower_faucet2",
+            () -> new BlockItemBase(ModBlocks.SHOWER_FAUCET2.get()));
 }
