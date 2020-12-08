@@ -29,6 +29,8 @@ public class ModItems {
     public static final RegistryObject<Item> AWESOMNIUM_STICK = ITEMS.register("awesomnium_stick", ItemBase::new);
     public static final RegistryObject<Item> DEPRESSNIUM_STICK = ITEMS.register("depressnium_stick", ItemBase::new);
     public static final RegistryObject<Item> HIGHLIGHTER = ITEMS.register("highlighter", ItemBase::new);
+    public static final RegistryObject<Item> AWESOME_MATTER = ITEMS.register("awesome_matter", ItemBase::new);
+    public static final RegistryObject<Item> DEPRESSING_MATTER = ITEMS.register("depressing_matter", ItemBase::new);
 
 
     //TOOLS

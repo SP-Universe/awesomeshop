@@ -10,6 +10,8 @@
   "item.awesomeshop.depressnium_stick": "Depressnium Stab",
 
   "item.awesomeshop.awesome_core": "Awesome Kern",
+  "item.awesomeshop.awesome_matter": "Awesome Materie",
+  "item.awesomeshop.depressing_matter": "Deprimierende Materie",
   "item.awesomeshop.poison_apple": "Vergifteter Apfel",
   "item.awesomeshop.highlighter": "Markierer",
 
@@ -36,6 +38,7 @@
   "block.awesomeshop.shredder" : "Schredder",
   "containername.awesomeshop.shredder" : "Schredder",
   "block.awesomeshop.drugar_flag" : "Drugar Flag",
+  "block.awesomeshop.shower_head" : "Duschkopf",
 
   "itemGroup.awesomeshopItemTab" : "AwesomeShop Gegenstände",
   "itemGroup.awesomeshopBlockTab" : "AwesomeShop Blocks"

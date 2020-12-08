@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "awesomeshop:awesome_matter"
+  },
+  "result": "awesomeshop:drugar_flag",
+  "count": 1
+}
