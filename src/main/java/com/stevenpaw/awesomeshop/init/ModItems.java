@@ -87,14 +87,19 @@ public class ModItems {
             () -> new BlockItemBase(ModBlocks.AWESOMNIUM_BLOCK_DIAGONAL.get()));
     //public static final RegistryObject<Item> SHREDDER_ITEM = ITEMS.register("shredder",
     //        () -> new BlockItemBase(ModBlocks.SHREDDER.get()));
-    public static final RegistryObject<Item> DRUGAR_FLAG_ITEM = ITEMS.register("drugar_flag",
-            () -> new BlockItemBase(ModBlocks.DRUGAR_FLAG.get()));
-    public static final RegistryObject<Item> GERMAN_FLAG_ITEM = ITEMS.register("german_flag",
-            () -> new BlockItemBase(ModBlocks.GERMAN_FLAG.get()));
     public static final RegistryObject<Item> SHOWER_HEAD_ITEM = ITEMS.register("shower_head",
             () -> new BlockItemBase(ModBlocks.SHOWER_HEAD.get()));
     public static final RegistryObject<Item> SHOWER_FAUCET1_ITEM = ITEMS.register("shower_faucet1",
             () -> new BlockItemBase(ModBlocks.SHOWER_FAUCET1.get()));
     public static final RegistryObject<Item> SHOWER_FAUCET2_ITEM = ITEMS.register("shower_faucet2",
             () -> new BlockItemBase(ModBlocks.SHOWER_FAUCET2.get()));
+
+    //Flags
+    public static final RegistryObject<Item> DRUGAR_FLAG_ITEM = ITEMS.register("drugar_flag",
+            () -> new BlockItemBase(ModBlocks.DRUGAR_FLAG.get()));
+    public static final RegistryObject<Item> GERMAN_FLAG_ITEM = ITEMS.register("german_flag",
+            () -> new BlockItemBase(ModBlocks.GERMAN_FLAG.get()));
+    public static final RegistryObject<Item> USA_FLAG_ITEM = ITEMS.register("usa_flag",
+            () -> new BlockItemBase(ModBlocks.USA_FLAG.get()));
+
 }
