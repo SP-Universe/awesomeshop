@@ -8,7 +8,7 @@ issueTrackerURL="https://github.com/Steven-Paw-Design/awesomeshop/issues" #optio
 
 [[mods]] #mandatory
 modId="awesomeshop" #mandatory
-version="1.16.4-0.7.0" #mandatory
+version="1.16.4-1.0.0" #mandatory
 displayName="Awesome Shop" #mandatory
 updateJSONURL="https://github.com/Steven-Paw-Design/awesomeshop/blob/develop/update.json" #optional
 displayURL="https://www.curseforge.com/minecraft/mc-mods/awesome-shop" #optional
@@ -16,7 +16,7 @@ logoFile="awesomeshop-logo.png" #optional
 #credits="Thanks for this Mod goes to my girlfriend. With her beautiful ideas" #optional
 authors="Steven Paw Design" #optional
 description='''
-This Mod adds Awesomnium, Depressnium and Ducatium into the Game to shredder Items and make more Awesomnium.
+This Mod adds Awesomnium, Depressnium and Ducatium into the Game to make decorative things.
 With the won Awesomnium you can create more Deco Blocks for your house and a few useful items.
 '''
 
