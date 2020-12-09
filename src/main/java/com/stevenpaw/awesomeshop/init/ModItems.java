@@ -95,6 +95,10 @@ public class ModItems {
             () -> new BlockItemBase(ModBlocks.SHOWER_FAUCET2.get()));
     public static final RegistryObject<Item> SMALL_TV_ITEM = ITEMS.register("small_tv",
             () -> new BlockItemBase(ModBlocks.SMALL_TV.get()));
+    public static final RegistryObject<Item> BRICK_OVEN_ITEM = ITEMS.register("brick_oven",
+            () -> new BlockItemBase(ModBlocks.BRICK_OVEN.get()));
+    public static final RegistryObject<Item> BRICK_OVEN_TUBE_ITEM = ITEMS.register("brick_oven_tube",
+            () -> new BlockItemBase(ModBlocks.BRICK_OVEN_TUBE.get()));
 
     //Flags
     public static final RegistryObject<Item> DRUGAR_FLAG_ITEM = ITEMS.register("drugar_flag",
