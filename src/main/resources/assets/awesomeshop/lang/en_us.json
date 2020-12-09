@@ -42,10 +42,12 @@
   "block.awesomeshop.shower_faucet2" : "Shower Faucet 2",
   "block.awesomeshop.small_tv" : "Small TV",
   "block.awesomeshop.brick_oven" : "Brick Oven",
-  "block.awesomeshop.brick_oven" : "Brick Oven Tube",
+  "block.awesomeshop.brick_oven_tube" : "Brick Oven Tube",
+  "block.awesomeshop.doormat" : "Doormat",
 
   "block.awesomeshop.drugar_flag" : "Drugar Flag",
   "block.awesomeshop.german_flag" : "German Flag",
+  "block.awesomeshop.usa_flag" : "USA Flag",
   "block.awesomeshop.gay_flag" : "Gay Flag",
   "block.awesomeshop.bi_flag" : "Bi Flag",
   "block.awesomeshop.pan_flag" : "Pan Flag",

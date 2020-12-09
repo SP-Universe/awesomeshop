@@ -99,6 +99,8 @@ public class ModItems {
             () -> new BlockItemBase(ModBlocks.BRICK_OVEN.get()));
     public static final RegistryObject<Item> BRICK_OVEN_TUBE_ITEM = ITEMS.register("brick_oven_tube",
             () -> new BlockItemBase(ModBlocks.BRICK_OVEN_TUBE.get()));
+    public static final RegistryObject<Item> DOORMAT_ITEM = ITEMS.register("doormat",
+            () -> new BlockItemBase(ModBlocks.DOORMAT.get()));
 
     //Flags
     public static final RegistryObject<Item> DRUGAR_FLAG_ITEM = ITEMS.register("drugar_flag",

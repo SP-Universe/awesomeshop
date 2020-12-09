@@ -26,6 +26,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> SMALL_TV = BLOCKS.register("small_tv", SmallTV::new);
     public static final RegistryObject<Block> BRICK_OVEN = BLOCKS.register("brick_oven", BrickOven::new);
     public static final RegistryObject<Block> BRICK_OVEN_TUBE = BLOCKS.register("brick_oven_tube", BrickOvenTube::new);
+    public static final RegistryObject<Block> DOORMAT = BLOCKS.register("doormat", Doormat::new);
 
     //Flags
     public static final RegistryObject<Block> DRUGAR_FLAG = BLOCKS.register("drugar_flag", DrugarFlag::new);
