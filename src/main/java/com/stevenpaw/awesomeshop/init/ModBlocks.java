@@ -2,9 +2,7 @@ package com.stevenpaw.awesomeshop.init;
 
 import com.stevenpaw.awesomeshop.AwesomeShop;
 import com.stevenpaw.awesomeshop.blocks.*;
-import com.stevenpaw.awesomeshop.blocks.flags.DrugarFlag;
-import com.stevenpaw.awesomeshop.blocks.flags.GermanFlag;
-import com.stevenpaw.awesomeshop.blocks.flags.USAFlag;
+import com.stevenpaw.awesomeshop.blocks.flags.*;
 import net.minecraft.block.Block;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -25,9 +23,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> SHOWER_HEAD = BLOCKS.register("shower_head", ShowerHead::new);
     public static final RegistryObject<Block> SHOWER_FAUCET1 = BLOCKS.register("shower_faucet1", ShowerFaucet1::new);
     public static final RegistryObject<Block> SHOWER_FAUCET2 = BLOCKS.register("shower_faucet2", ShowerFaucet2::new);
+    public static final RegistryObject<Block> SMALL_TV = BLOCKS.register("small_tv", SmallTV::new);
 
     //Flags
     public static final RegistryObject<Block> DRUGAR_FLAG = BLOCKS.register("drugar_flag", DrugarFlag::new);
     public static final RegistryObject<Block> GERMAN_FLAG = BLOCKS.register("german_flag", GermanFlag::new);
     public static final RegistryObject<Block> USA_FLAG = BLOCKS.register("usa_flag", USAFlag::new);
+    public static final RegistryObject<Block> GAY_FLAG = BLOCKS.register("gay_flag", GayFlag::new);
+    public static final RegistryObject<Block> BI_FLAG = BLOCKS.register("bi_flag", BiFlag::new);
+    public static final RegistryObject<Block> PAN_FLAG = BLOCKS.register("pan_flag", PanFlag::new);
 }

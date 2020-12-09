@@ -37,12 +37,17 @@
   "block.awesomeshop.awesomnium_block_diagonal" : "Awesomnium Block Diagonal",
   "block.awesomeshop.shredder" : "Schredder",
   "containername.awesomeshop.shredder" : "Schredder",
-  "block.awesomeshop.drugar_flag" : "Drugar Flagge",
-  "block.awesomeshop.german_flag" : "Deutsche Flagge",
-  "block.awesomeshop.usa_flag" : "USA Flagge",
   "block.awesomeshop.shower_head" : "Duschkopf",
   "block.awesomeshop.shower_faucet1" : "Dusch Armatur 1",
   "block.awesomeshop.shower_faucet2" : "Dusch Armatur 2",
+  "block.awesomeshop.small_tv" : "Kleiner TV",
+
+  "block.awesomeshop.drugar_flag" : "Drugar Flagge",
+  "block.awesomeshop.german_flag" : "Deutsche Flagge",
+  "block.awesomeshop.usa_flag" : "USA Flagge",
+  "block.awesomeshop.gay_flag" : "Schwule Flagge",
+  "block.awesomeshop.bi_flag" : "Bi Flagge",
+  "block.awesomeshop.pan_flag" : "Pan Flagge",
 
   "itemGroup.awesomeshopItemTab" : "AwesomeShop Gegenstände",
   "itemGroup.awesomeshopBlockTab" : "AwesomeShop Blocks"

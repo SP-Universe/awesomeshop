@@ -93,6 +93,8 @@ public class ModItems {
             () -> new BlockItemBase(ModBlocks.SHOWER_FAUCET1.get()));
     public static final RegistryObject<Item> SHOWER_FAUCET2_ITEM = ITEMS.register("shower_faucet2",
             () -> new BlockItemBase(ModBlocks.SHOWER_FAUCET2.get()));
+    public static final RegistryObject<Item> SMALL_TV_ITEM = ITEMS.register("small_tv",
+            () -> new BlockItemBase(ModBlocks.SMALL_TV.get()));
 
     //Flags
     public static final RegistryObject<Item> DRUGAR_FLAG_ITEM = ITEMS.register("drugar_flag",
@@ -101,5 +103,10 @@ public class ModItems {
             () -> new BlockItemBase(ModBlocks.GERMAN_FLAG.get()));
     public static final RegistryObject<Item> USA_FLAG_ITEM = ITEMS.register("usa_flag",
             () -> new BlockItemBase(ModBlocks.USA_FLAG.get()));
-
+    public static final RegistryObject<Item> GAY_FLAG_ITEM = ITEMS.register("gay_flag",
+            () -> new BlockItemBase(ModBlocks.GAY_FLAG.get()));
+    public static final RegistryObject<Item> BI_FLAG_ITEM = ITEMS.register("bi_flag",
+            () -> new BlockItemBase(ModBlocks.BI_FLAG.get()));
+    public static final RegistryObject<Item> PAN_FLAG_ITEM = ITEMS.register("pan_flag",
+            () -> new BlockItemBase(ModBlocks.PAN_FLAG.get()));
 }

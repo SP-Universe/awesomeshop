@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "awesomeshop:block/small_tv" },
+    "facing=south": { "model": "awesomeshop:block/small_tv", "y":  180},
+    "facing=west": { "model": "awesomeshop:block/small_tv", "y":  270},
+    "facing=east": { "model": "awesomeshop:block/small_tv", "y":  90}
+  }
+}
