@@ -5,6 +5,7 @@
 		"1.16.4-latest": "1.16.4-0.7.0"
 	},
 	"1.16.4": {
+		"1.0.0": "First Release with more Flags, Brickoven, new Mechanics etc.",
 		"0.7.0": "Added Drugar Flag",
 		"0.6.0": "Added the Highlighter",
 		"0.5.0": "Added the Shredder",
