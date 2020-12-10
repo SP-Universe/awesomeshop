@@ -30,6 +30,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> SWITCH = BLOCKS.register("switch", Switch::new);
     public static final RegistryObject<Block> PC_SETUP = BLOCKS.register("pc_setup", PCSetup::new);
     public static final RegistryObject<Block> TOILET = BLOCKS.register("toilet", Toilet::new);
+    public static final RegistryObject<Block> STAIRS = BLOCKS.register("stairs", Stairs::new);
 
     //Flags
     public static final RegistryObject<Block> DRUGAR_FLAG = BLOCKS.register("drugar_flag", DrugarFlag::new);
