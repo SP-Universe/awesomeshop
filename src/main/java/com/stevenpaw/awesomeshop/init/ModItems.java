@@ -105,6 +105,8 @@ public class ModItems {
             () -> new BlockItemBase(ModBlocks.SWITCH.get()));
     public static final RegistryObject<Item> PC_SETUP_ITEM = ITEMS.register("pc_setup",
             () -> new BlockItemBase(ModBlocks.PC_SETUP.get()));
+    public static final RegistryObject<Item> TOILET_ITEM = ITEMS.register("toilet",
+            () -> new BlockItemBase(ModBlocks.TOILET.get()));
 
     //Flags
     public static final RegistryObject<Item> DRUGAR_FLAG_ITEM = ITEMS.register("drugar_flag",
