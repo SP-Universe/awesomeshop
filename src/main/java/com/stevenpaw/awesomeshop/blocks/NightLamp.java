@@ -54,7 +54,7 @@ public class NightLamp extends Block {
                 .sound(SoundType.ANVIL)
                 .harvestLevel(0));
 
-        this.setDefaultState(this.getDefaultState().with(LIGHT, Integer.valueOf(3)).with(COLOR,Integer.valueOf(0)));
+        this.setDefaultState(this.getDefaultState().with(LIGHT, Integer.valueOf(3)).with(COLOR,Integer.valueOf(6)));
     }
 
     @Override
@@ -80,7 +80,7 @@ public class NightLamp extends Block {
     public BlockState getStateForPlacement(BlockItemUseContext context)
     {
         return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite())
-                .with(LIGHT, 3).with(COLOR, 0).getBlockState();
+                .with(LIGHT, 3).with(COLOR, 6).getBlockState();
     }
 
     @Override
