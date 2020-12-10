@@ -1,5 +1,6 @@
 package com.stevenpaw.awesomeshop.blocks;
 
+import com.stevenpaw.awesomeshop.AwesomeShop;
 import com.stevenpaw.awesomeshop.init.ModBlocks;
 import com.stevenpaw.awesomeshop.util.ModBlockStateProperties;
 import net.minecraft.block.Block;
@@ -34,7 +35,7 @@ public class NightLamp extends Block {
 
     //Light Handling
     private static final IntegerProperty LIGHT = ModBlockStateProperties.LIGHTDIMMER; //BooleanProperty if Light is turned on
-
+    private static final IntegerProperty COLOR = ModBlockStateProperties.COLOR;
 
     private static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 
@@ -53,7 +54,7 @@ public class NightLamp extends Block {
                 .sound(SoundType.ANVIL)
                 .harvestLevel(0));
 
-        this.setDefaultState(this.getDefaultState().with(LIGHT, Integer.valueOf(0)).with(LIGHT, Integer.valueOf(0)));
+        this.setDefaultState(this.getDefaultState().with(LIGHT, Integer.valueOf(3)).with(COLOR,Integer.valueOf(0)));
     }
 
     @Override
@@ -78,7 +79,8 @@ public class NightLamp extends Block {
     @Override
     public BlockState getStateForPlacement(BlockItemUseContext context)
     {
-        return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite()).with(LIGHT, 3).getBlockState();
+        return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite())
+                .with(LIGHT, 3).with(COLOR, 0).getBlockState();
     }
 
     @Override
@@ -96,7 +98,7 @@ public class NightLamp extends Block {
     @Override
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder)
     {
-        builder.add(FACING).add(LIGHT);
+        builder.add(FACING).add(LIGHT).add(COLOR);
     }
 
     @Override
@@ -131,29 +133,87 @@ public class NightLamp extends Block {
     public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand hand, BlockRayTraceResult rayTraceResult) {
 
         if(!worldIn.isRemote) {
-            switch (state.get(LIGHT)) {
-                case 0:
-                    worldIn.setBlockState(pos, state.with(LIGHT, 1),3);
+
+            ItemStack heldItem = player.getHeldItem(hand);
+
+            AwesomeShop.LOGGER.debug("ITEM:" + heldItem.getItem().toString());
+
+            switch (heldItem.getItem().toString()) {
+                case "cyan_dye":
+                    worldIn.setBlockState(pos, state.with(COLOR, 0), 3);
                     break;
-                case 1:
-                    worldIn.setBlockState(pos, state.with(LIGHT, 2),3);
+                case "purple_dye":
+                    worldIn.setBlockState(pos, state.with(COLOR, 1), 3);
                     break;
-                case 2:
-                    worldIn.setBlockState(pos, state.with(LIGHT, 3),3);
+                case "blue_dye":
+                    worldIn.setBlockState(pos, state.with(COLOR, 2), 3);
+                    break;
+                case "brown_dye":
+                    worldIn.setBlockState(pos, state.with(COLOR, 3), 3);
+                    break;
+                case "green_dye":
+                    worldIn.setBlockState(pos, state.with(COLOR, 4), 3);
+                    break;
+                case "red_dye":
+                    worldIn.setBlockState(pos, state.with(COLOR, 5), 3);
+                    break;
+                case "white_dye":
+                    worldIn.setBlockState(pos, state.with(COLOR, 6), 3);
+                    break;
+                case "orange_dye":
+                    worldIn.setBlockState(pos, state.with(COLOR, 7), 3);
+                    break;
+                case "magenta_dye":
+                    worldIn.setBlockState(pos, state.with(COLOR, 8), 3);
+                    break;
+                case "light_blue_dye":
+                    worldIn.setBlockState(pos, state.with(COLOR, 9), 3);
+                    break;
+                case "yellow_dye":
+                    worldIn.setBlockState(pos, state.with(COLOR, 10), 3);
+                    break;
+                case "lime_dye":
+                    worldIn.setBlockState(pos, state.with(COLOR, 11), 3);
+                    break;
+                case "pink_dye":
+                    worldIn.setBlockState(pos, state.with(COLOR, 12), 3);
+                    break;
+                case "gray_dye":
+                    worldIn.setBlockState(pos, state.with(COLOR, 13), 3);
+                    break;
+                case "light_gray_dye":
+                    worldIn.setBlockState(pos, state.with(COLOR, 14), 3);
+                    break;
+                case "awesome_matter":
+                    worldIn.setBlockState(pos, state.with(COLOR, 15), 3);
                     break;
                 default:
-                    worldIn.setBlockState(pos, state.with(LIGHT, 0),3);
-                    break;
+                    switch (state.get(LIGHT)) {
+                        case 0:
+                            worldIn.setBlockState(pos, state.with(LIGHT, 1), 3);
+                            break;
+                        case 1:
+                            worldIn.setBlockState(pos, state.with(LIGHT, 2), 3);
+                            break;
+                        case 2:
+                            worldIn.setBlockState(pos, state.with(LIGHT, 3), 3);
+                            break;
+                        default:
+                            worldIn.setBlockState(pos, state.with(LIGHT, 0), 3);
+                            break;
+                    }
+                    return ActionResultType.CONSUME;
+
             }
-            return ActionResultType.CONSUME;
 
         } else {
             return ActionResultType.SUCCESS;
         }
+        return ActionResultType.CONSUME;
     }
 
     @Override
     public void onBlockPlacedBy(World worldIn, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack stack) {
-        worldIn.setBlockState(pos, ModBlocks.RED_NIGHT_LAMP.get().getDefaultState());
+        worldIn.setBlockState(pos, ModBlocks.NIGHT_LAMP.get().getDefaultState());
     }
 }

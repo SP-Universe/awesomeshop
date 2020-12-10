@@ -109,8 +109,8 @@ public class ModItems {
             () -> new BlockItemBase(ModBlocks.TOILET.get()));
     public static final RegistryObject<Item> STAIRS_ITEM = ITEMS.register("stairs",
             () -> new BlockItemBase(ModBlocks.STAIRS.get()));
-    public static final RegistryObject<Item> RED_NIGHT_LAMP_ITEM = ITEMS.register("red_night_lamp",
-            () -> new BlockItemBase(ModBlocks.RED_NIGHT_LAMP.get()));
+    public static final RegistryObject<Item> RED_NIGHT_LAMP_ITEM = ITEMS.register("night_lamp",
+            () -> new BlockItemBase(ModBlocks.NIGHT_LAMP.get()));
 
     //Flags
     public static final RegistryObject<Item> DRUGAR_FLAG_ITEM = ITEMS.register("drugar_flag",

@@ -2,8 +2,8 @@
 	"credit": "Steven Paw",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "awesomeshop:blocks/red_night_lamp",
-		"particle": "awesomeshop:blocks/red_night_lamp"
+		"0": "awesomeshop:blocks/orange_night_lamp",
+		"particle": "awesomeshop:blocks/orange_night_lamp"
 	},
 	"elements": [
 		{
