@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "awesomeshop:block/red_night_lamp" },
+    "facing=south": { "model": "awesomeshop:block/red_night_lamp", "y":  180},
+    "facing=west": { "model": "awesomeshop:block/red_night_lamp", "y":  270},
+    "facing=east": { "model": "awesomeshop:block/red_night_lamp", "y":  90}
+  }
+}
