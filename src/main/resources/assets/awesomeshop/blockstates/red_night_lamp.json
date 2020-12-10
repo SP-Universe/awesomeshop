@@ -1,8 +1,23 @@
 {
   "variants": {
-    "facing=north": { "model": "awesomeshop:block/red_night_lamp" },
-    "facing=south": { "model": "awesomeshop:block/red_night_lamp", "y":  180},
-    "facing=west": { "model": "awesomeshop:block/red_night_lamp", "y":  270},
-    "facing=east": { "model": "awesomeshop:block/red_night_lamp", "y":  90}
+    "facing=north,lightdimmer=0": { "model": "awesomeshop:block/red_night_lamp" },
+    "facing=south,lightdimmer=0": { "model": "awesomeshop:block/red_night_lamp", "y":  180},
+    "facing=west,lightdimmer=0": { "model": "awesomeshop:block/red_night_lamp", "y":  270},
+    "facing=east,lightdimmer=0": { "model": "awesomeshop:block/red_night_lamp", "y":  90},
+
+    "facing=north,lightdimmer=1": { "model": "awesomeshop:block/red_night_lamp" },
+    "facing=south,lightdimmer=1": { "model": "awesomeshop:block/red_night_lamp", "y":  180},
+    "facing=west,lightdimmer=1": { "model": "awesomeshop:block/red_night_lamp", "y":  270},
+    "facing=east,lightdimmer=1": { "model": "awesomeshop:block/red_night_lamp", "y":  90},
+
+    "facing=north,lightdimmer=2": { "model": "awesomeshop:block/red_night_lamp" },
+    "facing=south,lightdimmer=2": { "model": "awesomeshop:block/red_night_lamp", "y":  180},
+    "facing=west,lightdimmer=2": { "model": "awesomeshop:block/red_night_lamp", "y":  270},
+    "facing=east,lightdimmer=2": { "model": "awesomeshop:block/red_night_lamp", "y":  90},
+
+    "facing=north,lightdimmer=3": { "model": "awesomeshop:block/red_night_lamp" },
+    "facing=south,lightdimmer=3": { "model": "awesomeshop:block/red_night_lamp", "y":  180},
+    "facing=west,lightdimmer=3": { "model": "awesomeshop:block/red_night_lamp", "y":  270},
+    "facing=east,lightdimmer=3": { "model": "awesomeshop:block/red_night_lamp", "y":  90}
   }
 }
