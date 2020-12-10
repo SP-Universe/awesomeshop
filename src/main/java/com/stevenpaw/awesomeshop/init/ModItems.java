@@ -101,6 +101,10 @@ public class ModItems {
             () -> new BlockItemBase(ModBlocks.BRICK_OVEN_TUBE.get()));
     public static final RegistryObject<Item> DOORMAT_ITEM = ITEMS.register("doormat",
             () -> new BlockItemBase(ModBlocks.DOORMAT.get()));
+    public static final RegistryObject<Item> SWITCH_ITEM = ITEMS.register("switch",
+            () -> new BlockItemBase(ModBlocks.SWITCH.get()));
+    public static final RegistryObject<Item> PC_SETUP_ITEM = ITEMS.register("pc_setup",
+            () -> new BlockItemBase(ModBlocks.PC_SETUP.get()));
 
     //Flags
     public static final RegistryObject<Item> DRUGAR_FLAG_ITEM = ITEMS.register("drugar_flag",

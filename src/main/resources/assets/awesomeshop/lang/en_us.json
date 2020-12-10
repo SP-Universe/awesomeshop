@@ -44,6 +44,8 @@
   "block.awesomeshop.brick_oven" : "Brick Oven",
   "block.awesomeshop.brick_oven_tube" : "Brick Oven Tube",
   "block.awesomeshop.doormat" : "Doormat",
+  "block.awesomeshop.switch" : "Switch",
+  "block.awesomeshop.pc_setup" : "PC Setup",
 
   "block.awesomeshop.drugar_flag" : "Drugar Flag",
   "block.awesomeshop.german_flag" : "German Flag",
