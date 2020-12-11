@@ -1,3 +1,12 @@
+---
+name: Bug Report
+about: Report a Bug that happened with the mod
+title: ''
+labels: bug
+assignees: ''
+
+---
+
 ### What is the Bug?:
 
 

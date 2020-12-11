@@ -1,3 +1,12 @@
+---
+name: Block Request
+about: Request a new Block that you would like to see in the game
+title: ''
+labels: blockrequest
+assignees: ''
+
+---
+
 ### Name your requested Block:
 
 
