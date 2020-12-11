@@ -1,16 +1,7 @@
 ---
 name: Bug report
-about: Create a report to help us improve
-title: "[BUG] "
-labels: bug
-assignees: ''
-
----
-
----
-name: Bug Report
 about: Report a Bug that happened with the mod
-title: ''
+title: "[BUG] "
 labels: bug
 assignees: ''
 
@@ -22,7 +13,7 @@ assignees: ''
 ### Server or Clientside?:
 
 
-### If it crashes the game: Does it crash into Title Screen or the enitre Game?:
+### If it crashes the game: Does it crash into Titlescreen or the enitre Game?:
 
 
 ### What did you do before that bug occured?:
