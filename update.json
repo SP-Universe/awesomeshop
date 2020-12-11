@@ -1,0 +1,18 @@
+{
+	"homepage": "https://www.curseforge.com/minecraft/mc-mods/awesome-shop",
+	"promos": {
+		"1.16.4-recommended": "1.16.4-1.1.0",
+		"1.16.4-latest": "1.16.4-1.1.0"
+	},
+	"1.16.4": {
+		"1.1.0": "Added Stairs, Lamps, Switch, PC and Toilet",
+		"1.0.0": "First Release with more Flags, Brickoven, new Mechanics etc.",
+		"0.7.0": "Added Drugar Flag",
+		"0.6.0": "Added the Highlighter",
+		"0.5.0": "Added the Shredder",
+		"0.4.0": "Added Ore Generation",
+		"0.3.0": "Added Depressnium",
+		"0.2.0": "Complete Rewrite",
+		"0.1.0": "Started the project"
+	}
+}

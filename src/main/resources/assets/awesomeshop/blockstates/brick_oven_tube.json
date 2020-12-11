@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "awesomeshop:block/brick_oven_tube" },
+    "facing=south": { "model": "awesomeshop:block/brick_oven_tube", "y":  180},
+    "facing=west": { "model": "awesomeshop:block/brick_oven_tube", "y":  270},
+    "facing=east": { "model": "awesomeshop:block/brick_oven_tube", "y":  90}
+  }
+}

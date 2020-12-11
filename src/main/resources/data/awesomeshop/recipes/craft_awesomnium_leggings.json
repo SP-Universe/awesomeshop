@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "CCC",
+    "C C",
+    "C C"
+  ],
+  "key":
+  {
+    "C":
+    {
+      "item": "awesomeshop:awesomnium_crystal"
+    }
+  },
+  "result":
+  {
+    "item": "awesomeshop:awesomnium_leggings",
+    "count": 1
+  }
+}

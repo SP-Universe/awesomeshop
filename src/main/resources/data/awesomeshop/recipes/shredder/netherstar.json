@@ -1,0 +1,9 @@
+{
+  "type": "awesomeshop:shredder",
+  "output" : {
+    "item" : "minecraft.netherstar"
+  },
+  "input": {
+    "item" : "minecraft:gold_ore"
+  }
+}

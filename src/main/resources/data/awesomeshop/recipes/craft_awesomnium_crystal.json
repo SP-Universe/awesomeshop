@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "awesomeshop:awesomnium_blocks"
+    }
+  ],
+  "result":
+  {
+    "item": "awesomeshop:awesomnium_crystal",
+    "count": 4
+  }
+}

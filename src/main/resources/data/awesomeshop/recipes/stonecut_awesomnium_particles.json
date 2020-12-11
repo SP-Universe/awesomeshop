@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "awesomeshop:awesomnium_crystal"
+  },
+  "result": "awesomeshop:awesomnium_particles",
+  "count": 8
+}

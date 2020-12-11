@@ -1,0 +1,69 @@
+{
+  "defaults": { "model": "awesomeshop:block/white_night_lamp" },
+  "multipart": [
+    {
+      "when": { "color": 0},
+      "apply": { "model": "awesomeshop:block/cyan_night_lamp" }
+    },
+    {
+      "when": { "color": 1},
+      "apply": { "model": "awesomeshop:block/purple_night_lamp" }
+    },
+    {
+      "when": { "color": 2},
+      "apply": { "model": "awesomeshop:block/blue_night_lamp" }
+    },
+    {
+      "when": { "color": 3},
+      "apply": { "model": "awesomeshop:block/brown_night_lamp" }
+    },
+    {
+      "when": { "color": 4},
+      "apply": { "model": "awesomeshop:block/green_night_lamp" }
+    },
+    {
+      "when": { "color": 5},
+      "apply": { "model": "awesomeshop:block/red_night_lamp" }
+    },
+    {
+      "when": { "color": 6},
+      "apply": { "model": "awesomeshop:block/white_night_lamp" }
+    },
+    {
+      "when": { "color": 7},
+      "apply": { "model": "awesomeshop:block/orange_night_lamp" }
+    },
+    {
+      "when": { "color": 8},
+      "apply": { "model": "awesomeshop:block/magenta_night_lamp" }
+    },
+    {
+      "when": { "color": 9},
+      "apply": { "model": "awesomeshop:block/light_blue_night_lamp" }
+    },
+    {
+      "when": { "color": 10},
+      "apply": { "model": "awesomeshop:block/yellow_night_lamp" }
+    },
+    {
+      "when": { "color": 11},
+      "apply": { "model": "awesomeshop:block/lime_night_lamp" }
+    },
+    {
+      "when": { "color": 12},
+      "apply": { "model": "awesomeshop:block/pink_night_lamp" }
+    },
+    {
+      "when": { "color": 13},
+      "apply": { "model": "awesomeshop:block/gray_night_lamp" }
+    },
+    {
+      "when": { "color": 14},
+      "apply": { "model": "awesomeshop:block/light_gray_night_lamp" }
+    },
+    {
+      "when": { "color": 15},
+      "apply": { "model": "awesomeshop:block/awesome_night_lamp"}
+    }
+  ]
+}
