@@ -4,11 +4,11 @@ loaderVersion="[35,)" #mandatory This is typically bumped every Minecraft versio
 
 license="CC BY-NC 3.0 DE"
 
-issueTrackerURL="https://airtable.com/shrpzRKLn0TUidQ4Y" #optional
+issueTrackerURL="https://github.com/SP-Universe/awesomeshop/issues/new/choose" #optional
 
 [[mods]] #mandatory
 modId="awesomeshop" #mandatory
-version="1.16.4-1.1.0" #mandatory
+version="1.16.4-1.2.0" #mandatory
 displayName="Awesome Shop" #mandatory
 updateJSONURL="https://raw.githubusercontent.com/Steven-Paw-Design/awesomeshop/develop/update.json" #optional
 displayURL="https://www.curseforge.com/minecraft/mc-mods/awesome-shop" #optional
