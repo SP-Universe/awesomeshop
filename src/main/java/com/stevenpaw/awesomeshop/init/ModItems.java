@@ -113,6 +113,12 @@ public class ModItems {
             () -> new BlockItemBase(ModBlocks.NIGHT_LAMP.get()));
     public static final RegistryObject<Item> SMALL_MODERN_LAMP_ITEM = ITEMS.register("small_modern_lamp",
             () -> new BlockItemBase(ModBlocks.SMALL_MODERN_LAMP.get()));
+    public static final RegistryObject<Item> SMALL_MODERN_LAMP2_ITEM = ITEMS.register("small_modern_lamp2",
+            () -> new BlockItemBase(ModBlocks.SMALL_MODERN_LAMP2.get()));
+    public static final RegistryObject<Item> SMALL_MODERN_LAMP3_ITEM = ITEMS.register("small_modern_lamp3",
+            () -> new BlockItemBase(ModBlocks.SMALL_MODERN_LAMP3.get()));
+    public static final RegistryObject<Item> MODERN_WALL_LAMP1_ITEM = ITEMS.register("modern_wall_lamp1",
+            () -> new BlockItemBase(ModBlocks.MODERN_WALL_LAMP1.get()));
 
     //Flags
     public static final RegistryObject<Item> DRUGAR_FLAG_ITEM = ITEMS.register("drugar_flag",

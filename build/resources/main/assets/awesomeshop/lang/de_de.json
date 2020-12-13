@@ -49,7 +49,10 @@
   "block.awesomeshop.toilet" : "Toilette",
   "block.awesomeshop.stairs" : "Treppe",
   "block.awesomeshop.night_lamp" : "Nachttisch-Lampe",
-  "block.awesomeshop.small_modern_lamp" : "Kleine moderne Lampe",
+  "block.awesomeshop.small_modern_lamp" : "Kleine moderne Lampe 1",
+  "block.awesomeshop.small_modern_lamp2" : "Kleine moderne Lampe 2",
+  "block.awesomeshop.small_modern_lamp3" : "Kleine moderne Lampe 3",
+  "block.awesomeshop.modern_wall_lamp1" : "Moderne Wandlampe 1",
 
   "block.awesomeshop.drugar_flag" : "Drugar Flagge",
   "block.awesomeshop.german_flag" : "Deutsche Flagge",

@@ -50,6 +50,9 @@
   "block.awesomeshop.stairs" : "Stairs",
   "block.awesomeshop.night_lamp" : "Nightdesk-Lamp",
   "block.awesomeshop.small_modern_lamp" : "Small modern Lamp",
+  "block.awesomeshop.small_modern_lamp2" : "Small modern Lamp 2",
+  "block.awesomeshop.small_modern_lamp3" : "Small modern Lamp 3",
+  "block.awesomeshop.modern_wall_lamp1" : "Modern wall Lamp 1",
 
   "block.awesomeshop.drugar_flag" : "Drugar Flag",
   "block.awesomeshop.german_flag" : "German Flag",
