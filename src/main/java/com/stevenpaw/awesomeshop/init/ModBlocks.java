@@ -22,6 +22,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> DUCATIUM_ORE = BLOCKS.register("ducatium_ore", DucatiumOre::new);
     public static final RegistryObject<Block> AWESOMNIUM_BLOCK = BLOCKS.register("awesomnium_block", AwesomniumBlock::new);
     public static final RegistryObject<Block> AWESOMNIUM_BLOCK_DIAGONAL = BLOCKS.register("awesomnium_block_diagonal", AwesomniumBlockDiagonal::new);
+    public static final RegistryObject<Block> CRYSTALLIUM_BLOCK = BLOCKS.register("crystallium_block", AwesomniumBlock::new);
 
     //public static final RegistryObject<Block> SHREDDER = BLOCKS.register("shredder", Shredder::new);
     public static final RegistryObject<Block> SHOWER_HEAD = BLOCKS.register("shower_head", ShowerHead::new);
@@ -43,9 +44,14 @@ public class ModBlocks {
 
     //Flags
     public static final RegistryObject<Block> DRUGAR_FLAG = BLOCKS.register("drugar_flag", DrugarFlag::new);
-    public static final RegistryObject<Block> GERMAN_FLAG = BLOCKS.register("german_flag", GermanFlag::new);
-    public static final RegistryObject<Block> USA_FLAG = BLOCKS.register("usa_flag", USAFlag::new);
-    public static final RegistryObject<Block> GAY_FLAG = BLOCKS.register("gay_flag", GayFlag::new);
-    public static final RegistryObject<Block> BI_FLAG = BLOCKS.register("bi_flag", BiFlag::new);
+    public static final RegistryObject<Block> ADVENT_WREATH_4 = BLOCKS.register("advent_wreath_4", AdventWreath4::new);
+    public static final RegistryObject<Block> ADVENT_WREATH_3 = BLOCKS.register("advent_wreath_3", AdventWreath3::new);
+    public static final RegistryObject<Block> ADVENT_WREATH_2 = BLOCKS.register("advent_wreath_2", AdventWreath2::new);
+    public static final RegistryObject<Block> ADVENT_WREATH_1 = BLOCKS.register("advent_wreath_1", AdventWreath1::new);
+    public static final RegistryObject<Block> ADVENT_WREATH_0 = BLOCKS.register("advent_wreath_0", AdventWreath0::new);
     public static final RegistryObject<Block> PAN_FLAG = BLOCKS.register("pan_flag", PanFlag::new);
+    public static final RegistryObject<Block> BI_FLAG = BLOCKS.register("bi_flag", BiFlag::new);
+    public static final RegistryObject<Block> GAY_FLAG = BLOCKS.register("gay_flag", GayFlag::new);
+    public static final RegistryObject<Block> USA_FLAG = BLOCKS.register("usa_flag", USAFlag::new);
+    public static final RegistryObject<Block> GERMAN_FLAG = BLOCKS.register("german_flag", GermanFlag::new);
 }

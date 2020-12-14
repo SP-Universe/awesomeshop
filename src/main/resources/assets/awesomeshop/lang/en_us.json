@@ -61,6 +61,12 @@
   "block.awesomeshop.bi_flag" : "Bi Flag",
   "block.awesomeshop.pan_flag" : "Pan Flag",
 
+  "block.awesomeshop.advent_wreath_0" : "Advent Wreath 0",
+  "block.awesomeshop.advent_wreath_1" : "Advent Wreath 1",
+  "block.awesomeshop.advent_wreath_2" : "Advent Wreath 2",
+  "block.awesomeshop.advent_wreath_3" : "Advent Wreath 3",
+  "block.awesomeshop.advent_wreath_4" : "Advent Wreath 4",
+
   "itemGroup.awesomeshopItemTab" : "AwesomeShop Items",
   "itemGroup.awesomeshopBlockTab" : "AwesomeShop Blocks"
 }
