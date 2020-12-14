@@ -24,3 +24,5 @@ run
 forge*changelog.txt
 
 build/tmp/
+
+build/

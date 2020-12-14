@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "awesomeshop:depressnium_particles"
-  },
-  "result": "awesomeshop:depressing_matter",
-  "experience": 0.0,
-  "cookingtime": 50
-}

@@ -3,7 +3,7 @@ package com.stevenpaw.awesomeshop.init;
 import com.stevenpaw.awesomeshop.AwesomeShop;
 import com.stevenpaw.awesomeshop.blocks.*;
 import com.stevenpaw.awesomeshop.blocks.ModernLamp.ModernWallLamp1;
-import com.stevenpaw.awesomeshop.blocks.ModernLamp.SmallModernLamp;
+import com.stevenpaw.awesomeshop.blocks.ModernLamp.SmallModernLamp1;
 import com.stevenpaw.awesomeshop.blocks.ModernLamp.SmallModernLamp2;
 import com.stevenpaw.awesomeshop.blocks.ModernLamp.SmallModernLamp3;
 import com.stevenpaw.awesomeshop.blocks.flags.*;
@@ -36,7 +36,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> TOILET = BLOCKS.register("toilet", Toilet::new);
     public static final RegistryObject<Block> STAIRS = BLOCKS.register("stairs", Stairs::new);
     public static final RegistryObject<Block> NIGHT_LAMP = BLOCKS.register("night_lamp", NightLamp::new);
-    public static final RegistryObject<Block> SMALL_MODERN_LAMP = BLOCKS.register("small_modern_lamp", SmallModernLamp::new);
+    public static final RegistryObject<Block> SMALL_MODERN_LAMP = BLOCKS.register("small_modern_lamp", SmallModernLamp1::new);
     public static final RegistryObject<Block> SMALL_MODERN_LAMP2 = BLOCKS.register("small_modern_lamp2", SmallModernLamp2::new);
     public static final RegistryObject<Block> SMALL_MODERN_LAMP3 = BLOCKS.register("small_modern_lamp3", SmallModernLamp3::new);
     public static final RegistryObject<Block> MODERN_WALL_LAMP1 = BLOCKS.register("modern_wall_lamp1", ModernWallLamp1::new);

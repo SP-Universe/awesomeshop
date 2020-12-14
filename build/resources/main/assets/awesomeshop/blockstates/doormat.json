@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "facing=north": { "model": "awesomeshop:block/doormat" },
-    "facing=south": { "model": "awesomeshop:block/doormat", "y":  180},
-    "facing=west": { "model": "awesomeshop:block/doormat", "y":  270},
-    "facing=east": { "model": "awesomeshop:block/doormat", "y":  90}
-  }
-}

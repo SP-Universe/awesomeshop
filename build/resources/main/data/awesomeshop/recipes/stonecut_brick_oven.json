@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "awesomeshop:depressing_matter"
-  },
-  "result": "awesomeshop:brick_oven",
-  "count": 1
-}
