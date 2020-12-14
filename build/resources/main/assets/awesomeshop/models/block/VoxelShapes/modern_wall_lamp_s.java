@@ -1,0 +1,1 @@
+VoxelShapes.combineAndSimplify(Block.makeCuboidShape(4.5, 0, 2.5, 11.5, 16, 7.5), Block.makeCuboidShape(6.5, 2, 0, 9.5, 14, 3), IBooleanFunction.OR)
