@@ -1,0 +1,46 @@
+{
+	"credit": "Steven Paw",
+	"elements": [
+		{
+			"from": [3, 3, 3],
+			"to": [13, 13, 13],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"color": 4,
+			"faces": {
+				"north": {"uv": [10, 10, 20, 20], "texture": "#missing"},
+				"east": {"uv": [0, 10, 10, 20], "texture": "#missing"},
+				"south": {"uv": [30, 10, 40, 20], "texture": "#missing"},
+				"west": {"uv": [20, 10, 30, 20], "texture": "#missing"},
+				"up": {"uv": [20, 10, 10, 0], "texture": "#missing"},
+				"down": {"uv": [30, 0, 20, 10], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [3, 3, 3],
+			"to": [13, 13, 13],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 8, 8]},
+			"color": 4,
+			"faces": {
+				"north": {"uv": [10, 10, 20, 20], "texture": "#missing"},
+				"east": {"uv": [0, 10, 10, 20], "texture": "#missing"},
+				"south": {"uv": [30, 10, 40, 20], "texture": "#missing"},
+				"west": {"uv": [20, 10, 30, 20], "texture": "#missing"},
+				"up": {"uv": [20, 10, 10, 0], "texture": "#missing"},
+				"down": {"uv": [30, 0, 20, 10], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"color": 4,
+			"faces": {
+				"north": {"uv": [16, 16, 32, 32], "texture": "#missing"},
+				"east": {"uv": [0, 16, 16, 32], "texture": "#missing"},
+				"south": {"uv": [48, 16, 64, 32], "texture": "#missing"},
+				"west": {"uv": [32, 16, 48, 32], "texture": "#missing"},
+				"up": {"uv": [32, 16, 16, 0], "texture": "#missing"},
+				"down": {"uv": [48, 0, 32, 16], "texture": "#missing"}
+			}
+		}
+	]
+}

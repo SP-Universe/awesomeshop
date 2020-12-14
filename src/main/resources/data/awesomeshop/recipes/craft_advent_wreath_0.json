@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "s s",
+    "lll"
+  ],
+  "key":
+  {
+    "s":
+    {
+      "tag": "forge:rods/wooden"
+    },
+    "l":
+    {
+      "tag": "minecraft:blocks/leaves"
+    }
+  },
+  "result":
+  {
+    "item": "awesomeshop:advent_wreath_0",
+    "count": 1
+  }
+}
