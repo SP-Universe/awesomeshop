@@ -1,7 +1,5 @@
 package com.stevenpaw.awesomeshop.util;
 
-import com.stevenpaw.awesomeshop.util.enums.ModColors;
-import net.minecraft.state.EnumProperty;
 import net.minecraft.state.IntegerProperty;
 import net.minecraft.state.properties.BlockStateProperties;
 

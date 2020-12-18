@@ -1,0 +1,67 @@
+{
+	"credit": "Steven Paw",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "awesomeshop:blocks/big_screen",
+		"particle": "awesomeshop:blocks/big_screen"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 8],
+			"to": [16, 16, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 10, 15]},
+			"faces": {
+				"north": {"uv": [0.25, 2.5, 4.25, 6.5], "texture": "#0"},
+				"east": {"uv": [0, 2.5, 0.25, 6.5], "texture": "#0"},
+				"south": {"uv": [4.5, 2.5, 8.5, 6.5], "texture": "#0"},
+				"west": {"uv": [4.25, 2.5, 4.5, 6.5], "texture": "#0"},
+				"up": {"uv": [4.25, 2.5, 0.25, 2.25], "texture": "#0"},
+				"down": {"uv": [8.25, 2.25, 4.25, 2.5], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [40, 170, 0],
+			"translation": [0, 0, 1],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [40, 170, 0],
+			"translation": [0, 0, 1],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 150, 0],
+			"translation": [0, 1.5, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 150, 0],
+			"translation": [0, 1.5, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"ground": {
+			"translation": [0, 1, 0],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"gui": {
+			"rotation": [45, 135, 0],
+			"translation": [-0.25, 0.25, 0],
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"head": {
+			"translation": [0, 13.5, 0]
+		},
+		"fixed": {
+			"translation": [0, 0, -0.5]
+		}
+	},
+	"groups": [
+		{
+			"name": "VoxelShapes",
+			"origin": [1.5, 2.1, 8],
+			"children": [0]
+		}
+	]
+}

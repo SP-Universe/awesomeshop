@@ -49,6 +49,10 @@
   "block.awesomeshop.toilet" : "Toilette",
   "block.awesomeshop.stairs" : "Treppe",
   "block.awesomeshop.night_lamp" : "Nachttisch-Lampe",
+  "block.awesomeshop.small_modern_lamp" : "Kleine moderne Lampe 1",
+  "block.awesomeshop.small_modern_lamp2" : "Kleine moderne Lampe 2",
+  "block.awesomeshop.small_modern_lamp3" : "Kleine moderne Lampe 3",
+  "block.awesomeshop.modern_wall_lamp1" : "Moderne Wandlampe 1",
 
   "block.awesomeshop.drugar_flag" : "Drugar Flagge",
   "block.awesomeshop.german_flag" : "Deutsche Flagge",
@@ -56,6 +60,24 @@
   "block.awesomeshop.gay_flag" : "Schwule Flagge",
   "block.awesomeshop.bi_flag" : "Bi Flagge",
   "block.awesomeshop.pan_flag" : "Pan Flagge",
+
+  "block.awesomeshop.advent_wreath0" : "Adventskranz 0",
+  "block.awesomeshop.advent_wreath1" : "Adventskranz 1",
+  "block.awesomeshop.advent_wreath2" : "Adventskranz 2",
+  "block.awesomeshop.advent_wreath3" : "Adventskranz 3",
+  "block.awesomeshop.advent_wreath4" : "Adventskranz 4",
+  "block.awesomeshop.christmastree" : "Weihnachtsbaum",
+
+  "block.awesomeshop.big_screen.big_screen1" : "Großer Bildschirm oben links",
+  "block.awesomeshop.big_screen.big_screen2" : "Großer Bildschirm oben mitte",
+  "block.awesomeshop.big_screen.big_screen3" : "Großer Bildschirm oben rechts",
+  "block.awesomeshop.big_screen.big_screen4" : "Großer Bildschirm mitte links",
+  "block.awesomeshop.big_screen.big_screen5" : "Großer Bildschirm mitte",
+  "block.awesomeshop.big_screen.big_screen6" : "Großer Bildschirm mitte rechts",
+  "block.awesomeshop.big_screen.big_screen7" : "Großer Bildschirm unten links",
+  "block.awesomeshop.big_screen.big_screen8" : "Großer Bildschirm unten mitte (mit Ständer)",
+  "block.awesomeshop.big_screen.big_screen9" : "Großer Bildschirm unten rechts",
+  "block.awesomeshop.big_screen.big_screen10" : "Großer Bildschirm unten mitte (ohne Ständer)",
 
   "itemGroup.awesomeshopItemTab" : "AwesomeShop Gegenstände",
   "itemGroup.awesomeshopBlockTab" : "AwesomeShop Blocks"

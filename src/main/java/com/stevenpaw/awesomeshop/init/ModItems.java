@@ -109,12 +109,32 @@ public class ModItems {
             () -> new BlockItemBase(ModBlocks.TOILET.get()));
     public static final RegistryObject<Item> STAIRS_ITEM = ITEMS.register("stairs",
             () -> new BlockItemBase(ModBlocks.STAIRS.get()));
-    public static final RegistryObject<Item> RED_NIGHT_LAMP_ITEM = ITEMS.register("night_lamp",
+    public static final RegistryObject<Item> NIGHT_LAMP_ITEM = ITEMS.register("night_lamp",
             () -> new BlockItemBase(ModBlocks.NIGHT_LAMP.get()));
+    public static final RegistryObject<Item> SMALL_MODERN_LAMP_ITEM = ITEMS.register("small_modern_lamp",
+            () -> new BlockItemBase(ModBlocks.SMALL_MODERN_LAMP.get()));
+    public static final RegistryObject<Item> SMALL_MODERN_LAMP2_ITEM = ITEMS.register("small_modern_lamp2",
+            () -> new BlockItemBase(ModBlocks.SMALL_MODERN_LAMP2.get()));
+    public static final RegistryObject<Item> SMALL_MODERN_LAMP3_ITEM = ITEMS.register("small_modern_lamp3",
+            () -> new BlockItemBase(ModBlocks.SMALL_MODERN_LAMP3.get()));
+    public static final RegistryObject<Item> MODERN_WALL_LAMP1_ITEM = ITEMS.register("modern_wall_lamp1",
+            () -> new BlockItemBase(ModBlocks.MODERN_WALL_LAMP1.get()));
+    public static final RegistryObject<Item> CHRISTMASTREE = ITEMS.register("christmastree",
+            () -> new BlockItemBase(ModBlocks.CHRISTMASTREE.get()));
 
     //Flags
     public static final RegistryObject<Item> DRUGAR_FLAG_ITEM = ITEMS.register("drugar_flag",
             () -> new BlockItemBase(ModBlocks.DRUGAR_FLAG.get()));
+    public static final RegistryObject<Item> ADVENT_WREATH_0_ITEM = ITEMS.register("advent_wreath0",
+            () -> new BlockItemBase(ModBlocks.ADVENT_WREATH_0.get()));
+    public static final RegistryObject<Item> ADVENT_WREATH_1_ITEM = ITEMS.register("advent_wreath1",
+            () -> new BlockItemBase(ModBlocks.ADVENT_WREATH_1.get()));
+    public static final RegistryObject<Item> ADVENT_WREATH_2_ITEM = ITEMS.register("advent_wreath2",
+            () -> new BlockItemBase(ModBlocks.ADVENT_WREATH_2.get()));
+    public static final RegistryObject<Item> ADVENT_WREATH_3_ITEM = ITEMS.register("advent_wreath3",
+            () -> new BlockItemBase(ModBlocks.ADVENT_WREATH_3.get()));
+    public static final RegistryObject<Item> ADVENT_WREATH_4_ITEM = ITEMS.register("advent_wreath4",
+            () -> new BlockItemBase(ModBlocks.ADVENT_WREATH_4.get()));
     public static final RegistryObject<Item> GERMAN_FLAG_ITEM = ITEMS.register("german_flag",
             () -> new BlockItemBase(ModBlocks.GERMAN_FLAG.get()));
     public static final RegistryObject<Item> USA_FLAG_ITEM = ITEMS.register("usa_flag",
@@ -125,4 +145,26 @@ public class ModItems {
             () -> new BlockItemBase(ModBlocks.BI_FLAG.get()));
     public static final RegistryObject<Item> PAN_FLAG_ITEM = ITEMS.register("pan_flag",
             () -> new BlockItemBase(ModBlocks.PAN_FLAG.get()));
+
+    //BigScreen
+    public static final RegistryObject<Item> BIG_SCREEN1_ITEM = ITEMS.register("big_screen/big_screen1",
+            () -> new BlockItemBase(ModBlocks.BIG_SCREEN_1.get()));
+    public static final RegistryObject<Item> BIG_SCREEN2_ITEM = ITEMS.register("big_screen/big_screen2",
+            () -> new BlockItemBase(ModBlocks.BIG_SCREEN_2.get()));
+    public static final RegistryObject<Item> BIG_SCREEN3_ITEM = ITEMS.register("big_screen/big_screen3",
+            () -> new BlockItemBase(ModBlocks.BIG_SCREEN_3.get()));
+    public static final RegistryObject<Item> BIG_SCREEN4_ITEM = ITEMS.register("big_screen/big_screen4",
+            () -> new BlockItemBase(ModBlocks.BIG_SCREEN_4.get()));
+    public static final RegistryObject<Item> BIG_SCREEN5_ITEM = ITEMS.register("big_screen/big_screen5",
+            () -> new BlockItemBase(ModBlocks.BIG_SCREEN_5.get()));
+    public static final RegistryObject<Item> BIG_SCREEN6_ITEM = ITEMS.register("big_screen/big_screen6",
+            () -> new BlockItemBase(ModBlocks.BIG_SCREEN_6.get()));
+    public static final RegistryObject<Item> BIG_SCREEN7_ITEM = ITEMS.register("big_screen/big_screen7",
+            () -> new BlockItemBase(ModBlocks.BIG_SCREEN_7.get()));
+    public static final RegistryObject<Item> BIG_SCREEN8_ITEM = ITEMS.register("big_screen/big_screen8",
+            () -> new BlockItemBase(ModBlocks.BIG_SCREEN_8.get()));
+    public static final RegistryObject<Item> BIG_SCREEN9_ITEM = ITEMS.register("big_screen/big_screen9",
+            () -> new BlockItemBase(ModBlocks.BIG_SCREEN_9.get()));
+    public static final RegistryObject<Item> BIG_SCREEN10_ITEM = ITEMS.register("big_screen/big_screen10",
+            () -> new BlockItemBase(ModBlocks.BIG_SCREEN_10.get()));
 }

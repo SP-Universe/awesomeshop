@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: awesomeshop
-Implementation-Version: 1.0
-Specification-Vendor: sp universe
-Specification-Title: awesomeshop
-Implementation-Timestamp: 2020-12-10T23:09:48+0100
-Specification-Version: 1
-Implementation-Vendor: examplemodsareus
-
