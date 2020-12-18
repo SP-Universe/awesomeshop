@@ -48,7 +48,7 @@
   "block.awesomeshop.pc_setup" : "PC Setup",
   "block.awesomeshop.toilet" : "Toilet",
   "block.awesomeshop.stairs" : "Stairs",
-  "block.awesomeshop.night_lamp" : "Nightdesk-Lamp",
+  "block.awesomeshop.night_lamp" : "Bedside Lamp",
   "block.awesomeshop.small_modern_lamp" : "Small modern Lamp",
   "block.awesomeshop.small_modern_lamp2" : "Small modern Lamp 2",
   "block.awesomeshop.small_modern_lamp3" : "Small modern Lamp 3",
@@ -67,6 +67,7 @@
   "block.awesomeshop.advent_wreath3" : "Advent Wreath 3",
   "block.awesomeshop.advent_wreath4" : "Advent Wreath 4",
   "block.awesomeshop.christmastree" : "Christmastree",
+  "block.awesomeshop.basic_table" : "Basic Table",
 
   "block.awesomeshop.big_screen.big_screen1" : "Big Screen top left",
   "block.awesomeshop.big_screen.big_screen2" : "Big Screen top center",

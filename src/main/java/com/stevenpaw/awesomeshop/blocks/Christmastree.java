@@ -5,7 +5,13 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.RenderState;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.client.util.InputMappings;
 import net.minecraft.item.BlockItemUseContext;
+import net.minecraft.item.ItemStack;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.state.StateContainer;
 import net.minecraft.util.Mirror;
@@ -15,29 +21,37 @@ import net.minecraft.util.math.shapes.IBooleanFunction;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.VoxelShapes;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.IBlockReader;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import org.lwjgl.glfw.GLFW;
 
 import javax.annotation.Nullable;
+import java.util.List;
 import java.util.stream.Stream;
 
 public class Christmastree extends Block {
 
     private static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 
-    private static final VoxelShape SHAPE_N = Stream.of(Block.makeCuboidShape(2, 20, 2, 14, 32, 14), Block.makeCuboidShape(0, 8, 0, 16, 20, 16), Block.makeCuboidShape(-3, 0, -3, 19, 8, 19)).reduce((v1, v2) -> {
+    private static final VoxelShape SHAPE_N = Stream.of(Block.makeCuboidShape(2, 20, 2, 14, 32, 14), Block.makeCuboidShape(0, 8, 1, 16, 20, 16), Block.makeCuboidShape(-3, 0, -3, 19, 8, 19)).reduce((v1, v2) -> {
         return VoxelShapes.combineAndSimplify(v1, v2, IBooleanFunction.OR);}).get();
-    private static final VoxelShape SHAPE_W = Stream.of(Block.makeCuboidShape(2, 20, 2, 14, 32, 14), Block.makeCuboidShape(0, 8, 0, 16, 20, 16), Block.makeCuboidShape(-3, 0, -3, 19, 8, 19)).reduce((v1, v2) -> {
+    private static final VoxelShape SHAPE_W = Stream.of(Block.makeCuboidShape(2, 20, 2, 14, 32, 14), Block.makeCuboidShape(0, 8, 1, 16, 20, 16), Block.makeCuboidShape(-3, 0, -3, 19, 8, 19)).reduce((v1, v2) -> {
         return VoxelShapes.combineAndSimplify(v1, v2, IBooleanFunction.OR);}).get();
-    private static final VoxelShape SHAPE_S = Stream.of(Block.makeCuboidShape(2, 20, 2, 14, 32, 14), Block.makeCuboidShape(0, 8, 0, 16, 20, 16), Block.makeCuboidShape(-3, 0, -3, 19, 8, 19)).reduce((v1, v2) -> {
+    private static final VoxelShape SHAPE_S = Stream.of(Block.makeCuboidShape(2, 20, 2, 14, 32, 14), Block.makeCuboidShape(0, 8, 1, 16, 20, 16), Block.makeCuboidShape(-3, 0, -3, 19, 8, 19)).reduce((v1, v2) -> {
         return VoxelShapes.combineAndSimplify(v1, v2, IBooleanFunction.OR);}).get();
-    private static final VoxelShape SHAPE_E = Stream.of(Block.makeCuboidShape(2, 20, 2, 14, 32, 14), Block.makeCuboidShape(0, 8, 0, 16, 20, 16), Block.makeCuboidShape(-3, 0, -3, 19, 8, 19)).reduce((v1, v2) -> {
+    private static final VoxelShape SHAPE_E = Stream.of(Block.makeCuboidShape(2, 20, 2, 14, 32, 14), Block.makeCuboidShape(0, 8, 1, 16, 20, 16), Block.makeCuboidShape(-3, 0, -3, 19, 8, 19)).reduce((v1, v2) -> {
         return VoxelShapes.combineAndSimplify(v1, v2, IBooleanFunction.OR);}).get();
 
     public Christmastree() {
         super(Properties.create(Material.WOOD)
                 .hardnessAndResistance(1.5f,1.0f)
                 .sound(SoundType.WOOD)
-                .harvestLevel(0));
+                .harvestLevel(0)
+                .notSolid());
     }
 
     @Override
@@ -87,5 +101,19 @@ public class Christmastree extends Block {
     public float getAmbientOcclusionLightValue(BlockState state, IBlockReader worldIn, BlockPos pos)
     {
         return 0.6f;
+    }
+
+    @OnlyIn(Dist.CLIENT)
+    @Override
+    public void addInformation(ItemStack stack, @Nullable IBlockReader world, List<ITextComponent> tooltip, ITooltipFlag flag)
+    {
+        if(InputMappings.isKeyDown(Minecraft.getInstance().getMainWindow().getHandle(), GLFW.GLFW_KEY_LEFT_SHIFT)) {
+            super.addInformation(stack, world, tooltip, flag);
+            tooltip.add(new StringTextComponent(TextFormatting.BLUE + "A Tree for Christmas"));
+        }
+        else
+        {
+            tooltip.add(new StringTextComponent("Hold " + "\u00A7e" + "Shift" + "\u00A77" + " for More Information")); //"\u00A7e" is a color code
+        }
     }
 }

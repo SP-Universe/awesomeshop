@@ -1,10 +1,12 @@
 {
 	"homepage": "https://www.curseforge.com/minecraft/mc-mods/awesome-shop",
 	"promos": {
-		"1.16.4-recommended": "1.16.4-1.2.0",
-		"1.16.4-latest": "1.16.4-1.2.0"
+		"1.16.4-recommended": "1.16.4-1.2.2",
+		"1.16.4-latest": "1.16.4-1.2.2"
 	},
 	"1.16.4": {
+		"1.2.2": "Fixed Bugs and added Basic Table",
+		"1.2.1": "Fixed Bugs with Big Screen and Christmastree",
 		"1.2.0": "Added the big Screen, more lamps and some bug fixes",
 		"1.1.0": "Added Stairs, Lamps, Switch, PC and Toilet",
 		"1.0.0": "First Release with more Flags, Brickoven, new Mechanics etc.",
