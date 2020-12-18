@@ -3,9 +3,12 @@ name: Bug report
 about: Report a Bug that happened with the mod
 title: "[BUG] "
 labels: bug
-assignees: ''
+assignees: StevenPaw
 
 ---
+
+### Minecraft & AwesomeShop-Version:
+
 
 ### What is the Bug?:
 
