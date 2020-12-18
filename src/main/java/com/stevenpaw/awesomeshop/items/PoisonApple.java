@@ -12,6 +12,8 @@ import net.minecraft.potion.Effects;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.world.World;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import org.lwjgl.glfw.GLFW;
 
 import java.util.List;
@@ -32,6 +34,7 @@ public class PoisonApple extends Item {
         );
     }
 
+    @OnlyIn(Dist.CLIENT)
     @Override
     public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {

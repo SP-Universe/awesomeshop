@@ -25,25 +25,28 @@ import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.IBlockReader;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.common.ToolType;
 import org.lwjgl.glfw.GLFW;
 
 import javax.annotation.Nullable;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class BigScreen extends Block {
+public class BasicTable extends Block {
 
     private static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 
-    private static final VoxelShape SHAPE_N = Block.makeCuboidShape(0, 0, 6, 16, 16, 10);
-    private static final VoxelShape SHAPE_E = Block.makeCuboidShape(6, 0, 0, 10, 16, 16);
-    private static final VoxelShape SHAPE_S = Block.makeCuboidShape(0, 0, 6, 16, 16, 10);
-    private static final VoxelShape SHAPE_W = Block.makeCuboidShape(6, 0, 0, 10, 16, 16);
+    private static final VoxelShape SHAPE_N = Stream.of(Block.makeCuboidShape(13, 0, 1, 15, 15, 3), Block.makeCuboidShape(1, 0, 1, 3, 15, 3), Block.makeCuboidShape(0, 14, 0, 16, 16, 16), Block.makeCuboidShape(1, 0, 13, 3, 15, 15), Block.makeCuboidShape(13, 0, 13, 15, 15, 15)).reduce((v1, v2) -> {
+        return VoxelShapes.combineAndSimplify(v1, v2, IBooleanFunction.OR);}).get();
+    private static final VoxelShape SHAPE_E = Stream.of(Block.makeCuboidShape(13, 0, 1, 15, 15, 3), Block.makeCuboidShape(1, 0, 1, 3, 15, 3), Block.makeCuboidShape(0, 14, 0, 16, 16, 16), Block.makeCuboidShape(1, 0, 13, 3, 15, 15), Block.makeCuboidShape(13, 0, 13, 15, 15, 15)).reduce((v1, v2) -> {
+        return VoxelShapes.combineAndSimplify(v1, v2, IBooleanFunction.OR);}).get();
+    private static final VoxelShape SHAPE_S = Stream.of(Block.makeCuboidShape(13, 0, 1, 15, 15, 3), Block.makeCuboidShape(1, 0, 1, 3, 15, 3), Block.makeCuboidShape(0, 14, 0, 16, 16, 16), Block.makeCuboidShape(1, 0, 13, 3, 15, 15), Block.makeCuboidShape(13, 0, 13, 15, 15, 15)).reduce((v1, v2) -> {
+        return VoxelShapes.combineAndSimplify(v1, v2, IBooleanFunction.OR);}).get();
+    private static final VoxelShape SHAPE_W = Stream.of(Block.makeCuboidShape(13, 0, 1, 15, 15, 3), Block.makeCuboidShape(1, 0, 1, 3, 15, 3), Block.makeCuboidShape(0, 14, 0, 16, 16, 16), Block.makeCuboidShape(1, 0, 13, 3, 15, 15), Block.makeCuboidShape(13, 0, 13, 15, 15, 15)).reduce((v1, v2) -> {
+        return VoxelShapes.combineAndSimplify(v1, v2, IBooleanFunction.OR);}).get();
 
-    public BigScreen() {
+    public BasicTable() {
         super(Properties.create(Material.IRON)
-                .hardnessAndResistance(3.5f,4.0f)
+                .hardnessAndResistance(1.5f,1.0f)
                 .sound(SoundType.ANVIL)
                 .harvestLevel(0));
     }
@@ -103,7 +106,7 @@ public class BigScreen extends Block {
     {
         if(InputMappings.isKeyDown(Minecraft.getInstance().getMainWindow().getHandle(), GLFW.GLFW_KEY_LEFT_SHIFT)) {
             super.addInformation(stack, world, tooltip, flag);
-            tooltip.add(new StringTextComponent(TextFormatting.BLUE + "Part of the Big Screen"));
+            tooltip.add(new StringTextComponent(TextFormatting.BLUE + "A basic Table for everyone"));
         }
         else
         {

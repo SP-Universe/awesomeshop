@@ -5,9 +5,11 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderState;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.client.util.InputMappings;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.state.DirectionProperty;
@@ -25,6 +27,7 @@ import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.IBlockReader;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import org.lwjgl.glfw.GLFW;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -101,9 +104,16 @@ public class Christmastree extends Block {
     }
 
     @OnlyIn(Dist.CLIENT)
+    @Override
     public void addInformation(ItemStack stack, @Nullable IBlockReader world, List<ITextComponent> tooltip, ITooltipFlag flag)
     {
-        super.addInformation(stack, world, tooltip, flag);
-        tooltip.add(new StringTextComponent(TextFormatting.BLUE + "A very sturdy glass block, drops the block when broken"));
+        if(InputMappings.isKeyDown(Minecraft.getInstance().getMainWindow().getHandle(), GLFW.GLFW_KEY_LEFT_SHIFT)) {
+            super.addInformation(stack, world, tooltip, flag);
+            tooltip.add(new StringTextComponent(TextFormatting.BLUE + "A Tree for Christmas"));
+        }
+        else
+        {
+            tooltip.add(new StringTextComponent("Hold " + "\u00A7e" + "Shift" + "\u00A77" + " for More Information")); //"\u00A7e" is a color code
+        }
     }
 }

@@ -1,6 +1,7 @@
 package com.stevenpaw.awesomeshop.init;
 
 import com.stevenpaw.awesomeshop.AwesomeShop;
+import com.stevenpaw.awesomeshop.items.Highlighter;
 import com.stevenpaw.awesomeshop.util.enums.ModArmorMaterial;
 import com.stevenpaw.awesomeshop.blocks.BlockItemBase;
 import com.stevenpaw.awesomeshop.items.ItemBase;
@@ -28,7 +29,7 @@ public class ModItems {
     public static final RegistryObject<Item> DUCATIUM_SLIME = ITEMS.register("ducatium_slime", ItemBase::new);
     public static final RegistryObject<Item> AWESOMNIUM_STICK = ITEMS.register("awesomnium_stick", ItemBase::new);
     public static final RegistryObject<Item> DEPRESSNIUM_STICK = ITEMS.register("depressnium_stick", ItemBase::new);
-    public static final RegistryObject<Item> HIGHLIGHTER = ITEMS.register("highlighter", ItemBase::new);
+    public static final RegistryObject<Item> HIGHLIGHTER = ITEMS.register("highlighter", Highlighter::new);
     public static final RegistryObject<Item> AWESOME_MATTER = ITEMS.register("awesome_matter", ItemBase::new);
     public static final RegistryObject<Item> DEPRESSING_MATTER = ITEMS.register("depressing_matter", ItemBase::new);
 
@@ -119,8 +120,10 @@ public class ModItems {
             () -> new BlockItemBase(ModBlocks.SMALL_MODERN_LAMP3.get()));
     public static final RegistryObject<Item> MODERN_WALL_LAMP1_ITEM = ITEMS.register("modern_wall_lamp1",
             () -> new BlockItemBase(ModBlocks.MODERN_WALL_LAMP1.get()));
-    public static final RegistryObject<Item> CHRISTMASTREE = ITEMS.register("christmastree",
+    public static final RegistryObject<Item> CHRISTMASTREE_ITEM = ITEMS.register("christmastree",
             () -> new BlockItemBase(ModBlocks.CHRISTMASTREE.get()));
+    public static final RegistryObject<Item> BASICTABLE_ITEM = ITEMS.register("basic_table",
+            () -> new BlockItemBase(ModBlocks.BASICTABLE.get()));
 
     //Flags
     public static final RegistryObject<Item> DRUGAR_FLAG_ITEM = ITEMS.register("drugar_flag",
