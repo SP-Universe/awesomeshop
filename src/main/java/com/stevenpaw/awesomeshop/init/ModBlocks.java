@@ -44,14 +44,26 @@ public class ModBlocks {
 
     //Flags
     public static final RegistryObject<Block> DRUGAR_FLAG = BLOCKS.register("drugar_flag", DrugarFlag::new);
-    public static final RegistryObject<Block> ADVENT_WREATH_4 = BLOCKS.register("advent_wreath_4", AdventWreath4::new);
-    public static final RegistryObject<Block> ADVENT_WREATH_3 = BLOCKS.register("advent_wreath_3", AdventWreath3::new);
-    public static final RegistryObject<Block> ADVENT_WREATH_2 = BLOCKS.register("advent_wreath_2", AdventWreath2::new);
-    public static final RegistryObject<Block> ADVENT_WREATH_1 = BLOCKS.register("advent_wreath_1", AdventWreath1::new);
-    public static final RegistryObject<Block> ADVENT_WREATH_0 = BLOCKS.register("advent_wreath_0", AdventWreath0::new);
+    public static final RegistryObject<Block> ADVENT_WREATH_4 = BLOCKS.register("advent_wreath4", AdventWreath4::new);
+    public static final RegistryObject<Block> ADVENT_WREATH_3 = BLOCKS.register("advent_wreath3", AdventWreath3::new);
+    public static final RegistryObject<Block> ADVENT_WREATH_2 = BLOCKS.register("advent_wreath2", AdventWreath2::new);
+    public static final RegistryObject<Block> ADVENT_WREATH_1 = BLOCKS.register("advent_wreath1", AdventWreath1::new);
+    public static final RegistryObject<Block> ADVENT_WREATH_0 = BLOCKS.register("advent_wreath0", AdventWreath0::new);
     public static final RegistryObject<Block> PAN_FLAG = BLOCKS.register("pan_flag", PanFlag::new);
     public static final RegistryObject<Block> BI_FLAG = BLOCKS.register("bi_flag", BiFlag::new);
     public static final RegistryObject<Block> GAY_FLAG = BLOCKS.register("gay_flag", GayFlag::new);
     public static final RegistryObject<Block> USA_FLAG = BLOCKS.register("usa_flag", USAFlag::new);
     public static final RegistryObject<Block> GERMAN_FLAG = BLOCKS.register("german_flag", GermanFlag::new);
+
+    //The Big Screen
+    public static final RegistryObject<Block> BIG_SCREEN_1 = BLOCKS.register("big_screen/big_screen1", BigScreen::new);
+    public static final RegistryObject<Block> BIG_SCREEN_2 = BLOCKS.register("big_screen/big_screen2", BigScreen::new);
+    public static final RegistryObject<Block> BIG_SCREEN_3 = BLOCKS.register("big_screen/big_screen3", BigScreen::new);
+    public static final RegistryObject<Block> BIG_SCREEN_4 = BLOCKS.register("big_screen/big_screen4", BigScreen::new);
+    public static final RegistryObject<Block> BIG_SCREEN_5 = BLOCKS.register("big_screen/big_screen5", BigScreen::new);
+    public static final RegistryObject<Block> BIG_SCREEN_6 = BLOCKS.register("big_screen/big_screen6", BigScreen::new);
+    public static final RegistryObject<Block> BIG_SCREEN_7 = BLOCKS.register("big_screen/big_screen7", BigScreen::new);
+    public static final RegistryObject<Block> BIG_SCREEN_8 = BLOCKS.register("big_screen/big_screen8", BigScreen::new);
+    public static final RegistryObject<Block> BIG_SCREEN_9 = BLOCKS.register("big_screen/big_screen9", BigScreen::new);
+    public static final RegistryObject<Block> BIG_SCREEN_10 = BLOCKS.register("big_screen/big_screen10", BigScreen::new);
 }
