@@ -124,6 +124,8 @@ public class ModItems {
             () -> new BlockItemBase(ModBlocks.CHRISTMASTREE.get()));
     public static final RegistryObject<Item> BASICTABLE_ITEM = ITEMS.register("basic_table",
             () -> new BlockItemBase(ModBlocks.BASICTABLE.get()));
+    public static final RegistryObject<Item> PIANO_ITEM = ITEMS.register("piano",
+            () -> new BlockItemBase(ModBlocks.PIANO.get()));
 
     //Flags
     public static final RegistryObject<Item> DRUGAR_FLAG_ITEM = ITEMS.register("drugar_flag",

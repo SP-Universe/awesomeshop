@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "awesomeshop:block/piano" },
+    "facing=south": { "model": "awesomeshop:block/piano", "y":  180},
+    "facing=west": { "model": "awesomeshop:block/piano", "y":  270},
+    "facing=east": { "model": "awesomeshop:block/piano", "y":  90}
+  }
+}

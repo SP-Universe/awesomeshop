@@ -11,7 +11,7 @@
 
   "item.awesomeshop.awesome_core": "Awesome Core",
   "item.awesomeshop.awesome_matter": "Awesome Matter",
-  "item.awesomeshop.depressing_matter": "Depressing Materie",
+  "item.awesomeshop.depressing_matter": "Depressing Matter",
   "item.awesomeshop.poison_apple": "Poison Apple",
   "item.awesomeshop.highlighter": "Highlighter",
 
@@ -68,6 +68,7 @@
   "block.awesomeshop.advent_wreath4" : "Advent Wreath 4",
   "block.awesomeshop.christmastree" : "Christmastree",
   "block.awesomeshop.basic_table" : "Basic Table",
+  "block.awesomeshop.piano" : "Piano",
 
   "block.awesomeshop.big_screen.big_screen1" : "Big Screen top left",
   "block.awesomeshop.big_screen.big_screen2" : "Big Screen top center",

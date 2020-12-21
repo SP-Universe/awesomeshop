@@ -42,6 +42,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> MODERN_WALL_LAMP1 = BLOCKS.register("modern_wall_lamp1", ModernWallLamp1::new);
     public static final RegistryObject<Block> CHRISTMASTREE = BLOCKS.register("christmastree", Christmastree::new);
     public static final RegistryObject<Block> BASICTABLE = BLOCKS.register("basic_table", BasicTable::new);
+    public static final RegistryObject<Block> PIANO = BLOCKS.register("piano", Piano::new);
 
     //Flags
     public static final RegistryObject<Block> DRUGAR_FLAG = BLOCKS.register("drugar_flag", DrugarFlag::new);
