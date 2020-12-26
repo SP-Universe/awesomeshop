@@ -1,7 +1,7 @@
 package com.stevenpaw.awesomeshop.blocks;
 
 import com.stevenpaw.awesomeshop.AwesomeShop;
-import com.stevenpaw.awesomeshop.init.ModBlocks;
+import com.stevenpaw.awesomeshop.init.BlockInit;
 import com.stevenpaw.awesomeshop.util.ModBlockStateProperties;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -214,6 +214,6 @@ public class NightLamp extends Block {
 
     @Override
     public void onBlockPlacedBy(World worldIn, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack stack) {
-        worldIn.setBlockState(pos, ModBlocks.NIGHT_LAMP.get().getDefaultState());
+        worldIn.setBlockState(pos, BlockInit.NIGHT_LAMP.get().getDefaultState());
     }
 }

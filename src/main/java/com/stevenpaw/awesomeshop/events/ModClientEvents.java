@@ -1,7 +1,7 @@
 package com.stevenpaw.awesomeshop.events;
 
 import com.stevenpaw.awesomeshop.AwesomeShop;
-import com.stevenpaw.awesomeshop.init.ModItems;
+import com.stevenpaw.awesomeshop.init.ItemInit;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -29,7 +29,7 @@ public class ModClientEvents
         }
 
         if(!player.world.isRemote) {
-            if (usedItem == ModItems.HIGHLIGHTER.get()) {
+            if (usedItem == ItemInit.HIGHLIGHTER.get()) {
                 Entity target = event.getTarget();
 
                 target.setGlowing(!target.isGlowing());

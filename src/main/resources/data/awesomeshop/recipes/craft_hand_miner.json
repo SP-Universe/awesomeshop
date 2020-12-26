@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "DRD",
+    "ICI",
+    "IGI"
+  ],
+  "key":
+  {
+    "R":
+    {
+      "item": "minecraft:redstone"
+    },
+    "C":
+    {
+      "item": "awesomeshop:awesome_core"
+    },
+    "I":
+    {
+      "tag": "forge:ingots/iron"
+    },
+    "D":
+    {
+      "item": "minecraft:dispenser"
+    },
+    "G":
+    {
+      "tag": "forge:ingots/gold"
+    }
+  },
+  "result":
+  {
+    "item": "awesomeshop:hand_miner",
+    "count": 1
+  }
+}
