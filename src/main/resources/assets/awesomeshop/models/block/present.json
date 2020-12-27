@@ -2,8 +2,8 @@
 	"credit": "Steven Paw",
 	"texture_size": [128, 128],
 	"textures": {
-		"0": "block/present",
-		"particle": "block/present"
+		"0": "awesomeshop:blocks/present",
+		"particle": "awesomeshop:blocks/present"
 	},
 	"elements": [
 		{

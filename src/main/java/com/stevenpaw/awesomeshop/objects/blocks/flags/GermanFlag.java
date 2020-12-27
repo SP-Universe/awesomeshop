@@ -1,4 +1,4 @@
-package com.stevenpaw.awesomeshop.blocks.flags;
+package com.stevenpaw.awesomeshop.objects.blocks.flags;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
