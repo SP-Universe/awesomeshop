@@ -70,6 +70,11 @@
   "block.awesomeshop.basic_table" : "Einfacher Tisch",
   "block.awesomeshop.piano" : "Flügel",
 
+  "block.awesomeshop.awesome_chest" : "Awesome Kiste",
+  "container.awesome_chest" : "Awesome Kiste",
+  "block.awesomeshop.present" : "Geschenk",
+  "container.present" : "Geschenk",
+
   "block.awesomeshop.big_screen.big_screen1" : "Großer Bildschirm oben links",
   "block.awesomeshop.big_screen.big_screen2" : "Großer Bildschirm oben mitte",
   "block.awesomeshop.big_screen.big_screen3" : "Großer Bildschirm oben rechts",

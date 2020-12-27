@@ -1,6 +1,5 @@
 package com.stevenpaw.awesomeshop.tileentity;
 
-import com.stevenpaw.awesomeshop.blocks.HandMiner;
 import com.stevenpaw.awesomeshop.init.ModTileEntityTypes;
 import com.stevenpaw.awesomeshop.util.helpers.NBTHelper;
 import net.minecraft.block.Block;

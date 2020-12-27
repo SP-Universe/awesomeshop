@@ -1,12 +1,12 @@
 package com.stevenpaw.awesomeshop.init;
 
 import com.stevenpaw.awesomeshop.AwesomeShop;
-import com.stevenpaw.awesomeshop.blocks.*;
-import com.stevenpaw.awesomeshop.blocks.ModernLamp.ModernWallLamp1;
-import com.stevenpaw.awesomeshop.blocks.ModernLamp.SmallModernLamp1;
-import com.stevenpaw.awesomeshop.blocks.ModernLamp.SmallModernLamp2;
-import com.stevenpaw.awesomeshop.blocks.ModernLamp.SmallModernLamp3;
-import com.stevenpaw.awesomeshop.blocks.flags.*;
+import com.stevenpaw.awesomeshop.objects.blocks.*;
+import com.stevenpaw.awesomeshop.objects.blocks.ModernLamp.ModernWallLamp1;
+import com.stevenpaw.awesomeshop.objects.blocks.ModernLamp.SmallModernLamp1;
+import com.stevenpaw.awesomeshop.objects.blocks.ModernLamp.SmallModernLamp2;
+import com.stevenpaw.awesomeshop.objects.blocks.ModernLamp.SmallModernLamp3;
+import com.stevenpaw.awesomeshop.objects.blocks.flags.*;
 import net.minecraft.block.Block;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -24,6 +24,8 @@ public class BlockInit {
     public static final RegistryObject<Block> AWESOMNIUM_BLOCK_DIAGONAL = BLOCKS.register("awesomnium_block_diagonal", AwesomniumBlockDiagonal::new);
 
     public static final RegistryObject<Block> HAND_MINER = BLOCKS.register("hand_miner", HandMiner::new);
+    public static final RegistryObject<Block> AWESOME_CHEST = BLOCKS.register("awesome_chest", AwesomeChest::new);
+    public static final RegistryObject<Block> PRESENT = BLOCKS.register("present", Present::new);
 
     //public static final RegistryObject<Block> SHREDDER = BLOCKS.register("shredder", Shredder::new);
     public static final RegistryObject<Block> SHOWER_HEAD = BLOCKS.register("shower_head", ShowerHead::new);

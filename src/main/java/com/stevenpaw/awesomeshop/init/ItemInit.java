@@ -1,11 +1,10 @@
 package com.stevenpaw.awesomeshop.init;
 
 import com.stevenpaw.awesomeshop.AwesomeShop;
-import com.stevenpaw.awesomeshop.items.Highlighter;
+import com.stevenpaw.awesomeshop.objects.items.Highlighter;
 import com.stevenpaw.awesomeshop.util.enums.ModArmorMaterial;
-import com.stevenpaw.awesomeshop.blocks.BlockItemBase;
-import com.stevenpaw.awesomeshop.items.ItemBase;
-import com.stevenpaw.awesomeshop.items.PoisonApple;
+import com.stevenpaw.awesomeshop.objects.items.ItemBase;
+import com.stevenpaw.awesomeshop.objects.items.PoisonApple;
 import com.stevenpaw.awesomeshop.util.enums.ModItemTier;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
