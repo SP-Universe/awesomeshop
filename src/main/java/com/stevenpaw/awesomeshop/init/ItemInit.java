@@ -31,7 +31,8 @@ public class ItemInit {
     public static final RegistryObject<Item> HIGHLIGHTER = ITEMS.register("highlighter", Highlighter::new);
     public static final RegistryObject<Item> AWESOME_MATTER = ITEMS.register("awesome_matter", ItemBase::new);
     public static final RegistryObject<Item> DEPRESSING_MATTER = ITEMS.register("depressing_matter", ItemBase::new);
-
+    public static final RegistryObject<Item> CARDBOARD = ITEMS.register("cardboard", ItemBase::new);
+    public static final RegistryObject<Item> DUCTTAPE = ITEMS.register("ducttape", ItemBase::new);
 
     //TOOLS
     // attackSpeed base is 4 (so make it faster with negative number)

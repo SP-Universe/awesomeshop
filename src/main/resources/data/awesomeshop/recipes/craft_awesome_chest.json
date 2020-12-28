@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "AAA",
+    "A A",
+    "AAA"
+  ],
+  "key":
+  {
+    "A":
+    {
+      "item": "awesomeshop:awesomnium_crystal"
+    }
+  },
+  "result":
+  {
+    "item": "awesomeshop:awesome_chest",
+    "count": 1
+  }
+}

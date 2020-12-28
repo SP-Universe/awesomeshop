@@ -30,6 +30,7 @@
   "item.awesomeshop.depressnium_shovel": "Depressnium Schaufel",
   "item.awesomeshop.awesomnium_hoe": "Awesomnium Hacke",
   "item.awesomeshop.depressnium_hoe": "Depressnium Hacke",
+  "item.awesomeshop.cardboard": "Pappe",
 
   "block.awesomeshop.ducatium_ore" : "Ducatium Erz",
   "block.awesomeshop.awesomnium_ore" : "Awesomnium Erz",
@@ -74,6 +75,8 @@
   "container.awesome_chest" : "Awesome Kiste",
   "block.awesomeshop.present" : "Geschenk",
   "container.present" : "Geschenk",
+  "block.awesomeshop.cardboard_box" : "Pappkiste",
+  "container.cardboard_box" : "Pappkiste",
 
   "block.awesomeshop.big_screen.big_screen1" : "Großer Bildschirm oben links",
   "block.awesomeshop.big_screen.big_screen2" : "Großer Bildschirm oben mitte",

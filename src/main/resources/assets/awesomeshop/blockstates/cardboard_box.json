@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "awesomeshop:block/cardboard_box" },
+    "facing=south": { "model": "awesomeshop:block/cardboard_box", "y":  180},
+    "facing=west": { "model": "awesomeshop:block/cardboard_box", "y":  270},
+    "facing=east": { "model": "awesomeshop:block/cardboard_box", "y":  90}
+  }
+}

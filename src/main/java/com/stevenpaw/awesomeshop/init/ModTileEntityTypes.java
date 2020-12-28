@@ -2,6 +2,7 @@ package com.stevenpaw.awesomeshop.init;
 
 import com.stevenpaw.awesomeshop.AwesomeShop;
 import com.stevenpaw.awesomeshop.tileentity.AwesomeChestTileEntity;
+import com.stevenpaw.awesomeshop.tileentity.CardBoardBoxTileEntity;
 import com.stevenpaw.awesomeshop.tileentity.HandMinerTileEntity;
 import com.stevenpaw.awesomeshop.tileentity.PresentTileEntity;
 import net.minecraft.tileentity.TileEntityType;
@@ -20,4 +21,7 @@ public class ModTileEntityTypes {
 
     public static final RegistryObject<TileEntityType<PresentTileEntity>> PRESENT = TILE_ENTITY_TYPES.register("present", () -> TileEntityType.Builder
             .create(PresentTileEntity::new, BlockInit.PRESENT.get()).build(null));
+
+    public static final RegistryObject<TileEntityType<CardBoardBoxTileEntity>> CARDBOARD_BOX = TILE_ENTITY_TYPES.register("cardboard_box", () -> TileEntityType.Builder
+            .create(CardBoardBoxTileEntity::new, BlockInit.CARDBOARD_BOX.get()).build(null));
 }

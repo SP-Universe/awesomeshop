@@ -26,6 +26,7 @@ public class BlockInit {
     public static final RegistryObject<Block> HAND_MINER = BLOCKS.register("hand_miner", HandMiner::new);
     public static final RegistryObject<Block> AWESOME_CHEST = BLOCKS.register("awesome_chest", AwesomeChest::new);
     public static final RegistryObject<Block> PRESENT = BLOCKS.register("present", Present::new);
+    public static final RegistryObject<Block> CARDBOARD_BOX = BLOCKS.register("cardboard_box", CardboardBox::new);
 
     //public static final RegistryObject<Block> SHREDDER = BLOCKS.register("shredder", Shredder::new);
     public static final RegistryObject<Block> SHOWER_HEAD = BLOCKS.register("shower_head", ShowerHead::new);

@@ -2,6 +2,7 @@ package com.stevenpaw.awesomeshop.init;
 
 import com.stevenpaw.awesomeshop.AwesomeShop;
 import com.stevenpaw.awesomeshop.container.AwesomeChestContainer;
+import com.stevenpaw.awesomeshop.container.CardboardBoxContainer;
 import com.stevenpaw.awesomeshop.container.PresentContainer;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraftforge.common.extensions.IForgeContainerType;
@@ -17,4 +18,7 @@ public class ModContainerTypes {
 
     public static final RegistryObject<ContainerType<PresentContainer>> PRESENT = CONTAINER_TYPES
             .register("present", () -> IForgeContainerType.create(PresentContainer::new));
+
+    public static final RegistryObject<ContainerType<CardboardBoxContainer>> CARDBOARD_BOX = CONTAINER_TYPES
+            .register("cardboard_box", () -> IForgeContainerType.create(CardboardBoxContainer::new));
 }
