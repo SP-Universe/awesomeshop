@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "PPP",
+    "PCP",
+    "PPP"
+  ],
+  "key":
+  {
+    "P":
+    {
+      "item": "minecraft:paper"
+    },
+    "C":
+    {
+      "item": "awesomeshop:cardboard_box"
+    }
+  },
+  "result":
+  {
+    "item": "awesomeshop:present",
+    "count": 1
+  }
+}

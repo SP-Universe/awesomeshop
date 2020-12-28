@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "TCT",
+    "C C",
+    "TCT"
+  ],
+  "key":
+  {
+    "C":
+    {
+      "item": "awesomeshop:cardboard"
+    },
+    "T":
+    {
+      "item": "awesomeshop:ducttape"
+    }
+  },
+  "result":
+  {
+    "item": "awesomeshop:cardboard_box",
+    "count": 1
+  }
+}

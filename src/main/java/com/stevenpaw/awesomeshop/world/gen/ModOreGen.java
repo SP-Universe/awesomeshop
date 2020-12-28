@@ -1,7 +1,7 @@
 package com.stevenpaw.awesomeshop.world.gen;
 
 import com.stevenpaw.awesomeshop.AwesomeShop;
-import com.stevenpaw.awesomeshop.init.ModBlocks;
+import com.stevenpaw.awesomeshop.init.BlockInit;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.world.biome.Biome;
@@ -39,13 +39,13 @@ public class ModOreGen {
         //Overworld Ore Register
         //Spawn Awesomnium Ores
         overworldOres.add(register("awesomnium_ore", Feature.ORE.withConfiguration(new OreFeatureConfig(
-                OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, ModBlocks.AWESOMNIUM_ORE.get().getDefaultState(), 5)) //Vein Size
+                OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.AWESOMNIUM_ORE.get().getDefaultState(), 5)) //Vein Size
                 .range(40).square() //Spawn height start
                 .func_242731_b(1))); //Chunk spawn frequency
 
         //Spawn Ducatium Ores
         overworldOres.add(register("ducatium_ore", Feature.ORE.withConfiguration(new OreFeatureConfig(
-                OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, ModBlocks.DUCATIUM_ORE.get().getDefaultState(), 3)) //Vein Size
+                OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.DUCATIUM_ORE.get().getDefaultState(), 3)) //Vein Size
                 .range(25).square() //Spawn height start
                 .func_242731_b(1))); //Chunk spawn frequency
 

@@ -2,39 +2,66 @@ package com.stevenpaw.awesomeshop;
 
 import com.stevenpaw.awesomeshop.init.*;
 import com.stevenpaw.awesomeshop.world.gen.ModOreGen;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.DistExecutor;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.IForgeRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @Mod("awesomeshop")
+@Mod.EventBusSubscriber(modid = AwesomeShop.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class AwesomeShop {
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "awesomeshop";
-
-    public static IEventBus MOD_EVENT_BUS;
+    public static AwesomeShop instance;
 
     public AwesomeShop() {
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+        final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        modEventBus.addListener(this::setup);
+        modEventBus.addListener(this::doClientStuff);
 
-        MOD_EVENT_BUS = FMLJavaModLoadingContext.get().getModEventBus();
+        ItemInit.ITEMS.register(modEventBus);
+        BlockInit.BLOCKS.register(modEventBus);
+        ModTileEntityTypes.TILE_ENTITY_TYPES.register(modEventBus);
+        ModContainerTypes.CONTAINER_TYPES.register(modEventBus);
 
-        ModBlocks.BLOCKS.register(MOD_EVENT_BUS);
-        ModItems.ITEMS.register(MOD_EVENT_BUS);
+        instance = this;
 
         MinecraftForge.EVENT_BUS.register(this);
     }
 
+    @SubscribeEvent
+    public static void onRegisterItems(final RegistryEvent.Register<Item> event) {
+        final IForgeRegistry<Item> registry = event.getRegistry();
+
+        BlockInit.BLOCKS.getEntries().stream().map(RegistryObject::get).forEach(block -> {
+            final Item.Properties properties = new Item.Properties().group(AwesomeShop.BLOCKTAB);
+            final BlockItem blockItem = new BlockItem(block, properties);
+            blockItem.setRegistryName(block.getRegistryName());
+            registry.register(blockItem);
+        });
+
+        LOGGER.debug("[COLORFUL WORLD] - Registered BlockItems!");
+    }
+
     private void setup(final FMLCommonSetupEvent event) {
         ModOreGen.registerOres();
+    }
+
+    private void doClientStuff(final FMLClientSetupEvent event)
+    {
+
     }
 
     //Creating Custom Inventory Tabs
@@ -42,7 +69,7 @@ public class AwesomeShop {
 
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(ModItems.AWESOMNIUM_CRYSTAL.get());
+            return new ItemStack(ItemInit.AWESOMNIUM_CRYSTAL.get());
         }
     };
 
@@ -50,7 +77,7 @@ public class AwesomeShop {
 
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(ModBlocks.AWESOMNIUM_BLOCK.get());
+            return new ItemStack(BlockInit.AWESOMNIUM_BLOCK.get());
         }
     };
 }
