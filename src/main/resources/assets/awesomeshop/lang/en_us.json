@@ -31,6 +31,7 @@
   "item.awesomeshop.awesomnium_hoe": "Awesomnium Hoe",
   "item.awesomeshop.depressnium_hoe": "Depressnium Hoe",
   "item.awesomeshop.cardboard": "Cardboard",
+  "item.awesomeshop.ducttape": "Ducttape",
 
   "block.awesomeshop.ducatium_ore" : "Ducatium Ore",
   "block.awesomeshop.awesomnium_ore" : "Awesomnium Ore",
@@ -77,6 +78,7 @@
   "container.present" : "Present",
   "block.awesomeshop.cardboard_box" : "Cardboard Box",
   "container.cardboard_box" : "Cardboard Box",
+  "block.awesomeshop.hand_miner" : "Hand-Miner",
 
   "block.awesomeshop.big_screen.big_screen1" : "Big Screen top left",
   "block.awesomeshop.big_screen.big_screen2" : "Big Screen top center",
