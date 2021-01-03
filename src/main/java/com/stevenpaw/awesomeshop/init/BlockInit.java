@@ -8,7 +8,9 @@ import com.stevenpaw.awesomeshop.objects.blocks.ModernLamp.SmallModernLamp2;
 import com.stevenpaw.awesomeshop.objects.blocks.ModernLamp.SmallModernLamp3;
 import com.stevenpaw.awesomeshop.objects.blocks.flags.*;
 import net.minecraft.block.Block;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -77,25 +79,48 @@ public class BlockInit {
 
     //Color Blocks
     public static final RegistryObject<Block> BLACK_CRYSTALLUM = BLOCKS.register
-            ("crystallum/black_crystallum", () -> new Block(Block.Properties.create(Material.CLAY)));
+            ("crystallum/black_crystallum", Crystallum::new);
     public static final RegistryObject<Block> BLUE_CRYSTALLUM = BLOCKS.register
-            ("crystallum/blue_crystallum", () -> new Block(Block.Properties.create(Material.CLAY)));
+            ("crystallum/blue_crystallum", Crystallum::new);
     public static final RegistryObject<Block> CYAN_CRYSTALLUM = BLOCKS.register
-            ("crystallum/cyan_crystallum", () -> new Block(Block.Properties.create(Material.CLAY)));
+            ("crystallum/cyan_crystallum", Crystallum::new);
     public static final RegistryObject<Block> GRAY_CRYSTALLUM = BLOCKS.register
-            ("crystallum/gray_crystallum", () -> new Block(Block.Properties.create(Material.CLAY)));
+            ("crystallum/gray_crystallum", Crystallum::new);
     public static final RegistryObject<Block> GREEN_CRYSTALLUM = BLOCKS.register
-            ("crystallum/green_crystallum", () -> new Block(Block.Properties.create(Material.CLAY)));
+            ("crystallum/green_crystallum", Crystallum::new);
     public static final RegistryObject<Block> ORANGE_CRYSTALLUM = BLOCKS.register
-            ("crystallum/orange_crystallum", () -> new Block(Block.Properties.create(Material.CLAY)));
+            ("crystallum/orange_crystallum", Crystallum::new);
     public static final RegistryObject<Block> PINK_CRYSTALLUM = BLOCKS.register
-            ("crystallum/pink_crystallum", () -> new Block(Block.Properties.create(Material.CLAY)));
+            ("crystallum/pink_crystallum", Crystallum::new);
     public static final RegistryObject<Block> PURPLE_CRYSTALLUM = BLOCKS.register
-            ("crystallum/purple_crystallum", () -> new Block(Block.Properties.create(Material.CLAY)));
+            ("crystallum/purple_crystallum", Crystallum::new);
     public static final RegistryObject<Block> RED_CRYSTALLUM = BLOCKS.register
-            ("crystallum/red_crystallum", () -> new Block(Block.Properties.create(Material.CLAY)));
+            ("crystallum/red_crystallum", Crystallum::new);
     public static final RegistryObject<Block> WHITE_CRYSTALLUM = BLOCKS.register
-            ("crystallum/white_crystallum", () -> new Block(Block.Properties.create(Material.CLAY)));
+            ("crystallum/white_crystallum", Crystallum::new);
     public static final RegistryObject<Block> YELLOW_CRYSTALLUM = BLOCKS.register
-            ("crystallum/yellow_crystallum", () -> new Block(Block.Properties.create(Material.CLAY)));
+            ("crystallum/yellow_crystallum", Crystallum::new);
+
+    public static final RegistryObject<Block> BLACK_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/black_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> BLUE_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/blue_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> CYAN_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/cyan_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> GRAY_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/gray_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> GREEN_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/green_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> ORANGE_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/orange_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> PINK_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/pink_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> PURPLE_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/purple_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> RED_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/red_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> WHITE_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/white_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> YELLOW_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/yellow_crystallum_stairs", CrystallumStairs::new);
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "awesomeshop:blocks/crystallum/black_crystallum",
+    "top": "awesomeshop:blocks/crystallum/black_crystallum",
+    "side": "awesomeshop:blocks/crystallum/black_crystallum"
+  }
+}

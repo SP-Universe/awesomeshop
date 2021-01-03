@@ -104,6 +104,18 @@
   "block.awesomeshop.crystallum.white_crystallum" : "Weißes Crystallum",
   "block.awesomeshop.crystallum.yellow_crystallum" : "Gelbes Crystallum",
 
+  "block.awesomeshop.crystallum_stairs.black_crystallum_stairs" : "Schwarzes Crystallum",
+  "block.awesomeshop.crystallum_stairs.blue_crystallum_stairs" : "Blaues Crystallum",
+  "block.awesomeshop.crystallum_stairs.cyan_crystallum_stairs" : "Cyan Crystallum",
+  "block.awesomeshop.crystallum_stairs.gray_crystallum_stairs" : "Graues Crystallum",
+  "block.awesomeshop.crystallum_stairs.green_crystallum_stairs" : "Grünes Crystallum",
+  "block.awesomeshop.crystallum_stairs.orange_crystallum_stairs" : "Oranges Crystallum",
+  "block.awesomeshop.crystallum_stairs.pink_crystallum_stairs" : "Pinkes Crystallum",
+  "block.awesomeshop.crystallum_stairs.purple_crystallum_stairs" : "Violettes Crystallum",
+  "block.awesomeshop.crystallum_stairs.red_crystallum_stairs" : "Rotes Crystallum",
+  "block.awesomeshop.crystallum_stairs.white_crystallum_stairs" : "Weißes Crystallum",
+  "block.awesomeshop.crystallum_stairs.yellow_crystallum_stairs" : "Gelbes Crystallum",
+
   "itemGroup.awesomeshopItemTab" : "AwesomeShop Gegenstände",
   "itemGroup.awesomeshopBlockTab" : "AwesomeShop Blocks"
 }

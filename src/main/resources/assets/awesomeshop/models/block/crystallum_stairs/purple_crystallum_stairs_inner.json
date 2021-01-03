@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "awesomeshop:blocks/crystallum/purple_crystallum",
+    "top": "awesomeshop:blocks/crystallum/purple_crystallum",
+    "side": "awesomeshop:blocks/crystallum/purple_crystallum"
+  }
+}
