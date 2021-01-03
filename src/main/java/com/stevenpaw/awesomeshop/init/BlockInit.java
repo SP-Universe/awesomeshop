@@ -8,6 +8,7 @@ import com.stevenpaw.awesomeshop.objects.blocks.ModernLamp.SmallModernLamp2;
 import com.stevenpaw.awesomeshop.objects.blocks.ModernLamp.SmallModernLamp3;
 import com.stevenpaw.awesomeshop.objects.blocks.flags.*;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -73,4 +74,28 @@ public class BlockInit {
     public static final RegistryObject<Block> BIG_SCREEN_8 = BLOCKS.register("big_screen/big_screen8", BigScreen::new);
     public static final RegistryObject<Block> BIG_SCREEN_9 = BLOCKS.register("big_screen/big_screen9", BigScreen::new);
     public static final RegistryObject<Block> BIG_SCREEN_10 = BLOCKS.register("big_screen/big_screen10", BigScreen::new);
+
+    //Color Blocks
+    public static final RegistryObject<Block> BLACK_CRYSTALLUM = BLOCKS.register
+            ("crystallum/black_crystallum", () -> new Block(Block.Properties.create(Material.CLAY)));
+    public static final RegistryObject<Block> BLUE_CRYSTALLUM = BLOCKS.register
+            ("crystallum/blue_crystallum", () -> new Block(Block.Properties.create(Material.CLAY)));
+    public static final RegistryObject<Block> CYAN_CRYSTALLUM = BLOCKS.register
+            ("crystallum/cyan_crystallum", () -> new Block(Block.Properties.create(Material.CLAY)));
+    public static final RegistryObject<Block> GRAY_CRYSTALLUM = BLOCKS.register
+            ("crystallum/gray_crystallum", () -> new Block(Block.Properties.create(Material.CLAY)));
+    public static final RegistryObject<Block> GREEN_CRYSTALLUM = BLOCKS.register
+            ("crystallum/green_crystallum", () -> new Block(Block.Properties.create(Material.CLAY)));
+    public static final RegistryObject<Block> ORANGE_CRYSTALLUM = BLOCKS.register
+            ("crystallum/orange_crystallum", () -> new Block(Block.Properties.create(Material.CLAY)));
+    public static final RegistryObject<Block> PINK_CRYSTALLUM = BLOCKS.register
+            ("crystallum/pink_crystallum", () -> new Block(Block.Properties.create(Material.CLAY)));
+    public static final RegistryObject<Block> PURPLE_CRYSTALLUM = BLOCKS.register
+            ("crystallum/purple_crystallum", () -> new Block(Block.Properties.create(Material.CLAY)));
+    public static final RegistryObject<Block> RED_CRYSTALLUM = BLOCKS.register
+            ("crystallum/red_crystallum", () -> new Block(Block.Properties.create(Material.CLAY)));
+    public static final RegistryObject<Block> WHITE_CRYSTALLUM = BLOCKS.register
+            ("crystallum/white_crystallum", () -> new Block(Block.Properties.create(Material.CLAY)));
+    public static final RegistryObject<Block> YELLOW_CRYSTALLUM = BLOCKS.register
+            ("crystallum/yellow_crystallum", () -> new Block(Block.Properties.create(Material.CLAY)));
 }
