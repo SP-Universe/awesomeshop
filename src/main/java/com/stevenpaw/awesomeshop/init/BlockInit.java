@@ -77,50 +77,77 @@ public class BlockInit {
     public static final RegistryObject<Block> BIG_SCREEN_9 = BLOCKS.register("big_screen/big_screen9", BigScreen::new);
     public static final RegistryObject<Block> BIG_SCREEN_10 = BLOCKS.register("big_screen/big_screen10", BigScreen::new);
 
-    //Color Blocks
+    //CRYSTALLUM
     public static final RegistryObject<Block> BLACK_CRYSTALLUM = BLOCKS.register
             ("crystallum/black_crystallum", Crystallum::new);
-    public static final RegistryObject<Block> BLUE_CRYSTALLUM = BLOCKS.register
-            ("crystallum/blue_crystallum", Crystallum::new);
-    public static final RegistryObject<Block> CYAN_CRYSTALLUM = BLOCKS.register
-            ("crystallum/cyan_crystallum", Crystallum::new);
-    public static final RegistryObject<Block> GRAY_CRYSTALLUM = BLOCKS.register
-            ("crystallum/gray_crystallum", Crystallum::new);
-    public static final RegistryObject<Block> GREEN_CRYSTALLUM = BLOCKS.register
-            ("crystallum/green_crystallum", Crystallum::new);
-    public static final RegistryObject<Block> ORANGE_CRYSTALLUM = BLOCKS.register
-            ("crystallum/orange_crystallum", Crystallum::new);
-    public static final RegistryObject<Block> PINK_CRYSTALLUM = BLOCKS.register
-            ("crystallum/pink_crystallum", Crystallum::new);
-    public static final RegistryObject<Block> PURPLE_CRYSTALLUM = BLOCKS.register
-            ("crystallum/purple_crystallum", Crystallum::new);
     public static final RegistryObject<Block> RED_CRYSTALLUM = BLOCKS.register
             ("crystallum/red_crystallum", Crystallum::new);
-    public static final RegistryObject<Block> WHITE_CRYSTALLUM = BLOCKS.register
-            ("crystallum/white_crystallum", Crystallum::new);
+    public static final RegistryObject<Block> GREEN_CRYSTALLUM = BLOCKS.register
+            ("crystallum/green_crystallum", Crystallum::new);
+    //TODO:
+    public static final RegistryObject<Block> BROWN_CRYSTALLUM = BLOCKS.register
+            ("crystallum/brown_crystallum", Crystallum::new);
+    public static final RegistryObject<Block> BLUE_CRYSTALLUM = BLOCKS.register
+            ("crystallum/blue_crystallum", Crystallum::new);
+    public static final RegistryObject<Block> PURPLE_CRYSTALLUM = BLOCKS.register
+            ("crystallum/purple_crystallum", Crystallum::new);
+    public static final RegistryObject<Block> CYAN_CRYSTALLUM = BLOCKS.register
+            ("crystallum/cyan_crystallum", Crystallum::new);
+    //TODO:
+    public static final RegistryObject<Block> LIGHT_GRAY_CRYSTALLUM = BLOCKS.register
+            ("crystallum/light_gray_crystallum", Crystallum::new);
+    public static final RegistryObject<Block> GRAY_CRYSTALLUM = BLOCKS.register
+            ("crystallum/gray_crystallum", Crystallum::new);
+    public static final RegistryObject<Block> PINK_CRYSTALLUM = BLOCKS.register
+            ("crystallum/pink_crystallum", Crystallum::new);
+    //TODO:
+    public static final RegistryObject<Block> LIME_CRYSTALLUM = BLOCKS.register
+            ("crystallum/lime_crystallum", Crystallum::new);
     public static final RegistryObject<Block> YELLOW_CRYSTALLUM = BLOCKS.register
             ("crystallum/yellow_crystallum", Crystallum::new);
+    //TODO:
+    public static final RegistryObject<Block> LIGHT_BLUE_CRYSTALLUM = BLOCKS.register
+            ("crystallum/light_blue_crystallum", Crystallum::new);
+    //TODO:
+    public static final RegistryObject<Block> MAGENTA_CRYSTALLUM = BLOCKS.register
+            ("crystallum/magenta_crystallum", Crystallum::new);
+    public static final RegistryObject<Block> ORANGE_CRYSTALLUM = BLOCKS.register
+            ("crystallum/orange_crystallum", Crystallum::new);
+    public static final RegistryObject<Block> WHITE_CRYSTALLUM = BLOCKS.register
+            ("crystallum/white_crystallum", Crystallum::new);
 
+
+    //CRYSTALLUM-STAIRS
     public static final RegistryObject<Block> BLACK_CRYSTALLUM_STAIRS = BLOCKS.register
             ("crystallum_stairs/black_crystallum_stairs", CrystallumStairs::new);
-    public static final RegistryObject<Block> BLUE_CRYSTALLUM_STAIRS = BLOCKS.register
-            ("crystallum_stairs/blue_crystallum_stairs", CrystallumStairs::new);
-    public static final RegistryObject<Block> CYAN_CRYSTALLUM_STAIRS = BLOCKS.register
-            ("crystallum_stairs/cyan_crystallum_stairs", CrystallumStairs::new);
-    public static final RegistryObject<Block> GRAY_CRYSTALLUM_STAIRS = BLOCKS.register
-            ("crystallum_stairs/gray_crystallum_stairs", CrystallumStairs::new);
-    public static final RegistryObject<Block> GREEN_CRYSTALLUM_STAIRS = BLOCKS.register
-            ("crystallum_stairs/green_crystallum_stairs", CrystallumStairs::new);
-    public static final RegistryObject<Block> ORANGE_CRYSTALLUM_STAIRS = BLOCKS.register
-            ("crystallum_stairs/orange_crystallum_stairs", CrystallumStairs::new);
-    public static final RegistryObject<Block> PINK_CRYSTALLUM_STAIRS = BLOCKS.register
-            ("crystallum_stairs/pink_crystallum_stairs", CrystallumStairs::new);
-    public static final RegistryObject<Block> PURPLE_CRYSTALLUM_STAIRS = BLOCKS.register
-            ("crystallum_stairs/purple_crystallum_stairs", CrystallumStairs::new);
     public static final RegistryObject<Block> RED_CRYSTALLUM_STAIRS = BLOCKS.register
             ("crystallum_stairs/red_crystallum_stairs", CrystallumStairs::new);
-    public static final RegistryObject<Block> WHITE_CRYSTALLUM_STAIRS = BLOCKS.register
-            ("crystallum_stairs/white_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> GREEN_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/green_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> BROWN_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/brown_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> BLUE_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/blue_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> PURPLE_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/purple_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> CYAN_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/cyan_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> LIGHT_GRAY_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/light_gray_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> GRAY_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/gray_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> PINK_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/pink_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> LIME_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/lime_crystallum_stairs", CrystallumStairs::new);
     public static final RegistryObject<Block> YELLOW_CRYSTALLUM_STAIRS = BLOCKS.register
             ("crystallum_stairs/yellow_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> LIGHT_BLUE_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/light_blue_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> MAGENTA_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/magenta_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> ORANGE_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/orange_crystallum_stairs", CrystallumStairs::new);
+    public static final RegistryObject<Block> WHITE_CRYSTALLUM_STAIRS = BLOCKS.register
+            ("crystallum_stairs/white_crystallum_stairs", CrystallumStairs::new);
 }

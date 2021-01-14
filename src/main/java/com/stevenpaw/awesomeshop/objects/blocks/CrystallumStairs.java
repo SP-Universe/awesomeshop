@@ -22,7 +22,7 @@ public class CrystallumStairs extends StairsBlock {
     public CrystallumStairs() {
         super(BlockInit.BLACK_CRYSTALLUM.get().getDefaultState(),
                 Properties.create(Material.CLAY)
-                .hardnessAndResistance(5.0f,6.0f)
+                .hardnessAndResistance(0.5f,2.0f)
                 .sound(SoundType.GLASS)
                 .harvestLevel(0)
                 .setLightLevel(value -> 10)
