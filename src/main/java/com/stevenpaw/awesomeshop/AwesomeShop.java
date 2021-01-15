@@ -1,5 +1,6 @@
 package com.stevenpaw.awesomeshop;
 
+import com.stevenpaw.awesomeshop.client.BlockRenderRegister;
 import com.stevenpaw.awesomeshop.init.*;
 import com.stevenpaw.awesomeshop.world.gen.ModOreGen;
 import net.minecraft.item.BlockItem;
@@ -69,7 +70,7 @@ public class AwesomeShop {
 
     private void doClientStuff(final FMLClientSetupEvent event)
     {
-
+        BlockRenderRegister.registerBlockRenderer();
     }
 
     //Creating Custom Inventory Tabs

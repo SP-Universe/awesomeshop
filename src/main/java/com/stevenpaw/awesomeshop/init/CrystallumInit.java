@@ -16,6 +16,10 @@ public class CrystallumInit {
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, AwesomeShop.MOD_ID);
 
+    //RAW CRYSTALLUM
+    public static final RegistryObject<Block> RAW_CRYSTALLUM = BLOCKS.register
+            ("crystallum/raw_crystallum", Crystallum::new);
+
     //CRYSTALLUM
     public static final RegistryObject<Block> BLACK_CRYSTALLUM = BLOCKS.register
             ("crystallum/black_crystallum", Crystallum::new);
