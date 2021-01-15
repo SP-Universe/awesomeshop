@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "awesomeshop:crystallum/raw_crystallum",
+    "awesomeshop:crystallum/black_crystallum",
+    "awesomeshop:crystallum/red_crystallum",
+    "awesomeshop:crystallum/green_crystallum",
+    "awesomeshop:crystallum/brown_crystallum",
+    "awesomeshop:crystallum/blue_crystallum",
+    "awesomeshop:crystallum/purple_crystallum",
+    "awesomeshop:crystallum/cyan_crystallum",
+    "awesomeshop:crystallum/light_gray_crystallum",
+    "awesomeshop:crystallum/gray_crystallum",
+    "awesomeshop:crystallum/pink_crystallum",
+    "awesomeshop:crystallum/lime_crystallum",
+    "awesomeshop:crystallum/yellow_crystallum",
+    "awesomeshop:crystallum/light_blue_crystallum",
+    "awesomeshop:crystallum/magenta_crystallum",
+    "awesomeshop:crystallum/orange_crystallum",
+    "awesomeshop:crystallum/white_crystallum"
+  ]
+}

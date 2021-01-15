@@ -94,7 +94,7 @@ public class AwesomeShop {
 
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(BlockInit.AWESOMNIUM_BLOCK.get());
+            return new ItemStack(CrystallumInit.RAW_CRYSTALLUM.get());
         }
     };
 }
