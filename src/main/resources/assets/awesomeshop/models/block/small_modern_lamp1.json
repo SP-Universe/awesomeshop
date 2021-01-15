@@ -2,8 +2,8 @@
 	"credit": "Steven Paw",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "awesomeshop:blocks/small_modern_lamp",
-		"particle": "awesomeshop:blocks/small_modern_lamp"
+		"0": "awesomeshop:blocks/small_modern_lamp1",
+		"particle": "awesomeshop:blocks/small_modern_lamp1"
 	},
 	"elements": [
 		{

@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "awesomeshop:blocks/crystallum/cyan_crystallum",
+    "top": "awesomeshop:blocks/crystallum/cyan_crystallum",
+    "side": "awesomeshop:blocks/crystallum/cyan_crystallum"
+  }
+}

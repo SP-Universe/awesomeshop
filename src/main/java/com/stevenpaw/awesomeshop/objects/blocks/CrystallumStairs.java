@@ -1,6 +1,7 @@
 package com.stevenpaw.awesomeshop.objects.blocks;
 
 import com.stevenpaw.awesomeshop.init.BlockInit;
+import com.stevenpaw.awesomeshop.init.CrystallumInit;
 import net.minecraft.block.AbstractGlassBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SoundType;
@@ -20,7 +21,7 @@ public class CrystallumStairs extends StairsBlock {
     //harvestTool:      What kind of Tool you need to harvest the block
 
     public CrystallumStairs() {
-        super(BlockInit.BLACK_CRYSTALLUM.get().getDefaultState(),
+        super(CrystallumInit.BLACK_CRYSTALLUM.get().getDefaultState(),
                 Properties.create(Material.CLAY)
                 .hardnessAndResistance(0.5f,2.0f)
                 .sound(SoundType.GLASS)

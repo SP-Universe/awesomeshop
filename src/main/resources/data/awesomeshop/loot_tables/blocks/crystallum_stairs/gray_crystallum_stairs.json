@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "awesomeshop:crystallum_stairs/gray_crystallum_stairs"
+        }
+      ]
+    }
+  ]
+}

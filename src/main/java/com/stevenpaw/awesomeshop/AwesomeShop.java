@@ -33,6 +33,7 @@ public class AwesomeShop {
 
         ItemInit.ITEMS.register(modEventBus);
         BlockInit.BLOCKS.register(modEventBus);
+        CrystallumInit.BLOCKS.register(modEventBus);
         ModTileEntityTypes.TILE_ENTITY_TYPES.register(modEventBus);
         ModContainerTypes.CONTAINER_TYPES.register(modEventBus);
 
@@ -52,7 +53,14 @@ public class AwesomeShop {
             registry.register(blockItem);
         });
 
-        LOGGER.debug("[COLORFUL WORLD] - Registered BlockItems!");
+        CrystallumInit.BLOCKS.getEntries().stream().map(RegistryObject::get).forEach(block -> {
+            final Item.Properties properties = new Item.Properties().group(AwesomeShop.CRYSTALLUMTAB);
+            final BlockItem blockItem = new BlockItem(block, properties);
+            blockItem.setRegistryName(block.getRegistryName());
+            registry.register(blockItem);
+        });
+
+        LOGGER.debug("[AWESOME SHOP] - Registered BlockItems!");
     }
 
     private void setup(final FMLCommonSetupEvent event) {
@@ -74,6 +82,14 @@ public class AwesomeShop {
     };
 
     public static final ItemGroup BLOCKTAB = new ItemGroup("awesomeshopBlockTab") {
+
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(BlockInit.AWESOMNIUM_BLOCK.get());
+        }
+    };
+
+    public static final ItemGroup CRYSTALLUMTAB = new ItemGroup("awesomeshopCrystallumTab") {
 
         @Override
         public ItemStack createIcon() {

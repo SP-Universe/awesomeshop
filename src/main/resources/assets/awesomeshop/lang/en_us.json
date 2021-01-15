@@ -52,7 +52,7 @@
   "block.awesomeshop.toilet" : "Toilet",
   "block.awesomeshop.stairs" : "Stairs",
   "block.awesomeshop.night_lamp" : "Bedside Lamp",
-  "block.awesomeshop.small_modern_lamp" : "Small modern Lamp",
+  "block.awesomeshop.small_modern_lamp1" : "Small modern Lamp",
   "block.awesomeshop.small_modern_lamp2" : "Small modern Lamp 2",
   "block.awesomeshop.small_modern_lamp3" : "Small modern Lamp 3",
   "block.awesomeshop.modern_wall_lamp1" : "Modern wall Lamp 1",
@@ -126,6 +126,24 @@
   "block.awesomeshop.crystallum_stairs.orange_crystallum_stairs" : "Orange Crystallum Stairs",
   "block.awesomeshop.crystallum_stairs.white_crystallum_stairs" : "White Crystallum Stairs",
 
+  "block.awesomeshop.crystallum_slabs.black_crystallum_slab" : "Black Crystallum Slab",
+  "block.awesomeshop.crystallum_slabs.red_crystallum_slab" : "Red Crystallum Slab",
+  "block.awesomeshop.crystallum_slabs.green_crystallum_slab" : "Green Crystallum Slab",
+  "block.awesomeshop.crystallum_slabs.brown_crystallum_slab" : "Brown Crystallum Slab",
+  "block.awesomeshop.crystallum_slabs.blue_crystallum_slab" : "Blue Crystallum Slab",
+  "block.awesomeshop.crystallum_slabs.purple_crystallum_slab" : "Purple Crystallum Slab",
+  "block.awesomeshop.crystallum_slabs.cyan_crystallum_slab" : "Cyan Crystallum Slab",
+  "block.awesomeshop.crystallum_slabs.light_gray_crystallum_slab" : "Light Gray Crystallum Slab",
+  "block.awesomeshop.crystallum_slabs.gray_crystallum_slab" : "Gray Crystallum Slab",
+  "block.awesomeshop.crystallum_slabs.pink_crystallum_slab" : "Pink Crystallum Slab",
+  "block.awesomeshop.crystallum_slabs.lime_crystallum_slab" : "Lime Crystallum Slab",
+  "block.awesomeshop.crystallum_slabs.yellow_crystallum_slab" : "Yellow Crystallum Slab",
+  "block.awesomeshop.crystallum_slabs.light_blue_crystallum_slab" : "Light Blue Crystallum Slab",
+  "block.awesomeshop.crystallum_slabs.magenta_crystallum_slab" : "Magenta Crystallum Slab",
+  "block.awesomeshop.crystallum_slabs.orange_crystallum_slab" : "Orange Crystallum Slab",
+  "block.awesomeshop.crystallum_slabs.white_crystallum_slab" : "White Crystallum Slab",
+
   "itemGroup.awesomeshopItemTab" : "AwesomeShop Items",
-  "itemGroup.awesomeshopBlockTab" : "AwesomeShop Blocks"
+  "itemGroup.awesomeshopBlockTab" : "AwesomeShop Blocks",
+  "itemGroup.awesomeshopCrystallumTab" : "AwesomeShop Crystallum"
 }
