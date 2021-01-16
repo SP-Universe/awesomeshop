@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "CCC"
+  ],
+  "key":
+  {
+    "C":
+    {
+      "item": "awesomeshop:crystallum/brown_crystallum"
+    }
+  },
+  "result":
+  {
+    "item": "awesomeshop:crystallum_slabs/brown_crystallum_slab",
+    "count": 1
+  }
+}

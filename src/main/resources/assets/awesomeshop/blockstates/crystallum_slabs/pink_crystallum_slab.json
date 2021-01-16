@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model":  "awesomeshop:block/crystallum_slabs/pink_crystallum_slab"},
+    "type=top": { "model":  "awesomeshop:block/crystallum_slabs/pink_crystallum_slab_top"},
+    "type=double": { "model":  "awesomeshop:block/crystallum/pink_crystallum"}
+  }
+}

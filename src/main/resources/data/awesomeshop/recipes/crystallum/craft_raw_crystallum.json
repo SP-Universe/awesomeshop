@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "key":
+  {
+    "P":
+    {
+      "item": "awesomeshop:prisma"
+    }
+  },
+  "result":
+  {
+    "item": "awesomeshop:crystallum/raw_crystallum",
+    "count": 1
+  }
+}

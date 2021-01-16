@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "awesomeshop:basic_table",
+    "awesomeshop:brick_oven",
+    "awesomeshop:brick_oven_tube",
+    "awesomeshop:doormat",
+    "awesomeshop:modern_wall_lamp1",
+    "awesomeshop:shower_faucet1",
+    "awesomeshop:shower_faucet2",
+    "awesomeshop:shower_head",
+    "awesomeshop:small_modern_lamp1",
+    "awesomeshop:small_modern_lamp2",
+    "awesomeshop:small_modern_lamp3",
+    "awesomeshop:small_tv",
+    "awesomeshop:stairs",
+    "awesomeshop:toilet"
+  ]
+}

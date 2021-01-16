@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "awesomeshop:blocks/crystallum/red_crystallum"
+  }
+}
