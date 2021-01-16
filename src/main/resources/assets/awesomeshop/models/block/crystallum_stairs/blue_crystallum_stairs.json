@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "awesomeshop:blocks/crystallum/blue_crystallum",
+    "top": "awesomeshop:blocks/crystallum/blue_crystallum",
+    "side": "awesomeshop:blocks/crystallum/blue_crystallum"
+  }
+}

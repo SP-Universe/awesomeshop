@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "awesomeshop:depressing_matter"
+  },
+  "result": "awesomeshop:depressing_matter",
+  "count": 1
+}

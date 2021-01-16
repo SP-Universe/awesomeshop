@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "C  ",
+    "CC ",
+    "CCC"
+  ],
+  "key":
+  {
+    "C":
+    {
+      "item": "awesomeshop:crystallum/green_crystallum"
+    }
+  },
+  "result":
+  {
+    "item": "awesomeshop:crystallum_stairs/green_crystallum_stairs",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "defaults": { "model": "awesomeshop:block/small_modern_lamp1" },
+  "multipart": [
+    {
+      "when": { "facing" : "north"},
+      "apply": { "model": "awesomeshop:block/small_modern_lamp1" }
+    },
+    {
+      "when": { "facing" : "south"},
+      "apply": { "model": "awesomeshop:block/small_modern_lamp1", "y":  180 }
+    },
+    {
+      "when": { "facing" : "west"},
+      "apply": { "model": "awesomeshop:block/small_modern_lamp1", "y":  270 }
+    },
+    {
+      "when": { "facing" : "east"},
+      "apply": { "model": "awesomeshop:block/small_modern_lamp1", "y":  90 }
+    }
+  ]
+}
