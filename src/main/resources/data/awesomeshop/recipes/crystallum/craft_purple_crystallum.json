@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients":
+  [
+    {
+      "tag": "awesomeshop:crystallum_blocks"
+    },
+    {
+      "tag": "forge:dyes/purple"
+    }
+  ],
+  "result":
+  {
+    "item": "awesomeshop:crystallum/purple_crystallum"
+  }
+}
