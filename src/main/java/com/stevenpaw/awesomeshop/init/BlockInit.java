@@ -8,9 +8,6 @@ import com.stevenpaw.awesomeshop.objects.blocks.ModernLamp.SmallModernLamp2;
 import com.stevenpaw.awesomeshop.objects.blocks.ModernLamp.SmallModernLamp3;
 import com.stevenpaw.awesomeshop.objects.blocks.flags.*;
 import net.minecraft.block.Block;
-import net.minecraft.block.StairsBlock;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MaterialColor;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -19,12 +16,17 @@ public class BlockInit {
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, AwesomeShop.MOD_ID);
 
+
+    public static final RegistryObject<Block> SHREDDER = BLOCKS.register("shredder", Shredder::new);
+
     // BLOCKS
     // public static final RegistryObject<Block> NAME_OF_BLOCK = BLOCKS.register("name_of_block", NameOfBlock::new);
     public static final RegistryObject<Block> AWESOMNIUM_ORE = BLOCKS.register("awesomnium_ore", AwesomniumOre::new);
     public static final RegistryObject<Block> DUCATIUM_ORE = BLOCKS.register("ducatium_ore", DucatiumOre::new);
     public static final RegistryObject<Block> AWESOMNIUM_BLOCK = BLOCKS.register("awesomnium_block", AwesomniumBlock::new);
     public static final RegistryObject<Block> AWESOMNIUM_BLOCK_DIAGONAL = BLOCKS.register("awesomnium_block_diagonal", AwesomniumBlockDiagonal::new);
+
+    public static final RegistryObject<Block> RUBY_LOG = BLOCKS.register("ruby_log", RubyLog::new);
 
     public static final RegistryObject<Block> HAND_MINER = BLOCKS.register("hand_miner", HandMiner::new);
     public static final RegistryObject<Block> AWESOME_CHEST = BLOCKS.register("awesome_chest", AwesomeChest::new);

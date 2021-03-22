@@ -1,4 +1,4 @@
-package com.stevenpaw.awesomeshop.container;
+package com.stevenpaw.awesomeshop.client.container;
 
 import com.stevenpaw.awesomeshop.init.BlockInit;
 import com.stevenpaw.awesomeshop.init.ModContainerTypes;

@@ -1,10 +1,7 @@
 package com.stevenpaw.awesomeshop.init;
 
 import com.stevenpaw.awesomeshop.AwesomeShop;
-import com.stevenpaw.awesomeshop.tileentity.AwesomeChestTileEntity;
-import com.stevenpaw.awesomeshop.tileentity.CardBoardBoxTileEntity;
-import com.stevenpaw.awesomeshop.tileentity.HandMinerTileEntity;
-import com.stevenpaw.awesomeshop.tileentity.PresentTileEntity;
+import com.stevenpaw.awesomeshop.tileentity.*;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -24,4 +21,7 @@ public class ModTileEntityTypes {
 
     public static final RegistryObject<TileEntityType<CardBoardBoxTileEntity>> CARDBOARD_BOX = TILE_ENTITY_TYPES.register("cardboard_box", () -> TileEntityType.Builder
             .create(CardBoardBoxTileEntity::new, BlockInit.CARDBOARD_BOX.get()).build(null));
+
+    public static final RegistryObject<TileEntityType<ShredderTileEntity>> SHREDDER = TILE_ENTITY_TYPES.register("shredder", () -> TileEntityType.Builder
+            .create(ShredderTileEntity::new, BlockInit.SHREDDER.get()).build(null));
 }

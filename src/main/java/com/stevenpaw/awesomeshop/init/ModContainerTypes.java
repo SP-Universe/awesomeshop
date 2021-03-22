@@ -1,9 +1,10 @@
 package com.stevenpaw.awesomeshop.init;
 
 import com.stevenpaw.awesomeshop.AwesomeShop;
-import com.stevenpaw.awesomeshop.container.AwesomeChestContainer;
-import com.stevenpaw.awesomeshop.container.CardboardBoxContainer;
-import com.stevenpaw.awesomeshop.container.PresentContainer;
+import com.stevenpaw.awesomeshop.client.container.AwesomeChestContainer;
+import com.stevenpaw.awesomeshop.client.container.CardboardBoxContainer;
+import com.stevenpaw.awesomeshop.client.container.PresentContainer;
+import com.stevenpaw.awesomeshop.client.container.ShredderContainer;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraftforge.common.extensions.IForgeContainerType;
 import net.minecraftforge.fml.RegistryObject;
@@ -21,4 +22,7 @@ public class ModContainerTypes {
 
     public static final RegistryObject<ContainerType<CardboardBoxContainer>> CARDBOARD_BOX = CONTAINER_TYPES
             .register("cardboard_box", () -> IForgeContainerType.create(CardboardBoxContainer::new));
+
+    public static final RegistryObject<ContainerType<ShredderContainer>> SHREDDER = CONTAINER_TYPES
+            .register("shredder", () -> IForgeContainerType.create(ShredderContainer::new));
 }

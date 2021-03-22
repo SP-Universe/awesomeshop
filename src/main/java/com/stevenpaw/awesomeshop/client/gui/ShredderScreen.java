@@ -3,7 +3,7 @@ package com.stevenpaw.awesomeshop.client.gui;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.stevenpaw.awesomeshop.AwesomeShop;
-import com.stevenpaw.awesomeshop.client.container.AwesomeChestContainer;
+import com.stevenpaw.awesomeshop.client.container.ShredderContainer;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.util.ResourceLocation;
@@ -12,11 +12,11 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
-public class AwesomeChestScreen extends ContainerScreen<AwesomeChestContainer> {
+public class ShredderScreen extends ContainerScreen<ShredderContainer> {
 
-    private static final ResourceLocation BACKGROUND_TEXTURE = new ResourceLocation(AwesomeShop.MOD_ID, "textures/gui/awesome_chest.png");
+    private static final ResourceLocation BACKGROUND_TEXTURE = new ResourceLocation(AwesomeShop.MOD_ID, "textures/gui/shredder.png");
 
-    public AwesomeChestScreen(AwesomeChestContainer screenContainer, PlayerInventory inv, ITextComponent titleIn) {
+    public ShredderScreen(ShredderContainer screenContainer, PlayerInventory inv, ITextComponent titleIn) {
         super(screenContainer, inv, titleIn);
         this.guiLeft = 0;
         this.guiTop = 0;

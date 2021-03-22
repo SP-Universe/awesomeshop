@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north":  { "model": "awesomeshop:block/shredder" },
+    "facing=east":   { "model": "awesomeshop:block/shredder", "y": 90 },
+    "facing=south":   { "model": "awesomeshop:block/shredder", "y": 180 },
+    "facing=west":   { "model": "awesomeshop:block/shredder", "y": 270 }
+  }
+}

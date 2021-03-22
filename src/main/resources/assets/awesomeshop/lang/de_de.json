@@ -73,6 +73,8 @@
   "block.awesomeshop.basic_table" : "Einfacher Tisch",
   "block.awesomeshop.piano" : "Flügel",
 
+  "block.awesomeshop.shredder" : "Schredder",
+  "container.shredder" : "Schredder",
   "block.awesomeshop.awesome_chest" : "Awesome Kiste",
   "container.awesome_chest" : "Awesome Kiste",
   "block.awesomeshop.present" : "Geschenk",

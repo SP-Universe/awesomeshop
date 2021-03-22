@@ -1,6 +1,6 @@
 package com.stevenpaw.awesomeshop.tileentity;
 
-import com.stevenpaw.awesomeshop.container.AwesomeChestContainer;
+import com.stevenpaw.awesomeshop.client.container.AwesomeChestContainer;
 import com.stevenpaw.awesomeshop.init.ModTileEntityTypes;
 import com.stevenpaw.awesomeshop.objects.blocks.AwesomeChest;
 import net.minecraft.block.Block;

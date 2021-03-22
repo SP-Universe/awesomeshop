@@ -1,8 +1,8 @@
-package com.stevenpaw.awesomeshop.container;
+package com.stevenpaw.awesomeshop.client.container;
 
 import com.stevenpaw.awesomeshop.init.BlockInit;
 import com.stevenpaw.awesomeshop.init.ModContainerTypes;
-import com.stevenpaw.awesomeshop.tileentity.AwesomeChestTileEntity;
+import com.stevenpaw.awesomeshop.tileentity.CardBoardBoxTileEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.container.Container;
@@ -14,30 +14,30 @@ import net.minecraft.util.IWorldPosCallable;
 
 import java.util.Objects;
 
-public class AwesomeChestContainer extends Container {
+public class CardboardBoxContainer extends Container {
 
-    public final AwesomeChestTileEntity tileEntity;
+    public final CardBoardBoxTileEntity tileEntity;
     private final IWorldPosCallable canInteractWithCallable;
 
     //VARIABLES FOR DEFINING THE SLOTS---------
-    int startChestX = 8;                                //The pixelX on which the first Slot starts
-    int startChestY = 18;                               //The pixelY on which the first Slot starts
+    int startChestX = 44;                                //The pixelX on which the first Slot starts
+    int startChestY = 36;                               //The pixelY on which the first Slot starts
     int slotSize = 16;                                  //Pixelsize of a slot
     int slotSpacing = 2;                                //Spacing between Slots
     int slotSizeWithSpace = slotSize + slotSpacing;     //SlotSize with SlotSpacing
 
-    int rowCount = 4;                                   //Number of Rows for the Chest
-    int columnCount = 9;                                //Number of Columns for the Chest
+    int rowCount = 1;                                   //Number of Rows for the Chest
+    int columnCount = 5;                                //Number of Columns for the Chest
 
     int playerInventoryStartX = 8;                      //The pixelX on which the first Slot of the PlayerInventory starts
-    int inventorySpacing = 12;                          //The space between the Container and the PlayerInventory
+    int inventorySpacing = 32;                          //The space between the Container and the PlayerInventory
     int hotBarSpacing = 4;                              //The space between the PlayerInventory and the HotBar
     //-----------------------------------------
 
     int slotCount = rowCount * columnCount;
 
-    public AwesomeChestContainer(final int windowId, final PlayerInventory playerInventory, final AwesomeChestTileEntity tileEntity) {
-        super(ModContainerTypes.AWESOME_CHEST.get(), windowId);
+    public CardboardBoxContainer(final int windowId, final PlayerInventory playerInventory, final CardBoardBoxTileEntity tileEntity) {
+        super(ModContainerTypes.CARDBOARD_BOX.get(), windowId);
         this.tileEntity = tileEntity;
         this.canInteractWithCallable = IWorldPosCallable.of(tileEntity.getWorld(), tileEntity.getPos());
 
@@ -64,23 +64,23 @@ public class AwesomeChestContainer extends Container {
         }
     }
 
-    private static AwesomeChestTileEntity getTileEntity(final PlayerInventory playerInventory, final PacketBuffer data) {
+    private static CardBoardBoxTileEntity getTileEntity(final PlayerInventory playerInventory, final PacketBuffer data) {
         Objects.requireNonNull(playerInventory, "playerInventory cannot be null");
         Objects.requireNonNull(data, "data cannot be null");
         final TileEntity tileAtPos = playerInventory.player.world.getTileEntity(data.readBlockPos());
-        if (tileAtPos instanceof AwesomeChestTileEntity) {
-            return (AwesomeChestTileEntity) tileAtPos;
+        if (tileAtPos instanceof CardBoardBoxTileEntity) {
+            return (CardBoardBoxTileEntity) tileAtPos;
         }
         throw new IllegalStateException("Tile entity is not correct! " + tileAtPos);
     }
 
-    public AwesomeChestContainer(final int windowId, final PlayerInventory playerInventory, final PacketBuffer data) {
+    public CardboardBoxContainer(final int windowId, final PlayerInventory playerInventory, final PacketBuffer data) {
         this(windowId, playerInventory, getTileEntity(playerInventory, data));
     }
 
     @Override
     public boolean canInteractWith(PlayerEntity playerIn) {
-        return isWithinUsableDistance(canInteractWithCallable, playerIn, BlockInit.AWESOME_CHEST.get());
+        return isWithinUsableDistance(canInteractWithCallable, playerIn, BlockInit.CARDBOARD_BOX.get());
     }
 
     @Override
