@@ -2,6 +2,7 @@ package com.stevenpaw.awesomeshop;
 
 import com.stevenpaw.awesomeshop.client.BlockRenderRegister;
 import com.stevenpaw.awesomeshop.init.*;
+import com.stevenpaw.awesomeshop.recipe.ModRecipeSerializer;
 import com.stevenpaw.awesomeshop.world.gen.ModOreGen;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -37,6 +38,8 @@ public class AwesomeShop {
         CrystallumInit.BLOCKS.register(modEventBus);
         ModTileEntityTypes.TILE_ENTITY_TYPES.register(modEventBus);
         ModContainerTypes.CONTAINER_TYPES.register(modEventBus);
+
+        ModRecipeSerializer.RECIPE_SERIALIZERS.register(modEventBus);
 
         instance = this;
 

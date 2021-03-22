@@ -1,10 +1,8 @@
 package com.stevenpaw.awesomeshop.tileentity;
 
-import com.stevenpaw.awesomeshop.container.CardboardBoxContainer;
-import com.stevenpaw.awesomeshop.container.PresentContainer;
+import com.stevenpaw.awesomeshop.client.container.CardboardBoxContainer;
 import com.stevenpaw.awesomeshop.init.ModTileEntityTypes;
 import com.stevenpaw.awesomeshop.objects.blocks.CardboardBox;
-import com.stevenpaw.awesomeshop.objects.blocks.Present;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;

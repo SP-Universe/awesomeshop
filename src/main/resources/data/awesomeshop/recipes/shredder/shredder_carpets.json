@@ -1,0 +1,10 @@
+{
+  "type": "awesomeshop:shredder",
+  "ingredient": {
+    "tag": "minecraft:carpets"
+  },
+  "result": "awesomeshop:awesomnium_particles",
+  "experience": 0.01,
+  "cookingtime": 10,
+  "count": 5
+}

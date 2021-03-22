@@ -73,6 +73,9 @@
   "block.awesomeshop.basic_table" : "Basic Table",
   "block.awesomeshop.piano" : "Piano",
 
+  "block.awesomeshop.shredder" : "Shredder",
+  "container.shredder" : "Shredder",
+
   "block.awesomeshop.awesome_chest" : "Awesome Chest",
   "container.awesome_chest" : "Awesome Chest",
   "block.awesomeshop.present" : "Present",

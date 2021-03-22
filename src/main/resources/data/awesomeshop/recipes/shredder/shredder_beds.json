@@ -1,0 +1,10 @@
+{
+  "type": "awesomeshop:shredder",
+  "ingredient": {
+    "tag": "minecraft:beds"
+  },
+  "result": "awesomeshop:awesomnium_particles",
+  "experience": 0.01,
+  "cookingtime": 15,
+  "count": 10
+}

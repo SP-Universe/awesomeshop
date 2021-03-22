@@ -1,0 +1,10 @@
+{
+  "type": "awesomeshop:shredder",
+  "ingredient": {
+    "tag": "minecraft:leaves"
+  },
+  "result": "awesomeshop:awesomnium_particles",
+  "experience": 0.01,
+  "cookingtime": 7,
+  "count": 1
+}
