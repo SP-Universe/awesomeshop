@@ -4,6 +4,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonSyntaxException;
 import com.stevenpaw.awesomeshop.init.BlockInit;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.*;
 import net.minecraft.network.PacketBuffer;
@@ -12,7 +13,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.registry.Registry;
 import net.minecraftforge.registries.ForgeRegistryEntry;
 
-public class ShredderRecipe extends AbstractCookingRecipe {
+public class ShredderRecipe extends AbstractCookingRecipe{
     public static int time;
 
     @SuppressWarnings("static-access")
