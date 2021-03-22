@@ -1,6 +1,7 @@
 package com.stevenpaw.awesomeshop.tileentity;
 
 import com.stevenpaw.awesomeshop.client.container.ShredderContainer;
+import com.stevenpaw.awesomeshop.init.ModContainerTypes;
 import com.stevenpaw.awesomeshop.init.ModTileEntityTypes;
 import com.stevenpaw.awesomeshop.objects.blocks.Shredder;
 import com.stevenpaw.awesomeshop.recipe.ModRecipeType;
@@ -43,7 +44,7 @@ public class ShredderTileEntity extends AbstractFurnaceTileEntity {
     @Override
     protected ITextComponent getDefaultName() {
 
-        return new TranslationTextComponent("container.smelting_furnace");
+        return new TranslationTextComponent("container.shredder");
 
     }
 
@@ -57,7 +58,7 @@ public class ShredderTileEntity extends AbstractFurnaceTileEntity {
     @Override
     protected Container createMenu(int id, PlayerInventory player) {
 
-        return new ShredderContainer(id, player, this, this.furnaceData);
+        return new ShredderContainer(ModContainerTypes.SHREDDER.get(), id, player, this, this.furnaceData);
 
     }
 }
