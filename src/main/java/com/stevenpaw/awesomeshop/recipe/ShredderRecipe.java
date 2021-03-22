@@ -73,8 +73,12 @@ public class ShredderRecipe extends AbstractCookingRecipe{
             }
 
             float f = JSONUtils.getFloat(json, "experience", 0.0F);
+            int c = JSONUtils.getInt(json, "count", 0);
             int i = JSONUtils.getInt(json, "cookingtime", ShredderRecipe.time);
-            return new ShredderRecipe(recipeId, s, ingredient, itemstack, f, i);
+
+            ItemStack resultItemStack = new ItemStack(itemstack.getItem(), c, itemstack.serializeNBT());
+
+            return new ShredderRecipe(recipeId, s, ingredient, resultItemStack, f, i);
 
         }
 

@@ -38,7 +38,7 @@ public class ShredderScreen extends ContainerScreen<ShredderContainer> {
     protected void drawGuiContainerForegroundLayer(MatrixStack matrixStack, int mouseX, int mouseY) {
         //super.drawGuiContainerForegroundLayer(matrixStack, mouseX, mouseY);
         this.font.drawString(matrixStack, this.title.getString(), 9.0f, 6.0f, 0);
-        this.font.drawString(matrixStack, this.playerInventory.getDisplayName().getString(), 8.0f, 75.0f, 0);
+        this.font.drawString(matrixStack, this.playerInventory.getDisplayName().getString(), 8.0f, 78.0f, 0);
     }
 
     @Override
@@ -54,7 +54,7 @@ public class ShredderScreen extends ContainerScreen<ShredderContainer> {
         int j = this.guiTop;
         if (this.container.isBurning()) {
             int k = this.container.getBurnLeftScaled();
-            this.blit(matrixStack, i + 27, j + 41 + 12 - k, 176, 12 - k, 14, k + 1);
+            this.blit(matrixStack, i + 26, j + 40 + 12 - k, 176, 12 - k, 14, k + 1);
         }
 
         int l = this.container.getCookProgressionScaled();

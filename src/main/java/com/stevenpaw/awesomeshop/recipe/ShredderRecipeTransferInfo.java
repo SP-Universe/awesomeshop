@@ -26,11 +26,9 @@ public class ShredderRecipeTransferInfo implements IRecipeTransferInfo<ShredderC
 
     @Override
     public List<Slot> getRecipeSlots(ShredderContainer container) {
-        List<Slot> slots = new ArrayList<>(2);
+        List<Slot> slots = new ArrayList<>(1);
 
-        for (int i = 1; i <= 2; i++) {
-            slots.add(container.getSlot(i));
-        }
+        slots.add(container.getSlot(0));
 
         return slots;
     }
