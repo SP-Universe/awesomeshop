@@ -17,5 +17,6 @@ public class BlockRenderRegister {
         RenderTypeLookup.setRenderLayer(CrystallumInit.RAW_CRYSTALLUM.get(), RenderType.getTranslucent());
         RenderTypeLookup.setRenderLayer(BlockInit.RUBY_LOG.get(), RenderType.getTranslucent());
         RenderTypeLookup.setRenderLayer(BlockInit.SHREDDER.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.AWESOMESHOP.get(), RenderType.getCutout());
     }
 }

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north":  { "model": "awesomeshop:block/awesomeshop" },
+    "facing=east":   { "model": "awesomeshop:block/awesomeshop", "y": 90 },
+    "facing=south":   { "model": "awesomeshop:block/awesomeshop", "y": 180 },
+    "facing=west":   { "model": "awesomeshop:block/awesomeshop", "y": 270 }
+  }
+}

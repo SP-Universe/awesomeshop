@@ -18,6 +18,7 @@ public class BlockInit {
 
 
     public static final RegistryObject<Block> SHREDDER = BLOCKS.register("shredder", Shredder::new);
+    public static final RegistryObject<Block> AWESOMESHOP = BLOCKS.register("awesomeshop", AwesomeShopBlock::new);
 
     // BLOCKS
     // public static final RegistryObject<Block> NAME_OF_BLOCK = BLOCKS.register("name_of_block", NameOfBlock::new);

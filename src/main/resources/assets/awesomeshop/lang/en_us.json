@@ -38,8 +38,7 @@
   "block.awesomeshop.awesomnium_ore" : "Awesomnium Ore",
   "block.awesomeshop.awesomnium_block" : "Awesomnium Block",
   "block.awesomeshop.awesomnium_block_diagonal" : "Awesomnium Block Diagonal",
-  "block.awesomeshop.shredder" : "Shredder",
-  "containername.awesomeshop.shredder" : "Shredder",
+
   "block.awesomeshop.shower_head" : "Shower Head",
   "block.awesomeshop.shower_faucet1" : "Shower Faucet 1",
   "block.awesomeshop.shower_faucet2" : "Shower Faucet 2",
@@ -75,6 +74,8 @@
 
   "block.awesomeshop.shredder" : "Shredder",
   "container.shredder" : "Shredder",
+  "block.awesomeshop.awesomeshop" : "Awesome Shop",
+  "container.awesomeshop" : "Awesome Shop",
 
   "block.awesomeshop.awesome_chest" : "Awesome Chest",
   "container.awesome_chest" : "Awesome Chest",
