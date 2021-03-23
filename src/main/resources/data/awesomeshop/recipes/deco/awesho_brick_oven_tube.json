@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:stonecutting",
+  "type": "awesomeshop:awesomeshop",
   "ingredient": {
     "item": "awesomeshop:depressing_matter"
   },

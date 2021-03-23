@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:stonecutting",
+  "type": "awesomeshop:shredder",
   "ingredient": {
     "tag": "awesomeshop:awesome_matter"
   },
