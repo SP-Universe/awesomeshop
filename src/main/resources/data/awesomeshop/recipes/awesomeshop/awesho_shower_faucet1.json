@@ -1,0 +1,8 @@
+{
+  "type": "awesomeshop:awesomeshop",
+  "ingredient": {
+    "item": "awesomeshop:depressing_matter"
+  },
+  "result": "awesomeshop:shower_faucet1",
+  "count": 1
+}

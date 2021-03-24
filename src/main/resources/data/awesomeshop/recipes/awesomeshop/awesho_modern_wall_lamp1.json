@@ -1,0 +1,8 @@
+{
+  "type": "awesomeshop:awesomeshop",
+  "ingredient": {
+    "item": "awesomeshop:depressing_matter"
+  },
+  "result": "awesomeshop:modern_wall_lamp1",
+  "count": 1
+}

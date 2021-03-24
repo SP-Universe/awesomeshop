@@ -6,6 +6,7 @@ import com.stevenpaw.awesomeshop.objects.blocks.ModernLamp.ModernWallLamp1;
 import com.stevenpaw.awesomeshop.objects.blocks.ModernLamp.SmallModernLamp1;
 import com.stevenpaw.awesomeshop.objects.blocks.ModernLamp.SmallModernLamp2;
 import com.stevenpaw.awesomeshop.objects.blocks.ModernLamp.SmallModernLamp3;
+import com.stevenpaw.awesomeshop.objects.blocks.decoblocks.*;
 import com.stevenpaw.awesomeshop.objects.blocks.flags.*;
 import net.minecraft.block.Block;
 import net.minecraftforge.fml.RegistryObject;
