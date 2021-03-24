@@ -1,8 +1,9 @@
-package com.stevenpaw.awesomeshop.recipe;
+package com.stevenpaw.awesomeshop.integrations.jei;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.stevenpaw.awesomeshop.AwesomeShop;
 import com.stevenpaw.awesomeshop.init.BlockInit;
+import com.stevenpaw.awesomeshop.recipe.ShredderRecipe;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.gui.IRecipeLayout;
 import mezz.jei.api.gui.drawable.IDrawable;

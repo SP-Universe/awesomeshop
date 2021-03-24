@@ -1,7 +1,6 @@
-package com.stevenpaw.awesomeshop.recipe;
+package com.stevenpaw.awesomeshop.integrations.jei;
 
 import com.stevenpaw.awesomeshop.client.container.AwesomeShopContainer;
-import com.stevenpaw.awesomeshop.client.container.ShredderContainer;
 import mezz.jei.api.recipe.transfer.IRecipeTransferInfo;
 import net.minecraft.inventory.container.Slot;
 import net.minecraft.util.ResourceLocation;
