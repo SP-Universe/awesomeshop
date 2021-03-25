@@ -1,8 +1,13 @@
 {
   "variants": {
-    "facing=north":  { "model": "awesomeshop:block/awesomeshop" },
-    "facing=east":   { "model": "awesomeshop:block/awesomeshop", "y": 90 },
-    "facing=south":   { "model": "awesomeshop:block/awesomeshop", "y": 180 },
-    "facing=west":   { "model": "awesomeshop:block/awesomeshop", "y": 270 }
+    "facing=north,half=upper":  { "model": "awesomeshop:block/awesomeshop_top" },
+    "facing=east,half=upper":   { "model": "awesomeshop:block/awesomeshop_top", "y": 90 },
+    "facing=south,half=upper":   { "model": "awesomeshop:block/awesomeshop_top", "y": 180 },
+    "facing=west,half=upper":   { "model": "awesomeshop:block/awesomeshop_top", "y": 270 },
+
+    "facing=north,half=lower":  { "model": "awesomeshop:block/awesomeshop_bottom" },
+    "facing=east,half=lower":   { "model": "awesomeshop:block/awesomeshop_bottom", "y": 90 },
+    "facing=south,half=lower":   { "model": "awesomeshop:block/awesomeshop_bottom", "y": 180 },
+    "facing=west,half=lower":   { "model": "awesomeshop:block/awesomeshop_bottom", "y": 270 }
   }
 }

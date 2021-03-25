@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CGC",
+    "CAC",
+    "CIC"
+  ],
+  "key": {
+    "C": {
+      "item": "awesomeshop:awesomnium_crystal"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "A": {
+      "item": "awesomeshop:awesome_core"
+    },
+    "I": {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "result": {
+    "item": "awesomeshop:awesomeshop",
+    "count": 1
+  }
+}
