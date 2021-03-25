@@ -1,0 +1,46 @@
+{
+	"credit": "Steven Paw",
+	"texture_size": [128, 128],
+	"textures": {
+		"0": "awesomeshop:blocks/pillars/basic_pillar",
+		"particle": "awesomeshop:blocks/pillars/basic_pillar"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 1, 16],
+			"faces": {
+				"north": {"uv": [2, 2, 4, 2.125], "texture": "#0"},
+				"east": {"uv": [0, 2, 2, 2.125], "texture": "#0"},
+				"south": {"uv": [6, 2, 8, 2.125], "texture": "#0"},
+				"west": {"uv": [4, 2, 6, 2.125], "texture": "#0"},
+				"up": {"uv": [4, 2, 2, 0], "texture": "#0"},
+				"down": {"uv": [6, 0, 4, 2], "texture": "#0"}
+			}
+		},
+		{
+			"from": [1, 1, 1],
+			"to": [15, 2, 15],
+			"faces": {
+				"north": {"uv": [7.875, 1.75, 9.625, 1.875], "texture": "#0"},
+				"east": {"uv": [6.125, 1.75, 7.875, 1.875], "texture": "#0"},
+				"south": {"uv": [11.375, 1.75, 13.125, 1.875], "texture": "#0"},
+				"west": {"uv": [9.625, 1.75, 11.375, 1.875], "texture": "#0"},
+				"up": {"uv": [9.625, 1.75, 7.875, 0], "texture": "#0"},
+				"down": {"uv": [11.375, 0, 9.625, 1.75], "texture": "#0"}
+			}
+		},
+		{
+			"from": [2, 1, 2],
+			"to": [14, 16, 14],
+			"faces": {
+				"north": {"uv": [1.5, 6, 3, 7.875], "texture": "#0"},
+				"east": {"uv": [0, 6, 1.5, 7.875], "texture": "#0"},
+				"south": {"uv": [4.5, 6, 6, 7.875], "texture": "#0"},
+				"west": {"uv": [3, 6, 4.5, 7.875], "texture": "#0"},
+				"up": {"uv": [3, 6, 1.5, 4.5], "texture": "#0"},
+				"down": {"uv": [4.5, 4.5, 3, 6], "texture": "#0"}
+			}
+		}
+	]
+}
