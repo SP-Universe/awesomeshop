@@ -28,8 +28,6 @@ public class BlockInit {
     public static final RegistryObject<Block> AWESOMNIUM_BLOCK = BLOCKS.register("awesomnium_block", AwesomniumBlock::new);
     public static final RegistryObject<Block> AWESOMNIUM_BLOCK_DIAGONAL = BLOCKS.register("awesomnium_block_diagonal", AwesomniumBlockDiagonal::new);
 
-    public static final RegistryObject<Block> RUBY_LOG = BLOCKS.register("ruby_log", RubyLog::new);
-
     public static final RegistryObject<Block> HAND_MINER = BLOCKS.register("hand_miner", HandMiner::new);
     public static final RegistryObject<Block> AWESOME_CHEST = BLOCKS.register("awesome_chest", AwesomeChest::new);
     public static final RegistryObject<Block> PRESENT = BLOCKS.register("present", Present::new);
