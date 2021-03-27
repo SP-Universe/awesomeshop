@@ -34,6 +34,8 @@ public class BlockInit {
     public static final RegistryObject<Block> CARDBOARD_BOX = BLOCKS.register("cardboard_box", CardboardBox::new);
 
     public static final RegistryObject<Block> BASIC_PILLAR = BLOCKS.register("pillars/basic_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> QUARTZ_PILLAR = BLOCKS.register("pillars/quartz_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> STONE_PILLAR = BLOCKS.register("pillars/stone_pillar", PillarBlock::new);
 
     //public static final RegistryObject<Block> SHREDDER = BLOCKS.register("shredder", Shredder::new);
     public static final RegistryObject<Block> SHOWER_HEAD = BLOCKS.register("shower_head", ShowerHead::new);

@@ -1,5 +1,5 @@
 {
-  "parent": "awesomeshop:block/pillars/pillar_double",
+  "parent": "awesomeshop:block/pillars/pillar_none",
   "textures": {
     "0": "awesomeshop:blocks/pillars/basic_pillar",
     "particle": "awesomeshop:blocks/pillars/basic_pillar"

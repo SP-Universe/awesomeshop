@@ -77,6 +77,10 @@
   "block.awesomeshop.awesomeshop" : "Awesome Shop",
   "container.awesomeshop" : "Awesome Shop",
 
+  "block.awesomeshop.pillars.basic_pillar" : "Basic Pillar",
+  "block.awesomeshop.pillars.quartz_pillar" : "Quartz Pillar",
+  "block.awesomeshop.pillars.stone_pillar" : "Stone Pillar",
+
   "block.awesomeshop.awesome_chest" : "Awesome Chest",
   "container.awesome_chest" : "Awesome Chest",
   "block.awesomeshop.present" : "Present",

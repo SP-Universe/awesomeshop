@@ -136,8 +136,6 @@ public class NightLamp extends Block {
 
             ItemStack heldItem = player.getHeldItem(hand);
 
-            AwesomeShop.LOGGER.debug("ITEM:" + heldItem.getItem().toString());
-
             switch (heldItem.getItem().toString()) {
                 case "cyan_dye":
                     worldIn.setBlockState(pos, state.with(COLOR, 0), 3);
