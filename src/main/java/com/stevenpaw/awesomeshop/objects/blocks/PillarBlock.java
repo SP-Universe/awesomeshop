@@ -24,7 +24,7 @@ import javax.annotation.Nullable;
 public class PillarBlock extends Block {
 
     public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
-    protected static final VoxelShape SHAPE = Block.makeCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
+    protected static final VoxelShape SHAPE = Block.makeCuboidShape(1.0D, 0.0D, 1.0D, 15.0D, 16.0D, 15.0D);
 
     public static final BooleanProperty OCCUPIED = BlockStateProperties.OCCUPIED;
     public static final BooleanProperty BOTTOM = BlockStateProperties.BOTTOM;
@@ -82,6 +82,12 @@ public class PillarBlock extends Block {
             pillar.UpdateModel(worldIn, pos.down(), state);
         }
         worldIn.setBlockState(pos, state.with(OCCUPIED, top).with(BOTTOM, bottom), 3);
+    }
+
+    @Override
+    public float getAmbientOcclusionLightValue(BlockState state, IBlockReader worldIn, BlockPos pos)
+    {
+        return 0.6f;
     }
 
     @Override

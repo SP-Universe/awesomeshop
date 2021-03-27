@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "x",
+    "x",
+    "x"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:light_gray_concrete"
+    }
+  },
+  "result":
+  {
+    "item": "awesomeshop:pillars/light_gray_concrete_pillar",
+    "count": 1
+  }
+}
