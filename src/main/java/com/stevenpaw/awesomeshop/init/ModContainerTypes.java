@@ -25,4 +25,7 @@ public class ModContainerTypes {
 
     public static final RegistryObject<ContainerType<AwesomeShopContainer>> AWESOMESHOP = CONTAINER_TYPES
             .register("awesomeshop", () -> IForgeContainerType.create(AwesomeShopContainer::new));
+
+    public static final RegistryObject<ContainerType<TrashCanContainer>> TRASHCAN = CONTAINER_TYPES
+            .register("trashcan", () -> IForgeContainerType.create(TrashCanContainer::new));
 }

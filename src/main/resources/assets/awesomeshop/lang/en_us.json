@@ -102,6 +102,8 @@
   "container.present" : "Present",
   "block.awesomeshop.cardboard_box" : "Cardboard Box",
   "container.cardboard_box" : "Cardboard Box",
+  "block.awesomeshop.trashcan" : "Trashcan",
+  "container.trashcan" : "Trashcan",
   "block.awesomeshop.hand_miner" : "Hand-Miner",
 
   "block.awesomeshop.big_screen.big_screen1" : "Big Screen top left",
