@@ -5,6 +5,9 @@ import net.minecraft.block.material.Material;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.monster.piglin.PiglinTasks;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.fluid.Fluid;
+import net.minecraft.fluid.FluidState;
+import net.minecraft.fluid.Fluids;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.state.*;
@@ -21,7 +24,7 @@ import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
 
-public class PillarBlock extends Block {
+public class PillarBlock extends Block implements IWaterLoggable{
 
     public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
     protected static final VoxelShape SHAPE = Block.makeCuboidShape(1.0D, 0.0D, 1.0D, 15.0D, 16.0D, 15.0D);
@@ -29,6 +32,7 @@ public class PillarBlock extends Block {
     public static final BooleanProperty OCCUPIED = BlockStateProperties.OCCUPIED;
     public static final BooleanProperty BOTTOM = BlockStateProperties.BOTTOM;
 
+    public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
     public PillarBlock(){
         super(Properties.create(Material.IRON)
@@ -36,7 +40,7 @@ public class PillarBlock extends Block {
                 .sound(SoundType.METAL)
                 .harvestLevel(0)
                 .notSolid());
-        this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH).with(OCCUPIED, false).with(BOTTOM, false));
+        this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH).with(OCCUPIED, false).with(BOTTOM, false).with(BlockStateProperties.WATERLOGGED, true));
     }
 
     @Override
@@ -62,7 +66,7 @@ public class PillarBlock extends Block {
         BlockPos blockpos = context.getPos();
         if (blockpos.getY() < 255) {
             World world = context.getWorld();
-            return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite()).with(OCCUPIED, true).with(BOTTOM, true);
+            return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite()).with(OCCUPIED, true).with(BOTTOM, true).with(WATERLOGGED, false);
         } else {
             return null;
         }
@@ -81,7 +85,12 @@ public class PillarBlock extends Block {
             PillarBlock pillar = (PillarBlock) worldIn.getBlockState(pos.down()).getBlock();
             pillar.UpdateModel(worldIn, pos.down(), state);
         }
-        worldIn.setBlockState(pos, state.with(OCCUPIED, top).with(BOTTOM, bottom), 3);
+        worldIn.setBlockState(pos, state.with(OCCUPIED, top).with(BOTTOM, bottom).with(WATERLOGGED, worldIn.getBlockState(pos).get(BlockStateProperties.WATERLOGGED)), 3);
+    }
+
+    @Override
+    public void onBlockAdded(BlockState state, World worldIn, BlockPos pos, BlockState oldState, boolean isMoving) {
+        worldIn.getPendingFluidTicks().scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(worldIn));
     }
 
     @Override
@@ -100,11 +109,6 @@ public class PillarBlock extends Block {
             PillarBlock pillar = (PillarBlock) worldIn.getBlockState(pos.down()).getBlock();
             pillar.UpdateModel(worldIn, pos.down(), state);
         }
-
-        worldIn.playEvent(player, 2001, pos, getStateId(state));
-        if (this.isIn(BlockTags.GUARDED_BY_PIGLINS)) {
-            PiglinTasks.func_234478_a_(player, false);
-        }
     }
 
     @Override
@@ -122,16 +126,44 @@ public class PillarBlock extends Block {
     public void UpdateModel(World worldIn, BlockPos pos, BlockState state) {
         Boolean top = false;
         Boolean bottom = false;
+        Boolean waterlogged = true;
         if(worldIn.getBlockState(pos.up()).getBlock().getRegistryName().equals(this.getRegistryName())){
             top = true;
         }
         if(worldIn.getBlockState(pos.down()).getBlock().getRegistryName().equals(this.getRegistryName())){
             bottom = true;
         }
-        worldIn.setBlockState(pos, state.with(OCCUPIED, top).with(BOTTOM, bottom), 3);
+        if(!worldIn.getBlockState(pos).get(BlockStateProperties.WATERLOGGED)) {
+            waterlogged = false;
+        }
+        worldIn.setBlockState(pos, state.with(OCCUPIED, top).with(BOTTOM, bottom).with(WATERLOGGED, waterlogged), 3);
     }
 
+    @Override
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
-        builder.add(FACING).add(OCCUPIED).add(BOTTOM);
+        builder.add(FACING).add(OCCUPIED).add(BOTTOM).add(WATERLOGGED);
+    }
+
+    /*public boolean canContainFluid(IBlockReader worldIn, BlockPos pos, BlockState state, Fluid fluidIn) {
+        return true;//state.get(TYPE) != SlabType.DOUBLE ? IWaterLoggable.super.canContainFluid(worldIn, pos, state, fluidIn) : false;
+    }*/
+
+    @Deprecated
+    public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos, BlockPos facingPos) {
+        if (!stateIn.get(BlockStateProperties.WATERLOGGED)) {
+            this.receiveFluid(worldIn, currentPos, stateIn, Fluids.WATER.getStillFluidState(false));
+        }
+        worldIn.getPendingFluidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickRate(worldIn));
+        return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
+    }
+
+    @Override
+    public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
+        return !state.get(WATERLOGGED);
+    }
+
+    @Override
+    public FluidState getFluidState(BlockState state) {
+        return state.get(WATERLOGGED) ? Fluids.WATER.getStillFluidState(false) : super.getFluidState(state);
     }
 }
