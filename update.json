@@ -1,10 +1,11 @@
 {
 	"homepage": "https://www.curseforge.com/minecraft/mc-mods/awesome-shop",
 	"promos": {
-		"1.16.4-recommended": "1.16.4-1.4.1",
-		"1.16.4-latest": "1.16.4-1.4.1"
+		"1.16.4-recommended": "1.16.4-1.5.0",
+		"1.16.4-latest": "1.16.4-1.5.0"
 	},
 	"1.16.4": {
+		"1.5.0": "Added Awesomeshop, Pillars and Trashcan",
 		"1.4.1": "Added Shredder",
 		"1.4.0": "Added Crystallum-Blocks",
 		"1.3.1": "Fixed Bugs",
