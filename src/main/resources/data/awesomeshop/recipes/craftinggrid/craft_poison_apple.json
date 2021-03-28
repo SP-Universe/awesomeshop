@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:apple"
+    },
+    {
+      "item": "awesomeshop:ducatium_slime"
+    }
+  ],
+  "result":
+  {
+    "item": "awesomeshop:poison_apple",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "x",
+    "x",
+    "x"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:magenta_concrete"
+    }
+  },
+  "result":
+  {
+    "item": "awesomeshop:pillars/magenta_concrete_pillar",
+    "count": 1
+  }
+}

@@ -24,4 +24,7 @@ public class ModTileEntityTypes {
 
     public static final RegistryObject<TileEntityType<ShredderTileEntity>> SHREDDER = TILE_ENTITY_TYPES.register("shredder", () -> TileEntityType.Builder
             .create(ShredderTileEntity::new, BlockInit.SHREDDER.get()).build(null));
+
+    public static final RegistryObject<TileEntityType<TrashCanTileEntity>> TRASHCAN = TILE_ENTITY_TYPES.register("trashcan", () -> TileEntityType.Builder
+            .create(TrashCanTileEntity::new, BlockInit.TRASHCAN.get()).build(null));
 }

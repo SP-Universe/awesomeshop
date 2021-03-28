@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "facing=north,open=true": { "model": "awesomeshop:block/trashcan" },
+    "facing=south,open=true": { "model": "awesomeshop:block/trashcan", "y":  180},
+    "facing=west,open=true": { "model": "awesomeshop:block/trashcan", "y":  270},
+    "facing=east,open=true": { "model": "awesomeshop:block/trashcan", "y":  90},
+
+    "facing=north,open=false": { "model": "awesomeshop:block/trashcan" },
+    "facing=south,open=false": { "model": "awesomeshop:block/trashcan", "y":  180},
+    "facing=west,open=false": { "model": "awesomeshop:block/trashcan", "y":  270},
+    "facing=east,open=false": { "model": "awesomeshop:block/trashcan", "y":  90}
+  }
+}

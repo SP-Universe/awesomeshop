@@ -7,4 +7,5 @@ public class ModRecipeType {
 
     public static final IRecipeType<ShredderRecipe> SHREDDER = IRecipeType.register("shredder");
 
+    public static final IRecipeType<AwesomeShopRecipe> AWESOMESHOP = IRecipeType.register("awesomeshop");
 }

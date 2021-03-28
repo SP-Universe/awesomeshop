@@ -1,0 +1,7 @@
+{
+  "parent": "awesomeshop:block/pillars/pillar_none",
+  "textures": {
+    "0": "awesomeshop:blocks/pillars/yellow_concrete_pillar",
+    "particle": "awesomeshop:blocks/pillars/yellow_concrete_pillar"
+  }
+}

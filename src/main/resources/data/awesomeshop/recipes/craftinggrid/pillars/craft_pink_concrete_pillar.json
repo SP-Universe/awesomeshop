@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "x",
+    "x",
+    "x"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:pink_concrete"
+    }
+  },
+  "result":
+  {
+    "item": "awesomeshop:pillars/pink_concrete_pillar",
+    "count": 1
+  }
+}

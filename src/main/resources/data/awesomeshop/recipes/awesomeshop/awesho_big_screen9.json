@@ -1,0 +1,8 @@
+{
+  "type": "awesomeshop:awesomeshop",
+  "ingredient": {
+    "item": "awesomeshop:awesome_matter"
+  },
+  "result": "awesomeshop:big_screen/big_screen9",
+  "count": 1
+}

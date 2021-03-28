@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "awesomeshop:depressnium_crystal"
-  },
-  "result": "awesomeshop:depressnium_particles",
-  "count": 8
-}

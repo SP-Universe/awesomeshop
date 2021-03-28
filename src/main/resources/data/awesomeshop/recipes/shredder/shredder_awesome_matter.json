@@ -1,0 +1,8 @@
+{
+  "type": "awesomeshop:shredder",
+  "ingredient": {
+    "tag": "awesomeshop:awesome_matter"
+  },
+  "result": "awesomeshop:awesome_matter",
+  "count": 1
+}

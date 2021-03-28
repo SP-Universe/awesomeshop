@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "awesomeshop:awesomnium_crystal"
-  },
-  "result": "awesomeshop:depressnium_crystal",
-  "experience": 0.0,
-  "cookingtime": 50
-}

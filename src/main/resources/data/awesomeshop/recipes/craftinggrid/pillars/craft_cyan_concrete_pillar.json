@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "x",
+    "x",
+    "x"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:cyan_concrete"
+    }
+  },
+  "result":
+  {
+    "item": "awesomeshop:pillars/cyan_concrete_pillar",
+    "count": 1
+  }
+}

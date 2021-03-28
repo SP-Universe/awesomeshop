@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "BBB",
+    "I I",
+    "III"
+  ],
+  "key":
+  {
+    "B":
+    {
+      "item": "minecraft:iron_block"
+    },
+    "I":
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "awesomeshop:trashcan",
+    "count": 1
+  }
+}

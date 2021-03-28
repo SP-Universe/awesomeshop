@@ -1,10 +1,7 @@
 package com.stevenpaw.awesomeshop.util;
 
 import com.stevenpaw.awesomeshop.AwesomeShop;
-import com.stevenpaw.awesomeshop.client.gui.AwesomeChestScreen;
-import com.stevenpaw.awesomeshop.client.gui.CardboardBoxScreen;
-import com.stevenpaw.awesomeshop.client.gui.PresentScreen;
-import com.stevenpaw.awesomeshop.client.gui.ShredderScreen;
+import com.stevenpaw.awesomeshop.client.gui.*;
 import com.stevenpaw.awesomeshop.init.BlockInit;
 import com.stevenpaw.awesomeshop.init.ModContainerTypes;
 import com.stevenpaw.awesomeshop.objects.blocks.CardboardBox;
@@ -26,5 +23,7 @@ public class ClientEventBusSubscriber {
         ScreenManager.registerFactory(ModContainerTypes.PRESENT.get(), PresentScreen::new);
         ScreenManager.registerFactory(ModContainerTypes.CARDBOARD_BOX.get(), CardboardBoxScreen::new);
         ScreenManager.registerFactory(ModContainerTypes.SHREDDER.get(), ShredderScreen::new);
+        ScreenManager.registerFactory(ModContainerTypes.AWESOMESHOP.get(), AwesomeShopScreen::new);
+        ScreenManager.registerFactory(ModContainerTypes.TRASHCAN.get(), TrashCanScreen::new);
     }
 }
