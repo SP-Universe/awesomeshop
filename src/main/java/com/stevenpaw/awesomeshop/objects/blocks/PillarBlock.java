@@ -12,6 +12,7 @@ import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.state.*;
 import net.minecraft.state.properties.BlockStateProperties;
+import net.minecraft.state.properties.SlabType;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
@@ -23,6 +24,7 @@ import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
+import java.util.Objects;
 
 public class PillarBlock extends Block implements IWaterLoggable{
 
@@ -44,48 +46,29 @@ public class PillarBlock extends Block implements IWaterLoggable{
     }
 
     @Override
-    public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context)
-    {
-        return SHAPE;
-    }
+    public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) { return SHAPE; }
 
     @Override
-    public BlockState rotate(BlockState state, Rotation rot)
-    {
-        return state.with(FACING, rot.rotate(state.get(FACING)));
-    }
+    public BlockState rotate(BlockState state, Rotation rot) { return state.with(FACING, rot.rotate(state.get(FACING))); }
 
     @Override
-    public BlockState mirror(BlockState state, Mirror mirrorIn)
-    {
-        return state.rotate(mirrorIn.toRotation(state.get(FACING)));
-    }
+    public BlockState mirror(BlockState state, Mirror mirrorIn) { return state.rotate(mirrorIn.toRotation(state.get(FACING))); }
+
+    @Override
+    public float getAmbientOcclusionLightValue(BlockState state, IBlockReader worldIn, BlockPos pos) { return 0.6f; }
 
     @Nullable
     public BlockState getStateForPlacement(BlockItemUseContext context) {
         BlockPos blockpos = context.getPos();
-        if (blockpos.getY() < 255) {
-            World world = context.getWorld();
-            return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite()).with(OCCUPIED, true).with(BOTTOM, true).with(WATERLOGGED, false);
+        BlockState blockstate = context.getWorld().getBlockState(blockpos);
+        if (blockstate.isIn(this)) {
+            return blockstate.with(FACING, context.getPlacementHorizontalFacing().getOpposite()).with(OCCUPIED, true).with(BOTTOM, true).with(WATERLOGGED, Boolean.valueOf(false));
         } else {
-            return null;
+            FluidState fluidstate = context.getWorld().getFluidState(blockpos);
+            BlockState blockstate1 = this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite()).with(OCCUPIED, true).with(BOTTOM, true).with(WATERLOGGED, Boolean.valueOf(fluidstate.getFluid() == Fluids.WATER));
+            Direction direction = context.getFace();
+            return direction != Direction.DOWN && (direction == Direction.UP || !(context.getHitVec().y - (double)blockpos.getY() > 0.5D)) ? blockstate1 : blockstate1.with(FACING, context.getPlacementHorizontalFacing().getOpposite()).with(OCCUPIED, true).with(BOTTOM, true);
         }
-    }
-
-    public void onBlockPlacedBy(World worldIn, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
-        Boolean top = false;
-        Boolean bottom = false;
-        if(worldIn.getBlockState(pos.up()).getBlock().getRegistryName().equals(this.getRegistryName())){
-            top = true;
-            PillarBlock pillar = (PillarBlock) worldIn.getBlockState(pos.up()).getBlock();
-            pillar.UpdateModel(worldIn, pos.up(), state);
-        }
-        if(worldIn.getBlockState(pos.down()).getBlock().getRegistryName().equals(this.getRegistryName())){
-            bottom = true;
-            PillarBlock pillar = (PillarBlock) worldIn.getBlockState(pos.down()).getBlock();
-            pillar.UpdateModel(worldIn, pos.down(), state);
-        }
-        worldIn.setBlockState(pos, state.with(OCCUPIED, top).with(BOTTOM, bottom).with(WATERLOGGED, worldIn.getBlockState(pos).get(BlockStateProperties.WATERLOGGED)), 3);
     }
 
     @Override
@@ -94,25 +77,22 @@ public class PillarBlock extends Block implements IWaterLoggable{
     }
 
     @Override
-    public float getAmbientOcclusionLightValue(BlockState state, IBlockReader worldIn, BlockPos pos)
-    {
-        return 0.6f;
+    public void onBlockPlacedBy(World worldIn, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
+        UpdateNeighbors(worldIn, pos, state);
+        UpdateModel(worldIn,pos,state);
     }
 
     @Override
     public void onBlockHarvested(World worldIn, BlockPos pos, BlockState state, PlayerEntity player) {
-        if(worldIn.getBlockState(pos.up()).getBlock().getRegistryName().equals(this.getRegistryName())){
-            PillarBlock pillar = (PillarBlock) worldIn.getBlockState(pos.up()).getBlock();
-            pillar.UpdateModel(worldIn, pos.up(), state);
-        }
-        if(worldIn.getBlockState(pos.down()).getBlock().getRegistryName().equals(this.getRegistryName())){
-            PillarBlock pillar = (PillarBlock) worldIn.getBlockState(pos.down()).getBlock();
-            pillar.UpdateModel(worldIn, pos.down(), state);
-        }
+        UpdateNeighbors(worldIn, pos, state);
     }
 
     @Override
     public void onPlayerDestroy(IWorld worldIn, BlockPos pos, BlockState state) {
+        UpdateNeighbors(worldIn, pos, state);
+    }
+
+    public void UpdateNeighbors (IWorld worldIn, BlockPos pos, BlockState state){
         if(worldIn.getBlockState(pos.up()).getBlock().getRegistryName().equals(this.getRegistryName())){
             PillarBlock pillar = (PillarBlock) worldIn.getBlockState(pos.up()).getBlock();
             pillar.UpdateModel((World) worldIn, pos.up(), state);
@@ -126,15 +106,12 @@ public class PillarBlock extends Block implements IWaterLoggable{
     public void UpdateModel(World worldIn, BlockPos pos, BlockState state) {
         Boolean top = false;
         Boolean bottom = false;
-        Boolean waterlogged = true;
+        Boolean waterlogged = worldIn.getBlockState(pos).get(WATERLOGGED);
         if(worldIn.getBlockState(pos.up()).getBlock().getRegistryName().equals(this.getRegistryName())){
             top = true;
         }
         if(worldIn.getBlockState(pos.down()).getBlock().getRegistryName().equals(this.getRegistryName())){
             bottom = true;
-        }
-        if(!worldIn.getBlockState(pos).get(BlockStateProperties.WATERLOGGED)) {
-            waterlogged = false;
         }
         worldIn.setBlockState(pos, state.with(OCCUPIED, top).with(BOTTOM, bottom).with(WATERLOGGED, waterlogged), 3);
     }
@@ -142,19 +119,6 @@ public class PillarBlock extends Block implements IWaterLoggable{
     @Override
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
         builder.add(FACING).add(OCCUPIED).add(BOTTOM).add(WATERLOGGED);
-    }
-
-    /*public boolean canContainFluid(IBlockReader worldIn, BlockPos pos, BlockState state, Fluid fluidIn) {
-        return true;//state.get(TYPE) != SlabType.DOUBLE ? IWaterLoggable.super.canContainFluid(worldIn, pos, state, fluidIn) : false;
-    }*/
-
-    @Deprecated
-    public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos, BlockPos facingPos) {
-        if (!stateIn.get(BlockStateProperties.WATERLOGGED)) {
-            this.receiveFluid(worldIn, currentPos, stateIn, Fluids.WATER.getStillFluidState(false));
-        }
-        worldIn.getPendingFluidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickRate(worldIn));
-        return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
     }
 
     @Override
