@@ -1,9 +1,9 @@
 {
   "type": "awesomeshop:shredder",
   "ingredient": {
-    "tag": "awesomeshop:awesome_matter"
+    "tag": "awesomeshop:pillars"
   },
-  "result": "awesomeshop:awesome_matter",
+  "result": "awesomeshop:awesomnium_particles",
   "experience": 0.01,
   "cookingtime": 7,
   "count": 1

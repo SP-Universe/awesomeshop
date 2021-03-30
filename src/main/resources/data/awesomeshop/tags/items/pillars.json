@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "awesomeshop:pillars/quartz_pillar",
+    "awesomeshop:pillars/stone_pillar",
+    "awesomeshop:pillars/black_concrete_pillar",
+    "awesomeshop:pillars/blue_concrete_pillar",
+    "awesomeshop:pillars/brown_concrete_pillar",
+    "awesomeshop:pillars/cyan_concrete_pillar",
+    "awesomeshop:pillars/gray_concrete_pillar",
+    "awesomeshop:pillars/green_concrete_pillar",
+    "awesomeshop:pillars/light_blue_concrete_pillar",
+    "awesomeshop:pillars/light_gray_concrete_pillar",
+    "awesomeshop:pillars/lime_concrete_pillar",
+    "awesomeshop:pillars/magenta_concrete_pillar",
+    "awesomeshop:pillars/orange_concrete_pillar",
+    "awesomeshop:pillars/pink_concrete_pillar",
+    "awesomeshop:pillars/purple_concrete_pillar",
+    "awesomeshop:pillars/red_concrete_pillar",
+    "awesomeshop:pillars/white_concrete_pillar",
+    "awesomeshop:pillars/yellow_concrete_pillar",
+    "awesomeshop:pillars/netherrack_pillar"
+  ]
+}
