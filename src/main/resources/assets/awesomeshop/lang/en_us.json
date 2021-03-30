@@ -98,6 +98,12 @@
   "block.awesomeshop.pillars.netherrack_pillar" : "Netherrack Pillar",
   "block.awesomeshop.pillars.oak_planks_pillar" : "Oak Planks Pillar",
   "block.awesomeshop.pillars.dark_oak_planks_pillar" : "Dark Oak Planks Pillar",
+  "block.awesomeshop.pillars.acacia_planks_pillar" : "Acacia Planks Pillar",
+  "block.awesomeshop.pillars.birch_planks_pillar" : "Birch Planks Pillar",
+  "block.awesomeshop.pillars.crimson_planks_pillar" : "Crimson Planks Pillar",
+  "block.awesomeshop.pillars.jungle_planks_pillar" : "Jungle Planks Pillar",
+  "block.awesomeshop.pillars.spruce_planks_pillar" : "Spruce Planks Pillar",
+  "block.awesomeshop.pillars.warped_planks_pillar" : "Warped Planks Pillar",
 
   "block.awesomeshop.awesome_chest" : "Awesome Chest",
   "container.awesome_chest" : "Awesome Chest",

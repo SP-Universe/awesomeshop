@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "x",
+    "x",
+    "x"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:spruce_planks"
+    }
+  },
+  "result":
+  {
+    "item": "awesomeshop:pillars/spruce_planks_pillar",
+    "count": 3
+  }
+}

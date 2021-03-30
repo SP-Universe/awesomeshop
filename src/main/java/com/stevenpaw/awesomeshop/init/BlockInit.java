@@ -56,6 +56,12 @@ public class BlockInit {
     public static final RegistryObject<Block> NETHERRACK_PILLAR = BLOCKS.register("pillars/netherrack_pillar", PillarBlock::new);
     public static final RegistryObject<Block> OAK_PLANKS_PILLAR = BLOCKS.register("pillars/oak_planks_pillar", PillarBlock::new);
     public static final RegistryObject<Block> DARK_OAK_PLANKS_PILLAR = BLOCKS.register("pillars/dark_oak_planks_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> ACACIA_PLANKS_PILLAR = BLOCKS.register("pillars/acacia_planks_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> BIRCH_PLANKS_PILLAR = BLOCKS.register("pillars/birch_planks_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> CRIMSON_PLANKS_PILLAR = BLOCKS.register("pillars/crimson_planks_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> JUNGLE_PLANKS_PILLAR = BLOCKS.register("pillars/jungle_planks_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> SPRUCE_PLANKS_PILLAR = BLOCKS.register("pillars/spruce_planks_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> WARPED_PLANKS_PILLAR = BLOCKS.register("pillars/warped_planks_pillar", PillarBlock::new);
 
     public static final RegistryObject<Block> SHOWER_HEAD = BLOCKS.register("shower_head", ShowerHead::new);
     public static final RegistryObject<Block> SHOWER_FAUCET1 = BLOCKS.register("shower_faucet1", ShowerFaucet1::new);
