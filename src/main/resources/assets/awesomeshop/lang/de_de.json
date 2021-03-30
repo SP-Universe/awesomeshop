@@ -96,6 +96,8 @@
   "block.awesomeshop.pillars.white_concrete_pillar": "Weiße Betonsäule",
   "block.awesomeshop.pillars.yellow_concrete_pillar": "Gelbe Betonsäule",
   "block.awesomeshop.pillars.netherrack_pillar": "Netherstein Säule",
+  "block.awesomeshop.pillars.oak_planks_pillar": "Eichenholzbretter Säule",
+  "block.awesomeshop.pillars.dark_oak_planks_pillar": "Dunkle Eichenholzbretter Säule",
 
   "block.awesomeshop.awesome_chest": "Awesome Kiste",
   "container.awesome_chest": "Awesome Kiste",

@@ -96,6 +96,8 @@
   "block.awesomeshop.pillars.white_concrete_pillar" : "White Concrete Pillar",
   "block.awesomeshop.pillars.yellow_concrete_pillar" : "Yellow Concrete Pillar",
   "block.awesomeshop.pillars.netherrack_pillar" : "Netherrack Pillar",
+  "block.awesomeshop.pillars.oak_planks_pillar" : "Oak Planks Pillar",
+  "block.awesomeshop.pillars.dark_oak_planks_pillar" : "Dark Oak Planks Pillar",
 
   "block.awesomeshop.awesome_chest" : "Awesome Chest",
   "container.awesome_chest" : "Awesome Chest",

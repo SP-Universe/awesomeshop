@@ -19,6 +19,8 @@
     "awesomeshop:pillars/red_concrete_pillar",
     "awesomeshop:pillars/white_concrete_pillar",
     "awesomeshop:pillars/yellow_concrete_pillar",
-    "awesomeshop:pillars/netherrack_pillar"
+    "awesomeshop:pillars/netherrack_pillar",
+    "awesomeshop:pillars/oak_planks_pillar",
+    "awesomeshop:pillars/dark_oak_planks_pillar"
   ]
 }
