@@ -72,6 +72,11 @@ public class BlockInit {
     public static final RegistryObject<Block> POLISHED_GRANITE_PILLAR = BLOCKS.register("pillars/polished_granite_pillar", PillarBlock::new);
     public static final RegistryObject<Block> GLASS_PILLAR = BLOCKS.register("pillars/glass_pillar", PillarBlock::new);
     public static final RegistryObject<Block> SANDSTONE_PILLAR = BLOCKS.register("pillars/sandstone_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> REDSTONE_BLOCK_PILLAR = BLOCKS.register("pillars/redstone_block_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> IRON_BLOCK_PILLAR = BLOCKS.register("pillars/iron_block_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> EMERALD_BLOCK_PILLAR = BLOCKS.register("pillars/emerald_block_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> DIAMOND_BLOCK_PILLAR = BLOCKS.register("pillars/diamond_block_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> GOLD_BLOCK_PILLAR = BLOCKS.register("pillars/gold_block_pillar", PillarBlock::new);
 
     public static final RegistryObject<Block> SHOWER_HEAD = BLOCKS.register("shower_head", ShowerHead::new);
     public static final RegistryObject<Block> SHOWER_FAUCET1 = BLOCKS.register("shower_faucet1", ShowerFaucet1::new);

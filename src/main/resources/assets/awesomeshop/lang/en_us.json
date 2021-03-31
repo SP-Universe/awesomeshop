@@ -114,6 +114,11 @@
   "block.awesomeshop.pillars.polished_granite_pillar" : "Polished Granite Pillar",
   "block.awesomeshop.pillars.glass_pillar" : "Glass Pillar",
   "block.awesomeshop.pillars.sandstone_pillar" : "Sandstone Pillar",
+  "block.awesomeshop.pillars.redstone_block_pillar" : "Block of Redstone Pillar",
+  "block.awesomeshop.pillars.iron_block_pillar" : "Block of Iron Pillar",
+  "block.awesomeshop.pillars.emerald_block_pillar" : "Block of Emerald Pillar",
+  "block.awesomeshop.pillars.diamond_block_pillar" : "Block of Diamond Pillar",
+  "block.awesomeshop.pillars.gold_block_pillar" : "Block of Gold Pillar",
 
   "block.awesomeshop.awesome_chest" : "Awesome Chest",
   "container.awesome_chest" : "Awesome Chest",

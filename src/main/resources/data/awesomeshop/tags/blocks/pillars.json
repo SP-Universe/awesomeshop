@@ -37,6 +37,11 @@
     "awesomeshop:pillars/polished_diorite_pillar",
     "awesomeshop:pillars/polished_granite_pillar",
     "awesomeshop:pillars/glass_pillar",
-    "awesomeshop:pillars/sandstone_pillar"
+    "awesomeshop:pillars/sandstone_pillar",
+    "awesomeshop:pillars/redstone_block_pillar",
+    "awesomeshop:pillars/iron_block_pillar",
+    "awesomeshop:pillars/emerald_block_pillar",
+    "awesomeshop:pillars/diamond_block_pillar",
+    "awesomeshop:pillars/gold_block_pillar"
   ]
 }

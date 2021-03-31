@@ -114,6 +114,11 @@
   "block.awesomeshop.pillars.polished_granite_pillar": "Polierte Granit Säule",
   "block.awesomeshop.pillars.glass_pillar": "Glas Säule",
   "block.awesomeshop.pillars.sandstone_pillar": "Sandstein Säule",
+  "block.awesomeshop.pillars.redstone_block_pillar": "Redstone-Block Säule",
+  "block.awesomeshop.pillars.iron_block_pillar": "Eisenblock Säule",
+  "block.awesomeshop.pillars.emerald_block_pillar": "Smaragdblock Säule",
+  "block.awesomeshop.pillars.diamond_block_pillar": "Diamantblock Säule",
+  "block.awesomeshop.pillars.gold_block_pillar": "Goldblock Säule",
 
   "block.awesomeshop.awesome_chest": "Awesome Kiste",
   "container.awesome_chest": "Awesome Kiste",

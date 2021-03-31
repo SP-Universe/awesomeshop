@@ -1,0 +1,7 @@
+{
+  "parent": "awesomeshop:block/pillars/pillar_none",
+  "textures": {
+    "0": "awesomeshop:blocks/pillars/redstone_block_pillar",
+    "particle": "awesomeshop:blocks/pillars/redstone_block_pillar"
+  }
+}
