@@ -62,6 +62,8 @@ public class BlockInit {
     public static final RegistryObject<Block> JUNGLE_PLANKS_PILLAR = BLOCKS.register("pillars/jungle_planks_pillar", PillarBlock::new);
     public static final RegistryObject<Block> SPRUCE_PLANKS_PILLAR = BLOCKS.register("pillars/spruce_planks_pillar", PillarBlock::new);
     public static final RegistryObject<Block> WARPED_PLANKS_PILLAR = BLOCKS.register("pillars/warped_planks_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> COBBLESTONE_PILLAR = BLOCKS.register("pillars/cobblestone_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> STONE_BRICKS_PILLAR = BLOCKS.register("pillars/stone_bricks_pillar", PillarBlock::new);
 
     public static final RegistryObject<Block> SHOWER_HEAD = BLOCKS.register("shower_head", ShowerHead::new);
     public static final RegistryObject<Block> SHOWER_FAUCET1 = BLOCKS.register("shower_faucet1", ShowerFaucet1::new);

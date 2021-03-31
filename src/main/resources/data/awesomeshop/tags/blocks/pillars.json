@@ -27,6 +27,8 @@
     "awesomeshop:pillars/crimson_planks_pillar",
     "awesomeshop:pillars/jungle_planks_pillar",
     "awesomeshop:pillars/spruce_planks_pillar",
-    "awesomeshop:pillars/warped_planks_pillar"
+    "awesomeshop:pillars/warped_planks_pillar",
+    "awesomeshop:pillars/cobblestone_pillar",
+    "awesomeshop:pillars/stone_bricks_pillar"
   ]
 }

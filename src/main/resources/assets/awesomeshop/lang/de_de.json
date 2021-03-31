@@ -104,6 +104,8 @@
   "block.awesomeshop.pillars.jungle_planks_pillar": "Tropenholzbretter Säule",
   "block.awesomeshop.pillars.spruce_planks_pillar": "Fichtenholzbretter Säule",
   "block.awesomeshop.pillars.warped_planks_pillar": "Wirrbretter Säule",
+  "block.awesomeshop.pillars.stone_bricks_pillar": "Steinziegel Säule",
+  "block.awesomeshop.pillars.cobblestone_pillar": "Bruchstein Säule",
 
   "block.awesomeshop.awesome_chest": "Awesome Kiste",
   "container.awesome_chest": "Awesome Kiste",

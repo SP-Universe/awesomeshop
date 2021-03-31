@@ -104,6 +104,8 @@
   "block.awesomeshop.pillars.jungle_planks_pillar" : "Jungle Planks Pillar",
   "block.awesomeshop.pillars.spruce_planks_pillar" : "Spruce Planks Pillar",
   "block.awesomeshop.pillars.warped_planks_pillar" : "Warped Planks Pillar",
+  "block.awesomeshop.pillars.stone_bricks_pillar" : "Stone Bricks Pillar",
+  "block.awesomeshop.pillars.cobblestone_pillar" : "Cobblestone Pillar",
 
   "block.awesomeshop.awesome_chest" : "Awesome Chest",
   "container.awesome_chest" : "Awesome Chest",
