@@ -112,6 +112,8 @@
   "block.awesomeshop.pillars.polished_andesite_pillar" : "Polished Andesite Pillar",
   "block.awesomeshop.pillars.polished_diorite_pillar" : "Polished Diorite Pillar",
   "block.awesomeshop.pillars.polished_granite_pillar" : "Polished Granite Pillar",
+  "block.awesomeshop.pillars.glass_pillar" : "Glass Pillar",
+  "block.awesomeshop.pillars.sandstone_pillar" : "Sandstone Pillar",
 
   "block.awesomeshop.awesome_chest" : "Awesome Chest",
   "container.awesome_chest" : "Awesome Chest",

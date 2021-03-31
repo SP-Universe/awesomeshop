@@ -35,6 +35,8 @@
     "awesomeshop:pillars/granite_pillar",
     "awesomeshop:pillars/polished_andesite_pillar",
     "awesomeshop:pillars/polished_diorite_pillar",
-    "awesomeshop:pillars/polished_granite_pillar"
+    "awesomeshop:pillars/polished_granite_pillar",
+    "awesomeshop:pillars/glass_pillar",
+    "awesomeshop:pillars/sandstone_pillar"
   ]
 }
