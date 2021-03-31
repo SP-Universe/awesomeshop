@@ -29,6 +29,12 @@
     "awesomeshop:pillars/spruce_planks_pillar",
     "awesomeshop:pillars/warped_planks_pillar",
     "awesomeshop:pillars/cobblestone_pillar",
-    "awesomeshop:pillars/stone_bricks_pillar"
+    "awesomeshop:pillars/stone_bricks_pillar",
+    "awesomeshop:pillars/andesite_pillar",
+    "awesomeshop:pillars/diorite_pillar",
+    "awesomeshop:pillars/granite_pillar",
+    "awesomeshop:pillars/polished_andesite_pillar",
+    "awesomeshop:pillars/polished_diorite_pillar",
+    "awesomeshop:pillars/polished_granite_pillar"
   ]
 }

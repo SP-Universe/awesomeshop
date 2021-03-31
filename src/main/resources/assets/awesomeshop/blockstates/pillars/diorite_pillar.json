@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "facing=north,occupied=true,bottom=true":  { "model": "awesomeshop:block/pillars/diorite_pillar_none"},
+    "facing=east,occupied=true,bottom=true":   { "model": "awesomeshop:block/pillars/diorite_pillar_none", "y": 90 },
+    "facing=south,occupied=true,bottom=true":   { "model": "awesomeshop:block/pillars/diorite_pillar_none", "y": 180 },
+    "facing=west,occupied=true,bottom=true":   { "model": "awesomeshop:block/pillars/diorite_pillar_none", "y": 270 },
+
+    "facing=north,occupied=false,bottom=true":  { "model": "awesomeshop:block/pillars/diorite_pillar_top" },
+    "facing=east,occupied=false,bottom=true":  { "model": "awesomeshop:block/pillars/diorite_pillar_top", "y": 90 },
+    "facing=south,occupied=false,bottom=true":  { "model": "awesomeshop:block/pillars/diorite_pillar_top", "y": 180 },
+    "facing=west,occupied=false,bottom=true":  { "model": "awesomeshop:block/pillars/diorite_pillar_top", "y": 270 },
+
+    "facing=north,occupied=true,bottom=false":  { "model": "awesomeshop:block/pillars/diorite_pillar_bottom" },
+    "facing=east,occupied=true,bottom=false":  { "model": "awesomeshop:block/pillars/diorite_pillar_bottom", "y": 90 },
+    "facing=south,occupied=true,bottom=false":  { "model": "awesomeshop:block/pillars/diorite_pillar_bottom", "y": 180 },
+    "facing=west,occupied=true,bottom=false":  { "model": "awesomeshop:block/pillars/diorite_pillar_bottom", "y": 270 },
+
+    "facing=north,occupied=false,bottom=false":  { "model": "awesomeshop:block/pillars/diorite_pillar_double" },
+    "facing=east,occupied=false,bottom=false":  { "model": "awesomeshop:block/pillars/diorite_pillar_double", "y": 90 },
+    "facing=south,occupied=false,bottom=false":  { "model": "awesomeshop:block/pillars/diorite_pillar_double", "y": 180 },
+    "facing=west,occupied=false,bottom=false":  { "model": "awesomeshop:block/pillars/diorite_pillar_double", "y": 270 }
+  }
+}

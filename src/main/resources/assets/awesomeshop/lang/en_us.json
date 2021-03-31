@@ -106,6 +106,12 @@
   "block.awesomeshop.pillars.warped_planks_pillar" : "Warped Planks Pillar",
   "block.awesomeshop.pillars.stone_bricks_pillar" : "Stone Bricks Pillar",
   "block.awesomeshop.pillars.cobblestone_pillar" : "Cobblestone Pillar",
+  "block.awesomeshop.pillars.andesite_pillar" : "Andesite Pillar",
+  "block.awesomeshop.pillars.diorite_pillar" : "Diorite Pillar",
+  "block.awesomeshop.pillars.granite_pillar" : "Granite Pillar",
+  "block.awesomeshop.pillars.polished_andesite_pillar" : "Polished Andesite Pillar",
+  "block.awesomeshop.pillars.polished_diorite_pillar" : "Polished Diorite Pillar",
+  "block.awesomeshop.pillars.polished_granite_pillar" : "Polished Granite Pillar",
 
   "block.awesomeshop.awesome_chest" : "Awesome Chest",
   "container.awesome_chest" : "Awesome Chest",

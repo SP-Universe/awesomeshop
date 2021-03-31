@@ -106,6 +106,12 @@
   "block.awesomeshop.pillars.warped_planks_pillar": "Wirrbretter Säule",
   "block.awesomeshop.pillars.stone_bricks_pillar": "Steinziegel Säule",
   "block.awesomeshop.pillars.cobblestone_pillar": "Bruchstein Säule",
+  "block.awesomeshop.pillars.andesite_pillar": "Andesit Säule",
+  "block.awesomeshop.pillars.diorite_pillar": "Diorit Säule",
+  "block.awesomeshop.pillars.granite_pillar": "Granit Säule",
+  "block.awesomeshop.pillars.polished_andesite_pillar": "Polierte Andesit Säule",
+  "block.awesomeshop.pillars.polished_diorite_pillar": "Polierte Diorit Säule",
+  "block.awesomeshop.pillars.polished_granite_pillar": "Polierte Granit Säule",
 
   "block.awesomeshop.awesome_chest": "Awesome Kiste",
   "container.awesome_chest": "Awesome Kiste",
