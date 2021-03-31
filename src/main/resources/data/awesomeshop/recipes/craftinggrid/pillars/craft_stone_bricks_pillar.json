@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "x",
+    "x",
+    "x"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:stone_bricks"
+    }
+  },
+  "result":
+  {
+    "item": "awesomeshop:pillars/stone_bricks_pillar",
+    "count": 3
+  }
+}

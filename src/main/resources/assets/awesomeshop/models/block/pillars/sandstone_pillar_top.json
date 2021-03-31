@@ -1,0 +1,7 @@
+{
+  "parent": "awesomeshop:block/pillars/pillar_top",
+  "textures": {
+    "0": "awesomeshop:blocks/pillars/sandstone_pillar",
+    "particle": "awesomeshop:blocks/pillars/sandstone_pillar"
+  }
+}

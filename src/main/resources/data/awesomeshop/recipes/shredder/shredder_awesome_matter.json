@@ -4,5 +4,7 @@
     "tag": "awesomeshop:awesome_matter"
   },
   "result": "awesomeshop:awesome_matter",
+  "experience": 0.01,
+  "cookingtime": 7,
   "count": 1
 }

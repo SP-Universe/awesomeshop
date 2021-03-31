@@ -34,6 +34,7 @@ public class BlockInit {
     public static final RegistryObject<Block> CARDBOARD_BOX = BLOCKS.register("cardboard_box", CardboardBox::new);
     public static final RegistryObject<Block> TRASHCAN = BLOCKS.register("trashcan", TrashCan::new);
 
+    //Pillars
     public static final RegistryObject<Block> QUARTZ_PILLAR = BLOCKS.register("pillars/quartz_pillar", PillarBlock::new);
     public static final RegistryObject<Block> STONE_PILLAR = BLOCKS.register("pillars/stone_pillar", PillarBlock::new);
     public static final RegistryObject<Block> BLACK_CONCRETE_PILLAR = BLOCKS.register("pillars/black_concrete_pillar", PillarBlock::new);
@@ -52,8 +53,31 @@ public class BlockInit {
     public static final RegistryObject<Block> RED_CONCRETE_PILLAR = BLOCKS.register("pillars/red_concrete_pillar", PillarBlock::new);
     public static final RegistryObject<Block> WHITE_CONCRETE_PILLAR = BLOCKS.register("pillars/white_concrete_pillar", PillarBlock::new);
     public static final RegistryObject<Block> YELLOW_CONCRETE_PILLAR = BLOCKS.register("pillars/yellow_concrete_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> NETHERRACK_PILLAR = BLOCKS.register("pillars/netherrack_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> OAK_PLANKS_PILLAR = BLOCKS.register("pillars/oak_planks_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> DARK_OAK_PLANKS_PILLAR = BLOCKS.register("pillars/dark_oak_planks_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> ACACIA_PLANKS_PILLAR = BLOCKS.register("pillars/acacia_planks_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> BIRCH_PLANKS_PILLAR = BLOCKS.register("pillars/birch_planks_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> CRIMSON_PLANKS_PILLAR = BLOCKS.register("pillars/crimson_planks_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> JUNGLE_PLANKS_PILLAR = BLOCKS.register("pillars/jungle_planks_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> SPRUCE_PLANKS_PILLAR = BLOCKS.register("pillars/spruce_planks_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> WARPED_PLANKS_PILLAR = BLOCKS.register("pillars/warped_planks_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> COBBLESTONE_PILLAR = BLOCKS.register("pillars/cobblestone_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> STONE_BRICKS_PILLAR = BLOCKS.register("pillars/stone_bricks_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> ANDESITE_PILLAR = BLOCKS.register("pillars/andesite_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> DIORITE_PILLAR = BLOCKS.register("pillars/diorite_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> GRANITE_PILLAR = BLOCKS.register("pillars/granite_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> POLISHED_ANDESITE_PILLAR = BLOCKS.register("pillars/polished_andesite_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> POLISHED_DIORITE_PILLAR = BLOCKS.register("pillars/polished_diorite_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> POLISHED_GRANITE_PILLAR = BLOCKS.register("pillars/polished_granite_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> GLASS_PILLAR = BLOCKS.register("pillars/glass_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> SANDSTONE_PILLAR = BLOCKS.register("pillars/sandstone_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> REDSTONE_BLOCK_PILLAR = BLOCKS.register("pillars/redstone_block_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> IRON_BLOCK_PILLAR = BLOCKS.register("pillars/iron_block_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> EMERALD_BLOCK_PILLAR = BLOCKS.register("pillars/emerald_block_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> DIAMOND_BLOCK_PILLAR = BLOCKS.register("pillars/diamond_block_pillar", PillarBlock::new);
+    public static final RegistryObject<Block> GOLD_BLOCK_PILLAR = BLOCKS.register("pillars/gold_block_pillar", PillarBlock::new);
 
-    //public static final RegistryObject<Block> SHREDDER = BLOCKS.register("shredder", Shredder::new);
     public static final RegistryObject<Block> SHOWER_HEAD = BLOCKS.register("shower_head", ShowerHead::new);
     public static final RegistryObject<Block> SHOWER_FAUCET1 = BLOCKS.register("shower_faucet1", ShowerFaucet1::new);
     public static final RegistryObject<Block> SHOWER_FAUCET2 = BLOCKS.register("shower_faucet2", ShowerFaucet2::new);

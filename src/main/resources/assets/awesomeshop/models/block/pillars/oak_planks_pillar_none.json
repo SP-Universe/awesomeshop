@@ -1,0 +1,7 @@
+{
+  "parent": "awesomeshop:block/pillars/pillar_none",
+  "textures": {
+    "0": "awesomeshop:blocks/pillars/oak_planks_pillar",
+    "particle": "awesomeshop:blocks/pillars/oak_planks_pillar"
+  }
+}

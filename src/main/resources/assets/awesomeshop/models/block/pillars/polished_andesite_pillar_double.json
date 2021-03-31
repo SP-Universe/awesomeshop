@@ -1,0 +1,7 @@
+{
+  "parent": "awesomeshop:block/pillars/pillar_double",
+  "textures": {
+    "0": "awesomeshop:blocks/pillars/polished_andesite_pillar",
+    "particle": "awesomeshop:blocks/pillars/polished_andesite_pillar"
+  }
+}
