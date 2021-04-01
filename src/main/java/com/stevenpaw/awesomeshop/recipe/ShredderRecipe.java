@@ -13,7 +13,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.registry.Registry;
 import net.minecraftforge.registries.ForgeRegistryEntry;
 
-public class ShredderRecipe extends AbstractCookingRecipe{
+public class ShredderRecipe extends AbstractShredderRecipe{
     public static int time;
 
     @SuppressWarnings("static-access")
