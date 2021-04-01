@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "awesomeshop:block/easter/easter_nest" },
+    "facing=south": { "model": "awesomeshop:block/easter/easter_nest", "y":  180},
+    "facing=west": { "model": "awesomeshop:block/easter/easter_nest", "y":  270},
+    "facing=east": { "model": "awesomeshop:block/easter/easter_nest", "y":  90}
+  }
+}

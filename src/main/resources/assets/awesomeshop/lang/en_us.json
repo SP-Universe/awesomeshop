@@ -120,6 +120,8 @@
   "block.awesomeshop.pillars.diamond_block_pillar" : "Block of Diamond Pillar",
   "block.awesomeshop.pillars.gold_block_pillar" : "Block of Gold Pillar",
 
+  "block.awesomeshop.easter.easter_nest" : "Easter Nest",
+
   "block.awesomeshop.awesome_chest" : "Awesome Chest",
   "container.awesome_chest" : "Awesome Chest",
   "block.awesomeshop.present" : "Present",
