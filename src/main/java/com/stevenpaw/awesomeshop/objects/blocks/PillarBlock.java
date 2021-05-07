@@ -26,6 +26,8 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 import java.util.Objects;
 
+import net.minecraft.block.AbstractBlock.Properties;
+
 public class PillarBlock extends Block implements IWaterLoggable{
 
     public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
@@ -61,7 +63,7 @@ public class PillarBlock extends Block implements IWaterLoggable{
     public BlockState getStateForPlacement(BlockItemUseContext context) {
         BlockPos blockpos = context.getPos();
         BlockState blockstate = context.getWorld().getBlockState(blockpos);
-        if (blockstate.isIn(this)) {
+        if (blockstate.matchesBlock(this)) {
             return blockstate.with(FACING, context.getPlacementHorizontalFacing().getOpposite()).with(OCCUPIED, true).with(BOTTOM, true).with(WATERLOGGED, Boolean.valueOf(false));
         } else {
             FluidState fluidstate = context.getWorld().getFluidState(blockpos);

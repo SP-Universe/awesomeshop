@@ -31,6 +31,8 @@ import javax.annotation.Nullable;
 import java.util.List;
 import java.util.stream.Stream;
 
+import net.minecraft.block.AbstractBlock.Properties;
+
 public class BasicTable extends Block {
 
     private static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;

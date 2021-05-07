@@ -28,6 +28,8 @@ import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
 
+import net.minecraft.block.AbstractBlock.Properties;
+
 public class ModernWallLamp1 extends Block {
 
     //Light Handling

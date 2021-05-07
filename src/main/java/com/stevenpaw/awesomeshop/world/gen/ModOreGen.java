@@ -32,35 +32,35 @@ public class ModOreGen {
     private static final ArrayList<ConfiguredFeature<?, ?>> endOres = new ArrayList<ConfiguredFeature<?, ?>>();
 
     public static void registerOres(){
-        //field_241882_a is for generating in stone, granite, diorite, and andesite
-        //field_241883_b is for generating in netherrack
-        //field_241884_c is for generating in netherrack, basalt and blackstone
+        //BASE_STONE_OVERWORLD is for generating in stone, granite, diorite, and andesite
+        //NETHERRACK is for generating in netherrack
+        //BASE_STONE_NETHER is for generating in netherrack, basalt and blackstone
 
         //Overworld Ore Register
         //Spawn Awesomnium Ores
         overworldOres.add(register("awesomnium_ore", Feature.ORE.withConfiguration(new OreFeatureConfig(
                 OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.AWESOMNIUM_ORE.get().getDefaultState(), 5)) //Vein Size
                 .range(40).square() //Spawn height start
-                .func_242731_b(1))); //Chunk spawn frequency
+                .count(1))); //Chunk spawn frequency
 
         //Spawn Ducatium Ores
         overworldOres.add(register("ducatium_ore", Feature.ORE.withConfiguration(new OreFeatureConfig(
                 OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.DUCATIUM_ORE.get().getDefaultState(), 3)) //Vein Size
                 .range(25).square() //Spawn height start
-                .func_242731_b(1))); //Chunk spawn frequency
+                .count(1))); //Chunk spawn frequency
 
         /*
         //Nether Ore Register
         netherOres.add(register("example_nether_ore", Feature.ORE.withConfiguration(new OreFeatureConfig(
-                OreFeatureConfig.FillerBlockType.field_241883_b, YOUR_ORE_BLOCK.getDefaultState(), 4)) //Vein Size
-                .func_242733_d(64).func_242728_a() //Spawn height start
-                .func_242731_b(64))); //Chunk spawn frequency
+                OreFeatureConfig.FillerBlockType.NETHERRACK, YOUR_ORE_BLOCK.getDefaultState(), 4)) //Vein Size
+                .range(64).square() //Spawn height start
+                .count(64))); //Chunk spawn frequency
 
         //The End Ore Register
         endOres.add(register("example_end_ore", Feature.ORE.withConfiguration(new OreFeatureConfig(
                 new BlockMatchRuleTest(Blocks.END_STONE), YOUR_ORE_BLOCK.getDefaultState(), 4)) //Vein Size
-                .func_242733_d(128).func_242728_a() //Spawn height start
-                .func_242731_b(64))); //Chunk spawn frequency
+                .range(128).square() //Spawn height start
+                .count(64))); //Chunk spawn frequency
 
          */
     }

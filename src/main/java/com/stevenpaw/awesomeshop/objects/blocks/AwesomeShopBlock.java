@@ -39,7 +39,9 @@ import org.lwjgl.glfw.GLFW;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class AwesomeShopBlock extends StonecutterBlock {
+import net.minecraft.block.AbstractBlock.Properties;
+
+public class AwesomeShopBlock extends Block {
 
     private static final ITextComponent CONTAINER_NAME = new TranslationTextComponent("container.awesomeshop");
     public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
@@ -112,18 +114,21 @@ public class AwesomeShopBlock extends StonecutterBlock {
     public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos, BlockPos facingPos) {
         DoubleBlockHalf doubleblockhalf = stateIn.get(HALF);
         if (facing.getAxis() == Direction.Axis.Y && doubleblockhalf == DoubleBlockHalf.LOWER == (facing == Direction.UP)) {
-            return facingState.isIn(this) && facingState.get(HALF) != doubleblockhalf ? stateIn.with(FACING, facingState.get(FACING)) : Blocks.AIR.getDefaultState();
+            return facingState.matchesBlock(this) && facingState.get(HALF) != doubleblockhalf ? stateIn.with(FACING, facingState.get(FACING)) : Blocks.AIR.getDefaultState();
         } else {
             return doubleblockhalf == DoubleBlockHalf.LOWER && facing == Direction.DOWN && !stateIn.isValidPosition(worldIn, currentPos) ? Blocks.AIR.getDefaultState() : super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
         }
     }
 
     public void onBlockHarvested(World worldIn, BlockPos pos, BlockState state, PlayerEntity player) {
-        if (!worldIn.isRemote && player.isCreative()) {
+        if (state.get(HALF) == DoubleBlockHalf.LOWER) {
+            RemoveUpperHalf(worldIn, pos, state, player);
+        } else {
             RemoveBottomHalf(worldIn, pos, state, player);
         }
 
-        super.onBlockHarvested(worldIn, pos, state, player);
+
+        //super.onBlockHarvested(worldIn, pos, state, player);
     }
 
     @Nullable
@@ -145,20 +150,27 @@ public class AwesomeShopBlock extends StonecutterBlock {
     public boolean isValidPosition(BlockState state, IWorldReader worldIn, BlockPos pos) {
         BlockPos blockpos = pos.down();
         BlockState blockstate = worldIn.getBlockState(blockpos);
-        return state.get(HALF) == DoubleBlockHalf.LOWER ? blockstate.isSolidSide(worldIn, blockpos, Direction.UP) : blockstate.isIn(this);
+        return state.get(HALF) == DoubleBlockHalf.LOWER ? blockstate.isSolidSide(worldIn, blockpos, Direction.UP) : blockstate.matchesBlock(this);
     }
 
     protected static void RemoveBottomHalf(World world, BlockPos pos, BlockState state, PlayerEntity player) {
         DoubleBlockHalf doubleblockhalf = state.get(HALF);
-        if (doubleblockhalf == DoubleBlockHalf.UPPER) {
             BlockPos blockpos = pos.down();
             BlockState blockstate = world.getBlockState(blockpos);
             if (blockstate.getBlock() == state.getBlock() && blockstate.get(HALF) == DoubleBlockHalf.LOWER) {
                 world.setBlockState(blockpos, Blocks.AIR.getDefaultState(), 35);
                 world.playEvent(player, 2001, blockpos, Block.getStateId(blockstate));
             }
-        }
+    }
 
+    protected static void RemoveUpperHalf(World world, BlockPos pos, BlockState state, PlayerEntity player) {
+        DoubleBlockHalf doubleblockhalf = state.get(HALF);
+            BlockPos blockpos = pos.up();
+            BlockState blockstate = world.getBlockState(blockpos);
+            if (blockstate.getBlock() == state.getBlock() && blockstate.get(HALF) == DoubleBlockHalf.UPPER) {
+                world.setBlockState(blockpos, Blocks.AIR.getDefaultState(), 35);
+                world.playEvent(player, 2001, blockpos, Block.getStateId(blockstate));
+            }
     }
 
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {

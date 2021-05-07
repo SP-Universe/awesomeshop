@@ -21,6 +21,8 @@ import net.minecraftforge.common.ToolType;
 import javax.annotation.Nullable;
 import java.util.stream.Stream;
 
+import net.minecraft.block.AbstractBlock.Properties;
+
 public class BiFlag extends Block {
 
     private static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;

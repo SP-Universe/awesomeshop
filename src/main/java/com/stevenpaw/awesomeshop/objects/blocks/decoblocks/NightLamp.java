@@ -31,6 +31,8 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 import java.util.stream.Stream;
 
+import net.minecraft.block.AbstractBlock.Properties;
+
 public class NightLamp extends Block {
 
     //Light Handling

@@ -12,6 +12,8 @@ import net.minecraft.world.IWorldReader;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.ToolType;
 
+import net.minecraft.block.AbstractBlock.Properties;
+
 public class Crystallum extends AbstractGlassBlock {
 
     //hardness:         how easy it is to mine block

@@ -9,6 +9,8 @@ import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockReader;
 
+import net.minecraft.block.AbstractBlock.Properties;
+
 public class RawCrystallum extends AbstractGlassBlock {
 
     //hardness:         how easy it is to mine block
