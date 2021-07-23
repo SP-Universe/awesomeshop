@@ -64,8 +64,8 @@ public class AwesomeShopRecipeCategory implements IRecipeCategory<AwesomeShopRec
     public void setRecipe(IRecipeLayout recipeLayout, AwesomeShopRecipe recipe, IIngredients ingredients) {
         IGuiItemStackGroup guiStacks = recipeLayout.getItemStacks();
 
-        guiStacks.init(0, true, 6, 6);
-        guiStacks.init(1, false, 57, 6);
+        guiStacks.init(0, true, 4, 4);
+        guiStacks.init(1, false, 55, 4);
         guiStacks.set(0, ingredients.getInputs(VanillaTypes.ITEM).get(0));
         guiStacks.set(1, ingredients.getOutputs(VanillaTypes.ITEM).get(0));
     }
