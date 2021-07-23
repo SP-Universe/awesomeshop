@@ -38,6 +38,9 @@
   "block.awesomeshop.awesomnium_ore" : "Awesomnium Ore",
   "block.awesomeshop.awesomnium_block" : "Awesomnium Block",
   "block.awesomeshop.awesomnium_block_diagonal" : "Awesomnium Block Diagonal",
+  "block.awesomeshop.doors.awesome_door" : "Awesome Door",
+  "block.awesomeshop.doors.modern_glass_door" : "Modern Glass Door",
+  "block.awesomeshop.doors.spooky_door" : "Spooky Door",
 
   "block.awesomeshop.shower_head" : "Shower Head",
   "block.awesomeshop.shower_faucet1" : "Shower Faucet 1",

@@ -34,6 +34,11 @@ public class BlockInit {
     public static final RegistryObject<Block> CARDBOARD_BOX = BLOCKS.register("cardboard_box", CardboardBox::new);
     public static final RegistryObject<Block> TRASHCAN = BLOCKS.register("trashcan", TrashCan::new);
 
+    //Doors
+    public static final RegistryObject<Block> AWESOME_DOOR = BLOCKS.register("doors/awesome_door", AwesomeshopDoor::new);
+    public static final RegistryObject<Block> MODERN_GLASS_DOOR = BLOCKS.register("doors/modern_glass_door", AwesomeshopDoor::new);
+    public static final RegistryObject<Block> SPOOKY_DOOR = BLOCKS.register("doors/spooky_door", AwesomeshopDoor::new);
+
     //Pillars
     public static final RegistryObject<Block> QUARTZ_PILLAR = BLOCKS.register("pillars/quartz_pillar", PillarBlock::new);
     public static final RegistryObject<Block> STONE_PILLAR = BLOCKS.register("pillars/stone_pillar", PillarBlock::new);

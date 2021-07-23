@@ -18,5 +18,8 @@ public class BlockRenderRegister {
         RenderTypeLookup.setRenderLayer(BlockInit.SHREDDER.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(BlockInit.AWESOMESHOP.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(BlockInit.GLASS_PILLAR.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(BlockInit.AWESOME_DOOR.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(BlockInit.MODERN_GLASS_DOOR.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(BlockInit.SPOOKY_DOOR.get(), RenderType.getTranslucent());
     }
 }
