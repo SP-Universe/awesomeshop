@@ -39,6 +39,7 @@ public class BlockInit {
     public static final RegistryObject<Block> MODERN_GLASS_DOOR = BLOCKS.register("doors/modern_glass_door", AwesomeshopDoor::new);
     public static final RegistryObject<Block> SPOOKY_DOOR = BLOCKS.register("doors/spooky_door", AwesomeshopDoor::new);
     public static final RegistryObject<Block> CHAIN_DOOR = BLOCKS.register("doors/chain_door", AwesomeshopDoor::new);
+    public static final RegistryObject<Block> CHURCH_DOOR = BLOCKS.register("doors/church_door", AwesomeshopDoor::new);
 
     //Pillars
     public static final RegistryObject<Block> QUARTZ_PILLAR = BLOCKS.register("pillars/quartz_pillar", PillarBlock::new);
