@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "awesomeshop:items/doors/chain_door"
+  }
+}
