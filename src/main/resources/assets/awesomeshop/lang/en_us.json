@@ -43,6 +43,8 @@
   "block.awesomeshop.doors.spooky_door" : "Spooky Door",
   "block.awesomeshop.doors.chain_door" : "Chain Door",
   "block.awesomeshop.doors.church_door" : "Church Door",
+  "block.awesomeshop.doors.classical_door" : "Classical Door",
+  "block.awesomeshop.doors.modern_door" : "Modern Door",
 
   "block.awesomeshop.shower_head" : "Shower Head",
   "block.awesomeshop.shower_faucet1" : "Shower Faucet 1",

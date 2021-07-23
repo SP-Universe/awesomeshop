@@ -22,5 +22,7 @@ public class BlockRenderRegister {
         RenderTypeLookup.setRenderLayer(BlockInit.MODERN_GLASS_DOOR.get(), RenderType.getTranslucent());
         RenderTypeLookup.setRenderLayer(BlockInit.SPOOKY_DOOR.get(), RenderType.getTranslucent());
         RenderTypeLookup.setRenderLayer(BlockInit.CHURCH_DOOR.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(BlockInit.CLASSICAL_DOOR.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(BlockInit.MODERN_DOOR.get(), RenderType.getTranslucent());
     }
 }
