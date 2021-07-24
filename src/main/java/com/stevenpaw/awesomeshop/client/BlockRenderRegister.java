@@ -31,5 +31,6 @@ public class BlockRenderRegister {
         RenderTypeLookup.setRenderLayer(BlockInit.MODERN_GLASS_TRAPDOOR.get(), RenderType.getTranslucent());
         RenderTypeLookup.setRenderLayer(BlockInit.MODERN_TRAPDOOR.get(), RenderType.getTranslucent());
         RenderTypeLookup.setRenderLayer(BlockInit.SPOOKY_TRAPDOOR.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(BlockInit.CHANDELIER.get(), RenderType.getTranslucent());
     }
 }

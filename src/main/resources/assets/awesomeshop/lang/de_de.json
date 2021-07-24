@@ -46,12 +46,12 @@
   "block.awesomeshop.stairs.acacia_log_stairs": "Akazienstamm Treppe",
   "block.awesomeshop.stairs.dark_oak_log_stairs": "Dunkeleichenstamm Treppe",
 
-  "block.awesomeshop.slabs.oak_log_slabs": "Eichenstamm Stufe",
-  "block.awesomeshop.slabs.spruce_log_slabs": "Fichtenstamm Stufe",
-  "block.awesomeshop.slabs.birch_log_slabs": "Birkenstamm Stufe",
-  "block.awesomeshop.slabs.jungle_log_slabs": "Tropenstamm Stufe",
-  "block.awesomeshop.slabs.acacia_log_slabs": "Akazienstamm Stufe",
-  "block.awesomeshop.slabs.dark_oak_log_slabs": "Dunkeleichenstamm Stufe",
+  "block.awesomeshop.slabs.oak_log_slab": "Oak Log Slabs",
+  "block.awesomeshop.slabs.spruce_log_slab": "Spruce Log Slabs",
+  "block.awesomeshop.slabs.birch_log_slab": "Birch Log Slabs",
+  "block.awesomeshop.slabs.jungle_log_slab": "Jungle Log Slabs",
+  "block.awesomeshop.slabs.acacia_log_slab": "Acacia Log Slabs",
+  "block.awesomeshop.slabs.dark_oak_log_slab": "Dark Oak Log Slabs",
 
   "block.awesomeshop.doors.awesome_door": "Awesome Tür",
   "block.awesomeshop.doors.modern_glass_door": "Moderne Glas Tür",
@@ -85,6 +85,7 @@
   "block.awesomeshop.small_modern_lamp2": "Kleine moderne Lampe 2",
   "block.awesomeshop.small_modern_lamp3": "Kleine moderne Lampe 3",
   "block.awesomeshop.modern_wall_lamp1": "Moderne Wandlampe 1",
+  "block.awesomeshop.chandelier": "Kronleuchter",
 
   "block.awesomeshop.drugar_flag": "Drugar Flagge",
   "block.awesomeshop.german_flag": "Deutsche Flagge",
@@ -227,5 +228,11 @@
 
   "itemGroup.awesomeshopItemTab": "AwesomeShop Gegenstände",
   "itemGroup.awesomeshopBlockTab": "AwesomeShop Blöcke",
-  "itemGroup.awesomeshopCrystallumTab": "AwesomeShop Crystallum"
+  "itemGroup.awesomeshopCrystallumTab": "AwesomeShop Crystallum",
+  "block.awesomeshop.slabs.acacia_log_slabs": "Akazienstamm Stufe",
+  "block.awesomeshop.slabs.birch_log_slabs": "Birkenstamm Stufe",
+  "block.awesomeshop.slabs.dark_oak_log_slabs": "Dunkeleichenstamm Stufe",
+  "block.awesomeshop.slabs.jungle_log_slabs": "Tropenstamm Stufe",
+  "block.awesomeshop.slabs.oak_log_slabs": "Eichenstamm Stufe",
+  "block.awesomeshop.slabs.spruce_log_slabs": "Fichtenstamm Stufe"
 }

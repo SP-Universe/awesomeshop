@@ -2,10 +2,7 @@ package com.stevenpaw.awesomeshop.init;
 
 import com.stevenpaw.awesomeshop.AwesomeShop;
 import com.stevenpaw.awesomeshop.objects.blocks.*;
-import com.stevenpaw.awesomeshop.objects.blocks.ModernLamp.ModernWallLamp1;
-import com.stevenpaw.awesomeshop.objects.blocks.ModernLamp.SmallModernLamp1;
-import com.stevenpaw.awesomeshop.objects.blocks.ModernLamp.SmallModernLamp2;
-import com.stevenpaw.awesomeshop.objects.blocks.ModernLamp.SmallModernLamp3;
+import com.stevenpaw.awesomeshop.objects.blocks.ModernLamp.*;
 import com.stevenpaw.awesomeshop.objects.blocks.decoblocks.*;
 import com.stevenpaw.awesomeshop.objects.blocks.flags.*;
 import net.minecraft.block.Block;
@@ -116,6 +113,7 @@ public class BlockInit {
     public static final RegistryObject<Block> EASTER_NEST = BLOCKS.register("easter/easter_nest", EasterNest::new);
 
     public static final RegistryObject<Block> SHOWER_HEAD = BLOCKS.register("shower_head", ShowerHead::new);
+    public static final RegistryObject<Block> CHANDELIER = BLOCKS.register("chandelier", Chandelier::new);
     public static final RegistryObject<Block> SHOWER_FAUCET1 = BLOCKS.register("shower_faucet1", ShowerFaucet1::new);
     public static final RegistryObject<Block> SHOWER_FAUCET2 = BLOCKS.register("shower_faucet2", ShowerFaucet2::new);
     public static final RegistryObject<Block> SMALL_TV = BLOCKS.register("small_tv", SmallTV::new);

@@ -1,0 +1,21 @@
+{
+  "defaults": { "model": "awesomeshop:block/chandelier" },
+  "multipart": [
+    {
+      "when": {"facing" : "north"},
+      "apply": { "model": "awesomeshop:block/chandelier" }
+    },
+    {
+      "when": { "facing" : "south"},
+      "apply": { "model": "awesomeshop:block/chandelier", "y":  180 }
+    },
+    {
+      "when": { "facing" : "west"},
+      "apply": { "model": "awesomeshop:block/chandelier", "y":  270 }
+    },
+    {
+      "when": { "facing" : "east"},
+      "apply": { "model": "awesomeshop:block/chandelier", "y":  90 }
+    }
+  ]
+}
