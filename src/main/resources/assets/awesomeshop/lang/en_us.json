@@ -38,6 +38,7 @@
   "block.awesomeshop.awesomnium_ore" : "Awesomnium Ore",
   "block.awesomeshop.awesomnium_block" : "Awesomnium Block",
   "block.awesomeshop.awesomnium_block_diagonal" : "Awesomnium Block Diagonal",
+
   "block.awesomeshop.doors.awesome_door" : "Awesome Door",
   "block.awesomeshop.doors.modern_glass_door" : "Modern Glass Door",
   "block.awesomeshop.doors.spooky_door" : "Spooky Door",
@@ -45,6 +46,14 @@
   "block.awesomeshop.doors.church_door" : "Church Door",
   "block.awesomeshop.doors.classical_door" : "Classical Door",
   "block.awesomeshop.doors.modern_door" : "Modern Door",
+
+  "block.awesomeshop.trapdoors.awesome_trapdoor" : "Awesome Trapdoor",
+  "block.awesomeshop.trapdoors.modern_glass_trapdoor" : "Modern Glass Trapdoor",
+  "block.awesomeshop.trapdoors.spooky_trapdoor" : "Spooky Trapdoor",
+  "block.awesomeshop.trapdoors.chain_trapdoor" : "Chain Trapdoor",
+  "block.awesomeshop.trapdoors.church_trapdoor" : "Church Trapdoor",
+  "block.awesomeshop.trapdoors.classical_trapdoor" : "Classical Trapdoor",
+  "block.awesomeshop.trapdoors.modern_trapdoor" : "Modern Trapdoor",
 
   "block.awesomeshop.shower_head" : "Shower Head",
   "block.awesomeshop.shower_faucet1" : "Shower Faucet 1",

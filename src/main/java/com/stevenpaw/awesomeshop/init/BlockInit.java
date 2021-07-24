@@ -43,6 +43,15 @@ public class BlockInit {
     public static final RegistryObject<Block> CLASSICAL_DOOR = BLOCKS.register("doors/classical_door", AwesomeshopDoor::new);
     public static final RegistryObject<Block> MODERN_DOOR = BLOCKS.register("doors/modern_door", AwesomeshopDoor::new);
 
+    //Trapdoors
+    public static final RegistryObject<Block> AWESOME_TRAPDOOR = BLOCKS.register("trapdoors/awesome_trapdoor", AwesomeshopTrapDoor::new);
+    public static final RegistryObject<Block> MODERN_GLASS_TRAPDOOR = BLOCKS.register("trapdoors/modern_glass_trapdoor", AwesomeshopTrapDoor::new);
+    public static final RegistryObject<Block> SPOOKY_TRAPDOOR = BLOCKS.register("trapdoors/spooky_trapdoor", AwesomeshopTrapDoor::new);
+    public static final RegistryObject<Block> CHAIN_TRAPDOOR = BLOCKS.register("trapdoors/chain_trapdoor", AwesomeshopTrapDoor::new);
+    public static final RegistryObject<Block> CHURCH_TRAPDOOR = BLOCKS.register("trapdoors/church_trapdoor", AwesomeshopTrapDoor::new);
+    public static final RegistryObject<Block> CLASSICAL_TRAPDOOR = BLOCKS.register("trapdoors/classical_trapdoor", AwesomeshopTrapDoor::new);
+    public static final RegistryObject<Block> MODERN_TRAPDOOR = BLOCKS.register("trapdoors/modern_trapdoor", AwesomeshopTrapDoor::new);
+
     //Pillars
     public static final RegistryObject<Block> QUARTZ_PILLAR = BLOCKS.register("pillars/quartz_pillar", PillarBlock::new);
     public static final RegistryObject<Block> STONE_PILLAR = BLOCKS.register("pillars/stone_pillar", PillarBlock::new);

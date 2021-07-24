@@ -24,5 +24,12 @@ public class BlockRenderRegister {
         RenderTypeLookup.setRenderLayer(BlockInit.CHURCH_DOOR.get(), RenderType.getTranslucent());
         RenderTypeLookup.setRenderLayer(BlockInit.CLASSICAL_DOOR.get(), RenderType.getTranslucent());
         RenderTypeLookup.setRenderLayer(BlockInit.MODERN_DOOR.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(BlockInit.AWESOME_TRAPDOOR.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(BlockInit.CHAIN_TRAPDOOR.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(BlockInit.CHURCH_TRAPDOOR.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(BlockInit.CLASSICAL_TRAPDOOR.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(BlockInit.MODERN_GLASS_TRAPDOOR.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(BlockInit.MODERN_TRAPDOOR.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(BlockInit.SPOOKY_TRAPDOOR.get(), RenderType.getTranslucent());
     }
 }
