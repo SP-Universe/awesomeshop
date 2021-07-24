@@ -9,6 +9,7 @@ import com.stevenpaw.awesomeshop.objects.blocks.ModernLamp.SmallModernLamp3;
 import com.stevenpaw.awesomeshop.objects.blocks.decoblocks.*;
 import com.stevenpaw.awesomeshop.objects.blocks.flags.*;
 import net.minecraft.block.Block;
+import net.minecraft.block.StairsBlock;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -33,6 +34,22 @@ public class BlockInit {
     public static final RegistryObject<Block> PRESENT = BLOCKS.register("present", Present::new);
     public static final RegistryObject<Block> CARDBOARD_BOX = BLOCKS.register("cardboard_box", CardboardBox::new);
     public static final RegistryObject<Block> TRASHCAN = BLOCKS.register("trashcan", TrashCan::new);
+
+    //Logstairs
+    public static final RegistryObject<Block> OAK_LOG_STAIR = BLOCKS.register("stairs/oak_log_stairs", AwesomeshopStairs::new);
+    public static final RegistryObject<Block> SPRUCE_LOG_STAIR = BLOCKS.register("stairs/spruce_log_stairs", AwesomeshopStairs::new);
+    public static final RegistryObject<Block> BIRCH_LOG_STAIR = BLOCKS.register("stairs/birch_log_stairs", AwesomeshopStairs::new);
+    public static final RegistryObject<Block> JUNGLE_LOG_STAIR = BLOCKS.register("stairs/jungle_log_stairs", AwesomeshopStairs::new);
+    public static final RegistryObject<Block> ACACIA_LOG_STAIR = BLOCKS.register("stairs/acacia_log_stairs", AwesomeshopStairs::new);
+    public static final RegistryObject<Block> DARK_OAK_LOG_STAIR = BLOCKS.register("stairs/dark_oak_log_stairs", AwesomeshopStairs::new);
+
+    //Logslabs
+    public static final RegistryObject<Block> OAK_LOG_SLAB = BLOCKS.register("slabs/oak_log_slab", AwesomeshopSlabs::new);
+    public static final RegistryObject<Block> SPRUCE_LOG_SLAB = BLOCKS.register("slabs/spruce_log_slab", AwesomeshopSlabs::new);
+    public static final RegistryObject<Block> BIRCH_LOG_SLAB = BLOCKS.register("slabs/birch_log_slab", AwesomeshopSlabs::new);
+    public static final RegistryObject<Block> JUNGLE_LOG_SLAB = BLOCKS.register("slabs/jungle_log_slab", AwesomeshopSlabs::new);
+    public static final RegistryObject<Block> ACACIA_LOG_SLAB = BLOCKS.register("slabs/acacia_log_slab", AwesomeshopSlabs::new);
+    public static final RegistryObject<Block> DARK_OAK_LOG_SLAB = BLOCKS.register("slabs/dark_oak_log_slab", AwesomeshopSlabs::new);
 
     //Doors
     public static final RegistryObject<Block> AWESOME_DOOR = BLOCKS.register("doors/awesome_door", AwesomeshopDoor::new);

@@ -39,6 +39,20 @@
   "block.awesomeshop.awesomnium_block" : "Awesomnium Block",
   "block.awesomeshop.awesomnium_block_diagonal" : "Awesomnium Block Diagonal",
 
+  "block.awesomeshop.stairs.oak_log_stairs" : "Oak Log Stairs",
+  "block.awesomeshop.stairs.spruce_log_stairs" : "Spruce Log Stairs",
+  "block.awesomeshop.stairs.birch_log_stairs" : "Birch Log Stairs",
+  "block.awesomeshop.stairs.jungle_log_stairs" : "Jungle Log Stairs",
+  "block.awesomeshop.stairs.acacia_log_stairs" : "Acacia Log Stairs",
+  "block.awesomeshop.stairs.dark_oak_log_stairs" : "Dark Oak Log Stairs",
+
+  "block.awesomeshop.slabs.oak_log_slab" : "Oak Log Slabs",
+  "block.awesomeshop.slabs.spruce_log_slab" : "Spruce Log Slabs",
+  "block.awesomeshop.slabs.birch_log_slab" : "Birch Log Slabs",
+  "block.awesomeshop.slabs.jungle_log_slab" : "Jungle Log Slabs",
+  "block.awesomeshop.slabs.acacia_log_slab" : "Acacia Log Slabs",
+  "block.awesomeshop.slabs.dark_oak_log_slab" : "Dark Oak Log Slabs",
+
   "block.awesomeshop.doors.awesome_door" : "Awesome Door",
   "block.awesomeshop.doors.modern_glass_door" : "Modern Glass Door",
   "block.awesomeshop.doors.spooky_door" : "Spooky Door",

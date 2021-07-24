@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model":  "awesomeshop:block/slabs/spruce_log_slab"},
+    "type=top": { "model":  "awesomeshop:block/slabs/spruce_log_slab_top"},
+    "type=double": { "model":  "minecraft:block/spruce_wood"}
+  }
+}
