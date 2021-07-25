@@ -132,6 +132,9 @@ public class BlockInit {
     public static final RegistryObject<Block> CHRISTMASTREE = BLOCKS.register("christmastree", Christmastree::new);
     public static final RegistryObject<Block> BASICTABLE = BLOCKS.register("basic_table", BasicTable::new);
     public static final RegistryObject<Block> PIANO = BLOCKS.register("piano", Piano::new);
+    public static final RegistryObject<Block> TOASTER = BLOCKS.register("toaster", Toaster::new);
+    public static final RegistryObject<Block> STAIRS_RAILING_LEFT = BLOCKS.register("stairs_railing_left", StairsRailingLeft::new);
+    public static final RegistryObject<Block> STAIRS_RAILING_RIGHT = BLOCKS.register("stairs_railing_right", StairsRailingRight::new);
 
     //Flags
     public static final RegistryObject<Block> DRUGAR_FLAG = BLOCKS.register("drugar_flag", DrugarFlag::new);

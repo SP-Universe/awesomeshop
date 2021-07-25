@@ -77,6 +77,7 @@
   "block.awesomeshop.brick_oven_tube": "Backsteinofen-Röhre",
   "block.awesomeshop.doormat": "Fußmatte",
   "block.awesomeshop.switch": "Switch",
+  "block.awesomeshop.toaster": "Toaster",
   "block.awesomeshop.pc_setup": "PC Set",
   "block.awesomeshop.toilet": "Toilette",
   "block.awesomeshop.stairs": "Treppe",
@@ -86,6 +87,8 @@
   "block.awesomeshop.small_modern_lamp3": "Kleine moderne Lampe 3",
   "block.awesomeshop.modern_wall_lamp1": "Moderne Wandlampe 1",
   "block.awesomeshop.chandelier": "Kronleuchter",
+  "block.awesomeshop.stairs_railing_left": "Treppengeländer links",
+  "block.awesomeshop.stairs_railing_right": "Treppengeländer rechts",
 
   "block.awesomeshop.drugar_flag": "Drugar Flagge",
   "block.awesomeshop.german_flag": "Deutsche Flagge",

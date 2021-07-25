@@ -77,6 +77,7 @@
   "block.awesomeshop.brick_oven_tube" : "Brick Oven Tube",
   "block.awesomeshop.doormat" : "Doormat",
   "block.awesomeshop.switch" : "Switch",
+  "block.awesomeshop.toaster" : "Toaster",
   "block.awesomeshop.pc_setup" : "PC Setup",
   "block.awesomeshop.toilet" : "Toilet",
   "block.awesomeshop.stairs" : "Stairs",
@@ -86,6 +87,8 @@
   "block.awesomeshop.small_modern_lamp3" : "Small Modern Lamp 3",
   "block.awesomeshop.modern_wall_lamp1" : "Modern Wall Lamp 1",
   "block.awesomeshop.chandelier" : "Chandelier",
+  "block.awesomeshop.stairs_railing_left" : "Stairs Railing Left",
+  "block.awesomeshop.stairs_railing_right" : "Stairs Railing Right",
 
   "block.awesomeshop.drugar_flag" : "Drugar Flag",
   "block.awesomeshop.german_flag" : "German Flag",
