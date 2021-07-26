@@ -25,6 +25,7 @@ public class CrystallumSlabs extends SlabBlock {
                 .hardnessAndResistance(0.5f,2.0f)
                 .sound(SoundType.GLASS)
                 .harvestLevel(0)
+                .setLightLevel(value -> 10)
                 .notSolid()
         );
     }

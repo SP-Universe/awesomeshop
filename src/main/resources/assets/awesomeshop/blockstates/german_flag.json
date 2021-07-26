@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "facing=north": { "model": "awesomeshop:block/german_flag" },
-    "facing=south": { "model": "awesomeshop:block/german_flag", "y":  180},
-    "facing=west": { "model": "awesomeshop:block/german_flag", "y":  270},
-    "facing=east": { "model": "awesomeshop:block/german_flag", "y":  90}
-  }
-}

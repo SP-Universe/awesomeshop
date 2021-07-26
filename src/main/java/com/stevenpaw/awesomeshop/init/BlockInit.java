@@ -4,9 +4,7 @@ import com.stevenpaw.awesomeshop.AwesomeShop;
 import com.stevenpaw.awesomeshop.objects.blocks.*;
 import com.stevenpaw.awesomeshop.objects.blocks.ModernLamp.*;
 import com.stevenpaw.awesomeshop.objects.blocks.decoblocks.*;
-import com.stevenpaw.awesomeshop.objects.blocks.flags.*;
 import net.minecraft.block.Block;
-import net.minecraft.block.StairsBlock;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -136,18 +134,25 @@ public class BlockInit {
     public static final RegistryObject<Block> STAIRS_RAILING_LEFT = BLOCKS.register("stairs_railing_left", StairsRailingLeft::new);
     public static final RegistryObject<Block> STAIRS_RAILING_RIGHT = BLOCKS.register("stairs_railing_right", StairsRailingRight::new);
 
-    //Flags
-    public static final RegistryObject<Block> DRUGAR_FLAG = BLOCKS.register("drugar_flag", DrugarFlag::new);
     public static final RegistryObject<Block> ADVENT_WREATH_4 = BLOCKS.register("advent_wreath4", AdventWreath4::new);
     public static final RegistryObject<Block> ADVENT_WREATH_3 = BLOCKS.register("advent_wreath3", AdventWreath3::new);
     public static final RegistryObject<Block> ADVENT_WREATH_2 = BLOCKS.register("advent_wreath2", AdventWreath2::new);
     public static final RegistryObject<Block> ADVENT_WREATH_1 = BLOCKS.register("advent_wreath1", AdventWreath1::new);
     public static final RegistryObject<Block> ADVENT_WREATH_0 = BLOCKS.register("advent_wreath0", AdventWreath0::new);
-    public static final RegistryObject<Block> PAN_FLAG = BLOCKS.register("pan_flag", PanFlag::new);
-    public static final RegistryObject<Block> BI_FLAG = BLOCKS.register("bi_flag", BiFlag::new);
-    public static final RegistryObject<Block> GAY_FLAG = BLOCKS.register("gay_flag", GayFlag::new);
-    public static final RegistryObject<Block> USA_FLAG = BLOCKS.register("usa_flag", USAFlag::new);
-    public static final RegistryObject<Block> GERMAN_FLAG = BLOCKS.register("german_flag", GermanFlag::new);
+
+    //Flags
+    public static final RegistryObject<Block> DRUGAR_FLAG = BLOCKS.register("flags/drugar_flag", AwesomeFlag::new);
+    public static final RegistryObject<Block> PAN_FLAG = BLOCKS.register("flags/pan_flag", AwesomeFlag::new);
+    public static final RegistryObject<Block> BI_FLAG = BLOCKS.register("flags/bi_flag", AwesomeFlag::new);
+    public static final RegistryObject<Block> GAY_FLAG = BLOCKS.register("flags/gay_flag", AwesomeFlag::new);
+    public static final RegistryObject<Block> USA_FLAG = BLOCKS.register("flags/usa_flag", AwesomeFlag::new);
+    public static final RegistryObject<Block> GERMAN_FLAG = BLOCKS.register("flags/german_flag", AwesomeFlag::new);
+    public static final RegistryObject<Block> SWEDEN_FLAG = BLOCKS.register("flags/sweden_flag", AwesomeFlag::new);
+    public static final RegistryObject<Block> ENGLAND_FLAG = BLOCKS.register("flags/england_flag", AwesomeFlag::new);
+    public static final RegistryObject<Block> CHINA_FLAG = BLOCKS.register("flags/china_flag", AwesomeFlag::new);
+    public static final RegistryObject<Block> JAPAN_FLAG = BLOCKS.register("flags/japan_flag", AwesomeFlag::new);
+    public static final RegistryObject<Block> CROATIA_FLAG = BLOCKS.register("flags/croatia_flag", AwesomeFlag::new);
+    public static final RegistryObject<Block> RUSSIA_FLAG = BLOCKS.register("flags/russia_flag", AwesomeFlag::new);
 
     //The Big Screen
     public static final RegistryObject<Block> BIG_SCREEN_1 = BLOCKS.register("big_screen/big_screen1", BigScreen::new);
