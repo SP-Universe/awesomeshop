@@ -17,6 +17,8 @@ import org.lwjgl.glfw.GLFW;
 
 import java.util.List;
 
+import net.minecraft.item.Item.Properties;
+
 public class Highlighter extends Item
 {
     public Highlighter() {

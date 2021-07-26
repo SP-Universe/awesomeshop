@@ -8,6 +8,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IWorldReader;
 import net.minecraftforge.common.ToolType;
 
+import net.minecraft.block.AbstractBlock.Properties;
+
 public class DucatiumOre extends OreBlock {
 
     //hardness:         how easy it is to mine block
@@ -20,7 +22,7 @@ public class DucatiumOre extends OreBlock {
         super(Properties.create(Material.CLAY)
                 .hardnessAndResistance(6.0f,1200)
                 .sound(SoundType.HONEY)
-                .harvestLevel(3)
+                .harvestLevel(2)
                 .harvestTool(ToolType.SHOVEL)
                 .setRequiresTool()
         );

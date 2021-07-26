@@ -1,0 +1,8 @@
+{
+  "type": "awesomeshop:awesomeshop",
+  "ingredient": {
+    "item": "awesomeshop:depressing_matter"
+  },
+  "result": "awesomeshop:slabs/dark_oak_log_slab",
+  "count": 1
+}

@@ -36,6 +36,8 @@ import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Random;
 
+import net.minecraft.block.AbstractBlock.Properties;
+
 public class Shredder extends AbstractFurnaceBlock {
 
     private static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;

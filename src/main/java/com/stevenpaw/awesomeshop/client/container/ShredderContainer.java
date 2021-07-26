@@ -1,6 +1,7 @@
 package com.stevenpaw.awesomeshop.client.container;
 
 import com.stevenpaw.awesomeshop.init.ModContainerTypes;
+import com.stevenpaw.awesomeshop.recipe.AbstractShredderRecipe;
 import com.stevenpaw.awesomeshop.recipe.ModRecipeType;
 import com.stevenpaw.awesomeshop.recipe.ShredderFuelSlot;
 import net.minecraft.entity.player.PlayerEntity;
@@ -24,7 +25,7 @@ public class ShredderContainer extends Container {
     private final IInventory furnaceInventory;
     private final IIntArray furnaceData;
     protected final World world;
-    private final IRecipeType<? extends AbstractCookingRecipe> recipeType;
+    private final IRecipeType<? extends AbstractShredderRecipe> recipeType;
 
     public ShredderContainer(int id, PlayerInventory playerInventory, PacketBuffer packetBuffer) {
         this(ModContainerTypes.SHREDDER.get(), id, playerInventory, new Inventory(3), new IntArray(4));

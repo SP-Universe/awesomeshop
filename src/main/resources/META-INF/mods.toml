@@ -8,7 +8,7 @@ issueTrackerURL="https://github.com/SP-Universe/awesomeshop/issues/new/choose" #
 
 [[mods]] #mandatory
 modId="awesomeshop" #mandatory
-version="1.16.4-1.5.1" #mandatory
+version="1.16.4-1.6.0" #mandatory
 displayName="Awesome Shop" #mandatory
 updateJSONURL="https://raw.githubusercontent.com/Steven-Paw-Design/awesomeshop/develop/update.json" #optional
 displayURL="https://www.curseforge.com/minecraft/mc-mods/awesome-shop" #optional
@@ -37,6 +37,6 @@ Also there are cool Crystallum-Blocks!
 [[dependencies.awesomeshop]] #optional
     modId="jei" #mandatory
     mandatory=false #mandatory
-    versionRange="[1.16.4]" #mandatory
+    versionRange="[1.16.4,)" #mandatory
     ordering="NONE"
     side="BOTH"

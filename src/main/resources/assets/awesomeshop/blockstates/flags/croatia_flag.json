@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "awesomeshop:block/flags/croatia_flag" },
+    "facing=south": { "model": "awesomeshop:block/flags/croatia_flag", "y":  180},
+    "facing=west": { "model": "awesomeshop:block/flags/croatia_flag", "y":  270},
+    "facing=east": { "model": "awesomeshop:block/flags/croatia_flag", "y":  90}
+  }
+}

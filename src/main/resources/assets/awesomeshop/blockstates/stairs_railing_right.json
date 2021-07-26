@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "awesomeshop:block/stairs_railing_right" },
+    "facing=south": { "model": "awesomeshop:block/stairs_railing_right", "y":  180},
+    "facing=west": { "model": "awesomeshop:block/stairs_railing_right", "y":  270},
+    "facing=east": { "model": "awesomeshop:block/stairs_railing_right", "y":  90}
+  }
+}

@@ -29,6 +29,8 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 import java.util.stream.Stream;
 
+import net.minecraft.block.AbstractBlock.Properties;
+
 public class SmallModernLamp2 extends Block {
 
     //Light Handling

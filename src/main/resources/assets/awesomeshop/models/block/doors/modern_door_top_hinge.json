@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_rh",
+  "textures": {
+    "top": "awesomeshop:blocks/doors/modern_door_top",
+    "bottom": "awesomeshop:blocks/doors/modern_door_bottom"
+  }
+}

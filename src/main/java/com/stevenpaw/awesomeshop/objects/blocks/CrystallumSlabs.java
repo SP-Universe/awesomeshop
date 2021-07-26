@@ -10,6 +10,8 @@ import net.minecraft.state.properties.SlabType;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockReader;
 
+import net.minecraft.block.AbstractBlock.Properties;
+
 public class CrystallumSlabs extends SlabBlock {
 
     //hardness:         how easy it is to mine block
@@ -23,6 +25,7 @@ public class CrystallumSlabs extends SlabBlock {
                 .hardnessAndResistance(0.5f,2.0f)
                 .sound(SoundType.GLASS)
                 .harvestLevel(0)
+                .setLightLevel(value -> 10)
                 .notSolid()
         );
     }

@@ -1,0 +1,8 @@
+{
+  "type": "awesomeshop:awesomeshop",
+  "ingredient": {
+    "item": "awesomeshop:depressing_matter"
+  },
+  "result": "awesomeshop:slabs/birch_log_slab",
+  "count": 1
+}

@@ -33,7 +33,7 @@ import net.minecraftforge.items.wrapper.InvWrapper;
 
 import javax.annotation.Nonnull;
 
-public class ShredderTileEntity extends AbstractFurnaceTileEntity {
+public class ShredderTileEntity extends AbstractShredderTileEntity {
 
     public ShredderTileEntity() {
 

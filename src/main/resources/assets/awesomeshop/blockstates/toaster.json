@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "awesomeshop:block/toaster" },
+    "facing=south": { "model": "awesomeshop:block/toaster", "y":  180},
+    "facing=west": { "model": "awesomeshop:block/toaster", "y":  270},
+    "facing=east": { "model": "awesomeshop:block/toaster", "y":  90}
+  }
+}
