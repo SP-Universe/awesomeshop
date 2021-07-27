@@ -1,5 +1,5 @@
 {
-	"credit": "Steven Paw",
+	"credit": "Made with Blockbench",
 	"texture_size": [128, 128],
 	"textures": {
 		"0": "awesomeshop:blocks/stairs",
@@ -109,7 +109,7 @@
 		},
 		"gui": {
 			"rotation": [45, 135, 0],
-			"translation": [-0.25, 0.5, 0],
+			"translation": [-0.25, 1, 0],
 			"scale": [0.5, 0.5, 0.5]
 		},
 		"head": {
@@ -124,7 +124,6 @@
 		{
 			"name": "VoxelShapes",
 			"origin": [8, 18, 17],
-			"color": 0,
 			"children": [1, 2, 3, 4, 5]
 		}
 	]

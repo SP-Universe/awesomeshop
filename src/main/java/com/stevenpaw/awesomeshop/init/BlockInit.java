@@ -133,6 +133,7 @@ public class BlockInit {
     public static final RegistryObject<Block> TOASTER = BLOCKS.register("toaster", Toaster::new);
     public static final RegistryObject<Block> STAIRS_RAILING_LEFT = BLOCKS.register("stairs_railing_left", StairsRailingLeft::new);
     public static final RegistryObject<Block> STAIRS_RAILING_RIGHT = BLOCKS.register("stairs_railing_right", StairsRailingRight::new);
+    public static final RegistryObject<Block> STAIRS_RAILING = BLOCKS.register("stairs_railing", StairsRailing::new);
 
     public static final RegistryObject<Block> ADVENT_WREATH_4 = BLOCKS.register("advent_wreath4", AdventWreath4::new);
     public static final RegistryObject<Block> ADVENT_WREATH_3 = BLOCKS.register("advent_wreath3", AdventWreath3::new);
