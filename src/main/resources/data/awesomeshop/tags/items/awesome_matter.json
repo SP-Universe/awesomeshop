@@ -16,17 +16,17 @@
     "awesomeshop:advent_wreath2",
     "awesomeshop:advent_wreath3",
     "awesomeshop:advent_wreath4",
-    "awesomeshop:bi_flag",
+    "awesomeshop:flags/bi_flag",
     "awesomeshop:christmastree",
-    "awesomeshop:drugar_flag",
-    "awesomeshop:gay_flag",
-    "awesomeshop:german_flag",
+    "awesomeshop:flags/drugar_flag",
+    "awesomeshop:flags/gay_flag",
+    "awesomeshop:flags/german_flag",
     "awesomeshop:night_lamp",
-    "awesomeshop:pan_flag",
+    "awesomeshop:flags/pan_flag",
     "awesomeshop:pc_setup",
     "awesomeshop:piano",
     "awesomeshop:switch",
-    "awesomeshop:usa_flag",
+    "awesomeshop:flags/usa_flag",
     "awesomeshop:easter/easter_nest"
   ]
 }

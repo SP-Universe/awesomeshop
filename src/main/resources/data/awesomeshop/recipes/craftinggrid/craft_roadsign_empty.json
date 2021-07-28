@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "I  ",
+    "III",
+    "I  "
+  ],
+  "key":
+  {
+    "I":
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "awesomeshop:roadsigns/roadsign_empty",
+    "count": 1
+  }
+}

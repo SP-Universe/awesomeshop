@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "awesomeshop:bi_flag"
+          "name": "awesomeshop:flags/bi_flag"
         }
       ]
     }

@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "awesomeshop:drugar_flag"
+          "name": "awesomeshop:flags/drugar_flag"
         }
       ]
     }

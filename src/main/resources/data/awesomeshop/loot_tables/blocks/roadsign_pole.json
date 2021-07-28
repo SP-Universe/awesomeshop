@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "awesomeshop:flags/pan_flag"
+          "name": "awesomeshop:roadsign_pole"
         }
       ]
     }

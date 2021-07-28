@@ -69,6 +69,9 @@
   "block.awesomeshop.trapdoors.classical_trapdoor" : "Classical Trapdoor",
   "block.awesomeshop.trapdoors.modern_trapdoor" : "Modern Trapdoor",
 
+  "block.awesomeshop.roadsign_pole" : "Roadsign Pole",
+  "block.awesomeshop.roadsigns.roadsign_empty" : "Empty Roadsign",
+
   "block.awesomeshop.shower_head" : "Shower Head",
   "block.awesomeshop.shower_faucet1" : "Shower Faucet 1",
   "block.awesomeshop.shower_faucet2" : "Shower Faucet 2",
@@ -117,6 +120,17 @@
   "container.shredder" : "Shredder",
   "block.awesomeshop.awesomeshop" : "Awesome Shop",
   "container.awesomeshop" : "Awesome Shop",
+  "block.awesomeshop.sign_painter" : "Sign Painter",
+  "container.sign_painter" : "Sign Painter",
+  "block.awesomeshop.awesome_chest" : "Awesome Chest",
+  "container.awesome_chest" : "Awesome Chest",
+  "block.awesomeshop.present" : "Present",
+  "container.present" : "Present",
+  "block.awesomeshop.cardboard_box" : "Cardboard Box",
+  "container.cardboard_box" : "Cardboard Box",
+  "block.awesomeshop.trashcan" : "Trashcan",
+  "container.trashcan" : "Trashcan",
+  "block.awesomeshop.hand_miner" : "Hand-Miner",
 
   "block.awesomeshop.pillars.quartz_pillar" : "Quartz Pillar",
   "block.awesomeshop.pillars.stone_pillar" : "Stone Pillar",
@@ -160,18 +174,7 @@
   "block.awesomeshop.pillars.emerald_block_pillar" : "Block of Emerald Pillar",
   "block.awesomeshop.pillars.diamond_block_pillar" : "Block of Diamond Pillar",
   "block.awesomeshop.pillars.gold_block_pillar" : "Block of Gold Pillar",
-
   "block.awesomeshop.easter.easter_nest" : "Easter Nest",
-
-  "block.awesomeshop.awesome_chest" : "Awesome Chest",
-  "container.awesome_chest" : "Awesome Chest",
-  "block.awesomeshop.present" : "Present",
-  "container.present" : "Present",
-  "block.awesomeshop.cardboard_box" : "Cardboard Box",
-  "container.cardboard_box" : "Cardboard Box",
-  "block.awesomeshop.trashcan" : "Trashcan",
-  "container.trashcan" : "Trashcan",
-  "block.awesomeshop.hand_miner" : "Hand-Miner",
 
   "block.awesomeshop.big_screen.big_screen1" : "Big Screen top left",
   "block.awesomeshop.big_screen.big_screen2" : "Big Screen top center",

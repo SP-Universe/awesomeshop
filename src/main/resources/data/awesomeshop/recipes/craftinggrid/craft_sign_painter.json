@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "WWW",
+    "SAS",
+    "SSS"
+  ],
+  "key":
+  {
+    "W":
+    {
+      "tag": "minecraft:wool"
+    },
+    "S":
+    {
+      "item": "minecraft:stone"
+    },
+    "A":
+    {
+      "item": "awesomeshop:awesome_core"
+    }
+  },
+  "result":
+  {
+    "item": "awesomeshop:sign_painter",
+    "count": 1
+  }
+}

@@ -69,6 +69,9 @@
   "block.awesomeshop.trapdoors.classical_trapdoor": "Klassische Falltür",
   "block.awesomeshop.trapdoors.modern_trapdoor": "Moderne Falltür",
 
+  "block.awesomeshop.roadsign_pole": "Straßenschild Pfahl",
+  "block.awesomeshop.roadsigns.roadsign_empty": "Leeres Straßenschild",
+
   "block.awesomeshop.shower_head": "Duschkopf",
   "block.awesomeshop.shower_faucet1": "Dusch Armatur 1",
   "block.awesomeshop.shower_faucet2": "Dusch Armatur 2",
@@ -117,6 +120,17 @@
   "container.shredder": "Schredder",
   "block.awesomeshop.awesomeshop": "Awesome Shop",
   "container.awesomeshop": "Awesome Shop",
+  "block.awesomeshop.sign_painter": "Schild Bemaler",
+  "container.sign_painter": "Schild Bemaler",
+  "block.awesomeshop.awesome_chest": "Awesome Kiste",
+  "container.awesome_chest": "Awesome Kiste",
+  "block.awesomeshop.present": "Geschenk",
+  "container.present": "Geschenk",
+  "block.awesomeshop.cardboard_box": "Pappkiste",
+  "container.cardboard_box": "Pappkiste",
+  "block.awesomeshop.trashcan": "Mülleimer",
+  "container.trashcan": "Mülleimer",
+  "block.awesomeshop.hand_miner": "Hand-Bohrer",
 
   "block.awesomeshop.pillars.quartz_pillar": "Quartz Säule",
   "block.awesomeshop.pillars.stone_pillar": "Stein Säule",
@@ -160,18 +174,7 @@
   "block.awesomeshop.pillars.emerald_block_pillar": "Smaragdblock Säule",
   "block.awesomeshop.pillars.diamond_block_pillar": "Diamantblock Säule",
   "block.awesomeshop.pillars.gold_block_pillar": "Goldblock Säule",
-
   "block.awesomeshop.easter.easter_nest": "Osternest",
-
-  "block.awesomeshop.awesome_chest": "Awesome Kiste",
-  "container.awesome_chest": "Awesome Kiste",
-  "block.awesomeshop.present": "Geschenk",
-  "container.present": "Geschenk",
-  "block.awesomeshop.cardboard_box": "Pappkiste",
-  "container.cardboard_box": "Pappkiste",
-  "block.awesomeshop.trashcan": "Mülleimer",
-  "container.trashcan": "Mülleimer",
-  "block.awesomeshop.hand_miner": "Hand-Bohrer",
 
   "block.awesomeshop.big_screen.big_screen1": "Großer Bildschirm oben links",
   "block.awesomeshop.big_screen.big_screen2": "Großer Bildschirm oben mitte",

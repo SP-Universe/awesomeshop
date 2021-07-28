@@ -21,4 +21,7 @@ public class ModRecipeSerializer {
 
     public static final RegistryObject<AbstractSingleItemRecipe.Serializer<AwesomeShopRecipe>> AWESOMESHOP = RECIPE_SERIALIZERS.register("awesomeshop",
             () -> new AbstractSingleItemRecipe.Serializer<>(AwesomeShopRecipe::new));
+
+    public static final RegistryObject<AbstractSingleItemRecipe.Serializer<SignPainterRecipe>> SIGN_PAINTER = RECIPE_SERIALIZERS.register("sign_painter",
+            () -> new AbstractSingleItemRecipe.Serializer<>(SignPainterRecipe::new));
 }

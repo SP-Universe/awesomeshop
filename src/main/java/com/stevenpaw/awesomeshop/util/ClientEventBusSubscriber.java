@@ -24,6 +24,7 @@ public class ClientEventBusSubscriber {
         ScreenManager.registerFactory(ModContainerTypes.CARDBOARD_BOX.get(), CardboardBoxScreen::new);
         ScreenManager.registerFactory(ModContainerTypes.SHREDDER.get(), ShredderScreen::new);
         ScreenManager.registerFactory(ModContainerTypes.AWESOMESHOP.get(), AwesomeShopScreen::new);
+        ScreenManager.registerFactory(ModContainerTypes.SIGN_PAINTER.get(), SignPainterScreen::new);
         ScreenManager.registerFactory(ModContainerTypes.TRASHCAN.get(), TrashCanScreen::new);
     }
 }

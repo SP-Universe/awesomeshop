@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "awesomeshop:stairs/oak_log_slabs"
+          "name": "awesomeshop:slabs/oak_log_slabs"
         }
       ]
     }

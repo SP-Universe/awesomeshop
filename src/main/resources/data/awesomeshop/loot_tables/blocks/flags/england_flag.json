@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "awesomeshop:england_flag"
+          "name": "awesomeshop:flags/england_flag"
         }
       ]
     }

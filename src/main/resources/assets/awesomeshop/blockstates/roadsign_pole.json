@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "awesomeshop:block/roadsign_pole" },
+    "facing=south": { "model": "awesomeshop:block/roadsign_pole", "y":  180},
+    "facing=west": { "model": "awesomeshop:block/roadsign_pole", "y":  270},
+    "facing=east": { "model": "awesomeshop:block/roadsign_pole", "y":  90}
+  }
+}
