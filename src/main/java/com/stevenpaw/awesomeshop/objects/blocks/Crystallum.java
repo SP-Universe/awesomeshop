@@ -28,7 +28,6 @@ public class Crystallum extends AbstractGlassBlock {
                 .sound(SoundType.GLASS)
                 .harvestLevel(0)
                 .setLightLevel(value -> 10)
-                .notSolid()
         );
     }
 
