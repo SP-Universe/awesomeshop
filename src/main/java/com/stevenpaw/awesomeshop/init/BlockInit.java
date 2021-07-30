@@ -30,6 +30,7 @@ public class BlockInit {
     public static final RegistryObject<Block> PRESENT = BLOCKS.register("present", Present::new);
     public static final RegistryObject<Block> CARDBOARD_BOX = BLOCKS.register("cardboard_box", CardboardBox::new);
     public static final RegistryObject<Block> TRASHCAN = BLOCKS.register("trashcan", TrashCan::new);
+    public static final RegistryObject<Block> SECURITY_CAM = BLOCKS.register("security_cam", TrashCan::new);
 
     //RoadSigns
     public static final RegistryObject<Block> ROADSIGN_POLE = BLOCKS.register("roadsign_pole", RoadSignPole::new);

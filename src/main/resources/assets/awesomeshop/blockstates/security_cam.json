@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "awesomeshop:block/security_cam_floor"
+    },
+    "facing=east": {
+      "model": "awesomeshop:block/security_cam_wall",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "awesomeshop:block/security_cam_wall"
+    },
+    "facing=south": {
+      "model": "awesomeshop:block/security_cam_wall",
+      "y": 180
+    },
+    "facing=up": {
+      "model": "awesomeshop:block/security_cam_ceiling"
+    },
+    "facing=west": {
+      "model": "awesomeshop:block/security_cam_wall",
+      "y": 270
+    }
+  }
+}
