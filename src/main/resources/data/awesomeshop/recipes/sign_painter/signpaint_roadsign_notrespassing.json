@@ -3,6 +3,6 @@
   "ingredient": {
     "item": "awesomeshop:roadsigns/roadsign_empty"
   },
-  "result": "minecraft:stone",
+  "result": "awesomeshop:roadsigns/roadsign_notrespassing",
   "count": 1
 }

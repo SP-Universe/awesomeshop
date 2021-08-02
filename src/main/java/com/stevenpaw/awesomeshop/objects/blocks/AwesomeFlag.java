@@ -39,7 +39,7 @@ public class AwesomeFlag extends Block {
     public AwesomeFlag() {
         super(Properties.create(Material.IRON)
                 .hardnessAndResistance(3.5f,4.0f)
-                .sound(SoundType.ANVIL)
+                .sound(SoundType.CLOTH)
                 .harvestLevel(0)
                 .harvestTool(ToolType.PICKAXE)
                 .setRequiresTool());

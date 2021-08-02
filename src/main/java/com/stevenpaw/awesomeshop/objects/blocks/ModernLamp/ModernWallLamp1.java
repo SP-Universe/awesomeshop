@@ -43,8 +43,8 @@ public class ModernWallLamp1 extends Block {
 
     public ModernWallLamp1() {
         super(Properties.create(Material.IRON)
-                .hardnessAndResistance(3.5f,4.0f)
-                .sound(SoundType.ANVIL)
+                .hardnessAndResistance(1.5f,2.0f)
+                .sound(SoundType.METAL)
                 .harvestLevel(0));
     }
 

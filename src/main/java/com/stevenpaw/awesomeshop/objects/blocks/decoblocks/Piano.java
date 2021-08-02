@@ -48,7 +48,7 @@ public class Piano extends Block {
 
     public Piano() {
         super(Properties.create(Material.WOOD)
-                .hardnessAndResistance(1.5f,1.0f)
+                .hardnessAndResistance(1.5f,2.0f)
                 .sound(SoundType.WOOD)
                 .harvestLevel(0)
                 .notSolid());

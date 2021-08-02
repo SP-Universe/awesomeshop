@@ -71,6 +71,9 @@
 
   "block.awesomeshop.roadsign_pole" : "Roadsign Pole",
   "block.awesomeshop.roadsigns.roadsign_empty" : "Empty Roadsign",
+  "block.awesomeshop.roadsigns.roadsign_stop" : "Stop Roadsign",
+  "block.awesomeshop.roadsigns.roadsign_rightofway" : "Right Of Way Roadsign",
+  "block.awesomeshop.roadsigns.roadsign_notrespassing" : "No Trespassing Roadsign",
 
   "block.awesomeshop.shower_head" : "Shower Head",
   "block.awesomeshop.shower_faucet1" : "Shower Faucet 1",
@@ -94,6 +97,10 @@
   "block.awesomeshop.stairs_railing_right" : "Stairs Railing Right",
   "block.awesomeshop.stairs_railing" : "Stairs Railing",
   "block.awesomeshop.security_cam" : "Security Cam",
+  "block.awesomeshop.keypad" : "KeyPad",
+  "block.awesomeshop.washing_machine" : "Washing Machine",
+  "block.awesomeshop.dryer" : "Dryer",
+  "block.awesomeshop.laptop" : "Laptop",
 
   "block.awesomeshop.flags.drugar_flag" : "Drugar Flag",
   "block.awesomeshop.flags.german_flag" : "German Flag",

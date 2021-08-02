@@ -37,8 +37,8 @@ public class EasterNest extends Block {
 
     public EasterNest() {
         super(Properties.create(Material.GLASS)
-                .hardnessAndResistance(3.5f,4.0f)
-                .sound(SoundType.SOUL_SAND)
+                .hardnessAndResistance(1.5f,2.0f)
+                .sound(SoundType.VINE)
                 .harvestLevel(0));
     }
 

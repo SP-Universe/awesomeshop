@@ -18,7 +18,7 @@ public class AwesomniumBlock extends Block {
     public AwesomniumBlock() {
         super(Properties.create(Material.IRON)
                 .hardnessAndResistance(3.0f,6.0f)
-                .sound(SoundType.METAL)
+                .sound(SoundType.STONE)
                 .harvestLevel(2)
                 .harvestTool(ToolType.PICKAXE)
                 .setRequiresTool()

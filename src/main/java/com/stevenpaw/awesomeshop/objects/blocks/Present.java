@@ -50,7 +50,7 @@ public class Present extends Block {
     public Present(){
         super(Properties.create(Material.IRON)
                 .hardnessAndResistance(1.5f,1.0f)
-                .sound(SoundType.METAL)
+                .sound(SoundType.SAND)
                 .harvestLevel(0)
                 .notSolid());
     }

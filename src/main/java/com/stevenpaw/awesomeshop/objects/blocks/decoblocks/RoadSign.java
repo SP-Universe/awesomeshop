@@ -29,7 +29,7 @@ public class RoadSign extends Block {
     public RoadSign() {
         super(Properties.create(Material.IRON)
                 .hardnessAndResistance(1.5f,2.0f)
-                .sound(SoundType.ANVIL)
+                .sound(SoundType.METAL)
                 .harvestLevel(0));
     }
 

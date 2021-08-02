@@ -52,8 +52,8 @@ public class NightLamp extends Block {
 
     public NightLamp() {
         super(Properties.create(Material.IRON)
-                .hardnessAndResistance(3.5f,4.0f)
-                .sound(SoundType.ANVIL)
+                .hardnessAndResistance(1.5f,2.0f)
+                .sound(SoundType.STONE)
                 .harvestLevel(0));
 
         this.setDefaultState(this.getDefaultState().with(LIGHT, Integer.valueOf(3)).with(COLOR,Integer.valueOf(6)));

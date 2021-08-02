@@ -1,0 +1,8 @@
+{
+  "type": "awesomeshop:sign_painter",
+  "ingredient": {
+    "item": "awesomeshop:roadsigns/roadsign_empty"
+  },
+  "result": "awesomeshop:roadsigns/roadsign_rightofway",
+  "count": 1
+}

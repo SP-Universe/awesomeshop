@@ -52,7 +52,7 @@ public class AwesomeShopBlock extends Block {
     public AwesomeShopBlock(){
         super(Properties.create(Material.IRON)
                 .hardnessAndResistance(1.5f,1.0f)
-                .sound(SoundType.METAL)
+                .sound(SoundType.STONE)
                 .harvestLevel(0)
                 .notSolid());
         this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH).with(HALF, DoubleBlockHalf.LOWER));

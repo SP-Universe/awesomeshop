@@ -30,11 +30,13 @@ public class BlockInit {
     public static final RegistryObject<Block> PRESENT = BLOCKS.register("present", Present::new);
     public static final RegistryObject<Block> CARDBOARD_BOX = BLOCKS.register("cardboard_box", CardboardBox::new);
     public static final RegistryObject<Block> TRASHCAN = BLOCKS.register("trashcan", TrashCan::new);
-    public static final RegistryObject<Block> SECURITY_CAM = BLOCKS.register("security_cam", TrashCan::new);
 
     //RoadSigns
     public static final RegistryObject<Block> ROADSIGN_POLE = BLOCKS.register("roadsign_pole", RoadSignPole::new);
     public static final RegistryObject<Block> ROADSIGN_EMPTY = BLOCKS.register("roadsigns/roadsign_empty", RoadSign::new);
+    public static final RegistryObject<Block> ROADSIGN_STOP = BLOCKS.register("roadsigns/roadsign_stop", RoadSign::new);
+    public static final RegistryObject<Block> ROADSIGN_RIGHTOFWAY = BLOCKS.register("roadsigns/roadsign_rightofway", RoadSign::new);
+    public static final RegistryObject<Block> ROADSIGN_NOTRESPASSING = BLOCKS.register("roadsigns/roadsign_notrespassing", RoadSign::new);
 
     //Logstairs
     public static final RegistryObject<Block> OAK_LOG_STAIR = BLOCKS.register("stairs/oak_log_stairs", AwesomeshopStairs::new);
@@ -114,38 +116,53 @@ public class BlockInit {
     public static final RegistryObject<Block> DIAMOND_BLOCK_PILLAR = BLOCKS.register("pillars/diamond_block_pillar", PillarBlock::new);
     public static final RegistryObject<Block> GOLD_BLOCK_PILLAR = BLOCKS.register("pillars/gold_block_pillar", PillarBlock::new);
 
+    //DECOBLOCKS
+    //Seasons
     public static final RegistryObject<Block> EASTER_NEST = BLOCKS.register("easter/easter_nest", EasterNest::new);
-
-    public static final RegistryObject<Block> SHOWER_HEAD = BLOCKS.register("shower_head", ShowerHead::new);
-    public static final RegistryObject<Block> CHANDELIER = BLOCKS.register("chandelier", Chandelier::new);
-    public static final RegistryObject<Block> SHOWER_FAUCET1 = BLOCKS.register("shower_faucet1", ShowerFaucet1::new);
-    public static final RegistryObject<Block> SHOWER_FAUCET2 = BLOCKS.register("shower_faucet2", ShowerFaucet2::new);
-    public static final RegistryObject<Block> SMALL_TV = BLOCKS.register("small_tv", SmallTV::new);
-    public static final RegistryObject<Block> BRICK_OVEN = BLOCKS.register("brick_oven", BrickOven::new);
-    public static final RegistryObject<Block> BRICK_OVEN_TUBE = BLOCKS.register("brick_oven_tube", BrickOvenTube::new);
-    public static final RegistryObject<Block> DOORMAT = BLOCKS.register("doormat", Doormat::new);
-    public static final RegistryObject<Block> SWITCH = BLOCKS.register("switch", Switch::new);
-    public static final RegistryObject<Block> PC_SETUP = BLOCKS.register("pc_setup", PCSetup::new);
-    public static final RegistryObject<Block> TOILET = BLOCKS.register("toilet", Toilet::new);
-    public static final RegistryObject<Block> STAIRS = BLOCKS.register("stairs", Stairs::new);
-    public static final RegistryObject<Block> NIGHT_LAMP = BLOCKS.register("night_lamp", NightLamp::new);
-    public static final RegistryObject<Block> SMALL_MODERN_LAMP = BLOCKS.register("small_modern_lamp1", SmallModernLamp1::new);
-    public static final RegistryObject<Block> SMALL_MODERN_LAMP2 = BLOCKS.register("small_modern_lamp2", SmallModernLamp2::new);
-    public static final RegistryObject<Block> SMALL_MODERN_LAMP3 = BLOCKS.register("small_modern_lamp3", SmallModernLamp3::new);
-    public static final RegistryObject<Block> MODERN_WALL_LAMP1 = BLOCKS.register("modern_wall_lamp1", ModernWallLamp1::new);
-    public static final RegistryObject<Block> CHRISTMASTREE = BLOCKS.register("christmastree", Christmastree::new);
-    public static final RegistryObject<Block> BASICTABLE = BLOCKS.register("basic_table", BasicTable::new);
-    public static final RegistryObject<Block> PIANO = BLOCKS.register("piano", Piano::new);
-    public static final RegistryObject<Block> TOASTER = BLOCKS.register("toaster", Toaster::new);
-    public static final RegistryObject<Block> STAIRS_RAILING_LEFT = BLOCKS.register("stairs_railing_left", StairsRailingLeft::new);
-    public static final RegistryObject<Block> STAIRS_RAILING_RIGHT = BLOCKS.register("stairs_railing_right", StairsRailingRight::new);
-    public static final RegistryObject<Block> STAIRS_RAILING = BLOCKS.register("stairs_railing", StairsRailing::new);
-
     public static final RegistryObject<Block> ADVENT_WREATH_4 = BLOCKS.register("advent_wreath4", AdventWreath4::new);
     public static final RegistryObject<Block> ADVENT_WREATH_3 = BLOCKS.register("advent_wreath3", AdventWreath3::new);
     public static final RegistryObject<Block> ADVENT_WREATH_2 = BLOCKS.register("advent_wreath2", AdventWreath2::new);
     public static final RegistryObject<Block> ADVENT_WREATH_1 = BLOCKS.register("advent_wreath1", AdventWreath1::new);
     public static final RegistryObject<Block> ADVENT_WREATH_0 = BLOCKS.register("advent_wreath0", AdventWreath0::new);
+    public static final RegistryObject<Block> CHRISTMASTREE = BLOCKS.register("christmastree", Christmastree::new);
+
+    //Housebuilding
+    public static final RegistryObject<Block> SHOWER_HEAD = BLOCKS.register("shower_head", ShowerHead::new);
+    public static final RegistryObject<Block> CHANDELIER = BLOCKS.register("chandelier", Chandelier::new);
+    public static final RegistryObject<Block> SHOWER_FAUCET1 = BLOCKS.register("shower_faucet1", ShowerFaucet1::new);
+    public static final RegistryObject<Block> SHOWER_FAUCET2 = BLOCKS.register("shower_faucet2", ShowerFaucet2::new);
+    public static final RegistryObject<Block> BRICK_OVEN = BLOCKS.register("brick_oven", BrickOven::new);
+    public static final RegistryObject<Block> BRICK_OVEN_TUBE = BLOCKS.register("brick_oven_tube", BrickOvenTube::new);
+    public static final RegistryObject<Block> DOORMAT = BLOCKS.register("doormat", Doormat::new);
+    public static final RegistryObject<Block> TOILET = BLOCKS.register("toilet", Toilet::new);
+    public static final RegistryObject<Block> STAIRS = BLOCKS.register("stairs", Stairs::new);
+    public static final RegistryObject<Block> STAIRS_RAILING_LEFT = BLOCKS.register("stairs_railing_left", StairsRailingLeft::new);
+    public static final RegistryObject<Block> STAIRS_RAILING_RIGHT = BLOCKS.register("stairs_railing_right", StairsRailingRight::new);
+    public static final RegistryObject<Block> STAIRS_RAILING = BLOCKS.register("stairs_railing", StairsRailing::new);
+    public static final RegistryObject<Block> BASICTABLE = BLOCKS.register("basic_table", BasicTable::new);
+
+    //Tech
+    public static final RegistryObject<Block> SMALL_TV = BLOCKS.register("small_tv", SmallTV::new);
+    public static final RegistryObject<Block> SWITCH = BLOCKS.register("switch", Switch::new);
+    public static final RegistryObject<Block> PC_SETUP = BLOCKS.register("pc_setup", PCSetup::new);
+    public static final RegistryObject<Block> WASHING_MACHINE = BLOCKS.register("washing_machine", WashingMachine::new);
+    public static final RegistryObject<Block> DRYER = BLOCKS.register("dryer", Dryer::new);
+    public static final RegistryObject<Block> LAPTOP = BLOCKS.register("laptop", Laptop::new);
+
+    //Lamps
+    public static final RegistryObject<Block> NIGHT_LAMP = BLOCKS.register("night_lamp", NightLamp::new);
+    public static final RegistryObject<Block> SMALL_MODERN_LAMP = BLOCKS.register("small_modern_lamp1", SmallModernLamp1::new);
+    public static final RegistryObject<Block> SMALL_MODERN_LAMP2 = BLOCKS.register("small_modern_lamp2", SmallModernLamp2::new);
+    public static final RegistryObject<Block> SMALL_MODERN_LAMP3 = BLOCKS.register("small_modern_lamp3", SmallModernLamp3::new);
+    public static final RegistryObject<Block> MODERN_WALL_LAMP1 = BLOCKS.register("modern_wall_lamp1", ModernWallLamp1::new);
+
+    //Laboratory
+    public static final RegistryObject<Block> SECURITY_CAM = BLOCKS.register("security_cam", SecurityCamera::new);
+    public static final RegistryObject<Block> KEYPAD = BLOCKS.register("keypad", KeyPad::new);
+
+    //Other
+    public static final RegistryObject<Block> PIANO = BLOCKS.register("piano", Piano::new);
+    public static final RegistryObject<Block> TOASTER = BLOCKS.register("toaster", Toaster::new);
 
     //Flags
     public static final RegistryObject<Block> DRUGAR_FLAG = BLOCKS.register("flags/drugar_flag", AwesomeFlag::new);

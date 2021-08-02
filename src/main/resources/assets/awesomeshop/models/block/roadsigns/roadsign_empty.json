@@ -47,6 +47,13 @@
 			}
 		}
 	],
+	"display": {
+		"gui": {
+			"rotation": [45, -135, 0],
+			"translation": [12.25, -8.25, 0],
+			"scale": [1.25, 1.25, 1.25]
+		}
+	},
 	"groups": [0,
 		{
 			"name": "roadsign_holder",

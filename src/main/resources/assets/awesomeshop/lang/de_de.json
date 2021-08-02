@@ -71,6 +71,9 @@
 
   "block.awesomeshop.roadsign_pole": "Straßenschild Pfahl",
   "block.awesomeshop.roadsigns.roadsign_empty": "Leeres Straßenschild",
+  "block.awesomeshop.roadsigns.roadsign_stop": "Stop Straßenschild",
+  "block.awesomeshop.roadsigns.roadsign_rightofway": "Vorfahrtsschild",
+  "block.awesomeshop.roadsigns.roadsign_notrespassing": "Keine Durchfahrt Straßenschild",
 
   "block.awesomeshop.shower_head": "Duschkopf",
   "block.awesomeshop.shower_faucet1": "Dusch Armatur 1",
@@ -93,6 +96,11 @@
   "block.awesomeshop.stairs_railing_left": "Treppengeländer links",
   "block.awesomeshop.stairs_railing_right": "Treppengeländer rechts",
   "block.awesomeshop.stairs_railing": "Treppengeländer",
+  "block.awesomeshop.security_cam": "Überwachungskamera",
+  "block.awesomeshop.keypad": "PIN-Eingabegerät",
+  "block.awesomeshop.washing_machine": "Waschmaschine",
+  "block.awesomeshop.dryer": "Trockner",
+  "block.awesomeshop.laptop": "Laptop",
 
   "block.awesomeshop.flags.drugar_flag": "Drugar Flagge",
   "block.awesomeshop.flags.german_flag": "Deutschland Flagge",

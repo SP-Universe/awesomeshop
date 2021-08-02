@@ -54,7 +54,7 @@ public class CardboardBox extends Block {
     public CardboardBox(){
         super(Properties.create(Material.IRON)
                 .hardnessAndResistance(1.5f,1.0f)
-                .sound(SoundType.METAL)
+                .sound(SoundType.STONE)
                 .harvestLevel(0)
                 .notSolid());
     }

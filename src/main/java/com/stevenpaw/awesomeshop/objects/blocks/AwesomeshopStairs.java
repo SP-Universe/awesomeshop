@@ -14,7 +14,6 @@ public class AwesomeshopStairs extends StairsBlock {
                         .hardnessAndResistance(0.5f,2.0f)
                         .sound(SoundType.WOOD)
                         .harvestLevel(0)
-                        .setLightLevel(value -> 10)
                         .notSolid()
         );
     }

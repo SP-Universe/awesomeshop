@@ -1,25 +1,124 @@
 {
   "variants": {
-    "facing=down": {
-      "model": "awesomeshop:block/security_cam_floor"
+    "attachment=ceiling,facing=east,powered=false": {
+      "model": "awesomeshop:block/security_cam_ceiling",
+      "y": 270
     },
-    "facing=east": {
-      "model": "awesomeshop:block/security_cam_wall",
+    "attachment=ceiling,facing=north,powered=false": {
+      "model": "awesomeshop:block/security_cam_ceiling",
+      "y": 180
+    },
+    "attachment=ceiling,facing=south,powered=false": {
+      "model": "awesomeshop:block/security_cam_ceiling"
+    },
+    "attachment=ceiling,facing=west,powered=false": {
+      "model": "awesomeshop:block/security_cam_ceiling",
       "y": 90
     },
-    "facing=north": {
-      "model": "awesomeshop:block/security_cam_wall"
+    "attachment=double_wall,facing=east,powered=false": {
+      "model": "awesomeshop:block/security_cam_doublewall"
     },
-    "facing=south": {
+    "attachment=double_wall,facing=north,powered=false": {
+      "model": "awesomeshop:block/security_cam_doublewall",
+      "y": 270
+    },
+    "attachment=double_wall,facing=south,powered=false": {
+      "model": "awesomeshop:block/security_cam_doublewall",
+      "y": 90
+    },
+    "attachment=double_wall,facing=west,powered=false": {
+      "model": "awesomeshop:block/security_cam_doublewall",
+      "y": 180
+    },
+    "attachment=floor,facing=east,powered=false": {
+      "model": "awesomeshop:block/security_cam_floor",
+      "y": 270
+    },
+    "attachment=floor,facing=north,powered=false": {
+      "model": "awesomeshop:block/security_cam_floor",
+      "y": 180
+    },
+    "attachment=floor,facing=south,powered=false": {
+      "model": "awesomeshop:block/security_cam_floor"
+    },
+    "attachment=floor,facing=west,powered=false": {
+      "model": "awesomeshop:block/security_cam_floor",
+      "y": 90
+    },
+    "attachment=single_wall,facing=east,powered=false": {
+      "model": "awesomeshop:block/security_cam_wall",
+      "y": 270
+    },
+    "attachment=single_wall,facing=north,powered=false": {
       "model": "awesomeshop:block/security_cam_wall",
       "y": 180
     },
-    "facing=up": {
-      "model": "awesomeshop:block/security_cam_ceiling"
+    "attachment=single_wall,facing=south,powered=false": {
+      "model": "awesomeshop:block/security_cam_wall"
     },
-    "facing=west": {
+    "attachment=single_wall,facing=west,powered=false": {
       "model": "awesomeshop:block/security_cam_wall",
+      "y": 90
+    },
+    "attachment=ceiling,facing=east,powered=true": {
+      "model": "awesomeshop:block/security_cam_ceiling_powered",
       "y": 270
+    },
+    "attachment=ceiling,facing=north,powered=true": {
+      "model": "awesomeshop:block/security_cam_ceiling_powered",
+      "y": 180
+    },
+    "attachment=ceiling,facing=south,powered=true": {
+      "model": "awesomeshop:block/security_cam_ceiling_powered"
+    },
+    "attachment=ceiling,facing=west,powered=true": {
+      "model": "awesomeshop:block/security_cam_ceiling_powered",
+      "y": 90
+    },
+    "attachment=double_wall,facing=east,powered=true": {
+      "model": "awesomeshop:block/security_cam_doublewall_powered"
+    },
+    "attachment=double_wall,facing=north,powered=true": {
+      "model": "awesomeshop:block/security_cam_doublewall_powered",
+      "y": 270
+    },
+    "attachment=double_wall,facing=south,powered=true": {
+      "model": "awesomeshop:block/security_cam_doublewall_powered",
+      "y": 90
+    },
+    "attachment=double_wall,facing=west,powered=true": {
+      "model": "awesomeshop:block/security_cam_doublewall_powered",
+      "y": 180
+    },
+    "attachment=floor,facing=east,powered=true": {
+      "model": "awesomeshop:block/security_cam_floor_powered",
+      "y": 270
+    },
+    "attachment=floor,facing=north,powered=true": {
+      "model": "awesomeshop:block/security_cam_floor_powered",
+      "y": 180
+    },
+    "attachment=floor,facing=south,powered=true": {
+      "model": "awesomeshop:block/security_cam_floor_powered"
+    },
+    "attachment=floor,facing=west,powered=true": {
+      "model": "awesomeshop:block/security_cam_floor_powered",
+      "y": 90
+    },
+    "attachment=single_wall,facing=east,powered=true": {
+      "model": "awesomeshop:block/security_cam_wall_powered",
+      "y": 270
+    },
+    "attachment=single_wall,facing=north,powered=true": {
+      "model": "awesomeshop:block/security_cam_wall_powered",
+      "y": 180
+    },
+    "attachment=single_wall,facing=south,powered=true": {
+      "model": "awesomeshop:block/security_cam_wall_powered"
+    },
+    "attachment=single_wall,facing=west,powered=true": {
+      "model": "awesomeshop:block/security_cam_wall_powered",
+      "y": 90
     }
   }
 }

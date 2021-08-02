@@ -29,7 +29,7 @@ public class RoadSignPole extends Block {
     public RoadSignPole() {
         super(Properties.create(Material.IRON)
                 .hardnessAndResistance(1.5f,2.0f)
-                .sound(SoundType.ANVIL)
+                .sound(SoundType.STONE)
                 .harvestLevel(0));
     }
 

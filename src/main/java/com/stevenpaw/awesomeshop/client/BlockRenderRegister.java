@@ -32,5 +32,11 @@ public class BlockRenderRegister {
         RenderTypeLookup.setRenderLayer(BlockInit.MODERN_TRAPDOOR.get(), RenderType.getTranslucent());
         RenderTypeLookup.setRenderLayer(BlockInit.SPOOKY_TRAPDOOR.get(), RenderType.getTranslucent());
         RenderTypeLookup.setRenderLayer(BlockInit.CHANDELIER.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(BlockInit.WASHING_MACHINE.get(), RenderType.getTranslucent());
+
+        //Roadsigns
+        RenderTypeLookup.setRenderLayer(BlockInit.ROADSIGN_STOP.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(BlockInit.ROADSIGN_RIGHTOFWAY.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(BlockInit.ROADSIGN_NOTRESPASSING.get(), RenderType.getTranslucent());
     }
 }

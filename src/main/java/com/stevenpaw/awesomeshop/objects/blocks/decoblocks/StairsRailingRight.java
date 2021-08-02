@@ -36,7 +36,7 @@ public class StairsRailingRight extends Block {
     public StairsRailingRight() {
         super(Properties.create(Material.IRON)
                 .hardnessAndResistance(1.5f,2.0f)
-                .sound(SoundType.ANVIL)
+                .sound(SoundType.METAL)
                 .harvestLevel(0));
     }
 

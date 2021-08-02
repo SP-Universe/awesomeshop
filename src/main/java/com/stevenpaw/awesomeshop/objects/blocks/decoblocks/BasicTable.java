@@ -48,8 +48,8 @@ public class BasicTable extends Block {
 
     public BasicTable() {
         super(Properties.create(Material.IRON)
-                .hardnessAndResistance(1.5f,1.0f)
-                .sound(SoundType.ANVIL)
+                .hardnessAndResistance(1.5f,2.0f)
+                .sound(SoundType.STONE)
                 .harvestLevel(0));
     }
 

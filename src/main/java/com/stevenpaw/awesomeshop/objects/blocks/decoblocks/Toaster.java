@@ -32,7 +32,7 @@ public class Toaster extends Block {
     public Toaster() {
         super(Properties.create(Material.IRON)
                 .hardnessAndResistance(1.5f,2.0f)
-                .sound(SoundType.ANVIL)
+                .sound(SoundType.STONE)
                 .harvestLevel(0));
     }
 
