@@ -1,0 +1,6 @@
+{
+  "parent": "awesomeshop:block/roadsigns/roadsign",
+  "textures": {
+    "1": "awesomeshop:blocks/roadsigns/roadsign_274_50"
+  }
+}

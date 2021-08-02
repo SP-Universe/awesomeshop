@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "awesomeshop:block/roadsigns/roadsign_720"
+    },
+    "facing=south": {
+      "model": "awesomeshop:block/roadsigns/roadsign_720",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "awesomeshop:block/roadsigns/roadsign_720",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "awesomeshop:block/roadsigns/roadsign_720",
+      "y": 90
+    }
+  }
+}

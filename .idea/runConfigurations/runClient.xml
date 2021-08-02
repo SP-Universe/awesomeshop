@@ -8,7 +8,7 @@
     <module name="awesomeshop.main"/>
     <envs>
       <env name="MOD_CLASSES" value="examplemod%%$PROJECT_DIR$\build\resources\main;examplemod%%$PROJECT_DIR$\build\classes\java\main"/>
-      <env name="MCP_MAPPINGS" value="snapshot_20201028-1.16.3"/>
+      <env name="MCP_MAPPINGS" value="snapshot_20210309-1.16.5"/>
       <env name="MCP_VERSION" value="20201102.104115"/>
       <env name="FORGE_VERSION" value="35.1.0"/>
       <env name="assetIndex" value="1.16"/>

@@ -21,10 +21,10 @@ public class RoadSignPole extends Block {
 
     private static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 
-    private static final VoxelShape SHAPE_N = Block.makeCuboidShape(7, 0, 7, 9, 16, 9);
-    private static final VoxelShape SHAPE_W = Block.makeCuboidShape(7, 0, 7, 9, 16, 9);
-    private static final VoxelShape SHAPE_S = Block.makeCuboidShape(7, 0, 7, 9, 16, 9);
-    private static final VoxelShape SHAPE_E = Block.makeCuboidShape(7, 0, 7, 9, 16, 9);
+    private static final VoxelShape SHAPE_N = Block.makeCuboidShape(6, 0, 6, 10, 14, 10);
+    private static final VoxelShape SHAPE_W = Block.makeCuboidShape(6, 0, 6, 10, 14, 10);
+    private static final VoxelShape SHAPE_S = Block.makeCuboidShape(6, 0, 6, 10, 14, 10);
+    private static final VoxelShape SHAPE_E = Block.makeCuboidShape(6, 0, 6, 10, 14, 10);
 
     public RoadSignPole() {
         super(Properties.create(Material.IRON)

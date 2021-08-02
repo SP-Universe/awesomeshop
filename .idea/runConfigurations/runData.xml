@@ -3,12 +3,12 @@
   <configuration default="false" factoryName="Application" name="runData" singleton="false" type="Application">
     <option name="MAIN_CLASS_NAME" value="net.minecraftforge.userdev.LaunchTesting"/>
     <option name="VM_PARAMETERS" value="-Dforge.logging.console.level=debug -Dforge.logging.markers=SCAN,REGISTRIES,REGISTRYDUMP"/>
-    <option name="PROGRAM_PARAMETERS" value="--mod examplemod --all --output E:\Git-Workspace\_SPMods\awesomeshop\src\generated\resources --existing E:\Git-Workspace\_SPMods\awesomeshop\src\main\resources"/>
+    <option name="PROGRAM_PARAMETERS" value="--mod awesomeshop --all --output E:\Git-Workspace\_SPMods\awesomeshop\src\generated\resources --existing E:\Git-Workspace\_SPMods\awesomeshop\src\main\resources"/>
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$\run"/>
     <module name="awesomeshop.main"/>
     <envs>
       <env name="MOD_CLASSES" value="examplemod%%$PROJECT_DIR$\build\resources\main;examplemod%%$PROJECT_DIR$\build\classes\java\main"/>
-      <env name="MCP_MAPPINGS" value="snapshot_20201028-1.16.3"/>
+      <env name="MCP_MAPPINGS" value="snapshot_20210309-1.16.5"/>
       <env name="MCP_VERSION" value="20201102.104115"/>
       <env name="FORGE_VERSION" value="35.1.0"/>
       <env name="FORGE_GROUP" value="net.minecraftforge"/>

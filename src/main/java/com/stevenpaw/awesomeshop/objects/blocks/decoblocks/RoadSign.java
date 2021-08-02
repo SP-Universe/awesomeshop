@@ -19,7 +19,7 @@ import javax.annotation.Nullable;
 
 public class RoadSign extends Block {
 
-    private static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
+    public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 
     private static final VoxelShape SHAPE_N = Block.makeCuboidShape(2, 2, 12, 14, 14, 22);
     private static final VoxelShape SHAPE_W = Block.makeCuboidShape(12, 2, 2, 22, 14, 14);

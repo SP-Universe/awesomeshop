@@ -113,7 +113,7 @@ public class AwesomeShop {
 
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(StreetInit.ROADSIGN_STOP.get());
+            return new ItemStack(StreetInit.ROADSIGN_206.get());
         }
     };
 }

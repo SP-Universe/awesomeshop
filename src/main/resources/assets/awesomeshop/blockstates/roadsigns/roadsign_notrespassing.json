@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "facing=north": { "model": "awesomeshop:block/roadsigns/roadsign_notrespassing" },
-    "facing=south": { "model": "awesomeshop:block/roadsigns/roadsign_notrespassing", "y":  180},
-    "facing=west": { "model": "awesomeshop:block/roadsigns/roadsign_notrespassing", "y":  270},
-    "facing=east": { "model": "awesomeshop:block/roadsigns/roadsign_notrespassing", "y":  90}
-  }
-}
