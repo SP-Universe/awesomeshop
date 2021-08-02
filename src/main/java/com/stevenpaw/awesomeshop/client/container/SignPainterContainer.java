@@ -3,6 +3,7 @@ package com.stevenpaw.awesomeshop.client.container;
 import com.google.common.collect.Lists;
 import com.stevenpaw.awesomeshop.init.BlockInit;
 import com.stevenpaw.awesomeshop.init.ModContainerTypes;
+import com.stevenpaw.awesomeshop.init.StreetInit;
 import com.stevenpaw.awesomeshop.recipe.ModRecipeType;
 import com.stevenpaw.awesomeshop.recipe.SignPainterRecipe;
 import net.minecraft.entity.player.PlayerEntity;
@@ -139,7 +140,7 @@ public class SignPainterContainer extends Container {
      * Determines whether supplied player can use this container
      */
     public boolean canInteractWith(PlayerEntity playerIn) {
-        return isWithinUsableDistance(this.worldPosCallable, playerIn, BlockInit.SIGN_PAINTER.get());
+        return isWithinUsableDistance(this.worldPosCallable, playerIn, StreetInit.SIGN_PAINTER.get());
     }
 
     /**

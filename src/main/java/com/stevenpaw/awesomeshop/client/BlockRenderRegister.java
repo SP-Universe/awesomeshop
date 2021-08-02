@@ -3,6 +3,7 @@ package com.stevenpaw.awesomeshop.client;
 import com.stevenpaw.awesomeshop.AwesomeShop;
 import com.stevenpaw.awesomeshop.init.BlockInit;
 import com.stevenpaw.awesomeshop.init.CrystallumInit;
+import com.stevenpaw.awesomeshop.init.StreetInit;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderState;
@@ -35,8 +36,8 @@ public class BlockRenderRegister {
         RenderTypeLookup.setRenderLayer(BlockInit.WASHING_MACHINE.get(), RenderType.getTranslucent());
 
         //Roadsigns
-        RenderTypeLookup.setRenderLayer(BlockInit.ROADSIGN_STOP.get(), RenderType.getTranslucent());
-        RenderTypeLookup.setRenderLayer(BlockInit.ROADSIGN_RIGHTOFWAY.get(), RenderType.getTranslucent());
-        RenderTypeLookup.setRenderLayer(BlockInit.ROADSIGN_NOTRESPASSING.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(StreetInit.ROADSIGN_STOP.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(StreetInit.ROADSIGN_RIGHTOFWAY.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(StreetInit.ROADSIGN_NOTRESPASSING.get(), RenderType.getTranslucent());
     }
 }

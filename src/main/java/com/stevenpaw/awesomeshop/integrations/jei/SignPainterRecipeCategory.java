@@ -2,6 +2,7 @@ package com.stevenpaw.awesomeshop.integrations.jei;
 
 import com.stevenpaw.awesomeshop.AwesomeShop;
 import com.stevenpaw.awesomeshop.init.BlockInit;
+import com.stevenpaw.awesomeshop.init.StreetInit;
 import com.stevenpaw.awesomeshop.recipe.SignPainterRecipe;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.gui.IRecipeLayout;
@@ -24,7 +25,7 @@ public class SignPainterRecipeCategory implements IRecipeCategory<SignPainterRec
         background = guiHelper.drawableBuilder(location, 0, 0, 81, 30)
                 .addPadding(0, 0, 0, 0)
                 .build();
-        this.icon = guiHelper.createDrawableIngredient(new ItemStack(BlockInit.SIGN_PAINTER.get()));
+        this.icon = guiHelper.createDrawableIngredient(new ItemStack(StreetInit.SIGN_PAINTER.get()));
     }
 
     @Override

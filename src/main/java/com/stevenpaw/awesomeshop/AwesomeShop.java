@@ -36,6 +36,7 @@ public class AwesomeShop {
         ItemInit.ITEMS.register(modEventBus);
         BlockInit.BLOCKS.register(modEventBus);
         CrystallumInit.BLOCKS.register(modEventBus);
+        StreetInit.BLOCKS.register(modEventBus);
         ModTileEntityTypes.TILE_ENTITY_TYPES.register(modEventBus);
         ModContainerTypes.CONTAINER_TYPES.register(modEventBus);
 
@@ -59,6 +60,13 @@ public class AwesomeShop {
 
         CrystallumInit.BLOCKS.getEntries().stream().map(RegistryObject::get).forEach(block -> {
             final Item.Properties properties = new Item.Properties().group(AwesomeShop.CRYSTALLUMTAB);
+            final BlockItem blockItem = new BlockItem(block, properties);
+            blockItem.setRegistryName(block.getRegistryName());
+            registry.register(blockItem);
+        });
+
+        StreetInit.BLOCKS.getEntries().stream().map(RegistryObject::get).forEach(block -> {
+            final Item.Properties properties = new Item.Properties().group(AwesomeShop.STREETTAB);
             final BlockItem blockItem = new BlockItem(block, properties);
             blockItem.setRegistryName(block.getRegistryName());
             registry.register(blockItem);
@@ -98,6 +106,14 @@ public class AwesomeShop {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(CrystallumInit.RAW_CRYSTALLUM.get());
+        }
+    };
+
+    public static final ItemGroup STREETTAB = new ItemGroup("awesomeshopStreetTab") {
+
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(StreetInit.ROADSIGN_STOP.get());
         }
     };
 }

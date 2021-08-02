@@ -16,7 +16,6 @@ public class BlockInit {
 
     public static final RegistryObject<Block> SHREDDER = BLOCKS.register("shredder", Shredder::new);
     public static final RegistryObject<Block> AWESOMESHOP = BLOCKS.register("awesomeshop", AwesomeShopBlock::new);
-    public static final RegistryObject<Block> SIGN_PAINTER = BLOCKS.register("sign_painter", SignPainterBlock::new);
 
     // BLOCKS
     // public static final RegistryObject<Block> NAME_OF_BLOCK = BLOCKS.register("name_of_block", NameOfBlock::new);
@@ -30,13 +29,6 @@ public class BlockInit {
     public static final RegistryObject<Block> PRESENT = BLOCKS.register("present", Present::new);
     public static final RegistryObject<Block> CARDBOARD_BOX = BLOCKS.register("cardboard_box", CardboardBox::new);
     public static final RegistryObject<Block> TRASHCAN = BLOCKS.register("trashcan", TrashCan::new);
-
-    //RoadSigns
-    public static final RegistryObject<Block> ROADSIGN_POLE = BLOCKS.register("roadsign_pole", RoadSignPole::new);
-    public static final RegistryObject<Block> ROADSIGN_EMPTY = BLOCKS.register("roadsigns/roadsign_empty", RoadSign::new);
-    public static final RegistryObject<Block> ROADSIGN_STOP = BLOCKS.register("roadsigns/roadsign_stop", RoadSign::new);
-    public static final RegistryObject<Block> ROADSIGN_RIGHTOFWAY = BLOCKS.register("roadsigns/roadsign_rightofway", RoadSign::new);
-    public static final RegistryObject<Block> ROADSIGN_NOTRESPASSING = BLOCKS.register("roadsigns/roadsign_notrespassing", RoadSign::new);
 
     //Logstairs
     public static final RegistryObject<Block> OAK_LOG_STAIR = BLOCKS.register("stairs/oak_log_stairs", AwesomeshopStairs::new);
